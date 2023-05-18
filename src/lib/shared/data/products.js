@@ -78,9 +78,9 @@ const products = [
 		title: 'Action delegation',
 		shortDesc:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		link: '7-delegation',
+		link: '',
 		id: 3,
-		anchor: '',
+		anchor: '7-delegation',
 
 		promoImg: '',
 		gallery: ['', '', '', '', '', '', '', ''],

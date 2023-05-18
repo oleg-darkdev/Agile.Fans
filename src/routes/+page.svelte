@@ -7,7 +7,8 @@
 		Header,
 		Hero,
 		Footer,
-		Reviews
+		Reviews,
+    Logos
 	} from '../lib/widgets';
 
 	import { products } from '../lib/shared';
@@ -16,6 +17,8 @@
 <Header />
 
 <Hero />
+<Logos />
+
 <a name="about" />
 <Description />
 

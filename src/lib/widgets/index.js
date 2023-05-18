@@ -7,9 +7,11 @@ import Reviews from './ui/landing/Reviews.svelte';
 import Footer from './ui/landing/Footer.svelte';
 import Features from './ui/landing/Features.svelte';
 import Description from './ui/landing/Description.svelte';
+import Logos from './ui/landing/Logos.svelte';
 
 export {
-	Product,
+  Product,
+  Logos,
 	FreeDownload,
 	Price,
 	Header,

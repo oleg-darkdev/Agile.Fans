@@ -3,7 +3,7 @@
 </script>
 
 <section>
-	<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:px-12 lg:px-24 lg:py-24">
+	<div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 md:px-12 lg:px-24 lg:py-12">
 		<div class="mx-auto flex max-w-7xl flex-wrap items-center">
 			<div class="w-full rounded-xl lg:w-1/2 lg:max-w-lg">
 				<div>

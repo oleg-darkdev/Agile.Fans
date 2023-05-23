@@ -37,7 +37,7 @@
 	<div class=" mx-auto px-5  lg:px-16">
 		<div class="mb-8 flex w-full flex-col text-center">
 			<span class="mb-4 text-sm font-medium uppercase tracking-wide text-gray-600">
-				The best front end teams use Wickedtemplates to state their presence.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 				<a
 					href="https://www.wickedtemplates.com/expo.html"
 					class="font-semibold text-blue-600 hover:text-blue-500 lg:mb-0">Our customers »</a

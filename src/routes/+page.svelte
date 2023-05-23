@@ -1,27 +1,29 @@
 <script>
-	// почистить файл импортов agile.fans
+	import { Features, Description, Price, Product, Hero, Logos } from '../lib/agile_fans/widgets';
 
-	import { Features, Description, Price, Product, Hero, Logos } from '../lib/agile.fans/widgets';
-	// 		FreeDownload,
-
-	import { Contact, FAQ, Header, Footer, Reviews, Stats, Cookie } from '../lib/core/layout/widgets';
+	import {
+		Contact,
+		FreeDownload,
+		FAQ,
+		Header,
+		Footer,
+		Reviews,
+		Stats,
+		Cookie
+	} from '../lib/core/layout/widgets';
 
 	import { productsList } from '../lib/core/data';
 	import { convertObjToArray } from '../lib/core/utils';
 
-	let arrayOfProducts = convertObjToArray(productsList);
+	const arrayOfProducts = convertObjToArray(productsList),
+		productData = productsList.agileFans;
 
-	const productData = productsList.agileFans;
-
-	// console.log(productsList);
 	// порефакторить, оставить прямые импорты где это необходимо, или динамические
 </script>
 
 <Header {productData} />
-
 <Hero {productData} />
 <Logos />
-
 <Cookie />
 
 <a name="about" />
@@ -29,7 +31,7 @@
 <!-- {arrayOfProducts}
  -->
 
- <Stats stats={productData.stats} />
+<Stats stats={productData.stats} />
 
 <a name="features" />
 <Features />

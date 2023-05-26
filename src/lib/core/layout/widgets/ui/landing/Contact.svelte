@@ -1,6 +1,7 @@
 <script>
-	export let productData;
+import { contact, social } from '../../../../data/index';
 </script>
+
 
 <section class="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 ">
 	<div class="container mx-auto flex min-h-screen flex-col px-6 py-12">
@@ -53,7 +54,7 @@
 							/>
 						</svg>
 
-						<span class="mx-2 w-72 truncate text-white">{productData.contact.phone}</span>
+						<span class="mx-2 w-72 truncate text-white">{contact.phone}</span>
 					</p>
 
 					<p class="-mx-2 flex items-start">
@@ -72,7 +73,7 @@
 							/>
 						</svg>
 
-						<span class="mx-2 w-72 truncate text-white">{productData.contact.email} </span>
+						<span class="mx-2 w-72 truncate text-white">{contact.email} </span>
 					</p>
 				</div>
 
@@ -83,7 +84,7 @@
 
 						<a
 							class="mx-1.5 transform text-white transition-colors duration-300 hover:text-blue-500"
-							href={productData.social.linkedin}
+							href={social.linkedin}
 						>
 							<svg
 								class="h-8 w-8"

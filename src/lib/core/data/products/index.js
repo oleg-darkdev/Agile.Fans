@@ -1,11 +1,11 @@
-import stats from './stats';
-import features from './features';
-import prices from './prices';
-import faq from './faq';
-import contacts from './contacts';
-import social from './social';
+import { agileFans as stats } from './stats';
+import { agileFans as features } from './features';
+import { agileFans as prices } from './prices';
+import { agileFans as faq } from './faq';
+// import contacts from '../contacts';
+// import social from '../social';
 
-const productData = {
+const agileFans = {
 	id: 1,
 	status: 0,
 	shortDesc: {
@@ -20,13 +20,12 @@ const productData = {
 	stats: stats.agileFans,
 	features: features.agileFans,
 	prices: prices.agileFans,
-	contact: contacts,
-	social: social,
+	// contact: contacts,
+	// social: social,
 	faq: faq.agileFans
 };
 
-const productsList = {
-	agileFans: productData
+export {
+	agileFans,
 };
 
-export default productsList;

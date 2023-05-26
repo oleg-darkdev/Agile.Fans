@@ -11,18 +11,18 @@ const agileFans = {
 	shortDesc: {
 		text: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
 		title: 'Agile.fans',
-		logo: '/agile_fans/images/logo.svg',
+		logo: '/core/images/logo.svg',
 		link: '',
 
 		synopsis:
 			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.'
 	},
-	stats: stats.agileFans,
-	features: features.agileFans,
-	prices: prices.agileFans,
+	stats: stats,
+	features: features,
+	prices: prices,
 	// contact: contacts,
 	// social: social,
-	faq: faq.agileFans
+	faq: faq
 };
 
 export {

@@ -1,5 +1,5 @@
 <script>
-	import { Features, Description, Price, Product, Hero, Logos } from '../lib/agile_fans/widgets';
+	import { Features, Description, Price, Product, Hero, Logos } from '../lib/agile-fans/widgets';
 
 	import {
 		Contact,

@@ -1,5 +1,4 @@
-const features = {
-	agileFans: [
+const features =  [
 		{
 			icon: '',
       title: 'Lorem ipsum dolor',
@@ -7,7 +6,7 @@ const features = {
 		},
 
 	]
-};
+
 
 
 export default features;

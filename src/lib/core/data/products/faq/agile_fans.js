@@ -1,5 +1,4 @@
-const faq = {
-	agileFans: ['Lorem impsum']
-};
+const faq =  ['Lorem impsum']
+
 
 export default faq;

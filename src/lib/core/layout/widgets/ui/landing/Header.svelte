@@ -17,6 +17,10 @@
 			link: '#price'
 		},
 		{
+			title: 'Shop',
+			link: '/shop'
+		},
+		{
 			title: 'About',
 			link: '#about'
 		},
@@ -33,8 +37,8 @@
 
 <header class="bg-blue-500">
 	<nav class="container relative mx-auto flex items-center justify-between px-6 py-8 text-white">
-		<a href="#">
-			<img src={productData.shortDesc.logo} class="h-24 w-24 rounded-xl" alt="" />
+		<a class="rounded rounded-xl" href="#">
+			<img src={productData.shortDesc.logo} class="h-24 w-48 " alt="" />
 			<!-- <svg
 				xmlns="http://www.w3.org/2000/svg"
 				class="h-8 w-8 md:h-10 md:w-10"

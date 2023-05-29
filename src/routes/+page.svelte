@@ -18,7 +18,6 @@
 	const arrayOfProducts = convertObjToArray(productsList),
 		productData = productsList.agileFans;
 
-
 	// порефакторить, оставить прямые импорты где это необходимо, или динамические
 </script>
 
@@ -31,6 +30,7 @@
 <Description />
 <!-- {arrayOfProducts}
  -->
+<Product />
 
 <Stats stats={productData.stats} />
 
@@ -51,6 +51,6 @@
 <FAQ />
 
 <a name="contact" />
-<Contact  />
+<Contact />
 
 <Footer {productData} {arrayOfProducts} />

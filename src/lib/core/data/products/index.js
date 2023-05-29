@@ -27,5 +27,10 @@ const agileFans = {
 
 export {
 	agileFans,
+	agileFans as agi,
+	agileFans as mui,
+	agileFans as hui,
+	agileFans as yui,
+	agileFans as aui,
+	agileFans as qui
 };
-

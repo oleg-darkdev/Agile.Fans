@@ -6,8 +6,10 @@
 <section>
 	<div class="relative grid h-96 w-full place-items-center bg-blue-500 lg:h-[20rem]">
 		<div class="mx-auto flex flex-col items-center text-center">
-			<h1 class="text-4xl font-semibold uppercase text-white md:text-6xl">
-				{productData.shortDesc.title}
+			<h1
+				class="poppins text-4xl font-bold leading-none tracking-tighter text-neutral-600 text-white md:text-6xl"
+			>
+				
 			</h1>
 
 			<p class="mt-6 text-lg leading-5 text-white">{productData.shortDesc.synopsis}</p>

@@ -45,8 +45,10 @@
 		<h2
 			class="mb-8 text-center text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl"
 		>
-			Our plans
+			Our asasdsadasdasdasdsad
 		</h2>
+
+
 		<a name="price" />
 		<div class="divide-y overflow-hidden rounded-xl px-5 shadow-xl lg:px-0">
 			{#each prices as price}

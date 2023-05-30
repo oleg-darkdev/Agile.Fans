@@ -8,6 +8,36 @@ import { agileFans as faq } from './faq';
 const agileFans = {
 	id: 1,
 	status: 0,
+	headerLinks: [
+		{
+			title: 'Contact',
+			link: '#contact'
+		},
+		{
+			title: 'FAQ',
+			link: '#faq'
+		},
+		{
+			title: 'Price',
+			link: '#price'
+		},
+		{
+			title: 'Shop',
+			link: '/shop'
+		},
+		{
+			title: 'About',
+			link: '#about'
+		},
+		{
+			title: 'Features',
+			link: '#features'
+		}
+		// {
+		//   title: '',
+		//   link: ''
+		// },
+	],
 	shortDesc: {
 		text: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
 		title: 'Agile.fans',

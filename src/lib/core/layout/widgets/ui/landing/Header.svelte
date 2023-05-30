@@ -1,38 +1,8 @@
 <script>
+	import { BtnLogIn, BtnSignIn } from '../../../entities';
 	export let productData;
 
 	let open = true;
-
-	const links = [
-		{
-			title: 'Contact',
-			link: '#contact'
-		},
-		{
-			title: 'FAQ',
-			link: '#faq'
-		},
-		{
-			title: 'Price',
-			link: '#price'
-		},
-		{
-			title: 'Shop',
-			link: '/shop'
-		},
-		{
-			title: 'About',
-			link: '#about'
-		},
-		{
-			title: 'Features',
-			link: '#features'
-		}
-		// {
-		//   title: '',
-		//   link: ''
-		// },
-	];
 </script>
 
 <header class="bg-blue-500">
@@ -92,7 +62,7 @@
 				? 'translate-x-0 opacity-100 '
 				: '-translate-x-full opacity-0'} absolute inset-x-0 top-16 z-30 mt-4 w-full space-y-6 bg-indigo-600 px-6 py-8 transition-all duration-300 ease-in-out md:relative md:top-0 md:-mx-6 md:mt-0 md:flex md:w-auto md:translate-x-0 md:items-center md:space-y-0 md:bg-transparent md:p-0 md:opacity-100"
 		>
-			{#each links as link}
+			{#each productData.headerLinks as link}
 				<a
 					href={link.link}
 					class="block text-white transition-colors duration-300 hover:text-indigo-300 md:px-6"
@@ -137,6 +107,10 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="inline-flex list-none items-center gap-2 lg:ml-auto">
+			<BtnLogIn />
+			<BtnSignIn />
 		</div>
 	</nav>
 </header>

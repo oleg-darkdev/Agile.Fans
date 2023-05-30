@@ -21,7 +21,7 @@
 	// порефакторить, оставить прямые импорты где это необходимо, или динамические
 </script>
 
-<Header {productData} />
+
 <Hero {productData} />
 <Logos />
 <Cookie />
@@ -53,4 +53,3 @@
 <a name="contact" />
 <Contact />
 
-<Footer {productData} {arrayOfProducts} />

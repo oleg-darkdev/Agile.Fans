@@ -1,13 +1,13 @@
 <script>
 	import { products } from '../../../shared/';
-  
+
 	export let productData;
 </script>
 
 <section>
 	<div class="relative grid h-96 w-full place-items-center bg-blue-500 lg:h-[20rem]">
 		<div class="mx-auto flex flex-col items-center text-center">
-			<h1 class="text-4xl font-semibold uppercase text-white md:text-6xl">
+			<h1 class="font-black text-4xl  uppercase text-white md:text-6xl">
 				{productData.shortDesc.title}
 			</h1>
 

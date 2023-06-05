@@ -1,7 +1,6 @@
 <script>
-import { contact, social } from '../../../../data/index';
+	import { contact, social } from '../../../../data/index';
 </script>
-
 
 <section class="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 ">
 	<div class="container mx-auto flex min-h-screen flex-col px-6 py-12">
@@ -81,7 +80,6 @@ import { contact, social } from '../../../../data/index';
 					<h3 class="text-gray-300 ">Follow us</h3>
 
 					<div class="-mx-1.5 mt-4 flex ">
-
 						<a
 							class="mx-1.5 transform text-white transition-colors duration-300 hover:text-blue-500"
 							href={social.linkedin}
@@ -103,7 +101,6 @@ import { contact, social } from '../../../../data/index';
 								/>
 							</svg>
 						</a>
-
 					</div>
 				</div>
 			</div>

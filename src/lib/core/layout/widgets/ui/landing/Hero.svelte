@@ -9,7 +9,7 @@
 			<h1
 				class="poppins text-4xl font-bold leading-none tracking-tighter text-neutral-600 text-white md:text-6xl"
 			>
-				
+				<!-- фывыфвфыв -->
 			</h1>
 
 			<p class="mt-6 text-lg leading-5 text-white">{productData.shortDesc.synopsis}</p>

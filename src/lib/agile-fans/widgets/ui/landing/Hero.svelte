@@ -5,9 +5,11 @@
 </script>
 
 <section>
-	<div class="relative grid h-96 w-full place-items-center bg-blue-500 lg:h-[20rem]">
+	<div
+		class="relative grid h-96 w-full place-items-center bg-gradient-to-t from-blue-200 via-blue-400 to-blue-500 lg:h-[20rem]"
+	>
 		<div class="mx-auto flex flex-col items-center text-center">
-			<h1 class="font-black text-4xl  uppercase text-white md:text-6xl">
+			<h1 class="text-4xl font-black  uppercase text-white md:text-6xl">
 				{productData.shortDesc.title}
 			</h1>
 
@@ -31,7 +33,7 @@
 		</div>
 	</div>
 
-	<svg class="fill-blue-500" viewBox="0 0 1440 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg class="fill-blue-200 " viewBox="0 0 1440 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M1440 0H0V57C720 0 1440 57 1440 57V0Z" />
 	</svg>
 </section>

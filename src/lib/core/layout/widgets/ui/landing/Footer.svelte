@@ -5,10 +5,15 @@
 <footer class="bg-white">
 	<div class="container mx-auto px-6 py-12">
 		<div class="text-center">
-			<h2 class="text-2xl font-semibold text-gray-800 ">Let’s get started on something great</h2>
+			<h2
+				class="mb-2 text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-4xl lg:text-3xl"
+			>
+				Let’s get started on something great
+			</h2>
 
 			<p class="mx-auto mt-2 max-w-md text-gray-500 ">
-				Join over 4,000+ startups already growing with Meraki UI.
+				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+				industries for previewing layouts and visual mockups.
 			</p>
 
 			<div class="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-center">
@@ -199,18 +204,18 @@
 			</div>
 		</div>
 
-		<hr class="my-6 border-gray-200  md:my-10" />
+		<hr class="my-2 border-blue-500  md:my-6" />
 
-		<div class="flex flex-col items-center justify-between sm:flex-row">
+		<div class=" flex flex-col items-center justify-between sm:flex-row">
 			<a href="#">
 				<img
-					class="h-7 w-auto"
+					class="h-20 w-auto"
 					src={productData.shortDesc.logo}
 					alt={productData.shortDesc.title}
 				/>
 			</a>
 
-			<p class="mt-4 text-sm text-gray-500  sm:mt-0">© Copyright 2023. All Rights Reserved.</p>
+			<p class="mt-4 text-sm text-blue-700  sm:mt-0">© Copyright 2023. All Rights Reserved.</p>
 		</div>
 	</div>
 </footer>

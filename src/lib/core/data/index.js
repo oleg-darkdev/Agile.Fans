@@ -1,11 +1,11 @@
-import { agileFans, mui, agi, hui, yui, aui, qui } from './products';
+import { agileFans, mui, ten, hui, yui, aui, qui } from './products';
 import social from './social';
 import contact from './contact';
 
 const productsList = {
 	agileFans,
 	mui,
-	agi,
+	ten,
 	hui,
 	yui,
 	aui,
@@ -15,7 +15,7 @@ const productsList = {
 const productsCategories = [
 	{
 		title: 'all',
-		products: [agileFans, mui, agi, hui, yui, aui, qui]
+		products: [agileFans, mui, ten, hui, yui, aui, qui]
 	},
 	{
 		title: 'AgileKIT',

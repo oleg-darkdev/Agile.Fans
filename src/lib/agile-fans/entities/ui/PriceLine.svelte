@@ -9,7 +9,7 @@ import { PriceItem, List } from '../../shared';
 
 <div class="flex w-full flex-wrap items-end justify-start {price.bg}">
 	<List>
-		<h2 slot="title" class="mb-4 text-sm font-medium uppercase tracking-widest text-neutral-600">
+		<h2 slot="title" class="mb-4 text-md font-medium leading-none  uppercase tracking-widest text-neutral-100">
 			{price.title}
 		</h2>
 		<ul slot="list" class="space-y-4">
@@ -36,7 +36,7 @@ import { PriceItem, List } from '../../shared';
 
 	<div class="w-full md:w-1/4 lg:ml-auto xl:w-1/4">
 		<div class="relative flex h-full flex-col p-8">
-			<strong class="mx-auto flex items-end text-3xl font-black leading-none {price.textColor}">
+			<strong class="mx-auto flex items-end text-3xl font-black leading-none text-white">
         <!-- neutral-600 -->
 				<span>${price.tax} </span>
 			</strong>
@@ -47,7 +47,7 @@ import { PriceItem, List } from '../../shared';
 					>Buy Now</button
 				>
 			</div>
-			<p class="mx-auto mt-6 text-xs text-gray-500">{price.terms}</p>
+			<p class="mx-auto mt-6 text-xs text-gray-50">{price.terms}</p>
 		</div>
 	</div>
 </div>

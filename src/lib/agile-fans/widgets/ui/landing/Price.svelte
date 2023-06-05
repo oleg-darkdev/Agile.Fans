@@ -14,9 +14,9 @@
 			link: '',
 			tax: 0,
 			terms: 'Trial access to web services for 2 weeks',
-			bg: 'bg-gray-50',
+			bg: 'bg-blue-500',
 
-			textColor: 'text-gray-400'
+			// textColor: 'text-gray-400'
 		},
 		{
 			title: 'Online acces for all products',
@@ -24,9 +24,9 @@
 			link: '',
 			tax: 12,
 			terms: 'Full acces for all online apps',
-			bg: 'bg-gray-100',
+			bg: 'bg-blue-600',
 
-			textColor: 'text-gray-500'
+			// textColor: 'text-gray-500'
 		},
 		{
 			title: 'Full box',
@@ -34,8 +34,8 @@
 			link: '',
 			tax: 200,
 			terms: 'Extended trial access to web services for 2 months ',
-			bg: 'bg-white',
-			textColor: 'text-gray-700'
+			bg: 'bg-blue-700',
+			// textColor: 'text-gray-700'
 		}
 	];
 </script>

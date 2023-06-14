@@ -104,11 +104,13 @@
 	$: selectedCategory = [faq[0].content];
 </script>
 
-<section class="bg-white ">
-	<div class="container mx-auto px-6 py-12">
-		<h1 class="text-center text-2xl font-semibold text-gray-800  lg:text-3xl">
+<section class="py-12 ">
+	<div class="container mx-auto min-h-screen w-full rounded-r-xl bg-gray-200 px-24 py-12 lg:mr-32">
+		<h2
+			class="mt-2 text-center text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl"
+		>
 			Have any Questions?
-		</h1>
+		</h2>
 
 		<div class="mt-8 lg:-mx-12 lg:flex xl:mt-16">
 			<div class="lg:mx-12">

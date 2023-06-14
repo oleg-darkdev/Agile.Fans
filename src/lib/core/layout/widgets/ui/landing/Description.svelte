@@ -25,7 +25,7 @@
 			<div class="relative justify-center lg:px-4">
 				<div class="lg:grid lg:grid-cols-2">
 					{#each products as product}
-						<div class="m-4 rounded-xl p-4 hover:bg-gray-100">
+						<div class="m-4 rounded-xl p-4 hover:bg-blue-100">
 							<h1 class="text-gray-500">{product.title}</h1>
 							<p class="text-gray-400">
 								{product.shortDesc}

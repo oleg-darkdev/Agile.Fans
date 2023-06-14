@@ -31,7 +31,7 @@
 				<h3 class="text-sm font-medium text-gray-500 ">Agile.fans products</h3>
 
 				<div class="mt-4 flex flex-col items-start space-y-4">
-					{#each arrayOfProducts.slice(0, 8) as product}
+					{#each arrayOfProducts.slice(0, 6) as product}
 						<a
 							href={product.shortDesc.link}
 							class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
@@ -45,7 +45,7 @@
 				<h3 class="text-sm font-medium text-gray-500 " />
 
 				<div class="mt-4 flex flex-col items-start space-y-4">
-					{#each arrayOfProducts.slice(0, 8) as product}
+					{#each arrayOfProducts.slice(0, 6) as product}
 						<a
 							href={product.shortDesc.link}
 							class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "

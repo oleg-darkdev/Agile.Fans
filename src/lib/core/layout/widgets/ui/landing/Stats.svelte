@@ -1,20 +1,66 @@
+
 <script>
-  export let stats;
+  import { CountUp } from 'countup.js';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const workersCountUp = new CountUp('workers', 50, { enableScrollSpy: true, duration: 6 }),
+			partnersCountUp = new CountUp('partners', 12, { enableScrollSpy: true, duration: 6 }),
+			progectsCountUp = new CountUp('progects', 9, { enableScrollSpy: true, duration: 8 }),
+			experienceCountUp = new CountUp('experience', 10, { enableScrollSpy: true, duration: 13 }),
+			metresCountUp = new CountUp('metres', 400, { enableScrollSpy: true, duration: 6 }),
+			hoursCountUp = new CountUp('hours', 900000, { enableScrollSpy: true, duration: 14 });
+	});
+
+	export let stats;
 </script>
 
-<section class="row-gap-8 grid grid-cols-2 md:grid-cols-4">
-  {#each stats as stat}
-	<div class="mb-12 text-center md:mb-0 md:border-r md:last:border-none dark:md:border-slate-500">
-		<div
-			class="font-heading text-[2.6rem] font-bold text-primary dark:text-blue-600 lg:text-5xl xl:text-6xl"
-		>
-			{stat.value}
+<section class="container mx-auto my-24 rounded-xl bg-gray-200 py-20  text-center lg:text-left ">
+	<div class="mx-8 grid items-start lg:grid-cols-2">
+		<div class="mt-40 lg:mb-0">
+			<div
+				class="relative z-[1] block rounded-lg bg-gradient-to-r from-blue-500  to-blue-700 px-6 py-12 shadow-black/20 md:px-12 lg:-mr-14"
+			>
+				<h2 class="mb-6 text-4xl font-bold text-white">Lorem ipsum is placeholder text</h2>
+				<p class="mb-12 text-gray-50">
+					Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+					industries for previewing layouts and visual mockups.
+				</p>
+
+				<div class="grid gap-x-6 md:grid-cols-3">
+					{#each stats as stat}
+						<div class="mb-6 md:mb-0">
+							<h2 class="text-4xl font-black text-white">{stat.value}</h2>
+							<h5 class="mb-0 text-lg font-medium text-white">
+								{stat.title}
+							</h5>
+						</div>
+					{/each}
+				</div>
+			</div>
+
+			<slot />
 		</div>
-		<p
-			class="text-sm font-medium uppercase tracking-widest text-gray-800 dark:text-slate-400 lg:text-base"
-		>
-			{stat.title}
-		</p>
+
+		<div>
+			<img
+				src="https://tecdn.b-cdn.net/img/new/ecommerce/vertical/088.jpg"
+				class="fancy-border-radius rotate-lg-6 w-full rounded-2xl shadow-lg shadow-black/20"
+				alt=""
+			/>
+		</div>
 	</div>
-  {/each}
 </section>
+
+<style>
+	@media (min-width: 992px) {
+		.rotate-lg-6 {
+			transform: rotate(6deg);
+		}
+	}
+
+	/* These are the KEY styles - you can add them directly to any object you want in your project */
+	.fancy-border-radius {
+		border-radius: 53% 47% 52% 48% / 36% 41% 59% 64%;
+	}
+</style>

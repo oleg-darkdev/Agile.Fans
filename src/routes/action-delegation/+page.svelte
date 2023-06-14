@@ -77,6 +77,8 @@ Contact -->
 	<FeaturesForProductType />
 </ProductVariants>
 
+<a name="workshops" />
+
 <FaqProduct faq={productData.faq} />
 
 <Contact />

@@ -49,7 +49,7 @@
 					{#each productData.headerLinks as link}
 						<li>
 							<a
-								href={link.link}
+								href='{link.link}'
 								class="block rounded  py-2 pl-3 pr-4 text-lg font-bold  text-white md:p-0"
 								>{link.title}</a
 							>

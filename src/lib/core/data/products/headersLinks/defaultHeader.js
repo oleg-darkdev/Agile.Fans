@@ -10,7 +10,7 @@ const defaultHeader = [
 	},
 	{
 		title: 'Warsztaty',
-		link: '#workshop'
+		link: '#workshops'
 	},
 
 	{

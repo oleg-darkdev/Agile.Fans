@@ -13,7 +13,7 @@ const header = [
 	},
 	{
 		title: 'Warsztaty',
-		link: '#workshop'
+		link: '#workshops'
 	},
 
 	{

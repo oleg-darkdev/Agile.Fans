@@ -126,6 +126,7 @@
 				</div>
 			</div>
 
+			<a name="faq" />
 			<div class="mt-8 flex-1 lg:mx-12 lg:mt-0">
 				{#each selectedCategory as answers}
 					<div>

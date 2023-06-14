@@ -79,4 +79,6 @@
 
 <FAQ />
 
+<a name="workshops" />
+
 <Contact />

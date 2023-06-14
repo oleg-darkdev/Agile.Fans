@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import {
 		SpyralTypesCardsSection,
 		Hero,
@@ -13,4 +13,4 @@
 <Hero />
 <SpyralTypeSection />
 <NewsLetter />
-<TestimonialsSection />
+<TestimonialsSection /> -->

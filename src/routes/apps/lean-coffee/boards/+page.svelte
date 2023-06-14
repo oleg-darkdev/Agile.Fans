@@ -1,12 +1,8 @@
 <script>
-	import { boards } from '../../../lib/lean-coffee/app/shared';
-
-	$: showApp = true;
+	import { boards } from '../../../../lib/lean-coffee/app/shared';
 </script>
 
-
-
-<section class:hidden={!showApp} class="flex  w-full justify-center py-12">
+<section class="flex  w-full justify-center py-12">
 	<div class="relative">
 		<div class="relative flex justify-start">
 			<span class="bg-white pr-3 text-lg font-medium text-neutral-600"> All Boards</span>
@@ -15,7 +11,7 @@
 
 	<div class="flex flex-row flex-wrap justify-center space-y-8">
 		{#each boards as board}
-			<a href="./action-delegation/board/"
+			<a href="board/"
 				><div class="group max-w-lg pt-8 sm:flex lg:items-end">
 					<div class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
 						<img

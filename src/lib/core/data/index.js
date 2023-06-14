@@ -1,33 +1,42 @@
-import { agileFans, mui, ten, hui, yui, aui, qui } from './products';
+import {
+	// agileKit
+	agileKit,
+	ten,
+	// kanbanKit
+	kanbanKit,
+	kanbanel,
+	healthCheck,
+	actionDelegation,
+	// scrumKit
+	scrumKit
+} from './products';
+
 import social from './social';
 import contact from './contact';
 
 const productsList = {
-	agileFans,
-	mui,
-	ten,
-	hui,
-	yui,
-	aui,
-	qui
+	agileKit,
+	kanbanKit,
+	scrumKit
 };
 
 const productsCategories = [
 	{
 		title: 'all',
-		products: [agileFans, mui, ten, hui, yui, aui, qui]
+		products: [agileKit, kanbanel, kanbanKit, healthCheck, scrumKit, actionDelegation, ten]
 	},
 	{
-		title: 'AgileKIT',
-		products: [agileFans, qui]
+		title: 'Agile.KIT',
+		products: [agileKit, ten]
 	},
 	{
-		title: 'KanbanKIT',
-		products: [hui, yui, qui]
+		title: 'Kanban.KIT',
+		products: [kanbanKit, kanbanel, healthCheck, actionDelegation]
 	},
+
 	{
-		title: 'ScrumKIT',
-		products: [hui, yui, qui]
+		title: 'Scrum.KIT',
+		products: [scrumKit]
 	}
 ];
 

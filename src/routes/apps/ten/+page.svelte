@@ -1,11 +1,11 @@
 <script>
-	import { motivatorsList, fearsList } from '../../../lib/ten/shared';
+	import { motivatorsList, fearsList } from '../../../lib/ten/app/shared';
 	import {
 		ModalGetStartedPlay,
 		CardCategory,
 		BoardgameCard,
 		ResultCard
-	} from '../../../lib/ten/entities';
+	} from '../../../lib/ten/app/entities';
 
 	const referencesList = [
 		{

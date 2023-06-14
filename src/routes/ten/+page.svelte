@@ -1,25 +1,42 @@
 <script>
-	// import { productsList } from '../../lib/core/data';
-
-	// const productData = productsList.agileFans;
-
 	import {
 		Motivators,
 		Subscription,
 		Logos,
-		Prices,
 		Video,
 		CardsMatch,
-		Description,
-		Footer
-	} from '../../lib/ten/widgets';
+		Description
+	} from '../../lib/ten/landing/widgets';
+	import { FeaturesForProductType } from '../../lib/core/layout/entities';
 
-	import { motivatorsList, fearsList } from '../../lib/ten/shared';
+	import {
+		Contact,
+		ProductVariants,
+		FaqProduct,
+		CallToWorkshop,
+		AboutProduct,
+		Reviews,
+		Stats,
+		HeaderBottomLine,
+		Cookie,
+		HeroProduct
+	} from '../../lib/core/layout/widgets';
+
+	import { motivatorsList, fearsList } from '../../lib/ten/app/shared';
+	import { productsList } from '../../lib/core/data';
+
+	const productData = productsList.ten;
 </script>
 
-<Subscription />
-<Logos />
+<HeaderBottomLine />
 
+<Cookie />
+
+<HeroProduct shortDesc={productData.shortDesc} />
+<!-- <Subscription /> -->
+<!-- <Logos /> -->
+
+<AboutProduct about={productData.about} title={productData.shortDesc.title} />
 <!-- motivators -->
 <Description />
 <Motivators />
@@ -32,4 +49,14 @@
 <Video />
 <CardsMatch cardList={fearsList} />
 
-<Prices />
+<CallToWorkshop />
+
+<Reviews feedback={productData.feedback} />
+
+<ProductVariants>
+	<FeaturesForProductType />
+</ProductVariants>
+
+<FaqProduct faq={productData.faq} />
+
+<Contact />

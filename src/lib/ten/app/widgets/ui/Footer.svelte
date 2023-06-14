@@ -1,5 +1,5 @@
 <script>
-	import { motivatorsList, fearsList } from '../../../shared/';
+	import { motivatorsList, fearsList } from '../../shared/';
 </script>
 
 <footer class=" bg-gray-50" aria-labelledby="footer-heading">

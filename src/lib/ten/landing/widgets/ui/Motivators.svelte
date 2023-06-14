@@ -1,5 +1,5 @@
 <script>
-	import { motivatorsList } from '../../../shared/';
+	import { motivatorsList } from '../../shared/';
 </script>
 
 <section>

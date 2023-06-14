@@ -1,8 +1,9 @@
 <script>
-	import { FreeDownload } from '../../../../core/layout/entities';
+	import { FreeDownload } from '../../../../../core/layout/entities';
+	import { ShowFullListBtn } from '../../../../../core/layout/shared';
 
 	import { products } from '../../../shared';
-  // export let arrayOfProducts;
+	let showFullList = false;
 </script>
 
 <section>
@@ -25,7 +26,7 @@
 		<div class="prose mx-auto flex w-full max-w-max flex-wrap justify-center lg:max-w-3xl">
 			<div class="relative justify-center lg:px-4">
 				<div class="lg:grid lg:grid-cols-2">
-					{#each products as product}
+					{#each showFullList ? products.splice(0, 6) : products as product}
 						<div class="m-4 rounded-xl p-4 hover:bg-gray-100">
 							<h1 class="text-gray-500">{product.title}</h1>
 							<p class="text-gray-400">
@@ -41,6 +42,8 @@
 						</div>
 					{/each}
 				</div>
+
+				<ShowFullListBtn bind:showFullList />
 			</div>
 		</div>
 	</div>

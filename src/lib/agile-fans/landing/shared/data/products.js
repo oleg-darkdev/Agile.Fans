@@ -3,8 +3,7 @@ const products = [
 		title: 'Cynefin',
 		shortDesc:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		link: '',
-		anchor: 'cynefin',
+		link: 'cynefin',
 		id: 1,
 		promoImg: '',
 		gallery: ['', '', '', '', '', '', '', ''],
@@ -41,10 +40,9 @@ const products = [
 		title: 'Lean coffee',
 		shortDesc:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		link: '',
+		link: 'lean-coffee',
 		orientation: 'flex-row-reverse',
 		id: 2,
-		anchor: 'lean-coffee',
 
 		promoImg: '',
 		gallery: ['', '', '', '', '', '', '', ''],
@@ -78,9 +76,8 @@ const products = [
 		title: 'Action delegation',
 		shortDesc:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		link: '',
+		link: 'action-delegation',
 		id: 3,
-		anchor: '7-delegation',
 
 		promoImg: '',
 		gallery: ['', '', '', '', '', '', '', ''],
@@ -117,8 +114,7 @@ const products = [
 		shortDesc:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 		orientation: 'flex-row-reverse',
-		link: '',
-		anchor: 'kanbanel',
+		link: 'kanbanel',
 
 		features: [
 			{
@@ -155,8 +151,7 @@ const products = [
 		title: 'Poker planning',
 		shortDesc:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		link: '',
-		anchor: 'poker-planning',
+		link: 'poker-planning',
 
 		id: 5,
 		orientation: 'flex-row',
@@ -189,8 +184,7 @@ const products = [
 		title: '10',
 		shortDesc:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		link: '',
-		anchor: '10',
+		link: 'ten',
 
 		orientation: 'flex-row-reverse',
 		id: 6,
@@ -225,8 +219,7 @@ const products = [
 		title: 'Scrum puzzle',
 		shortDesc:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		link: '',
-		anchor: 'scrum-puzzle',
+		link: 'scrum-puzzle',
 
 		orientation: 'flex-row',
 		id: 9,
@@ -260,8 +253,7 @@ const products = [
 		title: 'PO',
 		shortDesc:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		link: '',
-		anchor: 'po',
+		link: 'po',
 
 		orientation: 'flex-row-reverse',
 		id: 10,
@@ -296,11 +288,10 @@ const products = [
 	{
 		title: 'Retromat',
 		orientation: 'flex-row',
-		anchor: 'retromat',
 
 		shortDesc:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		link: '',
+		link: 'retromat',
 		id: 11,
 		promoImg: '',
 		gallery: ['', '', '', '', '', '', '', ''],
@@ -336,9 +327,8 @@ const products = [
 		orientation: 'flex-row-reverse',
 		shortDesc:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		link: '',
+		link: 'health-check',
 		id: 12,
-		anchor: 'health-check',
 
 		status: '0',
 		promoImg: '',
@@ -370,6 +360,5 @@ const products = [
 		]
 	}
 ];
-
 
 export default products;

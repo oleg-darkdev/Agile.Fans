@@ -1,38 +1,41 @@
 <script>
-  import { productsCategories } from "../../../../core/data";
+	import { productsCategories } from '../../../../../core/data';
 
 	let selectedCategory = productsCategories[0];
 </script>
 
-<section class="container mx-auto px-6 py-8 lg:py-16">
-	<h3 class="text-xl font-medium text-gray-800 md:text-2xl lg:text-3xl ">Browse Our Projects</h3>
+<section class="container mx-auto my-12 rounded-xl bg-gray-200 px-12 py-8 lg:py-16">
+	<h3 class="text-center font-black text-gray-600 md:text-2xl lg:text-6xl">Browse Our Projects</h3>
 
-	<div class="-mx-2 mt-4 flex items-center overflow-x-auto whitespace-nowrap py-6">
+	<div class="-mx-2 mt-4 flex items-center justify-center overflow-x-auto whitespace-nowrap py-6">
 		{#each productsCategories as category, i}
 			<button
 				on:click={() => (selectedCategory = category)}
-				class=" py-0.5transition-colors mx-2 inline-flex cursor-pointer rounded-2xl px-4 duration-300
+				class="mx-2 inline-flex cursor-pointer rounded-2xl py-0.5 px-4 text-2xl transition-colors duration-300
     {selectedCategory.title == category.title
 					? 'bg-blue-500  text-white hover:bg-indigo-400'
-					: 'text-gray-500 hover:bg-blue-500/70 hover:text-white focus:outline-none'}"
+					: 'border-gray-6000 border-2 text-gray-500 hover:bg-blue-500/70 hover:text-white focus:outline-none'}"
 				>{category.title}</button
 			>
 		{/each}
 	</div>
 
-	<div class="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 ">
+	<div class="mt-10 grid grid-cols-1 gap-6 gap-x-8 md:grid-cols-2 lg:grid-cols-3 ">
 		{#each selectedCategory.products as product, i}
 			<a
-				name={product.anchor}
 				href={product.shortDesc.link}
-				class:lg:col-span-2={i % 6 === 0}
-				class="transition-all duration-500 hover:scale-105 "
+				class:lg:col-span-2={i % 2 === 0 && i < 6}
+				class="rounded-2xl bg-gradient-to-r from-blue-500  to-blue-700 px-4 pb-8 pt-2 transition-all duration-500 hover:scale-105"
 			>
 				<img
-					class="h-80 w-full rounded-lg object-cover object-top shadow-md shadow-gray-200 xl:h-96"
-					src="https://cdn.dribbble.com/users/1644453/screenshots/17056773/media/00509f74e765da294440886db976943a.png?compress=1&resize=1000x750&vertical=top"
-					alt=""
+					class="max-h-40  w-full rounded-lg object-cover object-center shadow-md shadow-gray-200 xl:h-96"
+					src="{product.shortDesc.promo}"
+					alt="{product.shortDesc.title} photo"
 				/>
+				<h2 class="mt-4 text-3xl  font-bold text-white">{product.shortDesc.title}</h2>
+				<p class="leading-relax mt-2 text-base font-normal text-white ">
+					{product.shortDesc.synopsis}
+				</p>
 			</a>
 		{/each}
 	</div>

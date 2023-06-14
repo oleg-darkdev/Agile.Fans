@@ -1,19 +1,17 @@
 const stats = [
 	{
 		title: 'Lorem impsum',
-		value: 1000
+		id: ''
 	},
 	{
 		title: 'Lorem impsum',
-		value: '34K'
+		id: ''
 	},
 	{
 		title: 'Lorem impsum',
-		value: 230
-	},
-	{
-		title: 'Lorem impsum',
-		value: 5493
+		id: ''
 	}
 ];
+
+
 export default stats;

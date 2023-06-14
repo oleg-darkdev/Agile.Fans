@@ -24,6 +24,8 @@
   },
   "devDependencies": {
     "@fontsource/fira-mono": "^4.5.10",
+
+		"countup.js": "2.3.2",
     "@fontsource/inter": "^4.5.15",
     "@fontsource/poppins": "^4.5.10",
     "@playwright-testing-library/test": "^4.5.0",

@@ -9,6 +9,7 @@
 		Contact,
 		FreeDownload,
 		ProductVariants,
+		Video,
 		FaqProduct,
 		CallToWorkshop,
 		AboutProduct,
@@ -22,7 +23,7 @@
 	$: showFullList = true;
 
 	import { productsList } from '../../lib/core/data';
-	const productData = productsList.delegation;
+	const productData = productsList.actionDelegation;
 </script>
 
 <!--
@@ -71,13 +72,14 @@ Contact -->
 
 <CallToWorkshop />
 
+<Video
+	link="https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com"
+/>
 <Reviews feedback={productData.feedback} />
 
 <ProductVariants>
 	<FeaturesForProductType />
 </ProductVariants>
-
-<a name="workshops" />
 
 <FaqProduct faq={productData.faq} />
 

@@ -8,7 +8,7 @@
 	id="marketing-banner"
 	tabindex="-1"
 	class:hidden={showBanner == false}
-	class="fixed left-1/2 top-24  z-50 flex max-w-3xl -translate-x-1/2 flex-col justify-between rounded-lg border border-gray-100 bg-white p-4 shadow-sm dark:border-gray-600 dark:bg-gray-700 md:flex-row lg:max-w-7xl"
+	class="fixed left-1/2 lg:top-24  w-11/12 top-32 -mt-2 z-50 flex md:max-w-3xl -translate-x-1/2 flex-col justify-between rounded-lg border border-gray-100 bg-white p-4 shadow-sm dark:border-gray-600 dark:bg-gray-700 md:flex-row lg:max-w-7xl"
 >
 	<div class="mb-3 mr-4 flex flex-col items-start md:mb-0 md:flex-row md:items-center">
 		<a

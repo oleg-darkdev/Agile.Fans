@@ -4,8 +4,8 @@
 	let selectedCategory = productsCategories[0];
 </script>
 
-<section class="container mx-auto my-12 rounded-xl bg-gray-200 px-12 py-8 lg:py-16">
-	<h3 class="text-center font-black text-gray-600 md:text-2xl lg:text-6xl">Browse Our Projects</h3>
+<section class="container mx-auto my-12 rounded-xl bg-gray-200 lg:px-12 md:px-12 px-4 py-8 lg:py-16">
+	<h3 class="text-center font-black text-gray-600 md:text-2xl lg:text-6xl text-4xl">Browse Our Projects</h3>
 
 	<div class="-mx-2 mt-4 flex items-center justify-center overflow-x-auto whitespace-nowrap py-6">
 		{#each productsCategories as category, i}

@@ -40,14 +40,14 @@
 </section> -->
 
 <section class="container mx-auto flex  justify-center md:px-6">
-	<div class="my-24 max-w-6xl">
+	<div class="mb-12 max-w-6xl md:my-24 lg:my-24">
 		<div
-			class="relative h-[400px] overflow-hidden rounded-lg bg-[url('https://ibvsolutions.com/wp-content/uploads/2019/02/Kanban-on-Screen-781x512.jpg')] bg-cover bg-[50%] bg-no-repeat"
+			class="relative h-screen overflow-hidden bg-[url('https://ibvsolutions.com/wp-content/uploads/2019/02/Kanban-on-Screen-781x512.jpg')] bg-cover bg-[50%] bg-no-repeat md:h-[400px] md:rounded-lg lg:h-[400px] lg:rounded-lg"
 		/>
 		<div class="container mx-auto px-6 md:px-12 xl:px-32">
 			<div class="text-center">
 				<div
-					class="mt-[-170px] block rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 px-6 py-12  shadow-black/20  backdrop-blur-[30px] md:py-16 md:px-12"
+					class="-mt-[400px] block rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 py-12 shadow-black/20 backdrop-blur-[30px] md:mt-[-170px] md:px-6  md:py-16  md:px-12 lg:mt-[-170px] lg:px-6"
 				>
 					<h1 class="font-md mb-8 text-5xl tracking-tight text-white md:text-6xl xl:text-7xl">
 						A new era in educational boardgames <br /><span class="font-black"

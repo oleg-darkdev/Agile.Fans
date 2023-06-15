@@ -2,7 +2,7 @@
 	import { BtnLogIn, BtnSignIn } from './lib/core/layout/entities';
 	export let productData;
 
-	let open = true;
+	let showMenu = ~false;
 </script>
 
 <header class="h-24">
@@ -18,12 +18,14 @@
 			<div class="flex md:order-2">
 				<BtnLogIn />
 				<BtnSignIn />
+
 				<button
 					data-collapse-toggle="navbar-sticky"
 					type="button"
-					class="inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+					class="mx-2 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200  md:hidden"
 					aria-controls="navbar-sticky"
 					aria-expanded="false"
+					on:click={() => (showMenu = !showMenu)}
 				>
 					<span class="sr-only">Open main menu</span>
 					<svg
@@ -39,17 +41,26 @@
 					>
 				</button>
 			</div>
-			<div
-				class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
-				id="navbar-sticky"
-			>
+
+			<div class="z-20 w-full {showMenu ? 'hidden' : ''} md:hidden lg:hidden">
+				{#each productData.headerLinks as link}
+					<div on:click={() => (showMenu = !showMenu)}>
+						<a
+							href={link.link}
+							class="block w-full  rounded py-2 pl-3 pr-4 text-lg font-bold text-white  focus:text-gray-800 md:p-0"
+							>{link.title}</a
+						>
+					</div>
+				{/each}
+			</div>
+			<div class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto">
 				<ul
 					class="mt-4 flex flex-col rounded-lg p-4   md:mt-0 md:flex-row md:space-x-8 md:border-0  md:p-0 "
 				>
 					{#each productData.headerLinks as link}
 						<li>
 							<a
-								href='{link.link}'
+								href={link.link}
 								class="block rounded  py-2 pl-3 pr-4 text-lg font-bold  text-white md:p-0"
 								>{link.title}</a
 							>

@@ -205,16 +205,16 @@
 </script>
 
 <!-- mb-32 text-center my-24 mx-auto md:px-6 -->
-<section class="w-12/12 flex w-full justify-center  bg-gray-800 lg:py-24 lg:px-12">
-	<div class="grid w-full md:grid-cols-2">
-		<div class="mb-6 md:mb-0 ">
-			<h2 class="mb-6 text-5xl font-black text-blue-600">
+<section class="w-12/12 flex w-full justify-center  bg-gray-800 lg:py-24 py-12 px-4 lg:px-12">
+	<div class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+		<div class="lg:mb-6 mb-0  ">
+			<h2 class="mb-6 lg:text-5xl text-3xl lg:text-left text-center font-black text-blue-600">
 				Trusted by
 				<br />
 				<u class=""> 200+ customers</u> and <br />
 				<u class=""> 30+ companies</u>
 			</h2>
-			<p class="mb-6 text-blue-500">
+			<p class="mb-6 text-blue-500 max-w-xs lg:text-left text-center">
 				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
 				industries for previewing layouts and visual mockups.
 			</p>
@@ -230,9 +230,9 @@
 		</div>
 
 		<div class="mb-6 md:mb-0">
-			<div class="avatar-group mb-4 -space-x-6">
+			<div class="avatar-group mb-6 flex flex-row flex-wrap justify-center  -space-x-6 px-6">
 				{#each communities as client}
-					<div class="avatar bg-blue-600">
+					<div class="avatar bg-blue-600 ">
 						<div class="w-12">
 							<img class="text-white" src={client.img} alt={client.title} />
 						</div>
@@ -246,7 +246,7 @@
 				</div>
 			</div>
 
-			<div class="-mx-2  overflow-x-auto whitespace-nowrap py-2">
+			<div class="-mx-2 px-1 overflow-x-auto whitespace-nowrap py-2">
 				{#each clientsCategories as category, i}
 					<button
 						on:click={() => (selectedCategory = category)}

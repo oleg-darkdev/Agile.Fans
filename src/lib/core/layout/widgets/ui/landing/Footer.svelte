@@ -77,7 +77,7 @@
 	export let productData, arrayOfProducts;
 </script>
 
-<footer class="bg-white">
+<footer class="bg-white mt-4">
 	<div class="container mx-auto px-6 py-12">
 		<div class="text-center">
 			<h2

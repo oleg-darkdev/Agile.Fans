@@ -1,6 +1,6 @@
 <section class="my-24  mx-auto flex justify-center md:px-6 ">
-	<div class="flex max-w-7xl flex-wrap  rounded-lg bg-gray-800 py-14 px-12">
-		<div class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:-mr-[70px] lg:w-5/12">
+	<div class="flex max-w-7xl flex-wrap  lg:rounded-lg md:rounded-lg bg-gray-800 py-14 lg:px-12 md:px-12 px-4">
+		<div class="mb-12 w-full shrink-0 grow-0 basis-auto  lg:mb-0 lg:-mr-[70px] lg:w-5/12">
 			<div class="flex lg:py-12">
 				<img
 					src="https://mdbcdn.b-cdn.net/img/new/standard/people/033.jpg"
@@ -11,7 +11,7 @@
 		</div>
 		<a name="workshops" />
 
-		<div class=" w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+		<div class=" w-full shrink-0 grow-0 basis-auto lg:w-7/12 lg:px-0 px-4 -mt-[70px] lg:-mt-0 md:-mt-0">
 			<div
 				class="flex h-full items-center rounded-lg bg-primary p-6 text-center text-white lg:pl-12 lg:text-left"
 			>

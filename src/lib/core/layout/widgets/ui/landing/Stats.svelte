@@ -15,9 +15,9 @@
 	export let stats;
 </script>
 
-<section class="container mx-auto my-24 rounded-xl bg-gray-200 py-20  text-center lg:text-left ">
+<section class="container mx-auto lg:my-24 my-12 rounded-xl bg-gray-200 py-12   text-center lg:text-left ">
 	<div class="mx-8 grid items-start lg:grid-cols-2">
-		<div class="mt-40 lg:mb-0">
+		<div class="lg:mt-40 lg:mb-0">
 			<div
 				class="relative z-[1] block rounded-lg bg-gradient-to-r from-blue-500  to-blue-700 px-6 py-12 shadow-black/20 md:px-12 lg:-mr-14"
 			>

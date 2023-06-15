@@ -4,7 +4,7 @@
 
 {#if hideCookie}
 	<section
-		class="z-10 fixed left-12 bottom-6 mx-auto max-w-md rounded-2xl border border-gray-200 backdrop-blur-[30px] bg-gradient-to-l from-blue-500  to-blue-600 p-4 "
+		class="z-10 hidden md:hidden-none lg:hidden-none fixed left-12 bottom-6 mx-auto max-w-md rounded-2xl border border-gray-200 backdrop-blur-[30px] bg-gradient-to-l from-blue-500  to-blue-600 p-4 "
 	>
 		<h2 class="font-semibold text-white ">🍪 Cookie Notice</h2>
 

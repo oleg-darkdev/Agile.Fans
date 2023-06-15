@@ -1,4 +1,79 @@
 <script>
+	import { FooterLink } from '../../../shared';
+
+	const legalLinks = [
+		{
+			title: 'About us',
+			link: ''
+		},
+
+		{
+			title: 'Contact',
+			link: ''
+		},
+		{
+			title: 'Careers',
+			link: ''
+		}
+	];
+	const socialLinks = [
+		{
+			title: 'LinkedIn',
+			link: ''
+		},
+		{
+			title: 'Github',
+			link: ''
+		},
+		{
+			title: 'Facebook',
+			link: ''
+		}
+	];
+
+	const resourcesLinks = [
+		{
+			title: 'Events',
+			link: ''
+		},
+		{
+			title: 'Tutorials',
+			link: ''
+		},
+		{
+			title: 'Help center',
+			link: ''
+		},
+		{
+			title: 'Supports',
+			link: ''
+		}
+	];
+
+	const useCasesLinks = [
+		{
+			title: 'Startups',
+			link: ''
+		},
+
+		{
+			title: 'Enterprise',
+			link: ''
+		},
+		{
+			title: 'Ngo',
+			link: ''
+		},
+		{
+			title: 'Community',
+			link: ''
+		},
+		{
+			title: 'Personal use',
+			link: ''
+		}
+	];
+
 	export let productData, arrayOfProducts;
 </script>
 
@@ -17,9 +92,10 @@
 			</p>
 
 			<div class="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-center">
-				<button
+				<a
+					href="/demo"
 					class="w-full transform rounded-md bg-blue-600 px-5 py-2 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 sm:order-2 sm:mx-2 sm:w-auto"
-					>Get started</button
+					>Go demo</a
 				>
 			</div>
 		</div>
@@ -59,36 +135,9 @@
 				<h3 class="text-sm font-medium text-gray-500 ">Resources</h3>
 
 				<div class="mt-4 flex flex-col items-start space-y-4">
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Blog</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Newsletter</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Events</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Help center</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Tutorials</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Supports</a
-					>
+					{#each resourcesLinks as link}
+						<FooterLink {link} />
+					{/each}
 				</div>
 			</div>
 
@@ -96,36 +145,9 @@
 				<h3 class="text-sm font-medium text-gray-500 ">Use cases</h3>
 
 				<div class="mt-4 flex flex-col items-start space-y-4">
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Startups</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Enterprise</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Government</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Saas</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Marketplaces</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Ecommerce</a
-					>
+					{#each useCasesLinks as link}
+						<FooterLink {link} />
+					{/each}
 				</div>
 			</div>
 
@@ -133,36 +155,9 @@
 				<h3 class="text-sm font-medium text-gray-500 ">Social</h3>
 
 				<div class="mt-4 flex flex-col items-start space-y-4">
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Twitter</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>LinkedIn</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Github</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Facebook</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>AngelList</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Dribble</a
-					>
+					{#each socialLinks as link}
+						<FooterLink {link} />
+					{/each}
 				</div>
 			</div>
 
@@ -170,36 +165,9 @@
 				<h3 class="text-sm font-medium text-gray-500 ">Legal</h3>
 
 				<div class="mt-4 flex flex-col items-start space-y-4">
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>About us</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Careers</a
-					>
-					<!-- <a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Press</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>News</a
-					>
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Media kit</a
-					> -->
-					<a
-						href="#"
-						class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
-						>Contact</a
-					>
+					{#each legalLinks as link}
+						<FooterLink {link} />
+					{/each}
 				</div>
 			</div>
 		</div>

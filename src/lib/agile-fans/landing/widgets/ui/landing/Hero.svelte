@@ -66,9 +66,9 @@
 	</div>
 </section>
 
-<section class=" px-4 py-4 sm:px-6 md:px-12 lg:px-24 lg:py-12">
-	<div class="mx-8 grid items-center lg:grid-cols-2">
-		<div class="">
+<section class="py-4 sm:px-6 md:px-4 md:px-12 lg:px-4 lg:px-24 lg:py-12">
+	<div class="grid items-center md:mx-8 lg:mx-8 lg:grid-cols-2">
+		<div class="hidden-sm">
 			<img
 				alt="Agile.fans - banner"
 				src="https://www.giftedguru.com/wp-content/uploads/2020/10/kanban-board-nearly-done-888x1024.jpg"
@@ -76,7 +76,7 @@
 			/>
 		</div>
 		<div
-			class="relative z-[1] block rounded-lg bg-gradient-to-r from-blue-500  to-blue-700 px-6 py-12 shadow-black/20 md:px-12 lg:-ml-14"
+			class="relative z-[1] block lg:rounded-lg md:rounded-lg bg-gradient-to-r from-blue-500  to-blue-700 px-6 py-12 shadow-black/20 md:px-12 lg:-ml-14"
 		>
 			<span class="text-xs font-bold uppercase tracking-widest text-neutral-100"> about </span>
 			<h1

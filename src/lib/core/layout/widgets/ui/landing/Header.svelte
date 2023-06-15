@@ -1,13 +1,16 @@
 <script>
-	import { BtnLogIn, BtnSignIn } from './lib/core/layout/entities';
+	import { BtnLogIn, BtnSignIn } from '../../../shared/';
+
 	export let productData;
 
-	let showMenu = ~false;
+	let showMenu = false;
 </script>
 
 <header class="h-24">
 	<nav class="fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-blue-500  ">
-		<div class="justify-content mx-auto flex max-w-screen-xl flex-wrap items-center justify-start p-4">
+		<div
+			class="justify-content mx-auto flex max-w-screen-xl flex-wrap items-center justify-start p-4"
+		>
 			<a
 				href="/"
 				class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl"
@@ -15,7 +18,7 @@
 			>
 				<img src={productData.shortDesc.logo} class="h-12 w-24 lg:h-24 lg:w-48 " alt="" />
 			</a>
-			<div class="flex lg:w-[200px] w-full md:order-2 md:py-2 lg:py-2">
+			<div class="flex w-full md:order-2 md:py-2 lg:w-[200px] lg:py-2">
 				<div class="justify-content-sm flex flex-row">
 					<BtnLogIn />
 					<BtnSignIn />
@@ -27,7 +30,10 @@
 					class="mx-2 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200  md:hidden"
 					aria-controls="navbar-sticky"
 					aria-expanded="false"
-					on:click={() => (showMenu = !showMenu)}
+					on:click={() => {
+						showMenu = !showMenu;
+						console.log(showMenu);
+					}}
 				>
 					<span class="sr-only">Open main menu</span>
 					<svg
@@ -44,7 +50,7 @@
 				</button>
 			</div>
 
-			<div class="z-20 w-full {showMenu ? 'hidden' : ''} hidden-sm">
+			<div class="z-20 w-full {showMenu ? 'hidden' : ''} md:hidden lg:hidden">
 				{#each productData.headerLinks as link}
 					<div on:click={() => (showMenu = !showMenu)}>
 						<a
@@ -82,7 +88,7 @@
 		}
 	}
 
-  .justify-content {
-			justify-content: space-between;
-		}
+	.justify-content {
+		justify-content: space-between;
+	}
 </style>

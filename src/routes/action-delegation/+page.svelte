@@ -17,6 +17,7 @@
 		Reviews,
 		HeroProduct,
 		HeaderBottomLine,
+		StickyBanner,
 		Stats,
 		Cookie
 	} from '../../lib/core/layout/widgets';
@@ -34,6 +35,8 @@ Warsztaty
 Prices
 FAQ
 Contact -->
+
+<!-- <StickyBanner {productData} /> -->
 
 <Header {productData} />
 

@@ -2,7 +2,7 @@
 	import { ShowFullListBtn } from '../../lib/core/layout/shared';
 	import { FeaturesForProductType } from '../../lib/core/layout/entities';
 	import { Features } from '../../lib/action-delegation/landing/widgets';
-  import cards from '../../lib/health-check/cards';
+	import cards from '../../lib/health-check/cards';
 
 	import {
 		Contact,
@@ -15,7 +15,8 @@
 		HeroProduct,
 		HeaderBottomLine,
 		Stats,
-    Header,
+		StickyBanner,
+		Header,
 		Cookie
 	} from '../../lib/core/layout/widgets';
 
@@ -23,7 +24,6 @@
 
 	import { productsList } from '../../lib/core/data';
 	const productData = productsList.healthCheck;
-
 
 	const steps = [
 		'Create your board',
@@ -47,8 +47,10 @@ Contact -->
   В виде формы сделать - и данные передаются в таблицу?
   https://teamhealthcheck.io/about
  -->
-<Header {productData} />
 
+<StickyBanner {productData} />
+
+<Header {productData} />
 
 <HeaderBottomLine />
 
@@ -62,12 +64,17 @@ Contact -->
 
 <!-- <Stats stats={productData.stats} /> -->
 <AboutProduct about={productData.about} title={productData.shortDesc.title}>
-	<h2 class="mb-2 mt-4 text-center text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4 md:text-left">
+	<h2
+		class="mb-2 mt-4 text-center text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4 md:text-left"
+	>
 		Steps for starting
 	</h2>
 	<ol class="mb-4">
 		{#each steps as step, i}
-			<li class="text-center font-medium text-gray-500 md:text-left"><span class="font-medium text-gray-500">{i}.</span> {step}</li>
+			<li class="text-center font-medium text-gray-500 md:text-left">
+				<span class="font-medium text-gray-500">{i}.</span>
+				{step}
+			</li>
 		{/each}
 	</ol>
 </AboutProduct>

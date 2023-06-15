@@ -1,7 +1,8 @@
 import FreeDownload from '../entities/ui/FreeDownload.svelte';
-import Header from '../../../../Header.svelte';
+import Header from './ui/landing/Header.svelte';
 import Reviews from './ui/landing/Reviews.svelte';
 import Footer from './ui/landing/Footer.svelte';
+import HeaderApp from './ui/app/Header.svelte';
 
 import Stats from './ui/landing/Stats.svelte';
 import Cookie from './ui/landing/Cookie.svelte';
@@ -19,9 +20,10 @@ import HeroProduct from './ui/products/HeroProduct.svelte';
 import HeaderBottomLine from './ui/products/HeaderBottomLine.svelte';
 
 export {
-  ProductVariants,
-  StickyBanner,
-  Video,
+	ProductVariants,
+	StickyBanner,
+	HeaderApp,
+	Video,
 	AboutProduct,
 	Price,
 	Contact,

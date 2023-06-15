@@ -6,6 +6,7 @@
 		Header,
 		FreeDownload,
 		Video,
+		StickyBanner,
 		FAQ,
 		Price,
 		Reviews,
@@ -21,6 +22,8 @@
 	const arrayOfProducts = convertObjToArray(productsList),
 		productData = productsList.agileKit;
 </script>
+
+<StickyBanner {productData} />
 
 <Header {productData} />
 

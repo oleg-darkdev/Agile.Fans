@@ -18,6 +18,7 @@
 		Reviews,
 		Stats,
 		HeaderBottomLine,
+		StickyBanner,
 		Header,
 		Cookie,
 		HeroProduct
@@ -30,6 +31,8 @@
 </script>
 
 <Header {productData} />
+
+<StickyBanner {productData} />
 
 <HeaderBottomLine />
 

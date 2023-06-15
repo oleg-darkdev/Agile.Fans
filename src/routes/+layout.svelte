@@ -13,7 +13,7 @@
 	// 	AOS.init();
 	// });
 
-	import { Footer, StickyBanner } from '../lib/core/layout/widgets';
+	import { Footer } from '../lib/core/layout/widgets';
 
 	import { productsList } from '../lib/core/data';
 	import { convertObjToArray } from '../lib/core/utils';
@@ -23,7 +23,6 @@
 </script>
 
 
-<StickyBanner {productData}/>
 
 <main class="">
 	<slot />

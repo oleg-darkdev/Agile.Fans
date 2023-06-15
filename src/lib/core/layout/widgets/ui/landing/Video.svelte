@@ -39,11 +39,11 @@
 				</div>
 				<a
 					href="/workshops"
-					class="group flex w-7/12 flex-row rounded-lg border-2 border-neutral-50 bg-white px-7 py-4 text-sm font-semibold uppercase leading-normal text-blue-600 transition duration-150 ease-in-out  hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-white focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:font-medium lg:text-2xl lg:text-sm lg:font-medium"
+					class="group  justify-center flex lg:w-7/12 w-full flex-row rounded-lg border-2 border-neutral-50 bg-white px-7 py-4 text-sm font-semibold uppercase leading-normal text-blue-600 transition duration-150 ease-in-out  hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-white focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:font-medium lg:text-2xl lg:text-sm lg:font-medium"
 				>
 					Rejestracja na warsztaty <svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="mx-4 h-16 w-16 fill-blue-600 group-hover:fill-white"
+						class="mx-4 hidden-sm h-16 w-16 fill-blue-600 group-hover:fill-white"
 						fill="none"
 						viewBox="0 0 24 24"
 						><path

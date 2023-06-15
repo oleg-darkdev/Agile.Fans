@@ -16,7 +16,11 @@ import contact from './contact';
 
 const productsList = {
 	agileKit,
+	ten,
 	kanbanKit,
+	kanbanel,
+	healthCheck,
+	actionDelegation,
 	scrumKit
 };
 

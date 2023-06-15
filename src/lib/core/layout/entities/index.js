@@ -4,5 +4,14 @@ import BtnLogIn from './ui/BtnLogIn.svelte';
 import BtnSignIn from './ui/BtnSignIn.svelte';
 import PriceLine from './ui/PriceLine.svelte';
 import FeaturesForProductType from './ui/Features.svelte';
+import FeaturesForStats from './ui/FeaturesForStats.svelte';
 
-export { FreeDownload, ShopItemCard, BtnLogIn, BtnSignIn, PriceLine, FeaturesForProductType };
+export {
+	FreeDownload,
+	ShopItemCard,
+	FeaturesForStats,
+	BtnLogIn,
+	BtnSignIn,
+	PriceLine,
+	FeaturesForProductType
+};

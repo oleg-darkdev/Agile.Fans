@@ -7,7 +7,7 @@
 
 <header class="h-24">
 	<nav class="fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-blue-500  ">
-		<div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+		<div class="justify-content mx-auto flex max-w-screen-xl flex-wrap items-center justify-start p-4">
 			<a
 				href="/"
 				class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl"
@@ -15,9 +15,11 @@
 			>
 				<img src={productData.shortDesc.logo} class="h-12 w-24 lg:h-24 lg:w-48 " alt="" />
 			</a>
-			<div class="flex md:order-2">
-				<BtnLogIn />
-				<BtnSignIn />
+			<div class="flex lg:w-[200px] w-full md:order-2 md:py-2 lg:py-2">
+				<div class="justify-content-sm flex flex-row">
+					<BtnLogIn />
+					<BtnSignIn />
+				</div>
 
 				<button
 					data-collapse-toggle="navbar-sticky"
@@ -42,7 +44,7 @@
 				</button>
 			</div>
 
-			<div class="z-20 w-full {showMenu ? 'hidden' : ''} md:hidden lg:hidden">
+			<div class="z-20 w-full {showMenu ? 'hidden' : ''} hidden-sm">
 				{#each productData.headerLinks as link}
 					<div on:click={() => (showMenu = !showMenu)}>
 						<a
@@ -53,6 +55,7 @@
 					</div>
 				{/each}
 			</div>
+
 			<div class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto">
 				<ul
 					class="mt-4 flex flex-col rounded-lg p-4   md:mt-0 md:flex-row md:space-x-8 md:border-0  md:p-0 "
@@ -71,3 +74,15 @@
 		</div>
 	</nav>
 </header>
+
+<style>
+	@media (max-width: 640px) {
+		.justify-content-sm {
+			justify-content: space-between;
+		}
+	}
+
+  .justify-content {
+			justify-content: space-between;
+		}
+</style>

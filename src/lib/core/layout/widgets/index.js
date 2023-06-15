@@ -9,7 +9,6 @@ import FAQ from './ui/landing/FAQ.svelte';
 import Price from './ui/landing/Price.svelte';
 import Contact from './ui/landing/Contact.svelte';
 import StickyBanner from './ui/landing/StickyBanner.svelte';
-import Workshops from './ui/landing/Workshops.svelte';
 import Video from './ui/landing/Video.svelte';
 
 import ProductVariants from './ui/products/ProductVariants.svelte';
@@ -23,7 +22,6 @@ export {
   ProductVariants,
   StickyBanner,
   Video,
-  Workshops,
 	AboutProduct,
 	Price,
 	Contact,

@@ -230,7 +230,7 @@
 		</div>
 
 		<div class="mb-6 md:mb-0">
-			<div class="avatar-group mb-6 flex flex-row flex-wrap justify-center  -space-x-6 px-6">
+			<div class="avatar-group mb-6 flex flex-row flex-wrap justify-center  -space-x-6 px-6 lg:px-0">
 				{#each communities as client}
 					<div class="avatar bg-blue-600 ">
 						<div class="w-12">

@@ -3,8 +3,9 @@
 
 	import {
 		Contact,
+		Header,
 		FreeDownload,
-		Workshops,
+		Video,
 		FAQ,
 		Price,
 		Reviews,
@@ -20,6 +21,8 @@
 	const arrayOfProducts = convertObjToArray(productsList),
 		productData = productsList.agileKit;
 </script>
+
+<Header {productData} />
 
 <Hero {productData} />
 
@@ -37,7 +40,9 @@
 	<FeaturesForStats features={productData.features} />
 </Stats>
 
-<Workshops />
+<Video
+	link="https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com"
+/>
 
 <!-- <Features /> -->
 

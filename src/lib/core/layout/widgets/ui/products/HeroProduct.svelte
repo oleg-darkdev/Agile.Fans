@@ -2,7 +2,7 @@
 	export let shortDesc;
 </script>
 
-<section>
+<section class='pt-12'>
 	<div class="mx-auto  max-w-7xl px-4 pt-12 sm:px-6 md:px-12 lg:px-24 ">
 		<div class=" flex w-full flex-col items-center text-center">
 			<h1

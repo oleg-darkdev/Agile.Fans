@@ -47,11 +47,11 @@
 		<div class="container mx-auto px-6 md:px-12 xl:px-32">
 			<div class="text-center">
 				<div
-					class="-mt-[400px] block rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 py-12 shadow-black/20 backdrop-blur-[30px] md:mt-[-170px] md:px-6  md:py-16  md:px-12 lg:mt-[-170px] lg:px-6"
+					class="-mt-[450px] block rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 py-12 shadow-black/20 backdrop-blur-[30px] md:mt-[-170px] md:px-6  md:py-16  md:px-12 lg:mt-[-170px] lg:px-6"
 				>
-					<h1 class="font-md mb-8 text-5xl tracking-tight text-white md:text-6xl xl:text-7xl">
-						A new era in educational boardgames <br /><span class="font-black"
-							>for your business, NGO, or community.</span
+					<h1 class="font-md mb-8 text-4xl tracking-tight text-white md:text-6xl lg:text-7xl">
+						A new era in educational boardgames for your <br /><span class="font-black"
+							>business, NGO, or community.</span
 						>
 					</h1>
 					<a

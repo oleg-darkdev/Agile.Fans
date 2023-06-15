@@ -18,6 +18,7 @@
 		Reviews,
 		Stats,
 		HeaderBottomLine,
+		Header,
 		Cookie,
 		HeroProduct
 	} from '../../lib/core/layout/widgets';
@@ -27,6 +28,8 @@
 
 	const productData = productsList.ten;
 </script>
+
+<Header {productData} />
 
 <HeaderBottomLine />
 

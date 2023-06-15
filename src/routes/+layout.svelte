@@ -13,7 +13,7 @@
 	// 	AOS.init();
 	// });
 
-	import { Header, Footer, StickyBanner } from '../lib/core/layout/widgets';
+	import { Footer, StickyBanner } from '../lib/core/layout/widgets';
 
 	import { productsList } from '../lib/core/data';
 	import { convertObjToArray } from '../lib/core/utils';
@@ -22,7 +22,6 @@
 		productData = productsList.agileKit;
 </script>
 
-<Header {productData} />
 
 <StickyBanner {productData}/>
 
@@ -33,4 +32,9 @@
 <Footer {productData} {arrayOfProducts} />
 
 <style>
+  @media (max-width: 640px) {
+		:global(.hidden-sm) {
+			display: none;
+		}
+	}
 </style>

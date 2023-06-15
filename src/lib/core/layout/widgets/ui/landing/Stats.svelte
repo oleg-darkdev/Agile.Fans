@@ -1,6 +1,5 @@
-
 <script>
-  import { CountUp } from 'countup.js';
+	import { CountUp } from 'countup.js';
 	import { onMount } from 'svelte';
 
 	onMount(() => {
@@ -15,14 +14,18 @@
 	export let stats;
 </script>
 
-<section class="container mx-auto lg:my-24 my-12 rounded-xl bg-gray-200 py-12   text-center lg:text-left ">
+<section
+	class="container mx-auto my-12 text-center  md:rounded-xl md:bg-gray-200 md:py-12 lg:my-12 lg:my-24 lg:rounded-xl   lg:bg-gray-200 lg:text-left "
+>
 	<div class="mx-8 grid items-start lg:grid-cols-2">
 		<div class="lg:mt-40 lg:mb-0">
 			<div
 				class="relative z-[1] block rounded-lg bg-gradient-to-r from-blue-500  to-blue-700 px-6 py-12 shadow-black/20 md:px-12 lg:-mr-14"
 			>
-				<h2 class="mb-6 text-4xl font-bold text-white">Lorem ipsum is placeholder text</h2>
-				<p class="mb-12 text-gray-50">
+				<h2 class="mb-2 text-3xl font-bold text-white md:text-5xl lg:mb-6 lg:text-6xl">
+					Lorem ipsum is placeholder text
+				</h2>
+				<p class="mb-4 text-gray-50 md:mb-12 lg:mb-12">
 					Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
 					industries for previewing layouts and visual mockups.
 				</p>
@@ -45,8 +48,8 @@
 		<div>
 			<img
 				src="https://tecdn.b-cdn.net/img/new/ecommerce/vertical/088.jpg"
-				class="fancy-border-radius rotate-lg-6 w-full rounded-2xl shadow-lg shadow-black/20"
-				alt=""
+				class="fancy-border-radius rotate-lg-6 hidden-img w-full rounded-2xl shadow-lg shadow-black/20 "
+				alt="Features banner"
 			/>
 		</div>
 	</div>
@@ -56,6 +59,11 @@
 	@media (min-width: 992px) {
 		.rotate-lg-6 {
 			transform: rotate(6deg);
+		}
+	}
+	@media (max-width: 640px) {
+		.hidden-img {
+			display: none;
 		}
 	}
 

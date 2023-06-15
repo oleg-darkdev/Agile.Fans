@@ -40,9 +40,9 @@
 	];
 </script>
 
-<section class="my-12">
+<section class="lg:my-12 md:my-12">
 	<div
-		class="relative mx-auto w-full max-w-7xl items-center rounded-xl bg-gray-200 py-12 md:px-12 lg:px-16"
+		class="relative lg:mx-auto md:mx-auto w-full max-w-7xl items-center rounded-xl lg:bg-gray-200 md:bg-gray-200 py-12 md:px-12 lg:px-16"
 	>
 		<h2
 			class="mb-8 text-center text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl"
@@ -50,7 +50,7 @@
 			Our plans
 		</h2>
 		<a name="price" />
-		<div class="divide-y overflow-hidden rounded-xl px-5 shadow-xl lg:px-0">
+		<div class="divide-y overflow-hidden lg:rounded-xl md:rounded-xl lg:px-5 md:px-5 shadow-xl lg:px-0">
 			{#each prices as price}
 				<PriceLine {price} />
 			{/each}

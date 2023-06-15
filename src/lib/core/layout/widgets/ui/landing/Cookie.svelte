@@ -4,7 +4,7 @@
 
 {#if hideCookie}
 	<section
-		class="z-10 hidden md:hidden-none lg:hidden-none fixed left-12 bottom-6 mx-auto max-w-md rounded-2xl border border-gray-200 backdrop-blur-[30px] bg-gradient-to-l from-blue-500  to-blue-600 p-4 "
+		class="hidden-sm  fixed  left-4 bottom-6 z-10 mx-auto max-w-md rounded-2xl border border-gray-200 bg-gradient-to-l from-blue-500 to-blue-600  p-4 backdrop-blur-[30px] "
 	>
 		<h2 class="font-semibold text-white ">🍪 Cookie Notice</h2>
 
@@ -31,3 +31,11 @@
 		</div>
 	</section>
 {/if}
+
+<style>
+	@media (max-width: 640px) {
+		.hidden-sm {
+			display: none;
+		}
+	}
+</style>

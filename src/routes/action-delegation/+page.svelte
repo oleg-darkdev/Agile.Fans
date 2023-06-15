@@ -9,6 +9,7 @@
 		Contact,
 		FreeDownload,
 		ProductVariants,
+		Header,
 		Video,
 		FaqProduct,
 		CallToWorkshop,
@@ -33,6 +34,8 @@ Warsztaty
 Prices
 FAQ
 Contact -->
+
+<Header {productData} />
 
 <HeaderBottomLine />
 

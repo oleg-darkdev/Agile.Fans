@@ -15,6 +15,7 @@
 		HeroProduct,
 		HeaderBottomLine,
 		Stats,
+    Header,
 		Cookie
 	} from '../../lib/core/layout/widgets';
 
@@ -46,6 +47,8 @@ Contact -->
   В виде формы сделать - и данные передаются в таблицу?
   https://teamhealthcheck.io/about
  -->
+<Header {productData} />
+
 
 <HeaderBottomLine />
 

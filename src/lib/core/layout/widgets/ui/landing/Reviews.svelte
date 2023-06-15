@@ -2,9 +2,9 @@
 	export let feedback;
 </script>
 
-<section class=" py-12">
-	<div class="min-h-screen  rounded-l-xl bg-gray-200 lg:ml-32">
-		<div class="mx-auto max-w-6xl px-6 py-10 ">
+<section class=" md:py-12 lg:py-12">
+	<div class="rounded-l-xl md:min-h-screen  md:bg-gray-200 lg:ml-32 lg:min-h-screen lg:bg-gray-200">
+		<div class="mx-auto max-w-6xl px-6 md:py-10 lg:py-10 ">
 			<p class="text-xl font-medium text-blue-500 ">Testimonials</p>
 			<!-- mb-8 text-center text-4xl -->
 			<h1

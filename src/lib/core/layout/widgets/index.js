@@ -2,6 +2,9 @@ import FreeDownload from '../entities/ui/FreeDownload.svelte';
 import Header from './ui/landing/Header.svelte';
 import Reviews from './ui/landing/Reviews.svelte';
 import Footer from './ui/landing/Footer.svelte';
+import Product from './ui/landing/Product.svelte';
+
+
 import HeaderApp from './ui/app/Header.svelte';
 
 import Stats from './ui/landing/Stats.svelte';
@@ -22,7 +25,8 @@ import HeaderBottomLine from './ui/products/HeaderBottomLine.svelte';
 export {
 	ProductVariants,
 	StickyBanner,
-	HeaderApp,
+  HeaderApp,
+  Product,
 	Video,
 	AboutProduct,
 	Price,

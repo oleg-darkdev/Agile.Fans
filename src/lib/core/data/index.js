@@ -1,3 +1,11 @@
+// DB 
+import kanbanKitBoardModel from './kanbanKit/kanbanKitBoardModel.js';
+
+
+
+// end DB
+
+
 import {
 	// agileKit
 	agileKit,
@@ -10,6 +18,7 @@ import {
 	// scrumKit
 	scrumKit
 } from './products';
+
 
 import social from './social';
 import contact from './contact';
@@ -44,4 +53,4 @@ const productsCategories = [
 	}
 ];
 
-export { productsList, contact, social, productsCategories };
+export { productsList, contact, social, productsCategories, kanbanKitBoardModel };

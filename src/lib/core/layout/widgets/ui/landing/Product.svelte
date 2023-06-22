@@ -1,80 +1,50 @@
 <script>
-	export let product;
+	import { productsCategories } from '../../../../data';
+
+	let selectedCategory = productsCategories[0];
 </script>
 
-<section class="container mx-auto px-6 py-8 lg:py-16">
-	<h3 class="text-xl font-medium text-gray-800 md:text-2xl lg:text-3xl ">Browse Our Projects</h3>
+<section
+	class="container mx-auto my-12 px-4 py-8 md:rounded-xl md:bg-gray-200 md:px-12 lg:rounded-xl lg:bg-gray-200 lg:px-12 lg:py-16"
+>
+	<h3 class="text-center text-4xl font-black text-gray-600 md:text-2xl lg:text-6xl">
+		Browse Our Projects
+	</h3>
 
-	<div class="-mx-2 mt-4 flex items-center overflow-x-auto whitespace-nowrap py-6">
-		<button
-			class=" mx-2 inline-flex items-center rounded-2xl  bg-blue-500 px-4 py-0.5 text-white transition-colors duration-300 hover:bg-indigo-400 focus:outline-none"
-			>All</button
-		>
-		<button
-			class=" mx-2 inline-flex cursor-pointer rounded-2xl px-4 py-0.5 text-gray-500 transition-colors duration-300 hover:bg-blue-500/70 hover:text-white focus:outline-none"
-			>Web Design</button
-		>
-		<button
-			class=" mx-2 inline-flex cursor-pointer rounded-2xl px-4 py-0.5 text-gray-500 transition-colors duration-300 hover:bg-blue-500/70 hover:text-white focus:outline-none"
-			>Development</button
-		>
-		<button
-			class=" mx-2 inline-flex cursor-pointer rounded-2xl px-4 py-0.5 text-gray-500 transition-colors duration-300 hover:bg-blue-500/70 hover:text-white focus:outline-none"
-			>Research</button
-		>
+	<div class="-mx-2 mt-4 flex items-center justify-center overflow-x-auto whitespace-nowrap py-6">
+		{#each productsCategories as category, i}
+			<button
+				on:click={() => (selectedCategory = category)}
+				class="mx-2 inline-flex cursor-pointer rounded-2xl py-0.5 px-4 text-2xl transition-colors duration-300
+    {selectedCategory.title == category.title
+					? 'bg-blue-500  text-white hover:bg-indigo-400'
+					: 'border-gray-6000 border-2 text-gray-500 hover:bg-blue-500/70 hover:text-white focus:outline-none'}"
+				>{category.title}</button
+			>
+		{/each}
 	</div>
 
-	<div class="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 ">
-		<a href="#" class="transition-all duration-500 hover:scale-105 lg:col-span-2">
-			<img
-				class="h-80 w-full rounded-lg object-cover object-top shadow-md shadow-gray-200 xl:h-96"
-				src="https://cdn.dribbble.com/users/1644453/screenshots/17056773/media/00509f74e765da294440886db976943a.png?compress=1&resize=1000x750&vertical=top"
-				alt=""
-			/>
-		</a>
-
-		<a href="#" class="transition-all duration-500 hover:scale-105">
-			<img
-				class="h-80 w-full rounded-lg object-cover object-top shadow-md shadow-gray-200 xl:h-96 "
-				src="https://cdn.dribbble.com/userupload/3233220/file/original-e80767b5947df65a0f1ab4dab4964679.png?compress=1&resize=1024x768"
-				alt=""
-			/>
-		</a>
-
-		<a href="#" class="transition-all duration-500 hover:scale-105">
-			<img
-				class="h-80 w-full rounded-lg object-cover object-top shadow-md shadow-gray-200 xl:h-96"
-				src="https://cdn.dribbble.com/users/1644453/screenshots/14748860/media/25f53296059b741ac1c083be9f41745b.png?compress=1&resize=1000x750&vertical=top"
-				alt=""
-			/>
-		</a>
-
-		<a href="#" class="transition-all duration-500 hover:scale-105 lg:col-span-2">
-			<img
-				class="h-80 w-full rounded-lg object-cover object-top shadow-md shadow-gray-200 xl:h-96"
-				src="https://cdn.dribbble.com/users/878428/screenshots/17307425/media/01782a518148ce7ef2e790473c888b1f.png?compress=1&resize=1000x750&vertical=top"
-				alt=""
-			/>
-		</a>
-
-		<a href="#" class="transition-all duration-500 hover:scale-105 lg:col-span-2">
-			<img
-				class="h-80 w-full rounded-lg object-cover object-top shadow-md shadow-gray-200 xl:h-96"
-				src="https://cdn.dribbble.com/users/1930709/screenshots/11466872/media/e50b0f02160a77397eb4a76782d23966.png?compress=1&resize=1000x750&vertical=top"
-				alt=""
-			/>
-		</a>
-
-		<a href="#" class="transition-all duration-500 hover:scale-105">
-			<img
-				class="h-80 w-full rounded-lg object-cover object-top shadow-md shadow-gray-200 xl:h-96"
-				src="https://cdn.dribbble.com/users/1644453/screenshots/14403641/media/21e305eb9c8255b6e3367f0ca52c6668.png?compress=1&resize=1000x750&vertical=top"
-				alt=""
-			/>
-		</a>
+	<div class="mt-10 grid grid-cols-1 gap-6 gap-x-8 md:grid-cols-2 lg:grid-cols-3 ">
+		{#each selectedCategory.products as product, i}
+			<a
+				href={product.shortDesc.link}
+				class:lg:col-span-2={i % 2 === 0 && i < 6}
+				class="rounded-2xl bg-gradient-to-r from-blue-500  to-blue-700 px-4 pb-8 pt-2 transition-all duration-500 hover:scale-105"
+			>
+				<img
+					class="max-h-40  w-full rounded-lg object-cover object-center shadow-md shadow-gray-200 xl:h-96"
+					src={product.shortDesc.promo}
+					alt="{product.shortDesc.title} photo"
+				/>
+				<h2 class="mt-4 text-3xl  font-bold text-white">{product.shortDesc.title}</h2>
+				<p class="leading-relax mt-2 text-base font-normal text-white ">
+					{product.shortDesc.synopsis}
+				</p>
+			</a>
+		{/each}
 	</div>
 </section>
-
+<!--
 <section class="bg-white dark:bg-gray-900">
 	<div class="container mx-auto px-6 py-12">
 		<h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl">Portfolio</h1>
@@ -138,7 +108,8 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
+
 <!--
 <section class="m-auto px-6 py-16 text-gray-600 xl:container md:px-12 xl:px-16">
 	<a name={product.anchor} />

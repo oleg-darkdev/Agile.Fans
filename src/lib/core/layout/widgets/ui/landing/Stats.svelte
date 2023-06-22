@@ -15,7 +15,7 @@
 </script>
 
 <section
-	class="container mx-auto my-12 text-center  md:rounded-xl md:bg-gray-200 md:py-12 lg:my-12 lg:my-24 lg:rounded-xl   lg:bg-gray-200 lg:text-left "
+	class="container mx-auto my-12 text-center  md:rounded-xl md:bg-gray-200 lg:bg-gray-200 md:py-12 lg:my-12 lg:my-24 lg:rounded-xl    lg:text-left "
 >
 	<div class="mx-8 grid items-start lg:grid-cols-2">
 		<div class="lg:mt-40 lg:mb-0">

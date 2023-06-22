@@ -1,10 +1,10 @@
 <script>
-	import { Description, Product, Hero, Logos } from '../lib/agile-fans/landing/widgets';
+	import { Description, Hero, Logos } from '../lib/agile-fans/landing/widgets';
 
 	import {
 		Contact,
 		Header,
-		FreeDownload,
+		Product,
 		Video,
 		StickyBanner,
 		FAQ,
@@ -30,6 +30,8 @@
 <Hero {productData} />
 
 <Cookie />
+
+
 
 <a name="about" />
 <!-- <Description /> -->

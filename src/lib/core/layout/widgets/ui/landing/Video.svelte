@@ -1,10 +1,47 @@
 <script>
 	export let link;
+
+	import { WorkshopCard } from '../../../entities';
+
+	const workshopsList = [
+		{
+			img: 'https://miro.medium.com/v2/resize:fit:3840/1*CoSZTa4Pa9ik2AfudhfSFg.jpeg',
+			link: '',
+			title: 'Lorem Ipsum',
+			date: '04.02.2023',
+			place: 'Sopot, 3 maja 12',
+			tags: ['Lorem', 'Lorem', 'Lorem'],
+			trainer: {
+				fullName: 'Oleg Medvedev',
+				link: '',
+				subTitle: 'Lorem Ipsum',
+				avatar:
+					'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80'
+			},
+			desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.'
+		},
+		{
+			img: 'https://miro.medium.com/v2/resize:fit:3840/1*CoSZTa4Pa9ik2AfudhfSFg.jpeg',
+			link: '',
+			title: 'Lorem Ipsum',
+			date: '04.02.2023',
+			place: 'Sopot, 3 maja 12',
+			tags: ['Lorem', 'Lorem', 'Lorem'],
+			trainer: {
+				fullName: 'Oleg Medvedev',
+				link: '',
+				subTitle: 'Lorem Ipsum',
+				avatar:
+					'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80'
+			},
+			desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.'
+		}
+	];
 </script>
 
 <section class="flex justify-center  md:my-24 md:mx-auto  md:px-6 lg:my-24 lg:mx-auto ">
 	<div
-		class="flex max-w-7xl flex-wrap  rounded-lg py-14 px-4 md:bg-gray-200 md:px-12 lg:bg-gray-200 lg:px-12"
+		class="flex max-w-7xl flex-wrap justify-center rounded-lg py-14 px-4 md:bg-gray-200 md:px-12 lg:bg-gray-200 lg:px-12"
 	>
 		<div class="mb-12 w-full shrink-0 grow-0 basis-auto  lg:mb-0 lg:-mr-[70px] lg:w-5/12">
 			<div class="flex lg:py-12">
@@ -37,13 +74,13 @@
 						quisquam.
 					</p>
 				</div>
-				<a
+				<!-- <a
 					href="/workshops"
-					class="group  justify-center flex lg:w-7/12 w-full flex-row rounded-lg border-2 border-neutral-50 bg-white px-7 py-4 text-sm font-semibold uppercase leading-normal text-blue-600 transition duration-150 ease-in-out  hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-white focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:font-medium lg:text-2xl lg:text-sm lg:font-medium"
+					class="group  flex w-full flex-row justify-center rounded-lg border-2 border-neutral-50 bg-white px-7 py-4 text-sm font-semibold uppercase leading-normal text-blue-600 transition duration-150 ease-in-out hover:border-neutral-100  hover:bg-neutral-100 hover:bg-opacity-10 hover:text-white focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:font-medium lg:w-7/12 lg:text-2xl lg:text-sm lg:font-medium"
 				>
 					Rejestracja na warsztaty <svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="mx-4 hidden-sm h-16 w-16 fill-blue-600 group-hover:fill-white"
+						class="hidden-sm mx-4 h-16 w-16 fill-blue-600 group-hover:fill-white"
 						fill="none"
 						viewBox="0 0 24 24"
 						><path
@@ -51,8 +88,14 @@
 							transform="translate(-16.6 -11.9)"
 						/></svg
 					>
-				</a>
+				</a> -->
 			</div>
+		</div>
+
+		<div class="grid gap-6 lg:w-8/12 lg:grid-cols-2 xl:gap-x-12">
+			{#each workshopsList.slice(0, 2) as workshop}
+				<WorkshopCard {workshop} />
+			{/each}
 		</div>
 	</div>
 </section>

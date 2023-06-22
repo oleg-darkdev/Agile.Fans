@@ -51,6 +51,7 @@ Contact -->
 <!-- <Stats stats={productData.stats} /> -->
 <AboutProduct about={productData.about} title={productData.shortDesc.title} />
 
+=
 <section class="mb-12 flex flex-col items-center justify-center">
 	<div class="max-w-7xl">
 		<h2
@@ -86,6 +87,8 @@ Contact -->
 <ProductVariants>
 	<FeaturesForProductType />
 </ProductVariants>
+
+<FreeDownload />
 
 <FaqProduct faq={productData.faq} />
 

@@ -13,12 +13,12 @@ const product = {
 	shortDesc: {
 		text: 'Empowering your team may spend less time controlling, deciding, and supervising what everyone is doing and more time on other projects. It entails being available to concentrate on other tasks.',
 		title: '10 Motivators',
-		logo: '/core/images/logo.svg',
+		logo: '/ten/logo.svg',
 		promo: '',
 
 		banner:
 			'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
-		link: '/',
+		link: '/ten/',
 		synopsis:
 			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.'
 	},

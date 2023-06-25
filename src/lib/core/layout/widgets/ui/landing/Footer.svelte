@@ -43,14 +43,19 @@
 		{
 			title: 'Help center',
 			link: ''
-		},
-		{
-			title: 'Supports',
-			link: ''
 		}
 	];
 
 	const useCasesLinks = [
+		{
+			title: 'Platforms',
+			link: '/platforms'
+		},
+    		{
+			title: 'Products',
+			link: '/products'
+		},
+
 		{
 			title: 'Startups',
 			link: ''
@@ -94,7 +99,7 @@
 			<div class="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-center">
 				<a
 					href="/demo"
-					class="w-full lg:w-40 transform rounded-md bg-blue-600 px-5 py-2 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 sm:order-2 sm:mx-2 sm:w-auto"
+					class="w-full transform rounded-md bg-blue-600 px-5 py-2 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 sm:order-2 sm:mx-2 sm:w-auto lg:w-40"
 					>Go demo</a
 				>
 			</div>

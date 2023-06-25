@@ -1,4 +1,6 @@
 <script>
+	import { LinkBtnStyle } from '../../shared';
+
 	const communities = [
 		{
 			title: '',
@@ -37,14 +39,12 @@
 		<div class="py-auto absolute  top-16 my-2  flex items-center justify-between px-6">
 			<h5 class="text-3xl  font-black text-white">
 				{workshop.title}
-				<span
-					class="font-sans text-base font-normal leading-relaxed text-inherit antialiased"
-				>
+				<span class="font-sans text-base font-normal leading-relaxed text-inherit antialiased">
 					({workshop.date})
 				</span>
 			</h5>
 		</div>
-		<p class="absolute top-28 text-gray-100 px-6 ">{workshop.desc}</p>
+		<p class="absolute top-28 px-6 text-gray-100 ">{workshop.desc}</p>
 
 		<div class="px-6  py-2">
 			{#each workshop.tags as tag}
@@ -100,11 +100,7 @@
 			</p>
 		</div>
 		<div class="py-6">
-			<a
-				href={workshop.link}
-				class="w-full transform rounded-xl bg-blue-600 px-5 py-4 text-center text-base font-medium text-white transition duration-500 ease-in-out hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 lg:px-10"
-				>Registration</a
-			>
+			<LinkBtnStyle text="Registration" link={workshop.link} />
 		</div>
 	</div>
 </div>

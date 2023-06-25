@@ -4,5 +4,7 @@ import List from './ui/List.svelte';
 import FooterLink from './ui/FooterLink.svelte';
 import BtnLogIn from '../shared/ui/BtnLogIn.svelte';
 import BtnSignIn from '../shared/ui/BtnSignIn.svelte';
+import LinkBtnStyle from '../shared/ui/LinkBtnStyle.svelte';
 
-export { ShowFullListBtn, BtnLogIn, BtnSignIn, PriceItem, List, FooterLink };
+
+export { ShowFullListBtn, BtnLogIn, BtnSignIn, PriceItem, List, FooterLink, LinkBtnStyle };

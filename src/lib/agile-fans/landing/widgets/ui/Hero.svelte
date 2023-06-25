@@ -1,5 +1,5 @@
 <script>
-	import { products } from '../../../shared/';
+	import { products } from '../../shared';
 
 	export let productData;
 </script>

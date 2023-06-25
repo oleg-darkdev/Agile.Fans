@@ -1,8 +1,8 @@
 <script>
-	import { FreeDownload } from '../../../../../core/layout/entities';
-	import { ShowFullListBtn } from '../../../../../core/layout/shared';
+	import { FreeDownload } from '../../../../core/layout/entities';
+	import { ShowFullListBtn } from '../../../../core/layout/shared';
 
-	import { products } from '../../../shared';
+	import { products } from '../../shared';
 	let showFullList = false;
 </script>
 

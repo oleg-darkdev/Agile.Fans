@@ -205,16 +205,16 @@
 </script>
 
 <!-- mb-32 text-center my-24 mx-auto md:px-6 -->
-<section class="w-12/12 flex w-full justify-center  bg-gray-800 lg:py-24 py-12 px-4 lg:px-12">
+<section class="w-12/12 flex w-full justify-center  bg-black py-12 px-4 lg:py-24 lg:px-12">
 	<div class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-		<div class="lg:mb-6 mb-0  ">
-			<h2 class="mb-6 lg:text-5xl text-3xl lg:text-left text-center font-black text-blue-600">
+		<div class="mb-0 lg:mb-6  ">
+			<h2 class="mb-6 text-center text-3xl font-black text-pink-600 lg:text-left lg:text-5xl">
 				Trusted by
 				<br />
 				<u class=""> 200+ customers</u> and <br />
 				<u class=""> 30+ companies</u>
 			</h2>
-			<p class="mb-6 text-blue-500 max-w-xs lg:text-left text-center">
+			<p class="mb-6 max-w-xs text-center text-pink-500 lg:text-left">
 				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
 				industries for previewing layouts and visual mockups.
 			</p>
@@ -230,9 +230,11 @@
 		</div>
 
 		<div class="mb-6 md:mb-0">
-			<div class="avatar-group mb-6 flex flex-row flex-wrap justify-center  -space-x-6 px-6 lg:px-0">
+			<div
+				class="avatar-group mb-6 flex flex-row flex-wrap justify-center  -space-x-6 px-6 lg:px-0"
+			>
 				{#each communities as client}
-					<div class="avatar bg-blue-600 ">
+					<div class="avatar bg-pink-600 ">
 						<div class="w-12">
 							<img class="text-white" src={client.img} alt={client.title} />
 						</div>
@@ -240,26 +242,26 @@
 				{/each}
 
 				<div class="placeholder avatar">
-					<div class="w-12 bg-blue-600 text-neutral-content">
+					<div class="w-12 bg-pink-600 text-neutral-content">
 						<span class="text-xl  font-bold text-white">{communities.length}+</span>
 					</div>
 				</div>
 			</div>
 
-			<div class="-mx-2 px-1 overflow-x-auto whitespace-nowrap py-2">
+			<div class="-mx-2 overflow-x-auto whitespace-nowrap px-1 py-2">
 				{#each clientsCategories as category, i}
 					<button
 						on:click={() => (selectedCategory = category)}
 						class="mx-2 inline-flex cursor-pointer rounded-2xl py-0.5 px-4 text-2xl transition-colors duration-300
     {selectedCategory.title == category.title
-							? 'bg-blue-500  text-white hover:bg-indigo-400'
-							: 'border-gray-6000 border-2 text-white hover:bg-blue-500/70 hover:text-white focus:outline-none'}"
+							? 'bg-pink-500  text-white hover:bg-indigo-400'
+							: 'border-gray-6000 border-2 text-white hover:bg-pink-500/70 hover:text-white focus:outline-none'}"
 						>{category.title}
 					</button>
 				{/each}
 			</div>
 
-			<div class="grid grid-cols-2 gap-6 rounded-lg bg-blue-600 py-8 px-4">
+			<div class="grid grid-cols-2 gap-6 rounded-lg bg-pink-600 py-8 px-4">
 				{#each selectedCategory.logos as logo}
 					<div class="mb-6">
 						<img src={logo.img} alt={logo.title} class="px-6 dark:brightness-150" />
@@ -310,7 +312,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 				<a
 					href="https://www.wickedtemplates.com/expo.html"
-					class="font-semibold text-blue-600 hover:text-blue-500 lg:mb-0">Our customers »</a
+					class="font-semibold text-pink-600 hover:text-pink-500 lg:mb-0">Our customers »</a
 				>
 			</span>
 		</div>

@@ -35,7 +35,7 @@
 				<div class="mt-0  sm:flex lg:mt-4">
 					<div class="mt-3 rounded-lg sm:mt-0">
 						<button
-							class="block w-full transform items-center rounded-xl bg-blue-600 px-10 py-4 text-center text-base font-medium text-white transition duration-500 ease-in-out hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+							class="block w-full transform items-center rounded-xl bg-pink-600 px-10 py-4 text-center text-base font-medium text-white transition duration-500 ease-in-out hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
 							>Activate promocode</button
 						>
 					</div>

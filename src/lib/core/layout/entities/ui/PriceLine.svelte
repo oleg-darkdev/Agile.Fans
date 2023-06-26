@@ -43,7 +43,10 @@
 			<div class="mt-2">
 				<button
 					role="button"
-					class="block w-full transform items-center rounded-xl border-2 border-white bg-white px-10 py-3.5 text-center text-base font-medium text-blue-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+					class="block w-full transform items-center rounded-xl border-2 border-white {price.bg ==
+					'bg-black'
+						? 'bg-pink-600 text-black'
+						: 'bg-white text-pink-600'} px-10 py-3.5 text-center text-base font-medium  shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
 					>Buy Now</button
 				>
 			</div>

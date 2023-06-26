@@ -38,4 +38,5 @@ const product = {
 	faq: faq
 };
 
+
 export default product;

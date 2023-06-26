@@ -78,7 +78,7 @@
 </script>
 
 <div
-	class="flex min-h-screen w-screen justify-center  bg-gradient-to-t from-blue-200 via-blue-400 to-blue-500 text-gray-700"
+	class="flex min-h-screen w-screen justify-center  bg-gradient-to-t from-pink-200 via-pink-400 to-pink-500 text-gray-700"
 >
 	<!-- <div class="px-10">
 		<h1 class="text-2xl font-bold text-neutral-200">Team Project Board</h1>
@@ -86,7 +86,7 @@
 	<div
 		class="mt-4 flex {showCards
 			? 'flex-col'
-			: 'flex-row flex-wrap items-center justify-center max-w-7xl h-80'} overflow-hidden  px-4 "
+			: 'h-80 max-w-7xl flex-row flex-wrap items-center justify-center'} overflow-hidden  px-4 "
 	>
 		{#each board.columns as column (column.id)}
 			<BoardColumn {column} bind:showCards />

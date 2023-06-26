@@ -15,7 +15,7 @@
 		<div class="mx-auto flex w-full flex-wrap items-start justify-center gap-4 px-5 lg:px-0">
 			<div class="w-full md:text-center lg:w-2/6 lg:text-left xl:w-1/3">
 				<div class="flex flex-col p-8 lg:p-0">
-					<strong class="mb-1 text-xs font-semibold uppercase tracking-widest text-blue-500">
+					<strong class="mb-1 text-xs font-semibold uppercase tracking-widest text-pink-500">
 						Safe payments with Gumroad
 					</strong>
 					<span class="tracking-relaxed mb-8 text-2xl font-bold text-neutral-600 lg:text-5xl">
@@ -70,14 +70,14 @@
 
 					<div class="mt-8">
 						<button
-							class="block w-full transform items-center rounded-xl border-2 border-white bg-white px-10 py-3.5 text-center text-base font-medium text-blue-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+							class="block w-full transform items-center rounded-xl border-2 border-white bg-white px-10 py-3.5 text-center text-base font-medium text-pink-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
 							>Download</button
 						>
 					</div>
 				</div>
 			</div>
 			<div class="w-full md:w-2/6 xl:w-1/4">
-				<div class="relative flex h-full flex-col rounded-xl bg-blue-600 p-8 hover:border-white">
+				<div class="relative flex h-full flex-col rounded-xl bg-pink-600 p-8 hover:border-white">
 					<span class="mb-4 text-base font-medium uppercase tracking-widest text-white">
 						Bundle
 					</span>
@@ -117,7 +117,7 @@
 
 					<div class="mt-8">
 						<button
-							class="block w-full transform items-center rounded-xl border-2 border-white bg-white px-10 py-3.5 text-center text-base font-medium text-blue-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+							class="block w-full transform items-center rounded-xl border-2 border-white bg-white px-10 py-3.5 text-center text-base font-medium text-pink-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
 							>Buy for $69</button
 						>
 					</div>

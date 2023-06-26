@@ -2,7 +2,7 @@
 	export let title, cardsLength;
 </script>
 
-<div class="flex max-w-2xl flex-shrink-0 flex-col bg-blue-500 pr-4 ">
+<div class="flex max-w-2xl flex-shrink-0 flex-col bg-pink-500 pr-4 ">
 	<div class="flex h-10 flex-shrink-0 items-center px-2">
 		<span class="block text-3xl font-semibold text-white">{title}</span>
 		<span

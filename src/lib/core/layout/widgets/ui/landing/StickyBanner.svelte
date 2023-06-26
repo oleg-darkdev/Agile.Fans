@@ -8,7 +8,7 @@
 	id="marketing-banner"
 	tabindex="-1"
 	class:hidden={showBanner == false}
-	class="fixed left-1/2 top-32  z-50 flex w-11/12 -translate-x-1/2 flex-col justify-between rounded-lg border  border-gray-600 bg-gray-700 p-4 shadow-sm md:max-w-3xl md:flex-row lg:top-[7rem]  lg:max-w-3xl"
+	class="fixed left-1/2 top-32  z-50 flex w-11/12 -translate-x-1/2 flex-col justify-between rounded-lg bg-black shadow-black/20 backdrop-blur-[30px] p-4 shadow-sm md:max-w-3xl md:flex-row lg:top-[7rem]  lg:max-w-3xl"
 >
 	<div class="mb-3 mr-4 flex flex-col items-start md:mb-0 md:flex-row md:items-center">
 		<a
@@ -17,14 +17,14 @@
 		>
 			<img src={productData.shortDesc.logo} class="mr-2 h-10 w-auto" alt="Flowbite Logo" />
 		</a>
-		<p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
+		<p class="flex items-center text-md font-bold text-white">
 			The {productData.shortDesc.title} is still being developed, try the demo version
 		</p>
 	</div>
 	<div class="flex flex-shrink-0 items-center">
 		<a
 			href="/demo"
-			class="mr-2 rounded-lg bg-blue-700 px-5 py-2 text-xs font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+			class="mr-2 rounded-lg bg-pink-700 px-5 py-2 text-xs font-medium text-white hover:bg-pink-800 focus:outline-none focus:ring-4 focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800"
 			>Demo</a
 		>
 		<button

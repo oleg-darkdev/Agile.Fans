@@ -4,7 +4,7 @@
 
 <section>
 	<div class=" mx-auto flex max-w-7xl flex-col items-center px-5 py-8 sm:px-6 lg:px-8">
-		<div class="prose-blue prose mx-auto flex w-full max-w-3xl flex-col text-left">
+		<div class="text-pink text mx-auto flex w-full max-w-3xl flex-col text-left">
 			<div class="mx-auto w-full">
 				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 				<p>

@@ -3,7 +3,7 @@
 </script>
 
 <div class="mb-6 lg:mb-0">
-	<div class="relative block rounded-lg bg-gradient-to-r from-blue-500  to-blue-700">
+	<div class="relative block rounded-lg bg-gradient-to-r from-pink-500  to-pink-700">
 		<div class="flex">
 			<div
 				class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
@@ -25,7 +25,7 @@
 									{product.shortDesc.synopsis}
 								</p> -->
 			<button
-				class="transform rounded-xl bg-white px-5 py-4 text-center text-base font-medium text-blue-600 transition duration-500 ease-in-out hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 lg:px-10"
+				class="transform rounded-xl bg-white px-5 py-4 text-center text-base font-medium text-pink-600 transition duration-500 ease-in-out hover:bg-pink-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 lg:px-10"
 				>Get started</button
 			>
 		</div>

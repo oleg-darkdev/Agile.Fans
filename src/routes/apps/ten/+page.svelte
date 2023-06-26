@@ -148,7 +148,7 @@
 
 		<div class="mx-auto flex flex-wrap justify-center ">
 			{#each history as game}
-				<div on:click={() => (showHistory = true)} class="stats m-2 max-w-2xl bg-blue-500">
+				<div on:click={() => (showHistory = true)} class="stats m-2 max-w-2xl bg-pink-500">
 					<div class="stat">
 						<div class="stat-title text-white">{game.date}</div>
 						<div class="stat-value text-white">
@@ -177,7 +177,7 @@
 						<div
 							class="flex max-w-lg flex-col rounded-lg border border-gray-200 bg-white p-4 text-gray-500 shadow-md sm:p-8"
 						>
-							<span class="text-xs font-bold uppercase tracking-widest text-blue-500">
+							<span class="text-xs font-bold uppercase tracking-widest text-pink-500">
 								23.06.2023
 							</span>
 							<h1
@@ -191,7 +191,7 @@
 							</p>
 
 							<div class="flex flex-col  ">
-								<div class="stats mb-2 max-w-xs justify-center bg-blue-500 shadow">
+								<div class="stats mb-2 max-w-xs justify-center bg-pink-500 shadow">
 									<div class="stat ">
 										<div class="stat-figure text-primary">
 											<svg
@@ -215,19 +215,19 @@
 
 								<div class="stats stats-vertical mb-6 shadow lg:stats-horizontal">
 									<div class="stat bg-neutral-50  ">
-										<div class="stat-title text-blue-500 ">Downloads</div>
-										<div class="stat-value text-blue-500">31K</div>
-										<div class="stat-desc text-blue-500">Jan 1st - Feb 1st</div>
+										<div class="stat-title text-pink-500 ">Downloads</div>
+										<div class="stat-value text-pink-500">31K</div>
+										<div class="stat-desc text-pink-500">Jan 1st - Feb 1st</div>
 									</div>
 									<div class="stat bg-neutral-50 ">
-										<div class="stat-title text-blue-500 ">Downloads</div>
-										<div class="stat-value text-blue-500">31K</div>
-										<div class="stat-desc text-blue-500">Jan 1st - Feb 1st</div>
+										<div class="stat-title text-pink-500 ">Downloads</div>
+										<div class="stat-value text-pink-500">31K</div>
+										<div class="stat-desc text-pink-500">Jan 1st - Feb 1st</div>
 									</div>
 									<div class="stat bg-neutral-50 ">
-										<div class="stat-title text-blue-500 ">Downloads</div>
-										<div class="stat-value text-blue-500">31K</div>
-										<div class="stat-desc text-blue-500">Jan 1st - Feb 1st</div>
+										<div class="stat-title text-pink-500 ">Downloads</div>
+										<div class="stat-value text-pink-500">31K</div>
+										<div class="stat-desc text-pink-500">Jan 1st - Feb 1st</div>
 									</div>
 								</div>
 							</div>
@@ -260,7 +260,7 @@
 							<a
 								href="#cards"
 								on:click={() => (showFullResult = true)}
-								class="mt-6 block w-full transform items-center rounded-xl border-2 border-white px-5 py-3.5 text-center text-base font-medium text-blue-500 shadow-md transition duration-500 ease-in-out hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 lg:px-10"
+								class="mt-6 block w-full transform items-center rounded-xl border-2 border-white px-5 py-3.5 text-center text-base font-medium text-pink-500 shadow-md transition duration-500 ease-in-out hover:border-pink-500 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 lg:px-10"
 								>Show card statistics</a
 							>
 						</div>

@@ -7,7 +7,7 @@
 </script>
 
 <header class="h-24">
-	<nav class="fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-blue-500  ">
+	<nav class="fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-[hsla(0,0%,5%,0.7)] shadow-black/20 backdrop-blur-[30px]  ">
 		<div
 			class="justify-content mx-auto flex max-w-screen-xl flex-wrap items-center justify-start p-4"
 		>

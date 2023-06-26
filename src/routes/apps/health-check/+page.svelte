@@ -65,8 +65,8 @@
 				{#each cards as card, i}
 					<button
 						class="mx-1.5 h-2 w-2 rounded-full {i == step
-							? 'bg-blue-500'
-							: 'bg-blue-100'} focus:outline-none "
+							? 'bg-pink-500'
+							: 'bg-pink-100'} focus:outline-none "
 					/>
 				{/each}
 			</div>

@@ -1,6 +1,6 @@
 <script>
 	import { TextBlock } from '../lib/agile-fans/landing/entities';
-	import { Slider } from '../lib/agile-fans/landing/widgets';
+	import { Slider, ProductsList } from '../lib/agile-fans/landing/widgets';
 	import { WorkshopCard, FeaturesForProductType } from '../lib/core/layout/entities';
 	import { ProductVariants, FAQ } from '../lib/core/layout/widgets';
 
@@ -63,7 +63,9 @@
 	];
 
 	import { productsList } from '../lib/core/data';
+	import { convertObjToArray } from '../lib/core/utils';
 
+	const arrayOfProducts = convertObjToArray(productsList);
 	const productData = productsList.agileKit;
 
 	let showMenu = false;
@@ -81,7 +83,7 @@
 	<source src="/agile-fans/landing/video.mp4" type="video/mp4" />
 </video>
 
-<!-- bg-gradient-to-r from-rose-500 to-rose-700  -->
+<!-- bg-gradient-to-r from-pink-500 to-pink-700  -->
 
 <section class="min-h-screen">
 	<div
@@ -95,7 +97,7 @@
 					<li>
 						<a
 							href={link.link}
-							class="block rounded  py-2 pl-3 pr-4 text-lg font-bold  text-white hover:text-rose-600 md:p-0"
+							class="block rounded  py-2 pl-3 pr-4 text-lg font-bold  text-white hover:text-pink-600 md:p-0"
 							>{link.title}</a
 						>
 					</li>
@@ -105,7 +107,7 @@
 		<h2
 			class="max-w-5xl text-center text-4xl font-bold leading-none tracking-tighter text-neutral-50 md:text-5xl lg:max-w-7xl lg:text-6xl"
 		>
-			Witamy w <span class="font-black text-rose-500">#Agile.fans</span>
+			Witamy w <span class="font-black text-pink-500">#Agile.fans</span>
 		</h2>
 
 		<!-- <p class=" mx-auto mt-8 max-w-xl text-center text-2xl  leading-relaxed text-gray-200">
@@ -113,7 +115,7 @@
 		</p>
 
 		<a
-			class="text-1xl mx-auto mt-8 font-semibold text-rose-600 hover:text-neutral-50"
+			class="text-1xl mx-auto mt-8 font-semibold text-pink-600 hover:text-neutral-50"
 			title="read more"
 		>
 			Read more about the offer »
@@ -128,7 +130,7 @@
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
-						class="inline-block h-8 w-8 stroke-rose-600"
+						class="inline-block h-8 w-8 stroke-pink-600"
 						><path
 							stroke-linecap="round"
 							stroke-linejoin="round"
@@ -138,7 +140,7 @@
 					>
 				</div>
 				<div class="stat-title text-white">Lorem impsum</div>
-				<div class="stat-value text-rose-600">25.6K</div>
+				<div class="stat-value text-pink-600">25.6K</div>
 				<div class="stat-desc text-neutral-100">Lorem impsum textarea</div>
 			</div>
 
@@ -148,7 +150,7 @@
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
-						class="inline-block h-8 w-8 stroke-rose-500"
+						class="inline-block h-8 w-8 stroke-pink-500"
 						><path
 							stroke-linecap="round"
 							stroke-linejoin="round"
@@ -168,7 +170,7 @@
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
-						class="inline-block h-8 w-8 stroke-rose-500"
+						class="inline-block h-8 w-8 stroke-pink-500"
 						><path
 							stroke-linecap="round"
 							stroke-linejoin="round"
@@ -178,7 +180,7 @@
 					>
 				</div>
 				<div class="stat-title text-white">Lorem impsum</div>
-				<div class="stat-value text-rose-600">25.6K</div>
+				<div class="stat-value text-pink-600">25.6K</div>
 				<div class="stat-desc text-neutral-100">Lorem impsum textarea</div>
 			</div>
 		</div>
@@ -191,6 +193,18 @@
 		mt="0"
 		title={`Agile.fans: <br class="hidden lg:block"> One goal - more tools.`}
 		desc={descAgileFans}
+	/>
+	<div
+		class="z-1 -mt-[20%] h-[110%] w-full overflow-hidden rounded-xl bg-[url('/agile-fans/landing/more_tools.jpg')] bg-cover bg-fixed  bg-[50%] bg-no-repeat"
+	/>
+	<TextBlock
+		mt="20%"
+		title={`Zasilamy Ziemię.`}
+		desc={[
+			`Projektujemy ekologiczne systemy, które są masowo skalowalne — co daje największe możliwe
+			korzyści dla środowiska. Nasze produkty do wytwarzania i magazynowania energii współpracują z
+			naszymi pojazdami elektrycznymi, aby wzmocnić ich wpływ.`
+		]}
 	>
 		<!-- <div slot="bottom">
 			<div class="mx-auto mt-6 flex w-full max-w-2xl justify-center gap-2">
@@ -198,16 +212,13 @@
 					<a
 						href="/"
 						target="_blank"
-						class="block transform items-center rounded-xl border-2 border-white px-5 py-3.5 text-center text-base font-medium text-white hover:bg-rose-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 lg:px-10"
+						class="block transform items-center rounded-xl border-2 border-white px-5 py-3.5 text-center text-base font-medium text-white hover:bg-pink-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 lg:px-10"
 						>Wszystkie warsztaty</a
 					>
 				</div>
 			</div>
 		</div> -->
 	</TextBlock>
-	<div
-		class="z-1 -mt-[20%] h-[90%] w-full overflow-hidden rounded-xl bg-[url('/agile-fans/landing/more_tools.jpg')] bg-cover bg-fixed  bg-[50%] bg-no-repeat"
-	/>
 </section>
 <!--
 <section class="mt-64 flex flex-col items-center justify-center pt-24">
@@ -215,13 +226,11 @@
 		<h2
 			class="text-center text-4xl font-bold leading-none tracking-tighter text-gray-600 md:text-5xl   lg:text-6xl"
 		>
-			Zasilamy Ziemię
+
 		</h2>
 
 		<p class=" mx-auto mt-8 max-w-5xl text-center text-2xl  leading-relaxed text-gray-400">
-			Projektujemy ekologiczne systemy, które są masowo skalowalne — co daje największe możliwe
-			korzyści dla środowiska. Nasze produkty do wytwarzania i magazynowania energii współpracują z
-			naszymi pojazdami elektrycznymi, aby wzmocnić ich wpływ.
+
 		</p>
 	</div>
 	<Slider />
@@ -246,17 +255,19 @@
 			`Nasze pojazdy należą do najbezpieczniejszych na świecie. Naszym celem jest nie tylko
 				zapewnienie bezpieczeństwa, ale również zadbanie o to, by każda Tesla sprawiała największą
 				frajdę, jaką można mieć w pojeździe. Tworzymy funkcje, dzięki którym podróżowanie pojazdem
-				jest przyjemniejsze — od gier po filmy, ukryte odniesienia i nie tylko. Dzięki
+				jest przyjemniejsze — od gier po filmy, ukryte odniesienia i nie tylko. `,
+			`Dzięki
 				bezprzewodowym aktualizacjom oprogramowania regularnie wprowadzamy funkcje za naciśnięciem
 				jednego przycisku.`
 		]}
 	/>
 </section>
 
-<ProductVariants>
+<!-- <ProductVariants>
 	<FeaturesForProductType />
-</ProductVariants>
+</ProductVariants> -->
 
+<ProductsList productsList={arrayOfProducts} />
 <section class="py-4 sm:px-6 md:px-4 md:px-12 lg:px-4 lg:px-24 lg:py-12">
 	<!-- Jumbotron -->
 	<div class="px-6 py-12 text-center md:px-12 lg:text-left">
@@ -297,7 +308,7 @@
 	<!-- bg-gradient-to-tr from-[hsla(330,81%,60%,0.3)] to-[hsla(347,77%,50%,0.3)] -->
 	<TextBlock
 		mt="20%"
-		title={`Społeczność <span class='text-rose-500 font-black'>#Agile.fans</span>`}
+		title={`Społeczność <span class='text-pink-500 font-black'>#Agile.fans</span>`}
 		desc={[
 			`Stosując podejście oparte na pierwszych zasadach, rozwiązujemy jedne z największych problemów świata. Jeśli masz na koncie wybitne osiągnięcia, dołącz do nas, aby sprostać wyzwaniom inżynieryjnym, produkcyjnym i operacyjnym nowej generacji. `
 		]}
@@ -308,7 +319,7 @@
 					<a
 						href="/"
 						target="_blank"
-						class="block transform items-center rounded-xl border-2 border-white px-5 py-3.5 text-center text-base font-medium text-white shadow-md transition duration-500 ease-in-out hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 lg:px-10"
+						class="block transform items-center rounded-xl border-2 border-white px-5 py-3.5 text-center text-base font-medium text-white shadow-md transition duration-500 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 lg:px-10"
 						>Wszystkie warsztaty</a
 					>
 				</div>

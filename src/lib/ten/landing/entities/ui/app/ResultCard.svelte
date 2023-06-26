@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="group  flex transform cursor-pointer flex-col rounded-lg p-2 transition delay-100 duration-300 ease-in-out hover:-translate-x-16 hover:-translate-y-8 hover:bg-blue-400 "
+	class="group  flex transform cursor-pointer flex-col rounded-lg p-2 transition delay-100 duration-300 ease-in-out hover:-translate-x-16 hover:-translate-y-8 hover:bg-pink-400 "
 >
 	<div class="flex flex-row flex-wrap items-center ">
 		<div class=" flex max-w-lg flex-row-reverse lg:items-start">

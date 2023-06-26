@@ -51,7 +51,7 @@
 			title: 'Platforms',
 			link: '/platforms'
 		},
-    		{
+		{
 			title: 'Products',
 			link: '/products'
 		},
@@ -99,7 +99,7 @@
 			<div class="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-center">
 				<a
 					href="/demo"
-					class="w-full transform rounded-md bg-blue-600 px-5 py-2 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 sm:order-2 sm:mx-2 sm:w-auto lg:w-40"
+					class="w-full transform rounded-md bg-pink-600 px-5 py-2 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-pink-500 focus:outline-none focus:ring focus:ring-pink-300 focus:ring-opacity-80 sm:order-2 sm:mx-2 sm:w-auto lg:w-40"
 					>Go demo</a
 				>
 			</div>
@@ -115,7 +115,7 @@
 					{#each arrayOfProducts.slice(0, 6) as product}
 						<a
 							href={product.shortDesc.link}
-							class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
+							class="text-gray-700 transition-colors duration-200 hover:text-pink-600 hover:underline  "
 							>{product.shortDesc.title}</a
 						>
 					{/each}
@@ -129,7 +129,7 @@
 					{#each arrayOfProducts.slice(0, 6) as product}
 						<a
 							href={product.shortDesc.link}
-							class="text-gray-700 transition-colors duration-200 hover:text-blue-600 hover:underline  "
+							class="text-gray-700 transition-colors duration-200 hover:text-pink-600 hover:underline  "
 							>{product.shortDesc.title}</a
 						>
 					{/each}
@@ -177,7 +177,7 @@
 			</div>
 		</div>
 
-		<hr class="my-2 border-blue-500  md:my-6" />
+		<hr class="my-2 border-pink-500  md:my-6" />
 
 		<div class=" flex flex-col items-center justify-between sm:flex-row">
 			<a href="#">
@@ -188,7 +188,7 @@
 				/>
 			</a>
 
-			<p class="mt-4 text-sm text-blue-700  sm:mt-0">© Copyright 2023. All Rights Reserved.</p>
+			<p class="mt-4 text-sm text-pink-700  sm:mt-0">© Copyright 2023. All Rights Reserved.</p>
 		</div>
 	</div>
 </footer>
@@ -197,7 +197,7 @@
 <footer class="bg-white" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-5 py-12 md:px-12 lg:py-16 lg:px-20">
-		<h3 class="text-md font-semibold uppercase tracking-wider text-blue-600">Products</h3>
+		<h3 class="text-md font-semibold uppercase tracking-wider text-pink-600">Products</h3>
 
 		<div class="md:grid md:grid-cols-5 md:gap-8">
 			<div>
@@ -287,7 +287,7 @@
 				Copyright © 2022 - 2023
 				<a
 					href="https://wickedlabs.dev"
-					class="text-wickedblue mx-2 hover:text-gray-500"
+					class="text-wickedpink mx-2 hover:text-gray-500"
 					rel="noopener noreferrer">@agileKIT</a
 				>
 			</span>

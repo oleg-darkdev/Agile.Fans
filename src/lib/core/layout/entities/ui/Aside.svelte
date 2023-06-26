@@ -57,7 +57,7 @@
 </script>
 
 <aside class="flex">
-	<div class="flex h-full min-h-screen w-16 flex-col items-center border-gray-700 bg-blue-800 py-8">
+	<div class="flex h-full min-h-screen w-16 flex-col items-center border-gray-700 bg-pink-800 py-8">
 		<nav class="flex flex-1 flex-col items-center space-y-6 ">
 			<!-- <a href="#">
 				<img class="h-6 w-auto" src="https://merakiui.com/images/logo.svg" alt="" />
@@ -83,7 +83,7 @@
 
 				<a
 					href="#"
-					class="rotate-180 text-gray-500 transition-colors duration-200 hover:text-blue-500 rtl:rotate-0 dark:text-gray-400 dark:hover:text-blue-400"
+					class="rotate-180 text-gray-500 transition-colors duration-200 hover:text-pink-500 rtl:rotate-0 dark:text-gray-400 dark:hover:text-pink-400"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@
 
 				<input
 					type="text"
-					class="w-full rounded-md border bg-white py-1.5 pl-10 pr-4 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
+					class="w-full rounded-md border bg-white py-1.5 pl-10 pr-4 text-gray-700 focus:border-pink-400 focus:outline-none focus:ring focus:ring-pink-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-pink-300"
 					placeholder="Search"
 				/>
 			</div>

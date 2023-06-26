@@ -21,7 +21,7 @@
 		<div class="grid gap-4 sm:grid-cols-2 md:gap-8">
 			<!-- question - start -->
 			{#each faq as data}
-				<div class="rounded-lg bg-blue-500 p-5">
+				<div class="rounded-lg bg-pink-500 p-5">
 					<div class="mb-4 flex items-center justify-between gap-4 border-b pb-4">
 						<h3 class="font-semibold text-white sm:text-lg md:text-xl">
 							{data.title}

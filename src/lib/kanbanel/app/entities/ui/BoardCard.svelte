@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="group relative mt-1 flex w-80 cursor-pointer overflow-visible  flex-col items-start rounded-lg bg-white bg-opacity-90 p-4 hover:bg-opacity-100"
+	class="group relative mt-1 flex w-80 cursor-pointer flex-col  items-start overflow-visible rounded-lg bg-white bg-opacity-90 p-4 hover:bg-opacity-100"
 	draggable="true"
 >
 	<button
@@ -34,7 +34,7 @@
 
 			<div class="flex items-center ">
 				<svg
-					class="h-6 w-6 fill-blue-500 text-blue-500"
+					class="h-6 w-6 fill-pink-500 text-pink-500"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 20 20"
 					fill="currentColor"
@@ -45,12 +45,12 @@
 						clip-rule="evenodd"
 					/>
 				</svg>
-				<span class="ml-1 text-lg leading-none text-blue-500">{card.date}</span>
+				<span class="ml-1 text-lg leading-none text-pink-500">{card.date}</span>
 			</div>
 		</div>
 
 		<div
-			class="avatar-group  -space-x-6 rounded-full ring ring-blue-500 ring-offset-2 ring-offset-base-100"
+			class="avatar-group  -space-x-6 rounded-full ring ring-pink-500 ring-offset-2 ring-offset-base-100"
 		>
 			{#each card.members as member}
 				<div class="avatar ">

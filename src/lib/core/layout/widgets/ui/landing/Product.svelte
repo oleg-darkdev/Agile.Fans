@@ -7,7 +7,7 @@
 <section
 	class="container mx-auto my-12 px-4 py-8 md:rounded-xl md:bg-gray-200 md:px-12 lg:rounded-xl lg:bg-gray-200 lg:px-12 lg:py-16"
 >
-	<h3 class="text-center text-4xl font-black text-gray-600 md:text-2xl lg:text-6xl">
+	<h3 class="text-center text-4xl font-black text-neutral-700 md:text-2xl lg:text-6xl">
 		Browse Our Projects
 	</h3>
 
@@ -17,8 +17,8 @@
 				on:click={() => (selectedCategory = category)}
 				class="mx-2 inline-flex cursor-pointer rounded-2xl py-0.5 px-4 text-2xl transition-colors duration-300
     {selectedCategory.title == category.title
-					? 'bg-blue-500  text-white hover:bg-indigo-400'
-					: 'border-gray-6000 border-2 text-gray-500 hover:bg-blue-500/70 hover:text-white focus:outline-none'}"
+					? 'bg-pink-500  text-white hover:bg-black'
+					: 'border-gray-6000 border-2 text-black hover:bg-black hover:text-white focus:outline-none'}"
 				>{category.title}</button
 			>
 		{/each}
@@ -29,7 +29,7 @@
 			<a
 				href={product.shortDesc.link}
 				class:lg:col-span-2={i % 2 === 0 && i < 6}
-				class="rounded-2xl bg-gradient-to-r from-blue-500  to-blue-700 px-4 pb-8 pt-2 transition-all duration-500 hover:scale-105"
+				class="rounded-2xl  bg-black px-4 pb-8 pt-2 transition-all duration-500 hover:scale-105"
 			>
 				<img
 					class="max-h-40  w-full rounded-lg object-cover object-center shadow-md shadow-gray-200 xl:h-96"
@@ -54,7 +54,7 @@
 				<h1 class="text-xl font-semibold text-gray-800 dark:text-white">Table of Content</h1>
 
 				<div class="mt-4 space-y-4 lg:mt-8">
-					<a href="#" class="block text-blue-500 hover:underline dark:text-blue-400">Web design</a>
+					<a href="#" class="block text-pink-500 hover:underline dark:text-pink-400">Web design</a>
 					<a href="#" class="block text-gray-500 hover:underline dark:text-gray-300">App design</a>
 					<a href="#" class="block text-gray-500 hover:underline dark:text-gray-300">Branding</a>
 					<a href="#" class="block text-gray-500 hover:underline dark:text-gray-300">Animation</a>
@@ -72,7 +72,7 @@
 						<h2 class="mt-4 text-xl font-semibold capitalize text-gray-800 dark:text-white">
 							Best website collections
 						</h2>
-						<p class="mt-2 text-lg uppercase tracking-wider text-blue-500 dark:text-blue-400 ">
+						<p class="mt-2 text-lg uppercase tracking-wider text-pink-500 dark:text-pink-400 ">
 							Website
 						</p>
 					</div>
@@ -86,7 +86,7 @@
 						<h2 class="mt-4 text-xl font-semibold capitalize text-gray-800 dark:text-white">
 							Block of Ui kit collections
 						</h2>
-						<p class="mt-2 text-lg uppercase tracking-wider text-blue-500 dark:text-blue-400 ">
+						<p class="mt-2 text-lg uppercase tracking-wider text-pink-500 dark:text-pink-400 ">
 							Ui kit
 						</p>
 					</div>
@@ -100,7 +100,7 @@
 						<h2 class="mt-4 text-xl font-semibold capitalize text-gray-800 dark:text-white">
 							Ton’s of mobile mockup
 						</h2>
-						<p class="mt-2 text-lg uppercase tracking-wider text-blue-500 dark:text-blue-400 ">
+						<p class="mt-2 text-lg uppercase tracking-wider text-pink-500 dark:text-pink-400 ">
 							Mockups
 						</p>
 					</div>
@@ -135,7 +135,7 @@
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
 								fill="currentColor"
-								class="m-auto h-6 w-6 text-blue-600"
+								class="m-auto h-6 w-6 text-pink-600"
 							>
 								<path
 									fill-rule="evenodd"

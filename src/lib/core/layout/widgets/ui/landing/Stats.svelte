@@ -15,12 +15,12 @@
 </script>
 
 <section
-	class="container mx-auto my-12 text-center  md:rounded-xl md:bg-gray-200 lg:bg-gray-200 md:py-12 lg:my-12 lg:my-24 lg:rounded-xl    lg:text-left "
+	class="container mx-auto my-12 text-center  md:rounded-xl md:bg-gray-200 md:py-12 lg:my-12 lg:my-24 lg:rounded-xl lg:bg-gray-200    lg:text-left "
 >
 	<div class="mx-8 grid items-start lg:grid-cols-2">
 		<div class="lg:mt-40 lg:mb-0">
 			<div
-				class="relative z-[1] block rounded-lg bg-gradient-to-r from-blue-500  to-blue-700 px-6 py-12 shadow-black/20 md:px-12 lg:-mr-14"
+				class="relative z-[1] block rounded-lg bg-gradient-to-r from-pink-500  to-pink-700 px-6 py-12 shadow-black/20 md:px-12 lg:-mr-14"
 			>
 				<h2 class="mb-2 text-3xl font-bold text-white md:text-5xl lg:mb-6 lg:text-6xl">
 					Lorem ipsum is placeholder text

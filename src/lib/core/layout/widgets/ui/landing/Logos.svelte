@@ -96,7 +96,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 				<a
 					href="https://www.wickedtemplates.com/expo.html"
-					class="font-semibold text-blue-600 hover:text-blue-500 lg:mb-0">Our customers »</a
+					class="font-semibold text-pink-600 hover:text-pink-500 lg:mb-0">Our customers »</a
 				>
 			</span>
 		</div>

@@ -13,7 +13,7 @@
 		<div
 			class="mt-12 flex max-w-lg flex-col rounded-lg border border-gray-200 bg-white p-4 text-gray-500 shadow-md sm:p-8"
 		>
-			<span class="text-xs font-bold uppercase tracking-widest text-blue-500">
+			<span class="text-xs font-bold uppercase tracking-widest text-pink-500">
 				Last updates: {selectedBoard.lastUpd}
 			</span>
 
@@ -25,14 +25,14 @@
 			</p>
 
 			<div
-				class="stats stats-vertical mx-auto mb-4 max-w-xs bg-blue-500 shadow lg:stats-horizontal "
+				class="stats stats-vertical mx-auto mb-4 max-w-xs bg-pink-500 shadow lg:stats-horizontal "
 			>
-				<div class="stat place-items-center bg-blue-500">
+				<div class="stat place-items-center bg-pink-500">
 					<div class="stat-title text-white">Topics for discuss</div>
 					<div class="stat-value text-white">34</div>
 				</div>
 
-				<div class="stat place-items-center bg-blue-500">
+				<div class="stat place-items-center bg-pink-500">
 					<div class="stat-title text-white">Member</div>
 					<div class="stat-value text-secondary text-white">24</div>
 				</div>
@@ -40,7 +40,7 @@
 
 			<div class="mb-4 flex items-center justify-between">
 				<h5 class="text-xl font-bold leading-none text-gray-900 ">Board Members</h5>
-				<a href="/" class="text-sm font-medium text-blue-600 hover:underline ">View all </a>
+				<a href="/" class="text-sm font-medium text-pink-600 hover:underline ">View all </a>
 			</div>
 			<ul
 				class="divide-y divide-gray-200 rounded-lg border border-0 border-gray-200 bg-white text-gray-500 "

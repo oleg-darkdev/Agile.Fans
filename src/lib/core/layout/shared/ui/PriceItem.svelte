@@ -1,5 +1,5 @@
 <script>
-  export let text;
+	export let text;
 </script>
 
 <li class="mb-2 flex items-center text-base font-medium leading-relaxed text-gray-100">
@@ -11,10 +11,11 @@
 			stroke-linecap="round"
 			stroke-linejoin="round"
 			stroke-width="2.5"
-			class="stroke-blue-500 h-3 w-3"
+			class="h-3 w-3 stroke-pink-500"
 			viewBox="0 0 24 24"
 		>
 			<path d="M20 6L9 17l-5-5" />
 		</svg>
-	</span> {text}
+	</span>
+	{text}
 </li>

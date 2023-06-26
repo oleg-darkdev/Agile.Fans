@@ -209,14 +209,14 @@
 <div class="" bind:this={slider}>
 	<div class="slider">
 		<div class="nav">
-			<div class="next bg-rose-700" />
-			<div class="prev bg-rose-700" />
+			<div class="next bg-pink-700" />
+			<div class="prev bg-pink-700" />
 			<!-- <a href="" class="explore-btn">Czytaj więcej</a> -->
 		</div>
 
 		<div class="item is-active">
 			<div class="content" bind:this={content}>
-				<h2 class="wrap text-rose-600">Lorem</h2>
+				<h2 class="wrap text-pink-600">Lorem</h2>
 			</div>
 			<div class="imgs">
 				<div class="grid " bind:this={img}>

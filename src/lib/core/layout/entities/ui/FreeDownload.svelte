@@ -32,7 +32,7 @@
 </script>
 
 <section
-	class=" md:rounded-xl md:bg-blue-600 lg:mx-20 md:mx-16 md:py-12 lg:my-12 lg:my-24 lg:rounded-xl lg:bg-blue-600 "
+	class=" md:mx-16 md:rounded-xl md:bg-pink-600 md:py-12 lg:mx-20 lg:my-12 lg:my-24 lg:rounded-xl lg:bg-pink-600 "
 >
 	<div class="px-5 pb-24 lg:mx-0">
 		<div
@@ -47,14 +47,14 @@
 					>
 						You can get a set of educational boardgames and access to web applications
 						<span class="ml-4 font-bold">
-							<span class="text-blue-500"> FREE </span>
+							<span class="text-pink-500"> FREE </span>
 						</span>
 					</h2>
 				</div>
 				<div class="flex justify-start lg:mt-2">
 					<a
 						href="#price"
-						class="block w-full transform items-center rounded-xl border-2 border-white bg-blue-600 px-10 py-3.5 text-center text-base font-medium text-white shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+						class="block w-full transform items-center rounded-xl border-2 border-white bg-pink-600 px-10 py-3.5 text-center text-base font-medium text-white shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
 					>
 						Download
 					</a>
@@ -76,7 +76,10 @@
 			<div class="grid gap-x-6 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
 				{#each translates as translate}
 					<div class="mb-4">
-						<a href={translate.link} class="hover:text-blue-600 hover:text-bold hover:border-blue-600 border-b-2 border-white flex items-center text-gray-600">
+						<a
+							href={translate.link}
+							class="hover:text-bold flex items-center border-b-2 border-white text-gray-600 hover:border-pink-600 hover:text-pink-600"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"

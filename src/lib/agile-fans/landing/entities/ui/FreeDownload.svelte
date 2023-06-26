@@ -11,14 +11,14 @@
 				>
 					You can get a set of educational boardgames and access to web applications
 					<span class="ml-4 font-bold">
-						<span class="text-blue-500"> FREE </span>
+						<span class="text-pink-500"> FREE </span>
 					</span>
 				</h2>
 			</div>
 			<div class="flex justify-start lg:mt-2">
 				<a
 					href="#price"
-					class="block w-full transform items-center rounded-xl border-2 border-white bg-blue-600 px-10 py-3.5 text-center text-base font-medium text-white shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+					class="block w-full transform items-center rounded-xl border-2 border-white bg-pink-600 px-10 py-3.5 text-center text-base font-medium text-white shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
 				>
 					Read more
 				</a>

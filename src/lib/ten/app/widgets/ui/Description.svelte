@@ -24,7 +24,7 @@
 			<div
 				class="mt-12 mb-16 flex flex-col items-start text-left md:mb-0 lg:w-1/2 lg:flex-grow lg:pl-6 xl:mt-0 xl:pl-24"
 			>
-				<span class="mb-8 text-xs font-bold uppercase tracking-widest text-blue-600">
+				<span class="mb-8 text-xs font-bold uppercase tracking-widest text-pink-600">
 					Your tagline
 				</span>
 				<h1
@@ -42,7 +42,7 @@
 					ut labore et dolore magna aliqua.
 				</p>
 				<div class="mt-0 max-w-7xl flex-col sm:flex lg:mt-6">
-					<div class="prose-md prose">
+					<div class="text-md text">
 						<ul>
 							<li class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
 							<li class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>

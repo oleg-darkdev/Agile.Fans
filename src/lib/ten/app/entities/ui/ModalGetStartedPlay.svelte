@@ -15,7 +15,7 @@
 		role="dialog"
 		aria-modal="true" -->
 	<div
-		class="flex min-h-screen items-end justify-center bg-blue-500 bg-opacity-60 px-4 pt-4 pb-20 text-center sm:block sm:p-0"
+		class="flex min-h-screen items-end justify-center bg-pink-500 bg-opacity-60 px-4 pt-4 pb-20 text-center sm:block sm:p-0"
 	>
 		<span class="hidden sm:inline-block sm:h-screen sm:align-middle" aria-hidden="true"
 			>&#8203;</span
@@ -43,7 +43,7 @@
 					/>
 				</div>
 
-				<div class="mt-4 text-center mb-2">
+				<div class="mt-4 mb-2 text-center">
 					<h3 class="font-medium capitalize leading-6 text-gray-800 " id="modal-title">
 						Invite your team
 					</h3>
@@ -53,16 +53,13 @@
 					</p>
 				</div>
 
-				<div class=''>
-					<label for="Description" class="block text-sm text-gray-500 "
-						>Description</label
-					>
+				<div class="">
+					<label for="Description" class="block text-sm text-gray-500 ">Description</label>
 
 					<textarea
 						placeholder="lorem..."
-						class="mt-2  block h-32 w-full rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-gray-700 placeholder-gray-400/70 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-400"
+						class="focus:ring-opacity-400  mt-2 block h-32 w-full rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-gray-700 placeholder-gray-400/70 focus:border-pink-400 focus:outline-none focus:ring focus:ring-pink-300"
 					/>
-
 				</div>
 			</div>
 
@@ -73,15 +70,15 @@
 					<input
 						type="text"
 						value="invite-link"
-						class="mx-1 block h-10 flex-1 rounded-md border border-gray-200 bg-white px-4 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 "
+						class="mx-1 block h-10 flex-1 rounded-md border border-gray-200 bg-white px-4 text-sm text-gray-700 focus:border-pink-400 focus:outline-none focus:ring focus:ring-pink-300 focus:ring-opacity-40 "
 					/>
 
 					<button
-						class="mx-1 hidden text-gray-600 transition-colors duration-300 hover:text-blue-500  sm:block"
+						class="mx-1 hidden text-gray-600 transition-colors duration-300 hover:text-pink-500  sm:block"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							class="h-6 w-6 stroke-blue-500"
+							class="h-6 w-6 stroke-pink-500"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke-width="2"
@@ -100,7 +97,7 @@
 				<div class="mt-3 rounded-lg sm:mt-0">
 					<button
 						on:click={() => (isOpen = false)}
-						class="block transform items-center rounded-xl border-2 border-white px-10 py-3.5 text-center text-base font-medium text-blue-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+						class="block transform items-center rounded-xl border-2 border-white px-10 py-3.5 text-center text-base font-medium text-pink-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
 						>Decline</button
 					>
 				</div>
@@ -110,7 +107,7 @@
 							startPlay = true;
 							isOpen = false;
 						}}
-						class="block transform items-center rounded-xl bg-blue-600 px-10 py-4 text-center text-base font-medium text-white transition duration-500 ease-in-out hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+						class="block transform items-center rounded-xl bg-pink-600 px-10 py-4 text-center text-base font-medium text-white transition duration-500 ease-in-out hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
 						>Get Started</button
 					>
 				</div>

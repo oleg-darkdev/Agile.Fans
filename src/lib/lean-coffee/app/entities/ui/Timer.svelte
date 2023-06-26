@@ -25,7 +25,7 @@
 	<div class="flex max-w-2xl flex-row flex-wrap items-center justify-center ">
 		<span
 			style="font-size: 280px;"
-			class="font-mono align-center countdown font-black text-blue-500 "
+			class="font-mono align-center countdown font-black text-pink-500 "
 		>
 			<span style="--value:{minutes};" />:<span style="--value:{seconds};" />
 		</span>

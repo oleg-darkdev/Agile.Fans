@@ -120,7 +120,7 @@
 					{#each faq as toc}
 						<button
 							on:click={() => (selectedCategory = toc.content)}
-							class="block text-blue-500 hover:underline ">{toc.categoryTitle}</button
+							class="block text-pink-500 hover:underline ">{toc.categoryTitle}</button
 						>
 					{/each}
 				</div>
@@ -132,7 +132,7 @@
 					<div>
 						<button class="flex items-center focus:outline-none">
 							<svg
-								class="h-6 w-6 flex-shrink-0 text-blue-500"
+								class="h-6 w-6 flex-shrink-0 text-pink-500"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -147,7 +147,7 @@
 
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								class="h-6 w-6 flex-shrink-0 text-blue-500"
+								class="h-6 w-6 flex-shrink-0 text-pink-500"
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke="currentColor"
@@ -166,7 +166,7 @@
 						</button>
 
 						<div class="mt-8 flex md:mx-10">
-							<span class="border border-blue-500" />
+							<span class="border border-pink-500" />
 
 							<p class="max-w-3xl px-4 text-gray-500 ">
 								{answers.desc}

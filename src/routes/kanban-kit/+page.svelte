@@ -1,5 +1,5 @@
 <script>
-	import { Description, Hero, Logos } from '../../lib/agile-fans/landing/widgets';
+	import { Description, Hero, Logos, ProductsList } from '../../lib/agile-fans/landing/widgets';
 
 	import {
 		Contact,
@@ -27,7 +27,15 @@
 
 <Header {productData} />
 
-<Hero {productData} />
+<Hero {productData}>
+	<div class="mt-0 max-w-7xl flex-col sm:flex lg:mt-6">
+		<div class="text-md ">
+			<!-- <p class="-mb-1 text-left font-bold leading-relaxed text-neutral-100 ">List of games</p>? -->
+
+			<ProductsList productsList={arrayOfProducts} />
+		</div>
+	</div>
+</Hero>
 
 <Cookie />
 

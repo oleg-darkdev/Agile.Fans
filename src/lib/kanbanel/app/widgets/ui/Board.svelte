@@ -33,7 +33,7 @@
 </script>
 
 <div
-	class="flex h-auto w-screen flex-col bg-gradient-to-t from-blue-200 via-blue-400 to-blue-500 text-gray-700"
+	class="flex h-auto w-screen flex-col bg-gradient-to-t from-pink-200 via-pink-400 to-pink-500 text-gray-700"
 >
 	<!-- <div class="px-10">
 		<h1 class="text-2xl font-bold text-neutral-200">Team Project Board</h1>

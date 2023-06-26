@@ -5,6 +5,7 @@ import TechnologyCard from './ui/TechnologyCard.svelte';
 
 // agile.fans
 import TextBlock from './ui/TextBlock.svelte';
+import ProductCard from './ui/ProductCard.svelte';
 
 
-export { FreeDownload, TechnologyCard, TextBlock };
+export { FreeDownload, TechnologyCard, TextBlock, ProductCard };

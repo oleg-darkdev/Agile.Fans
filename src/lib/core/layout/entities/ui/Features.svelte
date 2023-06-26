@@ -8,7 +8,7 @@
 			<div class="mt-2 grid grid-cols-2 gap-2">
 				<div class="-px-3 flex items-center text-gray-800 ">
 					<svg
-						class="mx-1 h-12 w-12 stroke-blue-500"
+						class="mx-1 h-12 w-12 stroke-pink-500"
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
@@ -22,7 +22,7 @@
 						/>
 					</svg>
 
-					<span class="mx-1 text-blue-600">Lorem ipsum is placeholder text</span>
+					<span class="mx-1 text-pink-600">Lorem ipsum is placeholder text</span>
 				</div>
 			</div>
 		</div>

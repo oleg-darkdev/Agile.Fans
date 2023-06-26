@@ -33,7 +33,7 @@
 								value="Subscribe"
 								name="member[subscribe]"
 								id="member_submit"
-								class="block w-full rounded-lg border border-transparent bg-blue-600 px-5 py-3 text-base font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300 sm:px-10"
+								class="block w-full rounded-lg border border-transparent bg-pink-600 px-5 py-3 text-base font-medium text-white shadow hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300 sm:px-10"
 								>Notify me</button
 							>
 						</div>

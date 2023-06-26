@@ -63,14 +63,12 @@
 
 		<div class=" rounded-xl bg-gray-200  py-4 px-4 text-center">
 			<div
-				class="w-full rounded-lg border bg-gradient-to-r from-blue-500 to-blue-700 p-4  shadow sm:p-8"
+				class="w-full rounded-lg border bg-gradient-to-r from-pink-500 to-pink-700 p-4  shadow sm:p-8"
 			>
 				<div class="mb-4 flex items-center justify-between">
 					<h4 class="my-4 py-4 text-center text-4xl font-bold text-white">Nadchodzące warsztaty</h4>
 
-					<a href="#" class="text-sm font-medium text-white hover:underline ">
-						View all
-					</a>
+					<a href="#" class="text-sm font-medium text-white hover:underline "> View all </a>
 				</div>
 				<div class="flow-root">
 					<ul role="list" class="divide-y divide-gray-700">

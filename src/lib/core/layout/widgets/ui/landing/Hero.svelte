@@ -4,7 +4,7 @@
 </script>
 
 <section>
-	<div class="relative grid h-96 w-full place-items-center bg-blue-500 lg:h-[20rem]">
+	<div class="relative grid h-96 w-full place-items-center bg-pink-500 lg:h-[20rem]">
 		<div class="mx-auto flex flex-col items-center text-center">
 			<h1
 				class="poppins text-4xl font-bold leading-none tracking-tighter text-neutral-600 text-white md:text-6xl"
@@ -32,7 +32,7 @@
 		</div>
 	</div>
 
-	<svg class="fill-blue-500" viewBox="0 0 1440 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg class="fill-pink-500" viewBox="0 0 1440 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M1440 0H0V57C720 0 1440 57 1440 57V0Z" />
 	</svg>
 </section>
@@ -63,7 +63,7 @@
 			<div
 				class="mt-12 mb-16 flex flex-col items-start text-left md:mb-0 lg:w-1/2 lg:flex-grow lg:pl-6 xl:mt-0 xl:pl-24"
 			>
-				<span class="mb-8 text-xs font-bold uppercase tracking-widest text-blue-600">
+				<span class="mb-8 text-xs font-bold uppercase tracking-widest text-pink-600">
 					Lorem impsum
 				</span>
 				<h1
@@ -76,11 +76,11 @@
 					industries for previewing layouts and visual mockups.
 				</p>
 				<div class="mt-0 max-w-7xl flex-col sm:flex lg:mt-6">
-					<div class="prose-md prose">
+					<div class="text-md text">
 						<ul>
 							{#each products as product}
 								<li class="">
-									<a class="text-underline text-gray-500 hover:text-blue-500" href={product.link}
+									<a class="text-underline text-gray-500 hover:text-pink-500" href={product.link}
 										>{product.title}</a
 									>
 								</li>

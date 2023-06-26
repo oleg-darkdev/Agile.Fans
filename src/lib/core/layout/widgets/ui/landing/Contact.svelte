@@ -4,12 +4,12 @@
 
 <section class="mt-12 min-h-screen  ">
 	<div
-		class="container mx-auto flex w-10/12 flex-col rounded-2xl bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 px-6 text-center lg:text-left xl:px-32"
+		class="container mx-auto flex w-10/12 flex-col rounded-2xl bg-gradient-to-r from-pink-600 via-pink-800 to-pink-900 px-6 text-center lg:text-left xl:px-32"
 	>
 		<div class="-my-14 grid items-center lg:grid-cols-2">
 			<div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
 				<div
-					class="relative z-[1] block rounded-lg  px-6 py-12  backdrop-blur-[25px] bg-[hsla(0,0%,5%,0.55)] shadow-black/20 md:px-12 lg:-mr-14"
+					class="relative z-[1] block rounded-lg  bg-[hsla(0,0%,5%,0.55)] px-6  py-12 shadow-black/20 backdrop-blur-[25px] md:px-12 lg:-mr-14"
 				>
 					<h2 class="mt-0 mb-12 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
 						Are you ready <br /><span class="text-danger dark:text-danger-400"
@@ -129,7 +129,7 @@
 
 					<div class="-mx-1.5 mt-4 flex ">
 						<a
-							class="mx-1.5 transform text-white transition-colors duration-300 hover:text-blue-500"
+							class="mx-1.5 transform text-white transition-colors duration-300 hover:text-pink-500"
 							href={social.linkedin}
 						>
 							<svg
@@ -165,7 +165,7 @@
 							<input
 								type="text"
 								placeholder="John Doe"
-								class="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 "
+								class="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-pink-400 focus:outline-none focus:ring focus:ring-pink-300 focus:ring-opacity-40 "
 							/>
 						</div>
 
@@ -174,20 +174,20 @@
 							<input
 								type="email"
 								placeholder="johndoe@example.com"
-								class="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 "
+								class="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-pink-400 focus:outline-none focus:ring focus:ring-pink-300 focus:ring-opacity-40 "
 							/>
 						</div>
 
 						<div class="mt-6 w-full">
 							<label class="mb-2 block text-sm text-gray-600 ">Message</label>
 							<textarea
-								class="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 md:h-48"
+								class="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-pink-400 focus:outline-none focus:ring focus:ring-pink-300 focus:ring-opacity-40 md:h-48"
 								placeholder="Message"
 							/>
 						</div>
 
 						<button
-							class="mt-6 w-full transform rounded-md bg-blue-600 px-6 py-3 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50"
+							class="mt-6 w-full transform rounded-md bg-pink-600 px-6 py-3 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-pink-500 focus:outline-none focus:ring focus:ring-pink-400 focus:ring-opacity-50"
 						>
 							get in touch
 						</button>

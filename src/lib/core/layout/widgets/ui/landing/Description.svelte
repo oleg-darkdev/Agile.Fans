@@ -6,7 +6,7 @@
 
 <section>
 	<div class=" mx-auto flex flex-col items-center px-5 py-2">
-		<div class="prose mb-2 flex w-full max-w-max flex-col text-left lg:max-w-2xl">
+		<div class="text mb-2 flex w-full max-w-max flex-col text-left lg:max-w-2xl">
 			<div class="mx-auto w-full">
 				<h1 class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 				<h2 class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -21,18 +21,18 @@
 	</div>
 
 	<div class=" w-full items-center px-5">
-		<div class="prose mx-auto flex w-full max-w-max flex-wrap justify-center lg:max-w-3xl">
+		<div class="text mx-auto flex w-full max-w-max flex-wrap justify-center lg:max-w-3xl">
 			<div class="relative justify-center lg:px-4">
 				<div class="lg:grid lg:grid-cols-2">
 					{#each products as product}
-						<div class="m-4 rounded-xl p-4 hover:bg-blue-100">
+						<div class="m-4 rounded-xl p-4 hover:bg-pink-100">
 							<h1 class="text-gray-500">{product.title}</h1>
 							<p class="text-gray-400">
 								{product.shortDesc}
 							</p>
 							<a
 								href="#{product.anchor}"
-								class="mt-0 inline-flex items-center font-semibold text-blue-600 hover:text-neutral-600 lg:mb-0"
+								class="mt-0 inline-flex items-center font-semibold text-pink-600 hover:text-neutral-600 lg:mb-0"
 								title="read more"
 							>
 								Read More »

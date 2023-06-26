@@ -60,7 +60,7 @@
 			class=" -mt-[70px] w-full shrink-0 grow-0 basis-auto px-4 md:-mt-0 lg:-mt-0 lg:w-7/12 lg:px-4 lg:px-0"
 		>
 			<div
-				class="start-start flex h-full flex-col rounded-lg bg-primary py-8 px-4 text-center text-white md:p-6 lg:p-6 lg:pl-12 lg:text-left"
+				class="start-start flex h-full flex-col rounded-lg bg-pink-700 py-8 px-4 text-center text-white md:p-6 lg:p-6 lg:pl-12 lg:text-left"
 			>
 				<div class="lg:pl-12">
 					<h2 class="mb-6 text-3xl font-bold">Pozostały pytania ?</h2>
@@ -76,11 +76,11 @@
 				</div>
 				<!-- <a
 					href="/workshops"
-					class="group  flex w-full flex-row justify-center rounded-lg border-2 border-neutral-50 bg-white px-7 py-4 text-sm font-semibold uppercase leading-normal text-blue-600 transition duration-150 ease-in-out hover:border-neutral-100  hover:bg-neutral-100 hover:bg-opacity-10 hover:text-white focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:font-medium lg:w-7/12 lg:text-2xl lg:text-sm lg:font-medium"
+					class="group  flex w-full flex-row justify-center rounded-lg border-2 border-neutral-50 bg-white px-7 py-4 text-sm font-semibold uppercase leading-normal text-pink-600 transition duration-150 ease-in-out hover:border-neutral-100  hover:bg-neutral-100 hover:bg-opacity-10 hover:text-white focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:font-medium lg:w-7/12 lg:text-2xl lg:text-sm lg:font-medium"
 				>
 					Rejestracja na warsztaty <svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="hidden-sm mx-4 h-16 w-16 fill-blue-600 group-hover:fill-white"
+						class="hidden-sm mx-4 h-16 w-16 fill-pink-600 group-hover:fill-white"
 						fill="none"
 						viewBox="0 0 24 24"
 						><path

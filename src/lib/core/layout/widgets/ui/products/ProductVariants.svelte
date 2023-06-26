@@ -61,7 +61,7 @@
 
 							<div class="absolute left-0 bottom-2 flex gap-2">
 								<span
-									class="rounded-r-lg bg-blue-500 px-3 py-1.5 text-sm font-semibold uppercase tracking-wider text-white"
+									class="rounded-r-lg bg-pink-500 px-3 py-1.5 text-sm font-semibold uppercase tracking-wider text-white"
 									>-50%</span
 								>
 								<span
@@ -82,7 +82,7 @@
 									>część zestawu
 									<a
 										href="#"
-										class="text-xs font-semibold text-blue-600 transition duration-100 hover:text-gray-500 lg:text-xl"
+										class="text-xs font-semibold text-pink-600 transition duration-100 hover:text-gray-500 lg:text-xl"
 										>agileKIT</a
 									>
 								</span>
@@ -90,7 +90,7 @@
 
 							<div class="flex flex-col items-end">
 								<span class="font-bold text-gray-600 lg:text-lg">$19.99</span>
-								<span class="text-sm text-blue-500 line-through">$39.99</span>
+								<span class="text-sm text-pink-500 line-through">$39.99</span>
 							</div>
 						</div>
 						<slot />

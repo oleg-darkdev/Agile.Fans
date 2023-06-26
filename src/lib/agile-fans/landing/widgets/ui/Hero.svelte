@@ -72,7 +72,7 @@
 			<img
 				alt="Agile.fans - banner"
 				src="https://www.giftedguru.com/wp-content/uploads/2020/10/kanban-board-nearly-done-888x1024.jpg"
-				class="border-2 border-black fancy-border-radius rotate-lg-6 w-full  rounded-2xl shadow-lg shadow-black/20"
+				class=" fancy-border-radius rotate-lg-6 w-full  rounded-2xl shadow-lg shadow-black/20"
 			/>
 		</div>
 		<div
@@ -82,7 +82,7 @@
 			<h1
 				class="mb-4 text-4xl font-bold leading-none tracking-tighter text-white md:text-7xl lg:text-5xl"
 			>
-				<span class="text-black font-black">#{productData.shortDesc.title}</span>: One goal -
+				<span class="text-pink-600 font-black">#{productData.shortDesc.title}</span>: One goal -
 				more tools.
 			</h1>
 			<p class="mb-2 max-w-2xl text-left leading-relaxed text-neutral-100 ">

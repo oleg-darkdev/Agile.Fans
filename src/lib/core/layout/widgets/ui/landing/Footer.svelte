@@ -114,8 +114,8 @@
 				<div class="mt-4 flex flex-col items-start space-y-4">
 					{#each arrayOfProducts.slice(0, 6) as product}
 						<a
-							href="./products/{product.shortDesc.link}"
-							class="text-gray-700 transition-colors duration-200 hover:text-pink-600 hover:underline  "
+							href="/products/{product.shortDesc.link}"
+							class="text-neutral-400 transition-colors duration-200 hover:text-pink-600 hover:underline  "
 							>{product.shortDesc.title}</a
 						>
 					{/each}
@@ -128,8 +128,8 @@
 				<div class="mt-4 flex flex-col items-start space-y-4">
 					{#each arrayOfProducts.slice(0, 6) as product}
 						<a
-							href="./products/{product.shortDesc.link}"
-							class="text-gray-700 transition-colors duration-200 hover:text-pink-600 hover:underline  "
+							href="/products/{product.shortDesc.link}"
+							class="text-neutral-400 transition-colors duration-200 hover:text-pink-600 hover:underline  "
 							>{product.shortDesc.title}</a
 						>
 					{/each}

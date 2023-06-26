@@ -1,4 +1,5 @@
 import defaultHeader from '../../headersLinks/defaultHeader';
+import productsIcons from '../../productsIcons';
 
 import faq from './faq';
 import stats from './stats';
@@ -14,6 +15,7 @@ const product = {
 		text: 'Empowering your team may spend less time controlling, deciding, and supervising what everyone is doing and more time on other projects. It entails being available to concentrate on other tasks.',
 		title: '10 Motivators',
 		logo: '/ten/logo.svg',
+		icon: productsIcons.ten.icon,
 		promo: '',
 
 		banner:

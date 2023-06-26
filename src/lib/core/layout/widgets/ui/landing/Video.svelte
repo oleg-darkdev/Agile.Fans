@@ -60,10 +60,10 @@
 			class=" -mt-[70px] w-full shrink-0 grow-0 basis-auto px-4 md:-mt-0 lg:-mt-0 lg:w-7/12 lg:px-4 lg:px-0"
 		>
 			<div
-				class="start-start flex h-full flex-col rounded-lg bg-pink-700 py-8 px-4 text-center text-white md:p-6 lg:p-6 lg:pl-12 lg:text-left"
+				class="start-start flex h-full flex-col rounded-lg bg-pink-600 py-8 px-4 text-center text-white md:p-6 lg:p-6 lg:pl-12 lg:text-left"
 			>
 				<div class="lg:pl-12">
-					<h2 class="mb-6 text-3xl font-bold">Pozostały pytania ?</h2>
+					<h2 class="lg:mb-6 mb-2 lg:text-3xl md:text-3xl text-2xl font-bold">Pozostały pytania ?</h2>
 					<p class="mb-2 pb-2 lg:pb-0">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, sint, repellat vel quo
 						quisquam accusamus in qui at ipsa enim quibusdam illo laboriosam omnis. Labore itaque

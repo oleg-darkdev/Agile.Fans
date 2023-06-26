@@ -1,4 +1,6 @@
 import defaultHeader from '../../headersLinks/defaultHeader';
+import productsIcons from '../../productsIcons';
+
 
 import faq from './faq';
 import stats from './stats';
@@ -14,6 +16,7 @@ const product = {
 		text: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
 		title: 'Scrum.Kit',
 		logo: '',
+		icon: productsIcons.scrumKit.icon,
 		promo:
 			'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
 

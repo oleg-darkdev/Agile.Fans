@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
-	export let products;
 	import anime from 'animejs/lib/anime.min.js';
+
 	let slider = '',
 		img = '',
 		content = '';
@@ -209,8 +209,8 @@
 <div class="" bind:this={slider}>
 	<div class="slider">
 		<div class="nav">
-			<div class="next" />
-			<div class="prev" />
+			<div class="next bg-rose-700" />
+			<div class="prev bg-rose-700" />
 			<!-- <a href="" class="explore-btn">Czytaj więcej</a> -->
 		</div>
 
@@ -221,19 +221,19 @@
 			<div class="imgs">
 				<div class="grid " bind:this={img}>
 					<div class="img img-1">
-						<img src="" />
+						<img src="/agile-fans/landing/slider_1.jpg" />
 					</div>
 
 					<div class="img img-2">
-						<img src="" />
+						<img src="/agile-fans/landing/slider_2.jpg" />
 					</div>
 
 					<div class="img img-3">
-						<img src="" />
+						<img src="/agile-fans/landing/slider_3.jpg" />
 					</div>
 
 					<div class="img img-4">
-						<img src="" />
+						<img src="/agile-fans/landing/slider_4.jpg" />
 					</div>
 				</div>
 			</div>
@@ -245,19 +245,19 @@
 			<div class="imgs">
 				<div class="grid " bind:this={img}>
 					<div class="img img-1">
-						<img src="" />
+						<img src="/agile-fans/landing/slider_1.jpg" />
 					</div>
 
 					<div class="img img-2">
-						<img src="" />
+						<img src="/agile-fans/landing/slider_2.jpg" />
 					</div>
 
 					<div class="img img-3">
-						<img src="" />
+						<img src="/agile-fans/landing/slider_3.jpg" />
 					</div>
 
 					<div class="img img-4">
-						<img src="" />
+						<img src="/agile-fans/landing/slider_4.jpg" />
 					</div>
 				</div>
 			</div>
@@ -387,14 +387,14 @@
 	}
 	.slider .nav .next {
 		right: 6rem;
-		background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M 19 8 L 19 11 L 1 11 L 1 13 L 19 13 L 19 16 L 23 12 L 19 8 z' fill='white'/%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#be123c' %3E%3Cpath d='M 19 8 L 19 11 L 1 11 L 1 13 L 19 13 L 19 16 L 23 12 L 19 8 z' fill='#be123c'/%3E%3C/svg%3E");
 	}
 	.slider .nav .next:hover {
 		transform: translateX(0.5rem);
 	}
 	.slider .nav .prev {
 		left: 6rem;
-		background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M 5 8 L 1 12 L 5 16 L 5 13 L 23 13 L 23 11 L 5 11 L 5 8 z' fill='white'/%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#be123c' %3E%3Cpath d='M 5 8 L 1 12 L 5 16 L 5 13 L 23 13 L 23 11 L 5 11 L 5 8 z' fill='#be123c'/%3E%3C/svg%3E");
 	}
 	.slider .nav .prev:hover {
 		transform: translateX(-0.5rem);

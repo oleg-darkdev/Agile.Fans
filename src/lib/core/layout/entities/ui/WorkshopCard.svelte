@@ -25,7 +25,7 @@
 
 <!--  -->
 <div class="mb-6 lg:mb-0">
-	<div class="relative block rounded-lg bg-gray-800">
+	<div class="relative block rounded-lg bg-[hsla(0,0%,5%,0.7)]">
 		<div class="flex">
 			<div
 				class="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
@@ -82,7 +82,7 @@
 		<div style="justify-content: space-around;" class="flex flex-row flex-wrap items-center ">
 			<div class="avatar-group mb-6 mt-4 flex flex-row flex-wrap justify-start  -space-x-4 pl-6 ">
 				{#each communities as client}
-					<div class="avatar bg-blue-600 ">
+					<div class="avatar bg-rose-600 ">
 						<div class="w-10">
 							<img class="text-white" src={client.img} alt={client.title} />
 						</div>
@@ -90,7 +90,7 @@
 				{/each}
 
 				<div class="placeholder avatar">
-					<div class="w-10 bg-blue-600 text-neutral-content">
+					<div class="w-10 bg-rose-600 text-neutral-content">
 						<span class="text-xl  font-bold text-white">{communities.length}+</span>
 					</div>
 				</div>

@@ -1,7 +1,8 @@
 <script>
 	import { TextBlock } from '../lib/agile-fans/landing/entities';
 	import { Slider } from '../lib/agile-fans/landing/widgets';
-	import { WorkshopCard } from '../lib/core/layout/entities';
+	import { WorkshopCard, FeaturesForProductType } from '../lib/core/layout/entities';
+	import { ProductVariants } from '../lib/core/layout/widgets';
 
 	const descAgileFans = [
 		`A new era in hybrid board educational boardgames. An exceptional combination of the better of
@@ -76,86 +77,38 @@
 	muted
 	loop
 >
-	<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.webm" type="video/webm" />
-	<source src="http://thenewcode.com/assets/videos/fashion.mp4" type="video/mp4" />
+	<!-- <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.webm" type="video/webm" /> -->
+	<source src="/agile-fans/landing/video.mp4" type="video/mp4" />
 </video>
 
-<!-- bg-gradient-to-r from-blue-500 to-blue-700  -->
+<!-- bg-gradient-to-r from-rose-500 to-rose-700  -->
 
 <section class="min-h-screen">
 	<div
-		class="mix-blend-mode  mt-[10%] mb-12 flex w-full flex-col items-center justify-center text-center"
+		class="mix-blend-mode  mt-[4%]  flex w-full flex-col items-center justify-center text-center"
 	>
-		<header class="mb-40">
-			<nav class="  -mt-40  w-full  ">
-				<div class="flex w-full md:order-2 md:py-2 lg:w-[200px] lg:py-2">
-					<!-- <div class="justify-content-sm flex flex-row">
-				<BtnLogIn />
-				<BtnSignIn />
-			</div> -->
-
-					<button
-						data-collapse-toggle="navbar-sticky"
-						type="button"
-						class="mx-2 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200  md:hidden"
-						aria-controls="navbar-sticky"
-						aria-expanded="false"
-						on:click={() => {
-							showMenu = !showMenu;
-							console.log(showMenu);
-						}}
-					>
-						<span class="sr-only">Open main menu</span>
-						<svg
-							class="h-6 w-6 fill-white"
-							aria-hidden="true"
-							viewBox="0 0 20 20"
-							xmlns="http://www.w3.org/2000/svg"
-							><path
-								fill-rule="evenodd"
-								d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-								clip-rule="evenodd"
-							/></svg
+		<nav class="w-auto mb-12">
+			<ul
+				class="mt-4 flex flex-col rounded-lg p-4   md:mt-0 md:flex-row md:space-x-8 md:border-0  md:p-0 "
+			>
+				{#each productData.headerLinks as link}
+					<li>
+						<a
+							href={link.link}
+							class="block rounded  py-2 pl-3 pr-4 text-lg font-bold  text-white hover:text-rose-600 md:p-0"
+							>{link.title}</a
 						>
-					</button>
-				</div>
-
-				<div class="hidden w-full items-center justify-center md:order-1 md:flex md:w-auto">
-					<ul
-						class="mt-4 flex flex-col rounded-lg p-4   md:mt-0 md:flex-row md:space-x-8 md:border-0  md:p-0 "
-					>
-						{#each productData.headerLinks as link}
-							<li>
-								<a
-									href={link.link}
-									class="block rounded  py-2 pl-3 pr-4 text-lg font-bold  text-white hover:text-rose-600 md:p-0"
-									>{link.title}</a
-								>
-							</li>
-						{/each}
-					</ul>
-				</div>
-
-				<div class=" w-full {showMenu ? 'hidden' : ''} md:hidden lg:hidden">
-					{#each productData.headerLinks as link}
-						<div on:click={() => (showMenu = !showMenu)}>
-							<a
-								href={link.link}
-								class="block w-full  rounded py-2 pl-3 pr-4 text-lg font-bold text-white  focus:text-gray-800 md:p-0"
-								>{link.title}</a
-							>
-						</div>
-					{/each}
-				</div>
-			</nav>
-		</header>
+					</li>
+				{/each}
+			</ul>
+		</nav>
 		<h2
 			class="max-w-5xl text-center text-4xl font-bold leading-none tracking-tighter text-neutral-50 md:text-5xl lg:max-w-7xl lg:text-6xl"
 		>
-			Informacje o <span class="font-black text-rose-500">#Agile.fans</span>
+			Witamy w <span class="font-black text-rose-500">#Agile.fans</span>
 		</h2>
 
-		<p class=" mx-auto mt-8 max-w-xl text-center text-2xl  leading-relaxed text-gray-200">
+		<!-- <p class=" mx-auto mt-8 max-w-xl text-center text-2xl  leading-relaxed text-gray-200">
 			Przyspieszanie globalnego procesu przechodzenia na zrównoważone źródła energii
 		</p>
 
@@ -164,10 +117,10 @@
 			title="read more"
 		>
 			Read more about the offer »
-		</a>
+		</a> -->
 	</div>
 
-	<div class="mt-[14%] flex w-full justify-center ">
+	<div class="mt-[24%] flex w-full justify-center ">
 		<div class="stats shadow">
 			<div style="" class="mix-blend-mode stat">
 				<div class="stat-figure text-primary">
@@ -175,7 +128,7 @@
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
-						class="inline-block h-8 w-8 stroke-pink-600"
+						class="inline-block h-8 w-8 stroke-rose-600"
 						><path
 							stroke-linecap="round"
 							stroke-linejoin="round"
@@ -185,7 +138,7 @@
 					>
 				</div>
 				<div class="stat-title text-white">Lorem impsum</div>
-				<div class="stat-value text-pink-600">25.6K</div>
+				<div class="stat-value text-rose-600">25.6K</div>
 				<div class="stat-desc text-neutral-100">Lorem impsum textarea</div>
 			</div>
 
@@ -195,7 +148,7 @@
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
-						class="inline-block h-8 w-8 stroke-pink-500"
+						class="inline-block h-8 w-8 stroke-rose-500"
 						><path
 							stroke-linecap="round"
 							stroke-linejoin="round"
@@ -215,7 +168,7 @@
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
-						class="inline-block h-8 w-8 stroke-pink-500"
+						class="inline-block h-8 w-8 stroke-rose-500"
 						><path
 							stroke-linecap="round"
 							stroke-linejoin="round"
@@ -225,7 +178,7 @@
 					>
 				</div>
 				<div class="stat-title text-white">Lorem impsum</div>
-				<div class="stat-value text-pink-600">25.6K</div>
+				<div class="stat-value text-rose-600">25.6K</div>
 				<div class="stat-desc text-neutral-100">Lorem impsum textarea</div>
 			</div>
 		</div>
@@ -234,30 +187,29 @@
 
 <section class=" mx-auto mb-24 h-screen md:px-6">
 	<TextBlock
-		bg="bg-[hsla(0,0%,5%,0.7)]"
 		mt="0"
 		title={`Agile.fans: <br class="hidden lg:block"> One goal - more tools.`}
 		desc={descAgileFans}
 	>
-		<div slot="bottom">
+		<!-- <div slot="bottom">
 			<div class="mx-auto mt-6 flex w-full max-w-2xl justify-center gap-2">
 				<div class="mt-3 rounded-lg sm:mt-0 sm:ml-3">
 					<a
 						href="/"
 						target="_blank"
-						class="block transform items-center rounded-xl border-2 border-white px-5 py-3.5 text-center text-base font-medium text-blue-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 lg:px-10"
-						>See features</a
+						class="block transform items-center rounded-xl border-2 border-white px-5 py-3.5 text-center text-base font-medium text-white hover:bg-rose-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 lg:px-10"
+						>Wszystkie warsztaty</a
 					>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</TextBlock>
 	<div
-		class="z-1 -mt-[20%] h-[90%] w-full overflow-hidden rounded-xl bg-[url('/agile-fans/landing/boardgames_xl.jpg')] bg-cover bg-fixed  bg-[50%] bg-no-repeat"
+		class="z-1 -mt-[20%] h-[90%] w-full overflow-hidden rounded-xl bg-[url('/agile-fans/landing/more_tools.jpg')] bg-cover bg-fixed  bg-[50%] bg-no-repeat"
 	/>
 </section>
-
-<section class="mt-24 flex flex-col items-center justify-center pt-24">
+<!--
+<section class="mt-64 flex flex-col items-center justify-center pt-24">
 	<div class=" mb-12 flex flex-col text-center lg:max-w-7xl">
 		<h2
 			class="text-center text-4xl font-bold leading-none tracking-tighter text-gray-600 md:text-5xl   lg:text-6xl"
@@ -265,14 +217,14 @@
 			Zasilamy Ziemię
 		</h2>
 
-		<p class=" mx-auto mt-8 max-w-5xl text-center text-2xl  leading-relaxed text-gray-500">
+		<p class=" mx-auto mt-8 max-w-5xl text-center text-2xl  leading-relaxed text-gray-400">
 			Projektujemy ekologiczne systemy, które są masowo skalowalne — co daje największe możliwe
 			korzyści dla środowiska. Nasze produkty do wytwarzania i magazynowania energii współpracują z
 			naszymi pojazdami elektrycznymi, aby wzmocnić ich wpływ.
 		</p>
 	</div>
 	<Slider />
-</section>
+</section> -->
 
 <section>
 	<video
@@ -283,14 +235,10 @@
 		muted
 		loop
 	>
-		<source
-			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.webm"
-			type="video/webm"
-		/>
-		<source src="http://thenewcode.com/assets/videos/fashion.mp4" type="video/mp4" />
+		<source src="/agile-fans/landing/video.mp4" type="video/mp4" />
 	</video>
+
 	<TextBlock
-		bg="bg-[hsla(0,0%,5%,0.7)]"
 		mt="20%"
 		title={`Spraw, by było to (absurdalnie) zabawne`}
 		desc={[
@@ -303,6 +251,10 @@
 		]}
 	/>
 </section>
+
+<ProductVariants>
+	<FeaturesForProductType />
+</ProductVariants>
 
 <section class="py-4 sm:px-6 md:px-4 md:px-12 lg:px-4 lg:px-24 lg:py-12">
 	<!-- Jumbotron -->
@@ -340,10 +292,8 @@
 	<div
 		class=" relative h-[60%] overflow-hidden rounded-xl bg-[url('/agile-fans/landing/community.jpg')] bg-cover bg-fixed  bg-[50%] bg-no-repeat"
 	/>
+	<!-- bg-gradient-to-tr from-[hsla(330,81%,60%,0.3)] to-[hsla(347,77%,50%,0.3)] -->
 	<TextBlock
-		bg="bg-gradient-to-tr from-[hsla(274,87%,21%,0.4)] to-rose-700"
-		titleColor="text-white"
-		descColor="text-gray-100"
 		mt="20%"
 		title={`Społeczność <span class='text-rose-500 font-black'>#Agile.fans</span>`}
 		desc={[
@@ -356,8 +306,8 @@
 					<a
 						href="/"
 						target="_blank"
-						class="block transform items-center rounded-xl border-2 border-white px-5 py-3.5 text-center text-base font-medium text-blue-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 lg:px-10"
-						>See features</a
+						class="block transform items-center rounded-xl border-2 border-white px-5 py-3.5 text-center text-base font-medium text-white shadow-md transition duration-500 ease-in-out hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 lg:px-10"
+						>Wszystkie warsztaty</a
 					>
 				</div>
 			</div>

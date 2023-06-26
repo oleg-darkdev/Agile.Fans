@@ -3,7 +3,6 @@ const defaultHeader = [
 	// 	title: 'Shop',
 	// 	link: '/shop'
 	// },
-
 	{
 		title: 'O produkcie',
 		link: '#about'
@@ -17,18 +16,18 @@ const defaultHeader = [
 		title: 'FAQ',
 		link: '#faq'
 	},
-	{
-		title: 'Price',
-		link: '#price'
-	},
-	{
-		title: 'Contact',
-		link: '#contact'
-	},
+	// {
+	// 	title: 'Price',
+	// 	link: '#price'
+	// },
+	// {
+	// 	title: 'Contact',
+	// 	link: '#contact'
+	// },
 
 	{
 		title: 'Web Aplikacja',
-		link: '/'
+		link: '/demo'
 	}
 ];
 

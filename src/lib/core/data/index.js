@@ -1,7 +1,5 @@
-// DB 
+// DB
 import kanbanKitBoardModel from './kanbanKit/kanbanKitBoardModel.js';
-
-
 
 // end DB
 

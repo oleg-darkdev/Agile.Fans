@@ -2,7 +2,7 @@
 	import { TextBlock } from '../lib/agile-fans/landing/entities';
 	import { Slider } from '../lib/agile-fans/landing/widgets';
 	import { WorkshopCard, FeaturesForProductType } from '../lib/core/layout/entities';
-	import { ProductVariants } from '../lib/core/layout/widgets';
+	import { ProductVariants, FAQ } from '../lib/core/layout/widgets';
 
 	const descAgileFans = [
 		`A new era in hybrid board educational boardgames. An exceptional combination of the better of
@@ -87,7 +87,7 @@
 	<div
 		class="mix-blend-mode  mt-[4%]  flex w-full flex-col items-center justify-center text-center"
 	>
-		<nav class="w-auto mb-12">
+		<nav class="mb-12 w-auto">
 			<ul
 				class="mt-4 flex flex-col rounded-lg p-4   md:mt-0 md:flex-row md:space-x-8 md:border-0  md:p-0 "
 			>
@@ -186,6 +186,7 @@
 </section>
 
 <section class=" mx-auto mb-24 h-screen md:px-6">
+	<a name="about" />
 	<TextBlock
 		mt="0"
 		title={`Agile.fans: <br class="hidden lg:block"> One goal - more tools.`}
@@ -292,6 +293,7 @@
 	<div
 		class=" relative h-[60%] overflow-hidden rounded-xl bg-[url('/agile-fans/landing/community.jpg')] bg-cover bg-fixed  bg-[50%] bg-no-repeat"
 	/>
+	<a name="workshops" />
 	<!-- bg-gradient-to-tr from-[hsla(330,81%,60%,0.3)] to-[hsla(347,77%,50%,0.3)] -->
 	<TextBlock
 		mt="20%"
@@ -322,6 +324,9 @@
 		{/each}
 	</div>
 </section>
+
+// faq
+<FAQ />
 
 <style>
 	@media (max-width: 640px) {

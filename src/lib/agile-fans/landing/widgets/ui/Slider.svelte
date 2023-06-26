@@ -216,7 +216,7 @@
 
 		<div class="item is-active">
 			<div class="content" bind:this={content}>
-				<h2 class="wrap">Lorem</h2>
+				<h2 class="wrap text-rose-600">Lorem</h2>
 			</div>
 			<div class="imgs">
 				<div class="grid " bind:this={img}>

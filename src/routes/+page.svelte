@@ -60,6 +60,12 @@
 			desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.'
 		}
 	];
+
+	import { productsList } from '../lib/core/data';
+
+	const productData = productsList.agileKit;
+
+	let showMenu = false;
 </script>
 
 <video
@@ -73,53 +79,80 @@
 	<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.webm" type="video/webm" />
 	<source src="http://thenewcode.com/assets/videos/fashion.mp4" type="video/mp4" />
 </video>
-<!--
-<header>
-	<h1>ZIGGY</h1>
-	<nav>
-		<a href="#">Men</a>
-		<a href="#">Women</a>
-		<a href="#">Stores</a>
-		<a href="#">Contact</a>
-	</nav>
-</header> -->
-
-<header>
-	<!-- спиздить стандартный хеадер и сделать его прозрачным -->
-</header>
 
 <!-- bg-gradient-to-r from-blue-500 to-blue-700  -->
 
 <section class="min-h-screen">
-	<div class="mix-blend-mode  mt-[4%] mb-12 flex w-full flex-col text-center">
-		<div
-			class="mx-auto mb-5 inline-flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-full bg-gray-50 text-blue-600"
-		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				class="icon icon-tabler icon-tabler-aperture h-10 w-10"
-				width="24"
-				height="24"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				stroke="currentColor"
-				fill="none"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			>
-				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-				<circle cx="12" cy="12" r="9" />
-				<line x1="3.6" y1="15" x2="14.15" y2="15" />
-				<line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)" />
-				<line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)" />
-				<line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)" />
-				<line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)" />
-			</svg>
-		</div>
+	<div
+		class="mix-blend-mode  mt-[10%] mb-12 flex w-full flex-col items-center justify-center text-center"
+	>
+		<header class="mb-40">
+			<nav class="  -mt-40  w-full  ">
+				<div class="flex w-full md:order-2 md:py-2 lg:w-[200px] lg:py-2">
+					<!-- <div class="justify-content-sm flex flex-row">
+				<BtnLogIn />
+				<BtnSignIn />
+			</div> -->
+
+					<button
+						data-collapse-toggle="navbar-sticky"
+						type="button"
+						class="mx-2 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200  md:hidden"
+						aria-controls="navbar-sticky"
+						aria-expanded="false"
+						on:click={() => {
+							showMenu = !showMenu;
+							console.log(showMenu);
+						}}
+					>
+						<span class="sr-only">Open main menu</span>
+						<svg
+							class="h-6 w-6 fill-white"
+							aria-hidden="true"
+							viewBox="0 0 20 20"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								fill-rule="evenodd"
+								d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+								clip-rule="evenodd"
+							/></svg
+						>
+					</button>
+				</div>
+
+				<div class="hidden w-full items-center justify-center md:order-1 md:flex md:w-auto">
+					<ul
+						class="mt-4 flex flex-col rounded-lg p-4   md:mt-0 md:flex-row md:space-x-8 md:border-0  md:p-0 "
+					>
+						{#each productData.headerLinks as link}
+							<li>
+								<a
+									href={link.link}
+									class="block rounded  py-2 pl-3 pr-4 text-lg font-bold  text-white hover:text-rose-600 md:p-0"
+									>{link.title}</a
+								>
+							</li>
+						{/each}
+					</ul>
+				</div>
+
+				<div class=" w-full {showMenu ? 'hidden' : ''} md:hidden lg:hidden">
+					{#each productData.headerLinks as link}
+						<div on:click={() => (showMenu = !showMenu)}>
+							<a
+								href={link.link}
+								class="block w-full  rounded py-2 pl-3 pr-4 text-lg font-bold text-white  focus:text-gray-800 md:p-0"
+								>{link.title}</a
+							>
+						</div>
+					{/each}
+				</div>
+			</nav>
+		</header>
 		<h2
 			class="max-w-5xl text-center text-4xl font-bold leading-none tracking-tighter text-neutral-50 md:text-5xl lg:max-w-7xl lg:text-6xl"
 		>
-			Informacje o nas
+			Informacje o <span class="font-black text-rose-500">#Agile.fans</span>
 		</h2>
 
 		<p class=" mx-auto mt-8 max-w-xl text-center text-2xl  leading-relaxed text-gray-200">
@@ -127,7 +160,7 @@
 		</p>
 
 		<a
-			class="text-1xl mx-auto mt-8 font-semibold text-blue-600 hover:text-neutral-600"
+			class="text-1xl mx-auto mt-8 font-semibold text-rose-600 hover:text-neutral-50"
 			title="read more"
 		>
 			Read more about the offer »
@@ -136,13 +169,13 @@
 
 	<div class="mt-[14%] flex w-full justify-center ">
 		<div class="stats shadow">
-			<div style="mix-blend-mode: overlay;" class="stat">
+			<div style="" class="mix-blend-mode stat">
 				<div class="stat-figure text-primary">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
-						class="inline-block h-8 w-8 stroke-current"
+						class="inline-block h-8 w-8 stroke-pink-600"
 						><path
 							stroke-linecap="round"
 							stroke-linejoin="round"
@@ -151,18 +184,18 @@
 						/></svg
 					>
 				</div>
-				<div class="stat-title">Total Likes</div>
-				<div class="stat-value text-primary">25.6K</div>
-				<div class="stat-desc">21% more than last month</div>
+				<div class="stat-title text-white">Lorem impsum</div>
+				<div class="stat-value text-pink-600">25.6K</div>
+				<div class="stat-desc text-neutral-100">Lorem impsum textarea</div>
 			</div>
 
-			<div class="stat">
+			<div style="" class="mix-blend-mode stat">
 				<div class="stat-figure text-secondary">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
-						class="inline-block h-8 w-8 stroke-current"
+						class="inline-block h-8 w-8 stroke-pink-500"
 						><path
 							stroke-linecap="round"
 							stroke-linejoin="round"
@@ -171,33 +204,38 @@
 						/></svg
 					>
 				</div>
-				<div class="stat-title">Page Views</div>
-				<div class="stat-value text-secondary">2.6M</div>
-				<div class="stat-desc">21% more than last month</div>
+				<div class="stat-title text-white">Lorem impsum</div>
+				<div class="stat-value text-white">25.6K</div>
+				<div class="stat-desc text-neutral-100">Lorem impsum textarea</div>
 			</div>
 
-			<div class="stat">
-				<div class="stat-figure text-secondary">
-					<div class="online avatar">
-						<div class="w-16 rounded-full">
-							<img src="  " />
-						</div>
-					</div>
+			<div style="" class="mix-blend-mode stat">
+				<div class="stat-figure text-primary">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						class="inline-block h-8 w-8 stroke-pink-500"
+						><path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+						/></svg
+					>
 				</div>
-				<div class="stat-value">86%</div>
-				<div class="stat-title">Tasks done</div>
-				<div class="stat-desc text-secondary">31 tasks remaining</div>
+				<div class="stat-title text-white">Lorem impsum</div>
+				<div class="stat-value text-pink-600">25.6K</div>
+				<div class="stat-desc text-neutral-100">Lorem impsum textarea</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="container my-4 mx-auto h-screen md:px-6">
-	<div
-		class="relative h-[90%] overflow-hidden rounded-xl bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/284.jpg')] bg-cover bg-[50%] bg-no-repeat"
-	/>
+<section class=" mx-auto mb-24 h-screen md:px-6">
 	<TextBlock
-		mt="50%"
+		bg="bg-[hsla(0,0%,5%,0.7)]"
+		mt="0"
 		title={`Agile.fans: <br class="hidden lg:block"> One goal - more tools.`}
 		desc={descAgileFans}
 	>
@@ -214,17 +252,20 @@
 			</div>
 		</div>
 	</TextBlock>
+	<div
+		class="z-1 -mt-[20%] h-[90%] w-full overflow-hidden rounded-xl bg-[url('/agile-fans/landing/boardgames_xl.jpg')] bg-cover bg-fixed  bg-[50%] bg-no-repeat"
+	/>
 </section>
 
-<section class="mb-24 flex flex-col items-center justify-center">
+<section class="mt-24 flex flex-col items-center justify-center pt-24">
 	<div class=" mb-12 flex flex-col text-center lg:max-w-7xl">
 		<h2
-			class="text-center text-4xl font-bold leading-none tracking-tighter text-neutral-50 md:text-5xl   lg:text-6xl"
+			class="text-center text-4xl font-bold leading-none tracking-tighter text-gray-600 md:text-5xl   lg:text-6xl"
 		>
 			Zasilamy Ziemię
 		</h2>
 
-		<p class=" mx-auto mt-8 max-w-5xl text-center text-2xl  leading-relaxed text-gray-200">
+		<p class=" mx-auto mt-8 max-w-5xl text-center text-2xl  leading-relaxed text-gray-500">
 			Projektujemy ekologiczne systemy, które są masowo skalowalne — co daje największe możliwe
 			korzyści dla środowiska. Nasze produkty do wytwarzania i magazynowania energii współpracują z
 			naszymi pojazdami elektrycznymi, aby wzmocnić ich wpływ.
@@ -248,24 +289,19 @@
 		/>
 		<source src="http://thenewcode.com/assets/videos/fashion.mp4" type="video/mp4" />
 	</video>
-	<div class="container -mt-[20%] flex items-center justify-center px-6 md:px-12">
-		<div
-			class="block max-w-5xl  rounded-lg  bg-[hsla(0,0%,5%,0.7)] px-6  py-12  backdrop-blur-[30px] md:py-16 md:px-12"
-		>
-			<h2 class="mt-2 mb-12 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
-				Spraw, by było to (absurdalnie) zabawne
-			</h2>
-
-			<p class="mb-2 max-w-2xl text-left leading-relaxed text-neutral-100 ">
-				Nasze pojazdy należą do najbezpieczniejszych na świecie. Naszym celem jest nie tylko
+	<TextBlock
+		bg="bg-[hsla(0,0%,5%,0.7)]"
+		mt="20%"
+		title={`Spraw, by było to (absurdalnie) zabawne`}
+		desc={[
+			`Nasze pojazdy należą do najbezpieczniejszych na świecie. Naszym celem jest nie tylko
 				zapewnienie bezpieczeństwa, ale również zadbanie o to, by każda Tesla sprawiała największą
 				frajdę, jaką można mieć w pojeździe. Tworzymy funkcje, dzięki którym podróżowanie pojazdem
 				jest przyjemniejsze — od gier po filmy, ukryte odniesienia i nie tylko. Dzięki
 				bezprzewodowym aktualizacjom oprogramowania regularnie wprowadzamy funkcje za naciśnięciem
-				jednego przycisku.
-			</p>
-		</div>
-	</div>
+				jednego przycisku.`
+		]}
+	/>
 </section>
 
 <section class="py-4 sm:px-6 md:px-4 md:px-12 lg:px-4 lg:px-24 lg:py-12">
@@ -278,7 +314,7 @@
 						class="block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14"
 					>
 						<h2 class="mt-2 mb-16 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
-							Maszyna, która buduje maszynę
+							Platforma do tworzenia gier edukacyjnych.
 						</h2>
 						<p class="mb-2 max-w-2xl text-left leading-relaxed text-neutral-100 ">
 							Aby odejść od paliw kopalnych, potrzebujemy ekstremalnej skali. Mając siedzibę główną
@@ -290,7 +326,7 @@
 				</div>
 				<div class="md:mb-12 lg:mb-0">
 					<img
-						src="https://tecdn.b-cdn.net/img/new/ecommerce/vertical/004.jpg"
+						src="/agile-fans/landing/platform.jpg"
 						class="w-full rounded-lg shadow-lg dark:shadow-black/20"
 						alt=""
 					/>
@@ -298,34 +334,18 @@
 			</div>
 		</div>
 	</div>
-	<!--
-	<div class="grid items-center md:mx-8 lg:mx-8 lg:grid-cols-2">
-		<div class="hidden-sm">
-			<img
-				alt="Agile.fans - banner"
-				src="https://www.giftedguru.com/wp-content/uploads/2020/10/kanban-board-nearly-done-888x1024.jpg"
-				class="fancy-border-radius rotate-lg-6 w-full  rounded-2xl shadow-lg shadow-black/20"
-			/>
-		</div>
-		<div
-			class="relative z-[1] block bg-gradient-to-r from-blue-500 to-blue-700 px-6  py-12 shadow-black/20 md:rounded-lg md:px-12 lg:-ml-14 lg:rounded-lg"
-		>
-			<span class="text-xs font-bold uppercase tracking-widest text-neutral-100"> about </span>
-			<h1
-				class="mb-4 text-4xl font-bold leading-none tracking-tighter text-white md:text-7xl lg:text-5xl"
-			/>
-		</div> -->
-	<!-- </div> -->
-	<!-- </div> -->
 </section>
 
 <section class="container mx-auto mt-4 h-screen md:px-6">
 	<div
-		class="relative h-[60%] overflow-hidden rounded-xl bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/284.jpg')] bg-cover bg-[50%] bg-no-repeat"
+		class=" relative h-[60%] overflow-hidden rounded-xl bg-[url('/agile-fans/landing/community.jpg')] bg-cover bg-fixed  bg-[50%] bg-no-repeat"
 	/>
 	<TextBlock
+		bg="bg-gradient-to-tr from-[hsla(274,87%,21%,0.4)] to-rose-700"
+		titleColor="text-white"
+		descColor="text-gray-100"
 		mt="20%"
-		title={`Zespół Tesli`}
+		title={`Społeczność <span class='text-rose-500 font-black'>#Agile.fans</span>`}
 		desc={[
 			`Stosując podejście oparte na pierwszych zasadach, rozwiązujemy jedne z największych problemów świata. Jeśli masz na koncie wybitne osiągnięcia, dołącz do nas, aby sprostać wyzwaniom inżynieryjnym, produkcyjnym i operacyjnym nowej generacji. `
 		]}
@@ -354,8 +374,18 @@
 </section>
 
 <style>
+	@media (max-width: 640px) {
+		.justify-content-sm {
+			justify-content: space-between;
+		}
+	}
+
+	.justify-content {
+		justify-content: space-between;
+	}
+
 	.mix-blend-mode {
-		mix-blend-mode: overlay;
+		mix-blend-mode: screen;
 	}
 	.video-hero {
 		position: absolute;

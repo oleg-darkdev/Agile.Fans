@@ -62,11 +62,11 @@
 		}
 	];
 
-	import { productsList } from '../lib/core/data';
+	import { agileFans, productsList } from '../lib/core/data';
 	import { convertObjToArray } from '../lib/core/utils';
 
 	const arrayOfProducts = convertObjToArray(productsList);
-	const productData = productsList.agileKit;
+	const productData = agileFans;
 
 	let showMenu = false;
 </script>
@@ -268,6 +268,7 @@
 </ProductVariants> -->
 
 <ProductsList productsList={arrayOfProducts} />
+
 <section class="py-4 sm:px-6 md:px-4 md:px-12 lg:px-4 lg:px-24 lg:py-12">
 	<!-- Jumbotron -->
 	<div class="px-6 py-12 text-center md:px-12 lg:text-left">

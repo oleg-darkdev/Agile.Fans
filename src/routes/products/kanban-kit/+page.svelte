@@ -1,5 +1,5 @@
 <script>
-	import { Description, Hero, Logos, ProductsList } from '../../lib/agile-fans/landing/widgets';
+	import { Description, Hero, Logos, ProductsList } from '../../../lib/agile-fans/landing/widgets';
 
 	import {
 		Contact,
@@ -12,12 +12,12 @@
 		Reviews,
 		Stats,
 		Cookie
-	} from '../../lib/core/layout/widgets';
+	} from '../../../lib/core/layout/widgets';
 
-	import { FeaturesForStats } from '../../lib/core/layout/entities';
+	import { FeaturesForStats } from '../../../lib/core/layout/entities';
 
-	import { productsList } from '../../lib/core/data';
-	import { convertObjToArray } from '../../lib/core/utils';
+	import { productsList } from '../../../lib/core/data';
+	import { convertObjToArray } from '../../../lib/core/utils';
 
 	const arrayOfProducts = convertObjToArray(productsList),
 		productData = productsList.agileKit;

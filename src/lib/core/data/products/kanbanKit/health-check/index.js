@@ -18,7 +18,7 @@ const product = {
 			'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
 		promo:
 			'https://lh4.googleusercontent.com/kYErnMIZpuNbLnph6Rw_fq6S_znfF0vwdL02wxbnuqQZiaZn20DDRaYzlTnbp-asdx8XPQVwXQIfytLMDWSnTkoy9_ArhRD3fhazKNRl4RsccdbXsmButg3piG_JMcSAEOeVT7k',
-		link: '/health-check/',
+		link: 'health-check/',
 		synopsis:
 			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.'
 	},

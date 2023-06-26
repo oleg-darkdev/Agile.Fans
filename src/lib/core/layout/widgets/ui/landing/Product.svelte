@@ -27,7 +27,7 @@
 	<div class="mt-10 grid grid-cols-1 gap-6 gap-x-8 md:grid-cols-2 lg:grid-cols-3 ">
 		{#each selectedCategory.products as product, i}
 			<a
-				href={product.shortDesc.link}
+				href='./products/{product.shortDesc.link}'
 				class:lg:col-span-2={i % 2 === 0 && i < 6}
 				class="rounded-2xl  bg-primary px-4 pb-8 pt-2 transition-all duration-500 hover:scale-105"
 			>

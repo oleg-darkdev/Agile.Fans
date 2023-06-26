@@ -6,8 +6,8 @@
 		Video,
 		CardsMatch,
 		Description
-	} from '../../lib/ten/landing/widgets';
-	import { FeaturesForProductType } from '../../lib/core/layout/entities';
+	} from '../../../lib/ten/landing/widgets';
+	import { FeaturesForProductType } from '../../../lib/core/layout/entities';
 
 	import {
 		Contact,
@@ -22,10 +22,10 @@
 		Header,
 		Cookie,
 		HeroProduct
-	} from '../../lib/core/layout/widgets';
+	} from '../../../lib/core/layout/widgets';
 
-	import { motivatorsList, fearsList } from '../../lib/ten/app/shared';
-	import { productsList } from '../../lib/core/data';
+	import { motivatorsList, fearsList } from '../../../lib/ten/app/shared';
+	import { productsList } from '../../../lib/core/data';
 
 	const productData = productsList.ten;
 </script>

@@ -5,6 +5,8 @@ import kanbanKitBoardModel from './kanbanKit/kanbanKitBoardModel.js';
 
 
 import {
+	agileFans,
+
 	// agileKit
 	agileKit,
 	ten,
@@ -51,4 +53,4 @@ const productsCategories = [
 	}
 ];
 
-export { productsList, contact, social, productsCategories, kanbanKitBoardModel };
+export { productsList, contact, social, productsCategories, kanbanKitBoardModel, agileFans };

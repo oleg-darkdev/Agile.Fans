@@ -1,9 +1,9 @@
 <script>
-	import { DegreeDescriptionCard } from '../../lib/action-delegation/landing/entities';
-	import delegationDegrees from '../../lib/action-delegation/degreeDescription';
-	import { ShowFullListBtn } from '../../lib/core/layout/shared';
-	import { FeaturesForProductType } from '../../lib/core/layout/entities';
-	import { Features } from '../../lib/action-delegation/landing/widgets';
+	import { DegreeDescriptionCard } from '../../../lib/action-delegation/landing/entities';
+	import delegationDegrees from '../../../lib/action-delegation/degreeDescription';
+	import { ShowFullListBtn } from '../../../lib/core/layout/shared';
+	import { FeaturesForProductType } from '../../../lib/core/layout/entities';
+	import { Features } from '../../../lib/action-delegation/landing/widgets';
 
 	import {
 		Contact,
@@ -20,11 +20,11 @@
 		StickyBanner,
 		Stats,
 		Cookie
-	} from '../../lib/core/layout/widgets';
+	} from '../../../lib/core/layout/widgets';
 
 	$: showFullList = true;
 
-	import { productsList } from '../../lib/core/data';
+	import { productsList } from '../../../lib/core/data';
 	const productData = productsList.actionDelegation;
 </script>
 

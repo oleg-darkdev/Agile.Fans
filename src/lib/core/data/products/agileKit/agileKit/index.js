@@ -12,13 +12,13 @@ const product = {
 	headerLinks: defaultHeader,
 	shortDesc: {
 		text: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
-		title: 'Agile.fans',
+		title: 'AgileKITs',
 		logo: '/core/images/logo.svg',
 		promo: 'https://mdbcdn.b-cdn.net/img/new/standard/people/033.jpg',
 
 		banner:
 			'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
-		link: '/',
+		link: 'agike-kit/',
 		synopsis:
 			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.'
 	},

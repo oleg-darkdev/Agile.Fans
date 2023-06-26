@@ -26,7 +26,7 @@
 		},
 		{
 			icon: '/pomodoro-plan/icon.svg',
-			link: '/apps/pomodoro-plan/'
+			link: '/apps/pomodoro-plan'
 		},
 		// {
 		//   icon: '',

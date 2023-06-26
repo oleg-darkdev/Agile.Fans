@@ -14,7 +14,8 @@ const defaultHeader = [
 	},
 	{
 		title: 'Shop',
-		link: '/shop'
+		link: '/'
+		// shop
 	},
 
 	{

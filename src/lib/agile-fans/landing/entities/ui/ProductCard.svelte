@@ -7,7 +7,7 @@
 <li
 	class="group m-2 rounded-xl border-2 border-pink-700 p-3 transition duration-300 ease-in-out hover:bg-pink-700 hover:text-white"
 >
-	<a href="#!">
+	<a href="/">
 		<div class="flex items-start">
 			<div class="shrink-0">
 				<div class="pr-3 ">

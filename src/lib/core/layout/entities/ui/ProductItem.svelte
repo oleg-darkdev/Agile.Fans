@@ -11,7 +11,7 @@
 				data-te-ripple-color="light"
 			>
 				<img src={product.shortDesc.banner} class="w-full" />
-				<a href="#!">
+				<a href="/">
 					<div
 						class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98.4%,.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
 					/>

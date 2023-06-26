@@ -29,8 +29,6 @@
 		<div class="flex">
 			<div
 				class="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-				data-te-ripple-init
-				data-te-ripple-color="light"
 			>
 				<img src={workshop.img} class="w-full opacity-60 blur-sm" />
 			</div>

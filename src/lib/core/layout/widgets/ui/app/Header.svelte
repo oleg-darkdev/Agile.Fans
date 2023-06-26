@@ -5,7 +5,7 @@
 </script>
 
 <header class="h-24">
-	<nav class="fixed top-0 left-0 z-20 w-full border-b border-gray-200  bg-black shadow-black/20 backdrop-blur-[30px]  ">
+	<nav class="fixed top-0 left-0 z-20 w-full border-b border-gray-200  bg-[hsla(0,0%,0%,0.82)] shadow-black/20 backdrop-blur-[30px] shadow-black/20 backdrop-blur-[30px]  ">
 		<div class="justify-content flex w-full flex-wrap items-center justify-start px-6 ">
 			<a
 				href="/"

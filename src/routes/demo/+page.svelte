@@ -81,7 +81,7 @@
 			</div>
 		</div>
 
-		<div class=" rounded-xl bg-black py-4 px-4 text-center">
+		<div class=" rounded-xl bg-primary py-4 px-4 text-center">
 			<div class="mb-4 flex w-full justify-center ">
 				<div class="stats shadow">
 					{#each stats as stat}

@@ -3,12 +3,10 @@
 </script>
 
 <div class="mb-6 lg:mb-0">
-	<div class="relative block rounded-lg bg-black">
+	<div class="relative block rounded-lg bg-primary">
 		<div class="flex">
 			<div
-				class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
-				data-te-ripple-init
-				data-te-ripple-color="light"
+				class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-black/20"
 			>
 				<img src={product.shortDesc.banner} class="w-full" />
 				<a href="/">

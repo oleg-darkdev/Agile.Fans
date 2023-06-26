@@ -29,7 +29,7 @@
 			<a
 				href={product.shortDesc.link}
 				class:lg:col-span-2={i % 2 === 0 && i < 6}
-				class="rounded-2xl  bg-black px-4 pb-8 pt-2 transition-all duration-500 hover:scale-105"
+				class="rounded-2xl  bg-primary px-4 pb-8 pt-2 transition-all duration-500 hover:scale-105"
 			>
 				<img
 					class="max-h-40  w-full rounded-lg object-cover object-center shadow-md shadow-gray-200 xl:h-96"

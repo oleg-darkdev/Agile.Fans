@@ -3,7 +3,7 @@
 </script>
 
 <div class="mb-6 lg:mb-0">
-	<div class="relative block rounded-lg bg-gradient-to-r from-pink-500  to-pink-700">
+	<div class="relative block rounded-lg bg-black">
 		<div class="flex">
 			<div
 				class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
@@ -19,13 +19,13 @@
 			</div>
 		</div>
 		<div class="py-6 pt-2 pb-4">
-			<h4 class="font-bo?ld mb-1 text-3xl text-white">{product.shortDesc.title}</h4>
+			<h4 class="mb-1 text-3xl font-bold text-white">{product.shortDesc.title}</h4>
 
-			<!-- <p class="mb-4 pb-2 text-white">
-									{product.shortDesc.synopsis}
-								</p> -->
+			<p class="mb-4 pb-2 text-white">
+				{product.shortDesc.synopsis}
+			</p>
 			<button
-				class="transform rounded-xl bg-white px-5 py-4 text-center text-base font-medium text-pink-600 transition duration-500 ease-in-out hover:bg-pink-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 lg:px-10"
+				class="transform rounded-xl bg-pink-500 px-5 py-4 text-center text-base font-medium text-white transition duration-500 ease-in-out hover:bg-pink-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 lg:px-10"
 				>Get started</button
 			>
 		</div>

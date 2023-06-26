@@ -66,7 +66,7 @@
 			{#each icons as icon}
 				<button
 					on:click={() => selectedApp}
-					class="focus:outline-nones inline-block rounded-lg p-1.5 text-gray-500 transition-colors duration-200 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
+					class="focus:outline-nones inline-block rounded-lg p-1.5 text-black transition-colors duration-200 hover:bg-black"
 				>
 					<img src={icon.icon} class="h-8 w-8" alt="" />
 				</button>

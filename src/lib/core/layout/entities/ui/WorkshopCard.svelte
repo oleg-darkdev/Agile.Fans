@@ -25,7 +25,7 @@
 
 <!--  -->
 <div class="mb-6 lg:mb-0">
-	<div class="relative block rounded-lg bg-black">
+	<div class="relative block rounded-lg bg-primary">
 		<div class="flex">
 			<div
 				class="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"

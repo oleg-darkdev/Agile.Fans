@@ -82,7 +82,7 @@
 	export let productData, arrayOfProducts;
 </script>
 
-<footer class="mt-4 bg-black">
+<footer class="bg-black">
 	<div class="container mx-auto px-6 py-12">
 		<div class="text-center">
 			<h2

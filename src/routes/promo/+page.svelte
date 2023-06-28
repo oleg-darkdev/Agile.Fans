@@ -5,7 +5,6 @@
 <section
 	class="min-h-screen bg-[url('https://ibvsolutions.com/wp-content/uploads/2019/02/Kanban-on-Screen-781x512.jpg')] bg-cover bg-[50%] bg-no-repeat py-20 "
 >
-	<!-- Jumbotron -->
 	<div
 		class="w-100 mx-auto px-6 sm:max-w-2xl md:max-w-3xl md:px-12 lg:max-w-4xl xl:max-w-7xl xl:px-32"
 	>

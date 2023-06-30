@@ -1,34 +1,5 @@
 <script>
-	const translates = [
-		{
-			lang: 'English',
-			link: ''
-		},
-		{
-			lang: 'Polish',
-			link: ''
-		},
-		{
-			lang: 'Russian',
-			link: ''
-		},
-		{
-			lang: 'Ukrainian',
-			link: ''
-		},
-		{
-			lang: 'German',
-			link: ''
-		},
-		{
-			lang: 'French',
-			link: ''
-		},
-		{
-			lang: 'Spanish',
-			link: ''
-		}
-	];
+	export let translates;
 </script>
 
 <section
@@ -53,7 +24,7 @@
 				</div>
 				<div class="flex justify-start lg:mt-2">
 					<a
-						href="#price"
+						href="{translates[0].link}"
 						class="block w-full transform items-center rounded-xl border-2 border-white bg-pink-600 px-10 py-3.5 text-center text-base font-medium text-white shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
 					>
 						Download

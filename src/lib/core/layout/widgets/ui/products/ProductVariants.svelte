@@ -1,30 +1,7 @@
 <script>
-	const extensionsList = [
-		{
-			title: 'Boardgame ',
-			type: 'Deluxe components + Web app',
-			id: '',
-			img: 'https://www.kentonline.co.uk/_media/img/6YK0ISJU7E500PCGVXY5.jpg',
-			description: '',
-			price: ''
-		},
-		{
-			title: 'Boardgame standart',
-			type: 'NFC + Web app',
-			id: '',
-			img: 'https://www.kentonline.co.uk/_media/img/6YK0ISJU7E500PCGVXY5.jpg',
-			description: '',
-			price: ''
-		},
-		{
-			title: 'Web application',
-			type: 'Only Web app',
-			id: '',
-			img: 'https://www.kentonline.co.uk/_media/img/6YK0ISJU7E500PCGVXY5.jpg',
-			description: '',
-			price: ''
-		}
-	];
+import { FeaturesForProductType } from "../../../entities";
+
+	export let productVariants;
 </script>
 
 <section class="min-h-screen  bg-white py-6 sm:py-8 lg:py-12">
@@ -46,14 +23,14 @@
 		<div class="w-full">
 			<div class="flex  flex-row  flex-wrap justify-center ">
 				<!-- product - start -->
-				{#each extensionsList as extension}
+				{#each productVariants as product}
 					<div class="mx-2 max-w-sm">
 						<a
 							href="#"
 							class="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3"
 						>
 							<img
-								src={extension.img}
+								src={product.img}
 								loading="lazy"
 								alt="Photo by Austin Wade"
 								class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -66,7 +43,7 @@
 								>
 								<span
 									class="rounded-lg bg-white px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gray-800"
-									>{extension.type}</span
+									>{product.type}</span
 								>
 							</div>
 						</a>
@@ -76,7 +53,7 @@
 								<a
 									href="#"
 									class="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl"
-									>{extension.title}</a
+									>{product.title}</a
 								>
 								<span class="text-gray-500"
 									>część zestawu
@@ -93,7 +70,8 @@
 								<span class="text-sm text-pink-500 line-through">$39.99</span>
 							</div>
 						</div>
-						<slot />
+						  	<FeaturesForProductType features={product.features}/>
+
 					</div>
 				{/each}
 			</div>

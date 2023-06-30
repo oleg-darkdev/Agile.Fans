@@ -1,11 +1,13 @@
 import defaultHeader from '../../headersLinks/defaultHeader';
 import productsIcons from '../../productsIcons';
+import variantOfProduct from './variantOfProduct';
 
 import faq from './faq';
 import stats from './stats';
 import features from './features';
 import price from './price';
 import feedback from './feedback';
+
 
 const delegation = {
 	id: 1,
@@ -23,8 +25,42 @@ const delegation = {
 			'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.0nZWvncwJmjAmiSFglBqVQHaEN%26pid%3DApi&f=1&ipt=a553a918730e10b3da34bc4a2794c81eea15379f77490b696ebdd066e35a35c7&ipo=images',
 		link: 'action-delegation/',
 		synopsis:
-			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.'
+			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.',
+		video:
+			'https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com',
+		translates: [
+			{
+				lang: 'English',
+				link: ''
+			},
+			{
+				lang: 'Polish',
+				link: ''
+			},
+			{
+				lang: 'Russian',
+				link: ''
+			},
+			{
+				lang: 'Ukrainian',
+				link: ''
+			},
+			{
+				lang: 'German',
+				link: ''
+			},
+			{
+				lang: 'French',
+				link: ''
+			},
+			{
+				lang: 'Spanish',
+				link: ''
+			}
+		]
 	},
+	variants: variantOfProduct,
+
 	about: {
 		desc: [
 			`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,

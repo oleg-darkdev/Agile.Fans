@@ -1,29 +1,33 @@
+<script>
+	export let features;
+</script>
+
 <div class="container flex max-w-md flex-col lg:flex-row lg:items-center ">
 	<div class="w-full ">
 		<div class="lg:max-w-lg">
 			<p class="mt-1 text-gray-600 ">
-				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-				industries for previewing layouts and visual mockups.
+				{features.desc}
 			</p>
 			<div class="mt-2 grid grid-cols-2 gap-2">
-				<div class="-px-3 flex items-center text-gray-800 ">
-					<svg
-						class="mx-1 h-12 w-12 stroke-pink-500"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke=""
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M5 13l4 4L19 7"
-						/>
-					</svg>
-
-					<span class="mx-1 text-pink-600">Lorem ipsum is placeholder text</span>
-				</div>
+				{#each features.featuresList as feature}
+					<div class="-px-3 flex items-center text-gray-800 ">
+						<svg
+							class="mx-1 h-12 w-12 stroke-pink-500"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke=""
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 13l4 4L19 7"
+							/>
+						</svg>
+						<span class="mx-1 text-pink-600">{feature} </span>
+					</div>
+				{/each}
 			</div>
 		</div>
 	</div>

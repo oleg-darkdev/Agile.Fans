@@ -24,8 +24,8 @@
 
 	$: showFullList = true;
 
-	import { productsList } from '../../../lib/core/data';
-	const productData = productsList.actionDelegation;
+	import { actionDelegation } from '../../../lib/core/data';
+	const productData = actionDelegation;
 </script>
 
 <!--
@@ -36,11 +36,9 @@ Prices
 FAQ
 Contact -->
 
-<!-- <StickyBanner {productData} /> -->
-
 <Header {productData} />
 
-<HeaderBottomLine />
+<StickyBanner {productData} />
 
 <Cookie />
 
@@ -48,10 +46,8 @@ Contact -->
 
 <Features features={productData.features} />
 
-<!-- <Stats stats={productData.stats} /> -->
 <AboutProduct about={productData.about} title={productData.shortDesc.title} />
 
-=
 <section class="mb-12 flex flex-col items-center justify-center">
 	<div class="max-w-7xl">
 		<h2
@@ -80,15 +76,13 @@ Contact -->
 <CallToWorkshop />
 
 <Video
-	link="https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com"
+	link="{productData.shortDesc.video}"
 />
 <Reviews feedback={productData.feedback} />
 
-<ProductVariants>
-	<FeaturesForProductType />
-</ProductVariants>
+<ProductVariants productVariants={productData.variants} />
 
-<FreeDownload />
+<FreeDownload translates={productData.shortDesc.translates}/>
 
 <FaqProduct faq={productData.faq} />
 

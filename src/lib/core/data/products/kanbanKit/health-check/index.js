@@ -1,5 +1,7 @@
 import header from './header';
 import productsIcons from '../../productsIcons';
+import variantOfProduct from './variantOfProduct';
+
 
 import faq from './faq';
 import stats from './stats';
@@ -23,8 +25,42 @@ const product = {
 			'https://lh4.googleusercontent.com/kYErnMIZpuNbLnph6Rw_fq6S_znfF0vwdL02wxbnuqQZiaZn20DDRaYzlTnbp-asdx8XPQVwXQIfytLMDWSnTkoy9_ArhRD3fhazKNRl4RsccdbXsmButg3piG_JMcSAEOeVT7k',
 		link: 'health-check/',
 		synopsis:
-			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.'
+			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.',
+		video:
+			'https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com',
+		translates: [
+			{
+				lang: 'English',
+				link: ''
+			},
+			{
+				lang: 'Polish',
+				link: ''
+			},
+			{
+				lang: 'Russian',
+				link: ''
+			},
+			{
+				lang: 'Ukrainian',
+				link: ''
+			},
+			{
+				lang: 'German',
+				link: ''
+			},
+			{
+				lang: 'French',
+				link: ''
+			},
+			{
+				lang: 'Spanish',
+				link: ''
+			}
+		]
 	},
+	variants: variantOfProduct,
+
 	about: {
 		desc: [
 			`This tool is a conversation starter. It won't really tell you what to do, but it will help you figure out what questions to ask. That's why the possible answers are strongly worded.`,

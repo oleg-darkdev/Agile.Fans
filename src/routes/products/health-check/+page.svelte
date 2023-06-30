@@ -47,19 +47,11 @@ Contact -->
   https://teamhealthcheck.io/about
  -->
 
-<StickyBanner {productData} />
 
-<Header {productData} />
 
-<HeaderBottomLine />
-
-<Cookie />
-
-<HeroProduct shortDesc={productData.shortDesc} />
+<!-- <HeroProduct shortDesc={productData.shortDesc} /> -->
 <!-- Health Check - How is your team feeling? -->
 <!-- A free, anonymous, and super simple tool to run a version of the Spotify Health Check Survey. -->
-
-<Features features={productData.features} />
 
 <!-- <Stats stats={productData.stats} /> -->
 <AboutProduct about={productData.about} title={productData.shortDesc.title}>
@@ -137,15 +129,3 @@ You can create an account to organize the different polls from your team. Still,
 		{/each}
 	</div>
 </section>
-
-<CallToWorkshop />
-
-<Reviews feedback={productData.feedback} />
-
-<ProductVariants>
-	<FeaturesForProductType />
-</ProductVariants>
-
-<FaqProduct faq={productData.faq} />
-
-<Contact />

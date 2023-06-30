@@ -3,7 +3,7 @@ const cards = [
 		title: 'Easy to release',
 		icon: 'release.svg',
 		id: 1,
-		positive: 'Releasing is simple, safe, painless & mostly automated',
+		positive: 'Releasing is simple, safe, painless & mostly automated.',
 		negative: 'Releasing is risky, painful, lots of manual work, and takes forever',
 		status: ''
 	},

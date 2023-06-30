@@ -4,7 +4,6 @@
 	import {
 		Contact,
 		Header,
-		Product,
 		Video,
 		StickyBanner,
 		FAQ,
@@ -43,7 +42,6 @@
 <!-- <Description /> -->
 <!-- {arrayOfProducts}
  -->
-<Product />
 
 <Logos />
 
@@ -52,7 +50,7 @@
 </Stats>
 
 <Video
-	link="https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com"
+	link="{productData.shortDesc.video}"
 />
 
 <!-- <Features /> -->

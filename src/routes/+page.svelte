@@ -2,7 +2,7 @@
 	import { TextBlock } from '../lib/agile-fans/landing/entities';
 	import { Slider, ProductsList } from '../lib/agile-fans/landing/widgets';
 	import { WorkshopCard, FeaturesForProductType } from '../lib/core/layout/entities';
-	import { ProductVariants, FAQ } from '../lib/core/layout/widgets';
+	import { ProductVariants, FAQ, Product } from '../lib/core/layout/widgets';
 
 	const descAgileFans = [
 		`A new era in hybrid board educational boardgames. An exceptional combination of the better of
@@ -236,6 +236,9 @@
 	<Slider />
 </section> -->
 
+<Product />
+
+
 <section>
 	<video
 		class="min-h-screen w-full"
@@ -267,7 +270,7 @@
 	<FeaturesForProductType />
 </ProductVariants> -->
 
-<ProductsList productsList={arrayOfProducts} />
+<!-- <ProductsList productsList={arrayOfProducts} /> -->
 
 <section class="py-4 sm:px-6 md:px-4 md:px-12 lg:px-4 lg:px-24 lg:py-12">
 	<!-- Jumbotron -->

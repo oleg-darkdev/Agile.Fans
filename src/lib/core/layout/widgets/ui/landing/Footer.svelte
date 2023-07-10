@@ -1,19 +1,19 @@
 <script>
-	import { FooterLink } from '../../../shared';
+	import { FooterLink, FooterLinkTargetNewBlank } from '../../../shared';
 
 	const legalLinks = [
 		{
 			title: 'About us',
-			link: ''
+			link: '/about'
 		},
 
 		{
 			title: 'Contact',
-			link: ''
+			link: '/contact'
 		},
 		{
 			title: 'Careers',
-			link: ''
+			link: '/careers'
 		}
 	];
 	const socialLinks = [
@@ -169,7 +169,7 @@
 
 				<div class="mt-4 flex flex-col items-start space-y-4">
 					{#each socialLinks as link}
-						<FooterLink {link} />
+						<FooterLinkTargetNewBlank {link} />
 					{/each}
 				</div>
 			</div>

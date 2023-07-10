@@ -19,31 +19,39 @@
 	const socialLinks = [
 		{
 			title: 'LinkedIn',
-			link: ''
+			link: 'https://www.linkedin.com/groups/9377920/'
 		},
 		{
 			title: 'Github',
-			link: ''
+			link: 'https://github.com/orgs/Agile-fans/repositories'
 		},
 		{
 			title: 'Facebook',
-			link: ''
-		}
+			link: 'https://facebook.com/groups/1155818035374001/'
+		},
+    {
+      title: 'Youtube',
+      link: 'https://www.youtube.com/channel/UC317AMnk8sj3EWGhm73JMCw'
+    }
 	];
 
 	const resourcesLinks = [
 		{
 			title: 'Events',
-			link: ''
+			link: '/events'
 		},
 		{
 			title: 'Tutorials',
-			link: ''
+			link: '/help-center/tutorials'
 		},
 		{
 			title: 'Help center',
-			link: ''
-		}
+			link: '/help-center'
+		},
+    {
+			title: 'FAQ',
+			link: '/help-center/faq'
+		},
 	];
 
 	const useCasesLinks = [
@@ -58,24 +66,24 @@
 
 		{
 			title: 'Startups',
-			link: ''
+			link: '/use-cases/startups'
 		},
 
 		{
 			title: 'Enterprise',
-			link: ''
+			link: '/use-cases/enterprise'
 		},
 		{
 			title: 'Ngo',
-			link: ''
+			link: '/use-cases/ngo'
 		},
 		{
 			title: 'Community',
-			link: ''
+			link: '/use-cases/community'
 		},
 		{
 			title: 'Personal use',
-			link: ''
+			link: '/use-cases/personal'
 		}
 	];
 

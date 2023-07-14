@@ -12,11 +12,12 @@
 				{#each features.featuresList as feature}
 					<div class="-px-3 flex items-center text-gray-800 ">
 						<svg
-							class="mx-1 h-12 w-12 stroke-pink-500"
+							class="mx-1    stroke-pink-500"
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke=""
+              style="width: 30px; height: 30px;"
 						>
 							<path
 								stroke-linecap="round"

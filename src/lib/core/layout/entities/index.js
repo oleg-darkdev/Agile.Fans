@@ -7,12 +7,14 @@ import Aside from './ui/Aside.svelte';
 import ProductItem from './ui/ProductItem.svelte';
 import WorkshopCard from './ui/WorkshopCard.svelte';
 import FooterApp from './ui/FooterApp.svelte';
+import TextBlock from './ui/TextBlock.svelte';
 
 export {
   FreeDownload,
   WorkshopCard,
   ShopItemCard,
   FooterApp,
+  TextBlock,
 	FeaturesForStats,
 	Aside,
 	PriceLine,

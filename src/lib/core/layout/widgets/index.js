@@ -6,6 +6,7 @@ import Product from './ui/landing/Product.svelte';
 
 
 import HeaderApp from './ui/app/Header.svelte';
+import AppScreen from './ui/app/AppScreen.svelte';
 
 import Stats from './ui/landing/Stats.svelte';
 import Cookie from './ui/landing/Cookie.svelte';
@@ -27,6 +28,7 @@ export {
 	StickyBanner,
   HeaderApp,
   Product,
+  AppScreen,
 	Video,
 	AboutProduct,
 	Price,

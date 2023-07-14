@@ -10,19 +10,17 @@
 		Price,
 		Reviews,
 		Stats,
-		Cookie
+		Cookie,
+    ProductVariants,
+		Footer
 	} from '../../../lib/core/layout/widgets';
 
 	import { FeaturesForStats } from '../../../lib/core/layout/entities';
 
-	import { productsList, kanbanKitSubProducts } from '../../../lib/core/data';
+	import { productsList, kanbanKitSubProducts, allKit } from '../../../lib/core/data';
 
 	const productData = productsList.kanbanKit;
-
-	// console.log(kanbanKitSubProducts);
 </script>
-
-
 
 <StickyBanner {productData} />
 
@@ -37,6 +35,9 @@
 		</div>
 	</div>
 </Hero>
+
+<ProductVariants title='Zestaw produktów zawiera' productVariants={productData.variants}  mainProduct={productData.shortDesc.title}/>
+
 
 <Cookie />
 
@@ -66,3 +67,5 @@
 <FAQ />
 
 <Contact />
+
+<Footer {productData} productsCategories={allKit.products} />

@@ -80,7 +80,7 @@ Contact -->
 />
 <Reviews feedback={productData.feedback} />
 
-<ProductVariants productVariants={productData.variants} />
+<ProductVariants title='Warianty produktu' productVariants={productData.variants} mainProduct={productData.shortDesc.title}/>
 
 <FreeDownload translates={productData.shortDesc.translates}/>
 

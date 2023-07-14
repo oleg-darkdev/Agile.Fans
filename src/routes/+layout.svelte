@@ -13,25 +13,21 @@
 	// 	AOS.init();
 	// });
 
-	import { Footer } from '../lib/core/layout/widgets';
+	// import { Footer } from '../lib/core/layout/widgets';
 
-	import { productsList } from '../lib/core/data';
-	import { convertObjToArray } from '../lib/core/utils';
+	// import { productsList, allKit } from '../lib/core/data';
 
-	const arrayOfProducts = convertObjToArray(productsList),
-		productData = productsList.agileKit;
+	// const productData = productsList.agileKit;
 </script>
-
 
 
 <main class="">
 	<slot />
 </main>
-
-<Footer {productData} {arrayOfProducts} />
+<!--  -->
 
 <style>
-  @media (max-width: 640px) {
+	@media (max-width: 640px) {
 		:global(.hidden-sm) {
 			display: none;
 		}

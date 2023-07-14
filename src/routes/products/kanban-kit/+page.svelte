@@ -15,12 +15,14 @@
 
 	import { FeaturesForStats } from '../../../lib/core/layout/entities';
 
-	import { productsList } from '../../../lib/core/data';
-	import { convertObjToArray } from '../../../lib/core/utils';
+	import { productsList, kanbanKitSubProducts } from '../../../lib/core/data';
 
-	const arrayOfProducts = convertObjToArray(productsList),
-		productData = productsList.agileKit;
+	const productData = productsList.kanbanKit;
+
+	// console.log(kanbanKitSubProducts);
 </script>
+
+
 
 <StickyBanner {productData} />
 
@@ -31,7 +33,7 @@
 		<div class="text-md ">
 			<!-- <p class="-mb-1 text-left font-bold leading-relaxed text-neutral-100 ">List of games</p>? -->
 
-			<ProductsList productsList={arrayOfProducts} />
+			<ProductsList productsList={kanbanKitSubProducts} />
 		</div>
 	</div>
 </Hero>
@@ -39,7 +41,7 @@
 <Cookie />
 
 <a name="about" />
-<!-- <Description /> -->
+<!-- <Description products={kanbanKitSubProducts} /> -->
 <!-- {arrayOfProducts}
  -->
 
@@ -49,9 +51,7 @@
 	<FeaturesForStats features={productData.features} />
 </Stats>
 
-<Video
-	link="{productData.shortDesc.video}"
-/>
+<Video link={productData.shortDesc.video} />
 
 <!-- <Features /> -->
 

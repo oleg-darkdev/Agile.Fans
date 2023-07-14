@@ -1,10 +1,10 @@
 <script>
 	import { TextBlock } from '../lib/agile-fans/landing/entities';
-	import { Slider, ProductsList } from '../lib/agile-fans/landing/widgets';
+	import { Slider } from '../lib/agile-fans/landing/widgets';
 	import { WorkshopCard, FeaturesForProductType } from '../lib/core/layout/entities';
-	import { ProductVariants, FAQ, Product } from '../lib/core/layout/widgets';
+	import {Footer, ProductVariants, FAQ, Product } from '../lib/core/layout/widgets';
 
-	const descAgileFans = [
+  	const descAgileFans = [
 		`A new era in hybrid board educational boardgames. An exceptional combination of the better of
 			educational board games and technology. Connecting board games with electronics and related
 			applications - making it much easier for players to learn and improve their performance.`,
@@ -62,10 +62,10 @@
 		}
 	];
 
-	import { agileFans, productsList } from '../lib/core/data';
-	import { convertObjToArray } from '../lib/core/utils';
+	import { agileFans, productsList, allKit, productsCategories } from '../lib/core/data';
+	// import { convertObjToArray } from '../lib/core/utils';
 
-	const arrayOfProducts = convertObjToArray(productsList);
+	// const arrayOfProducts = convertObjToArray(productsList);
 	const productData = agileFans;
 
 	let showMenu = false;
@@ -238,7 +238,6 @@
 
 <Product />
 
-
 <section>
 	<video
 		class="min-h-screen w-full"
@@ -270,7 +269,7 @@
 	<FeaturesForProductType />
 </ProductVariants> -->
 
-<!-- <ProductsList productsList={arrayOfProducts} /> -->
+<!-- <ProductsList productsList={arrayOfProducts} />   -->
 
 <section class="py-4 sm:px-6 md:px-4 md:px-12 lg:px-4 lg:px-24 lg:py-12">
 	<!-- Jumbotron -->
@@ -340,8 +339,11 @@
 	</div>
 </section>
 
-// faq
+<!--  faq -->
 <FAQ />
+
+<Footer {productData}  productsCategories={allKit.products} />
+
 
 <style>
 	@media (max-width: 640px) {

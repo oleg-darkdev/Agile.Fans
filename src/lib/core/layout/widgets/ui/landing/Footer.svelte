@@ -87,8 +87,13 @@
 		}
 	];
 
-	export let productData, arrayOfProducts;
+	export let productData, productsCategories;
+
+
+// console.log(productsCategories);
 </script>
+
+
 
 <footer class="bg-black">
 	<div class="container mx-auto px-6 py-12">
@@ -114,13 +119,13 @@
 		</div>
 
 		<div
-			class="mt-12 grid grid-cols-2 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
+			class="mt-12 mx-auto grid grid-cols-2 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
 		>
-			<div>
+			<div class='max-w-md'>
 				<h3 class="text-sm font-medium text-pink-500 ">Agile.fans products</h3>
 
-				<div class="mt-4 flex flex-col items-start space-y-4">
-					{#each arrayOfProducts.slice(0, 6) as product}
+				<div class="grid grid-cols-2 gap-1 mt-4 space-y-4">
+					{#each productsCategories as product}
 						<a
 							href="/products/{product.shortDesc.link}"
 							class="text-neutral-400 transition-colors duration-200 hover:text-pink-600 hover:underline  "
@@ -130,11 +135,11 @@
 				</div>
 			</div>
 
-			<div>
+			<!-- <div>
 				<h3 class="text-sm font-medium text-pink-500 " />
 
 				<div class="mt-4 flex flex-col items-start space-y-4">
-					{#each arrayOfProducts.slice(0, 6) as product}
+					{#each productsCategories.slice(0, 6) as product}
 						<a
 							href="/products/{product.shortDesc.link}"
 							class="text-neutral-400 transition-colors duration-200 hover:text-pink-600 hover:underline  "
@@ -142,7 +147,7 @@
 						>
 					{/each}
 				</div>
-			</div>
+			</div> -->
 
 			<div>
 				<h3 class="text-sm font-medium text-pink-500 ">Resources</h3>
@@ -200,6 +205,7 @@
 		</div>
 	</div>
 </footer>
+
 
 <!--
 <footer class="bg-white" aria-labelledby="footer-heading">

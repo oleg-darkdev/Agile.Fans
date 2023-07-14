@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { FreeDownload } from '../../../entities';
 
 	import { products } from '../../../shared/';
@@ -45,4 +45,4 @@
 	</div>
 
 	<FreeDownload />
-</section>
+</section> -->

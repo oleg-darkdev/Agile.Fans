@@ -4,6 +4,8 @@
 
 	import { products } from '../../shared';
 	let showFullList = false;
+
+  // export let products;
 </script>
 
 <section>

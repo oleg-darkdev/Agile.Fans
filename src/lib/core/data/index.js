@@ -33,34 +33,34 @@ const productsList = {
 	// loremThird
 };
 
+const kanbanKitSubProducts = [kanbanel, healthCheck, actionDelegation],
+	scrumKitSubProducts = [],
+	agileKitSubProducts = [ten];
+
 const agileKIT = {
 		title: 'Agile.KIT',
 		mainProduct: agileKit,
 
-		products: [ten]
+		products: agileKitSubProducts
 	},
 	kanbanKIT = {
 		title: 'Kanban.KIT',
 		mainProduct: kanbanKit,
-		products: [kanbanel, healthCheck, actionDelegation]
+		products: kanbanKitSubProducts
 	},
 	scrumKIT = {
 		title: 'Scrum.KIT',
 		mainProduct: scrumKit,
 
-		products: []
+		products: scrumKitSubProducts
+	},
+	allKit = {
+		title: 'all',
+		products: [].concat(kanbanKIT.products, scrumKIT.products, agileKIT.products)
 	};
 
-const productsCategories = [
-	{
-		title: 'all',
-		products: [agileKit, kanbanel, kanbanKit, healthCheck, scrumKit, actionDelegation, ten]
-	},
-	agileKIT,
-	kanbanKIT,
-	scrumKIT
-];
-
+const productsCategories = [kanbanKIT];
+// agileKIT, scrumKIT
 export {
 	productsList,
 	contact,
@@ -69,7 +69,12 @@ export {
 	kanbanKitBoardModel,
 	agileFans,
 	healthCheck,
-	scrumKit,
 	actionDelegation,
-	ten
+  ten,
+
+	kanbanKitSubProducts,
+	agileKitSubProducts,
+	scrumKitSubProducts,
+	allKit,
+	scrumKit
 };

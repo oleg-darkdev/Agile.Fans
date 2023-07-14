@@ -16,7 +16,14 @@ import {
 	kanbanKit,
 	kanbanel,
 	healthCheck,
-	actionDelegation,
+  actionDelegation,
+  сoastOfDelay,
+	sudoScrumban,
+	retrogen,
+	pomodoroPlan,
+	kanbanRiders,
+	easyKanban,
+	crazyWip,
 	// scrumKit
 	scrumKit
 } from './products';
@@ -33,7 +40,18 @@ const productsList = {
 	// loremThird
 };
 
-const kanbanKitSubProducts = [kanbanel, healthCheck, actionDelegation],
+const kanbanKitSubProducts = [
+		kanbanel,
+		healthCheck,
+		actionDelegation,
+		сoastOfDelay,
+		sudoScrumban,
+		retrogen,
+		pomodoroPlan,
+		kanbanRiders,
+		easyKanban,
+		crazyWip
+	],
 	scrumKitSubProducts = [],
 	agileKitSubProducts = [ten];
 
@@ -70,8 +88,15 @@ export {
 	agileFans,
 	healthCheck,
 	actionDelegation,
-  ten,
-
+	ten,
+	сoastOfDelay,
+	sudoScrumban,
+	retrogen,
+	pomodoroPlan,
+	kanbanRiders,
+	easyKanban,
+  crazyWip,
+  
 	kanbanKitSubProducts,
 	agileKitSubProducts,
 	scrumKitSubProducts,

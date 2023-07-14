@@ -25,7 +25,7 @@ const product = {
 			'https://lh4.googleusercontent.com/kYErnMIZpuNbLnph6Rw_fq6S_znfF0vwdL02wxbnuqQZiaZn20DDRaYzlTnbp-asdx8XPQVwXQIfytLMDWSnTkoy9_ArhRD3fhazKNRl4RsccdbXsmButg3piG_JMcSAEOeVT7k',
 		link: 'health-check/',
 		synopsis:
-			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.',
+			'Gra do systematycznego podejścia poprawy wydajności zespołu, z wykorzystaniem przejrzystej wizualizacji i oceny obecnego stanu.',
 		video:
 			'https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com',
 		translates: [

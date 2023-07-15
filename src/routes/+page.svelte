@@ -2,9 +2,9 @@
 	import { TextBlock } from '../lib/agile-fans/landing/entities';
 	import { Slider } from '../lib/agile-fans/landing/widgets';
 	import { WorkshopCard, FeaturesForProductType } from '../lib/core/layout/entities';
-	import {Footer, ProductVariants, FAQ, Product } from '../lib/core/layout/widgets';
+	import { Footer, ProductVariants, FAQ, Product } from '../lib/core/layout/widgets';
 
-  	const descAgileFans = [
+	const descAgileFans = [
 		`A new era in hybrid board educational boardgames. An exceptional combination of the better of
 			educational board games and technology. Connecting board games with electronics and related
 			applications - making it much easier for players to learn and improve their performance.`,
@@ -62,13 +62,12 @@
 		}
 	];
 
-	import { agileFans, productsList, allKit, productsCategories } from '../lib/core/data';
-	// import { convertObjToArray } from '../lib/core/utils';
-
-	// const arrayOfProducts = convertObjToArray(productsList);
+	import { agileFans, allKit, productsList, productsCategories } from '../lib/core/data';
+	import { extractFaqValues } from '../lib/core/utils';
 	const productData = agileFans;
+  const allProductsArr=[].concat(productsList.kanbanKit, productsList.scrumKit, productsList.agileKit, allKit.products);
 
-	let showMenu = false;
+	const allFaq = extractFaqValues(allProductsArr);
 </script>
 
 <video
@@ -339,11 +338,9 @@
 	</div>
 </section>
 
-<!--  faq -->
-<FAQ />
+<FAQ productsFaq={allFaq} />
 
-<Footer {productData}  productsCategories={allKit.products} />
-
+<Footer {productData} productsCategories={allKit.products} />
 
 <style>
 	@media (max-width: 640px) {

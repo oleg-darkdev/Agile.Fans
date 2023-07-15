@@ -1,6 +1,7 @@
 <script>
 	import { Description, Hero, Logos, ProductsList } from '../../../lib/agile-fans/landing/widgets';
 
+
 	import {
 		Contact,
 		Header,
@@ -18,8 +19,12 @@
 	import { FeaturesForStats } from '../../../lib/core/layout/entities';
 
 	import { productsList, kanbanKitSubProducts, allKit } from '../../../lib/core/data';
+  import {extractFaqValues} from '../../../lib/core/utils';
 
 	const productData = productsList.kanbanKit;
+
+  const kanbanKitFaq = extractFaqValues(kanbanKitSubProducts);
+
 </script>
 
 <StickyBanner {productData} />
@@ -64,7 +69,7 @@
 <Price />
 <Reviews feedback={productData.feedback} />
 
-<FAQ />
+<FAQ productsFaq={kanbanKitFaq}/>
 
 <Contact />
 

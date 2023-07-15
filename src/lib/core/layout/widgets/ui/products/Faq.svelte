@@ -4,10 +4,9 @@
 
 <section class="min-h-screen  bg-white py-6 sm:py-8 lg:py-12">
 	<div class="mx-auto max-w-screen-xl px-4 md:px-8">
-		<!-- text - start -->
 		<div class="mb-8">
 			<h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-				Frequently asked questions
+				Odpowiedzi na najczęściej zadawane pytania
 			</h2>
 
 			<p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
@@ -15,12 +14,10 @@
 				characteristics of a real written text but is random or otherwise generated.
 			</p>
 		</div>
-		<!-- text - end -->
 		<a name="faq" />
 
 		<div class="grid gap-4 sm:grid-cols-2 md:gap-8">
-			<!-- question - start -->
-			{#each faq as data}
+			{#each faq.content as data}
 				<div class="rounded-lg bg-pink-500 p-5">
 					<div class="mb-4 flex items-center justify-between gap-4 border-b pb-4">
 						<h3 class="font-semibold text-white sm:text-lg md:text-xl">
@@ -51,7 +48,6 @@
 					{/each}
 				</div>
 			{/each}
-			<!-- question - end -->
 		</div>
 	</div>
 </section>

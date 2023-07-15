@@ -2,7 +2,6 @@
 	import { DegreeDescriptionCard } from '../../../lib/action-delegation/landing/entities';
 	import delegationDegrees from '../../../lib/action-delegation/degreeDescription';
 	import { ShowFullListBtn } from '../../../lib/core/layout/shared';
-	import { FeaturesForProductType } from '../../../lib/core/layout/entities';
 	import { Features } from '../../../lib/action-delegation/landing/widgets';
 
 	import {

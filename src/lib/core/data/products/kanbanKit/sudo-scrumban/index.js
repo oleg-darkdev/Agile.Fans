@@ -20,7 +20,7 @@ const product = {
 
 		banner:
 			'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
-		link: '/',
+		link: 'sudo-scrumban/',
 		synopsis:
 			'Gra wizualizuje proces pracy w metodologii ScrumBan, pozwala łatwo pracować z metrykami, zmieniać ustalenia poprzez szybkie retrospektywy i informacje zwrotne.',
 		video:

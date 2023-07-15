@@ -16,8 +16,8 @@ import {
 	kanbanKit,
 	kanbanel,
 	healthCheck,
-  actionDelegation,
-  сoastOfDelay,
+	actionDelegation,
+	сoastOfDelay,
 	sudoScrumban,
 	retrogen,
 	pomodoroPlan,
@@ -95,11 +95,11 @@ export {
 	pomodoroPlan,
 	kanbanRiders,
 	easyKanban,
-  crazyWip,
-  
+	crazyWip,
 	kanbanKitSubProducts,
 	agileKitSubProducts,
-	scrumKitSubProducts,
+  scrumKitSubProducts,
+  
 	allKit,
 	scrumKit
 };

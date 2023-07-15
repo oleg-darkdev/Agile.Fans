@@ -17,6 +17,7 @@
 		HeroProduct,
 		HeaderBottomLine,
 		StickyBanner,
+    Footer,
 		Stats,
 		Cookie
 	} from '../../../lib/core/layout/widgets';
@@ -86,3 +87,5 @@ Contact -->
 <FaqProduct faq={productData.faq} />
 
 <Contact />
+
+<Footer />

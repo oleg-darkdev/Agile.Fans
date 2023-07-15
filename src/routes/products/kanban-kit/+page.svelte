@@ -73,4 +73,4 @@
 
 <Contact />
 
-<Footer {productData} productsCategories={allKit.products} />
+<Footer />

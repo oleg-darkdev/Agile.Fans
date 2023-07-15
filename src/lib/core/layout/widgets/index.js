@@ -15,6 +15,9 @@ import Price from './ui/landing/Price.svelte';
 import Contact from './ui/landing/Contact.svelte';
 import StickyBanner from './ui/landing/StickyBanner.svelte';
 import Video from './ui/landing/Video.svelte';
+import FullScreenVideo from './ui/landing/FullScreenVideo.svelte';
+
+
 
 import ProductVariants from './ui/products/ProductVariants.svelte';
 import FaqProduct from './ui/products/Faq.svelte';
@@ -25,7 +28,8 @@ import HeaderBottomLine from './ui/products/HeaderBottomLine.svelte';
 
 export {
 	ProductVariants,
-	StickyBanner,
+  StickyBanner,
+  FullScreenVideo,
   HeaderApp,
   Product,
   AppScreen,

@@ -209,7 +209,7 @@
 
 <FAQ productsFaq={allFaq} />
 
-<Footer {productData} productsCategories={allProductsArr} />
+<Footer />
 
 <style>
 	@media (max-width: 640px) {

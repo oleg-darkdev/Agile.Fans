@@ -1,6 +1,15 @@
 <script>
 	import { FooterLink, FooterLinkTargetNewBlank } from '../../../shared';
 
+  import { agileFans, allKit, productsList  } from '../../../../data';
+
+	const allProductsArr = [].concat(
+		productsList.kanbanKit,
+		productsList.scrumKit,
+		productsList.agileKit,
+		allKit.products
+	);
+
 	const legalLinks = [
 		{
 			title: 'About us',
@@ -87,10 +96,6 @@
 		}
 	];
 
-	export let productData, productsCategories;
-
-
-// console.log(productsCategories);
 </script>
 
 
@@ -125,7 +130,7 @@
 				<h3 class="text-sm font-medium text-pink-500 ">Agile.fans products</h3>
 
 				<div class="grid grid-cols-2 gap-1 mt-4 space-y-4">
-					{#each productsCategories as product}
+					{#each allProductsArr as product}
 						<a
 							href="/products/{product.shortDesc.link}"
 							class="text-neutral-400 transition-colors duration-200 hover:text-pink-600 hover:underline  "
@@ -139,7 +144,7 @@
 				<h3 class="text-sm font-medium text-pink-500 " />
 
 				<div class="mt-4 flex flex-col items-start space-y-4">
-					{#each productsCategories.slice(0, 6) as product}
+					{#each allProductsArr.slice(0, 6) as product}
 						<a
 							href="/products/{product.shortDesc.link}"
 							class="text-neutral-400 transition-colors duration-200 hover:text-pink-600 hover:underline  "
@@ -196,8 +201,8 @@
 			<a href="#">
 				<img
 					class="h-20 w-auto"
-					src={productData.shortDesc.logo}
-					alt={productData.shortDesc.title}
+					src={agileFans.shortDesc.logo}
+					alt={agileFans.shortDesc.title}
 				/>
 			</a>
 

@@ -66,7 +66,7 @@
 <!-- <Product {product} />
 {/each} -->
 
-<Price />
+<Price prices={productData.prices}/>
 <Reviews feedback={productData.feedback} />
 
 <FAQ productsFaq={kanbanKitFaq}/>

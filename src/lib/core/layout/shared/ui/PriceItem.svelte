@@ -2,7 +2,7 @@
 	export let text;
 </script>
 
-<li class="mb-2 flex items-center text-base font-medium leading-relaxed text-gray-100">
+<p class="mb-2 flex items-center text-base font-medium leading-relaxed text-gray-100">
 	<span
 		class="mr-2 inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-gray-50 text-white"
 	>
@@ -18,4 +18,4 @@
 		</svg>
 	</span>
 	{text}
-</li>
+</p>

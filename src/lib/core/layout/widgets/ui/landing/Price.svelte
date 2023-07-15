@@ -1,45 +1,7 @@
 <script>
 	import { PriceLine } from '../../../entities';
 
-	let priceItems = [
-		'Lorem ipsum is placeholder',
-		'Lorem ipsum is placeholder',
-		'Lorem ipsum is placeholder'
-	];
-
-	let prices = [
-		{
-			title: 'Free',
-			priceItems: priceItems,
-			link: '',
-			tax: 0,
-			terms: 'Trial access to web services for 2 weeks',
-			bg: 'bg-pink-500'
-
-			// textColor: 'text-gray-400'
-		},
-		{
-			title: 'Online acces for all products',
-			priceItems: priceItems,
-			link: '',
-			tax: 12,
-			terms: 'Full acces for all online apps',
-			bg: 'bg-pink-600'
-
-			// textColor: 'text-gray-500'
-		},
-		{
-			title: 'Full box',
-			priceItems: priceItems,
-			link: '',
-			tax: 200,
-			terms: 'Extended trial access to web services for 2 months ',
-			bg: 'bg-black'
-
-			// bg: 'bg-pink-700'
-			// textColor: 'text-gray-700'
-		}
-	];
+export let prices;
 </script>
 
 <section class="md:my-12 lg:my-12">

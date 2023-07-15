@@ -1,12 +1,8 @@
 // DB
 import kanbanKitBoardModel from './kanbanKit/kanbanKitBoardModel.js';
-
 // end DB
 
 import {
-	// lorem as loremFirst,
-	// lorem as loremSecond,
-	// lorem as loremThird,
 	agileFans,
 
 	// agileKit
@@ -23,7 +19,8 @@ import {
 	pomodoroPlan,
 	kanbanRiders,
 	easyKanban,
-	crazyWip,
+  crazyWip,
+
 	// scrumKit
 	scrumKit
 } from './products';
@@ -33,11 +30,8 @@ import contact from './contact';
 
 const productsList = {
 	agileKit,
-	// loremFirst,
 	kanbanKit,
-	// loremSecond,
 	scrumKit
-	// loremThird
 };
 
 const kanbanKitSubProducts = [
@@ -77,8 +71,8 @@ const agileKIT = {
 		products: [].concat(kanbanKIT.products, scrumKIT.products, agileKIT.products)
 	};
 
-const productsCategories = [kanbanKIT];
-// agileKIT, scrumKIT
+const productsCategories = [allKit, kanbanKIT, scrumKIT, agileKIT];
+
 export {
 	productsList,
 	contact,
@@ -99,7 +93,7 @@ export {
 	kanbanKitSubProducts,
 	agileKitSubProducts,
   scrumKitSubProducts,
-  
+
 	allKit,
 	scrumKit
 };

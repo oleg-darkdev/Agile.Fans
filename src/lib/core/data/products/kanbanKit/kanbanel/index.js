@@ -17,7 +17,6 @@ const product = {
 		title: 'Kanbanel',
 		logo: '/kanbanel/logo.svg',
 		promo: '/kanbanel/logo.svg',
-
 		icon: '/kanbanel/icon.svg',
 
 		banner:

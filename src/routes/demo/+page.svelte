@@ -1,13 +1,17 @@
 <script>
-	import { HeaderApp } from '../../lib/core/layout/widgets';
+	import { HeaderApp, Footer } from '../../lib/core/layout/widgets';
 	import { ProductItem } from '../../lib/core/layout/entities';
 
 	import { Aside } from '../../lib/core/layout/entities';
 
-	import { productsList } from '../../lib/core/data';
+	import { productsList, agileFans, allKit, productsCategories } from '../../lib/core/data';
 	import { convertObjToArray } from '../../lib/core/utils';
 
 	const arrayOfProducts = convertObjToArray(productsList);
+
+	const allProductsArr = [].concat(
+		allKit.products
+	);
 
 	$: selectedApp = '';
 
@@ -59,7 +63,7 @@
 <HeaderApp productData={productsList.agileKit} />
 
 <main class="flex flex-row ">
-	<Aside {selectedApp} />
+	<Aside {selectedApp} {allProductsArr}/>
 
 	<section class="my-12 grid gap-4 py-8 px-4 lg:grid-cols-2 xl:gap-x-12 ">
     <div class=" rounded-xl bg-gray-200  py-4 px-4 text-center ">
@@ -147,3 +151,5 @@
 	</section>
 </main>
 <!-- {#if selectedApp}{/if} -->
+
+<Footer />

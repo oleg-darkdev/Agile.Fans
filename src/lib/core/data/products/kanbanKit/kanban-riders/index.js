@@ -15,8 +15,9 @@ const product = {
 	shortDesc: {
 		text: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
 		title: 'Kanban Riders.',
-		logo: '',
-		promo: '',
+		logo: '/kanban-riders/logo.svg',
+		promo: '/kanban-riders/logo.svg',
+		icon: '/kanban-riders/icon.svg',
 
 		banner:
 			'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',

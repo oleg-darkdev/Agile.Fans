@@ -17,12 +17,11 @@ const product = {
 		text: '',
 		title: 'Health Check App - How is your team feeling?',
 		logo: './health-check/logo.svg',
-		icon: productsIcons.healthCheck.icon,
+		icon: '/health-check/icon.svg',
 
 		banner:
 			'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
-		promo:
-			'https://lh4.googleusercontent.com/kYErnMIZpuNbLnph6Rw_fq6S_znfF0vwdL02wxbnuqQZiaZn20DDRaYzlTnbp-asdx8XPQVwXQIfytLMDWSnTkoy9_ArhRD3fhazKNRl4RsccdbXsmButg3piG_JMcSAEOeVT7k',
+		promo: '/health-check/logo.svg',
 		link: 'health-check/',
 		synopsis:
 			'Gra do systematycznego podejścia poprawy wydajności zespołu, z wykorzystaniem przejrzystej wizualizacji i oceny obecnego stanu.',

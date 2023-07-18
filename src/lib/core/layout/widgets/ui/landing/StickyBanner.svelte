@@ -12,10 +12,10 @@
 >
 	<div class="mb-3 mr-4 flex flex-col items-start md:mb-0 md:flex-row md:items-center">
 		<a
-			href="https://flowbite.com/"
+			href="/"
 			class="mb-2 flex items-center border-gray-200 dark:border-gray-600 md:mr-4 md:mb-0 md:border-r md:pr-4"
 		>
-			<img src={productData.shortDesc.logo} class="mr-2 h-10 w-auto" alt="Flowbite Logo" />
+			<img src={productData.shortDesc.logo} class="mr-2 h-16 w-40" alt="Flowbite Logo" />
 		</a>
 		<p class="flex items-center text-md font-bold text-white">
 			The {productData.shortDesc.title} is still being developed, try the demo version

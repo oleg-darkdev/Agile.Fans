@@ -1,59 +1,5 @@
 <script>
-	// import { ten, kanbanel, healthCheck, actionDelegation } from '../../../data/';
-
-	// const productsList = [ten, kanbanel, healthCheck, actionDelegation];
-	const icons = [
-		{
-			icon: '/cynefin/icon.svg',
-			link: '/apps/cynefin'
-		},
-		{
-			icon: '/action-delegation/icon.svg',
-			link: '/apps/action-delegation'
-		},
-		{
-			icon: 'health-check/icon.svg',
-			link: '/apps/health-check'
-		},
-		{
-			icon: '/kanbanel/icon.svg',
-			link: '/apps/kanbanel'
-		},
-		{
-			icon: '/lean-coffee/icon.svg',
-			link: '/apps/lean-coffee'
-		},
-		{
-			icon: '/pomodoro-plan/icon.svg',
-			link: '/apps/pomodoro-plan/'
-		},
-		// {
-		//   icon: '',
-		//   link: '/apps/retromat'
-		// },
-		{
-			icon: '/spiral-dynamics/icon.svg',
-			link: '/apps/spiral-dynamics'
-		},
-		{
-			icon: '/ten/icon.svg',
-			link: '/apps/ten'
-		},
-		// {
-		//   icon: '',
-		//   link: '/apps/ten'
-		// },
-		// {
-		//   icon: '',
-		//   link: '/apps/ten'
-		// },
-		{
-			icon: '/scrum-puzle/icon.svg',
-			link: '/apps/scrum-puzle'
-		}
-	];
-
-	export let selectedApp;
+	export let selectedApp, allProductsArr;
 </script>
 
 <aside class="flex">
@@ -63,12 +9,12 @@
 				<img class="h-6 w-auto" src="https://merakiui.com/images/logo.svg" alt="" />
 			</a> -->
 
-			{#each icons as icon}
+			{#each allProductsArr as product}
 				<button
 					on:click={() => selectedApp}
 					class="focus:outline-nones inline-block rounded-lg p-1.5 text-black transition-colors duration-200 hover:bg-black"
 				>
-					<img src={icon.icon} class="h-8 w-8" alt="" />
+					<img src={product.shortDesc.icon} class="h-8 w-8" alt="" />
 				</button>
 			{/each}
 

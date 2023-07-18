@@ -12,7 +12,7 @@
 				class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl"
 				aria-label="logo"
 			>
-				<img src={productData.shortDesc.logo} class="h-12 w-24 lg:h-24 lg:w-48 " alt="" />
+				<img src='/core/logo.svg' class="h-12 w-24 lg:h-24 lg:w-48 " alt="" />
 			</a>
 			<div class="flex w-full justify-end md:order-2 md:py-2 lg:w-6/12 lg:py-2">
 				<div class="justify-content-sm flex flex-row ">

@@ -15,9 +15,9 @@ const product = {
 	shortDesc: {
 		text: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
 		title: 'KanbanKIT',
-		logo: '/kanban-kit/logo.svg',
-		promo: '/kanban-kit/logo.svg',
-		icon: '/kanban-kit/icon.svg',
+		logo: '/core/kanbanKit/logo.svg',
+		promo: '/core/kanbanKit/logo.svg',
+		icon: '/core/kanbanKit/icon.svg',
 
 		banner:
 			'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',

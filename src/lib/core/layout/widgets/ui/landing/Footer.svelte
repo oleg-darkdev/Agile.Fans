@@ -1,7 +1,7 @@
 <script>
 	import { FooterLink, FooterLinkTargetNewBlank } from '../../../shared';
 
-  import { agileFans, allKit, productsList  } from '../../../../data';
+	import { agileFans, allKit, productsList } from '../../../../data';
 
 	const allProductsArr = [].concat(
 		productsList.kanbanKit,
@@ -38,10 +38,10 @@
 			title: 'Facebook',
 			link: 'https://facebook.com/groups/1155818035374001/'
 		},
-    {
-      title: 'Youtube',
-      link: 'https://www.youtube.com/channel/UC317AMnk8sj3EWGhm73JMCw'
-    }
+		{
+			title: 'Youtube',
+			link: 'https://www.youtube.com/channel/UC317AMnk8sj3EWGhm73JMCw'
+		}
 	];
 
 	const resourcesLinks = [
@@ -57,10 +57,10 @@
 			title: 'Help center',
 			link: '/help-center'
 		},
-    {
+		{
 			title: 'FAQ',
 			link: '/help-center/faq'
-		},
+		}
 	];
 
 	const useCasesLinks = [
@@ -95,10 +95,7 @@
 			link: '/use-cases/personal'
 		}
 	];
-
 </script>
-
-
 
 <footer class="bg-black">
 	<div class="container mx-auto px-6 py-12">
@@ -124,12 +121,12 @@
 		</div>
 
 		<div
-			class="mt-12 mx-auto grid grid-cols-2 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+			class="mx-auto mt-12 grid grid-cols-2 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
 		>
-			<div class='max-w-md'>
+			<div class="max-w-md">
 				<h3 class="text-sm font-medium text-pink-500 ">Agile.fans products</h3>
 
-				<div class="grid grid-cols-2 gap-1 mt-4 space-y-4">
+				<div class="mt-4 grid grid-cols-2 gap-1 space-y-4">
 					{#each allProductsArr as product}
 						<a
 							href="/products/{product.shortDesc.link}"
@@ -199,18 +196,13 @@
 
 		<div class=" flex flex-col items-center justify-between sm:flex-row">
 			<a href="#">
-				<img
-					class="h-20 w-auto"
-					src={agileFans.shortDesc.logo}
-					alt={agileFans.shortDesc.title}
-				/>
+				<img class="h-20 w-auto" src="/core/logo.svg" alt="Agile.fans logo" />
 			</a>
 
 			<p class="mt-4 text-sm text-pink-700  sm:mt-0">© Copyright 2023. All Rights Reserved.</p>
 		</div>
 	</div>
 </footer>
-
 
 <!--
 <footer class="bg-white" aria-labelledby="footer-heading">

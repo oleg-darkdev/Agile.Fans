@@ -1,9 +1,9 @@
 function extractFaqValues(objArray) {
-	var faqValues = [];
+	let faqValues = [];
 
-	for (var i = 0; i < objArray.length; i++) {
-		var obj = objArray[i];
-		var faq = obj.faq;
+	for (let i = 0; i < objArray.length; i++) {
+		let obj = objArray[i],
+			faq = obj.faq;
 
 		faqValues.push(faq);
 	}

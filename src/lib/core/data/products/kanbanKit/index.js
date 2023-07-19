@@ -7,6 +7,7 @@ import easyKanban from './easy-kanban';
 import kanbanRiders from './kanban-riders';
 import pomodoroPlan from './pomodoro-plan';
 import retrogen from './retrogen';
+import leanCoffee from './lean-coffee';
 import sudoScrumban from './sudo-scrumban';
 import сoastOfDelay from './сoast-of-delay';
 
@@ -17,7 +18,8 @@ export {
 	kanbanKit,
 	сoastOfDelay,
 	sudoScrumban,
-	retrogen,
+  retrogen,
+  leanCoffee,
 	pomodoroPlan,
 	kanbanRiders,
 	easyKanban,

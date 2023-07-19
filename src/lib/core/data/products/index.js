@@ -3,7 +3,8 @@ import {
 	kanbanel,
 	healthCheck,
 	actionDelegation,
-	kanbanKit,
+  kanbanKit,
+  leanCoffee,
 
 	сoastOfDelay,
 	sudoScrumban,
@@ -27,8 +28,8 @@ export {
 	kanbanKit,
 	scrumKit,
   agileFans,
+leanCoffee,
 
-  
 	сoastOfDelay,
 	sudoScrumban,
 	retrogen,

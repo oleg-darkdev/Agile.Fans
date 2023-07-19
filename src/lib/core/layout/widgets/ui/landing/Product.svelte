@@ -18,7 +18,7 @@
 				class="mx-2 inline-flex cursor-pointer rounded-2xl py-0.5 px-4 text-2xl transition-colors duration-300
     {selectedCategory.title == category.title
 					? 'bg-pink-500  text-white hover:bg-black'
-					: 'border-gray-6000 border-2 text-black hover:bg-black hover:text-white focus:outline-none'}"
+					: 'border-gray-600 border-2 text-black hover:bg-black hover:text-white focus:outline-none'}"
 				>{category.title}</button
 			>
 		{/each}

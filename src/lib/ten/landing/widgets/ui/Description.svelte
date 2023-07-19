@@ -5,7 +5,7 @@
 				<div>
 					<div class="relative w-full max-w-lg">
 						<div
-							class="animate-blob absolute top-0 -left-4 h-72 w-72 rounded-full bg-violet-300 opacity-70 mix-blend-multiply blur-xl filter"
+							class="animate-blob absolute top-0 -left-4 h-72 w-72 rounded-full bg-pink-300 opacity-70 mix-blend-multiply blur-xl filter"
 						/>
 
 						<div

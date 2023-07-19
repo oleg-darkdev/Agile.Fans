@@ -62,9 +62,9 @@
 					<div class="flex items-center justify-center space-x-3 border-t-2 p-3">
 						<a
 							rel="noopener noreferrer"
-							href=''
+							href=""
 							title="LinkedIn"
-							class="text-gray-900 hover:text-violet-400"
+							class="text-gray-900 hover:text-pink-400"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -80,9 +80,9 @@
 
 						<a
 							rel="noopener noreferrer"
-							href=''
+							href=""
 							title="GitHub"
-							class="text-gray-900 hover:text-violet-400"
+							class="text-gray-900 hover:text-pink-400"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@
 						</a>
 					</div>
 				{/if}
-				<button on:click={() => (showContact = !showContact)} class="btn-outline btn  btn-warning "
+				<button on:click={() => (showContact = !showContact)} class="btn-outline btn-warning  btn "
 					>Kontakt do autora</button
 				>
 			</div>

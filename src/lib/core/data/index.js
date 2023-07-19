@@ -20,7 +20,7 @@ import {
 	kanbanRiders,
 	easyKanban,
 	crazyWip,
-leanCoffee,
+	leanCoffee,
 	// scrumKit
 	scrumKit
 } from './products';
@@ -36,7 +36,6 @@ const productsList = {
 
 const kanbanKitSubProducts = [
 		kanbanel,
-		healthCheck,
 		actionDelegation,
 		сoastOfDelay,
 		sudoScrumban,
@@ -45,7 +44,8 @@ const kanbanKitSubProducts = [
 		kanbanRiders,
 		easyKanban,
 		crazyWip,
-		leanCoffee
+		leanCoffee,
+		healthCheck
 	],
 	scrumKitSubProducts = [],
 	agileKitSubProducts = [ten];
@@ -82,8 +82,8 @@ export {
 	kanbanKitBoardModel,
 	agileFans,
 	healthCheck,
-  actionDelegation,
-  leanCoffee,
+	actionDelegation,
+	leanCoffee,
 	ten,
 	сoastOfDelay,
 	sudoScrumban,

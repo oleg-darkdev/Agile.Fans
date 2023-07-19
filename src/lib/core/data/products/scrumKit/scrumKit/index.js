@@ -16,7 +16,7 @@ const product = {
 	headerLinks: defaultHeader,
 	shortDesc: {
 		text: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
-		title: 'Scrum.Kit',
+		title: 'ScrumKIT',
 		logo: '',
 		icon: productsIcons.scrumKit.icon,
 		promo:

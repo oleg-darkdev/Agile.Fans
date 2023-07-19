@@ -2,33 +2,19 @@
 	import { DegreeDescriptionCard } from '../../../lib/action-delegation/landing/entities';
 	import delegationDegrees from '../../../lib/action-delegation/degreeDescription';
 	import { ShowFullListBtn } from '../../../lib/core/layout/shared';
-	import { Features } from '../../../lib/action-delegation/landing/widgets';
-
-	import {
-		Contact,
-		FreeDownload,
-		ProductVariants,
-		Header,
-		Video,
-		FaqProduct,
-		CallToWorkshop,
-		AboutProduct,
-		Reviews,
-		HeroProduct,
-		HeaderBottomLine,
-		StickyBanner,
-    Footer,
-		Stats,
-		Cookie
-	} from '../../../lib/core/layout/widgets';
 
 	$: showFullList = true;
+
+	import { ProductLanding } from '../../../lib/core/layout/features';
 
 	import { actionDelegation } from '../../../lib/core/data';
 	const productData = actionDelegation;
 </script>
 
 <!--
+  Header
+
+
 Teoria stopniej delegowania
 Web Aplikacja
 Warsztaty
@@ -36,56 +22,31 @@ Prices
 FAQ
 Contact -->
 
-<Header {productData} />
+<ProductLanding {productData}>
+	<section class="mb-12 flex flex-col items-center justify-center">
+		<div class="max-w-7xl">
+			<h2
+				class="max-w-5xl text-center text-4xl font-medium leading-none tracking-tighter text-neutral-600 md:text-5xl lg:max-w-4xl "
+			>
+				Opis etapów delegowania
+			</h2>
+			{#each delegationDegrees as degree}
+				<DegreeDescriptionCard {degree} />
+			{/each}
+			<!-- {#each showFullList ? delegationDegrees.splice(0, 3) : delegationDegrees as degree}
+				<DegreeDescriptionCard {degree} />
+			{/each} -->
+		</div>
+		<div class="mx-auto w-80">
+			<ShowFullListBtn bind:showFullList />
+		</div>
 
-<StickyBanner {productData} />
-
-<Cookie />
-
-<HeroProduct shortDesc={productData.shortDesc} />
-
-<Features features={productData.features} />
-
-<AboutProduct about={productData.about} title={productData.shortDesc.title} />
-
-<section class="mb-12 flex flex-col items-center justify-center">
-	<div class="max-w-7xl">
-		<h2
-			class="max-w-5xl text-center text-4xl font-medium leading-none tracking-tighter text-neutral-600 md:text-5xl lg:max-w-4xl "
-		>
-			Opis etapów delegowania
-		</h2>
-
-		{#each showFullList ? delegationDegrees.splice(0, 3) : delegationDegrees as degree}
-			<DegreeDescriptionCard {degree} />
-		{/each}
-	</div>
-	<div class="mx-auto w-80">
-		<ShowFullListBtn bind:showFullList />
-	</div>
-
-	<!-- <div class="embed-responsive embed-responsive-16by9 w-8/12 overflow-hidden rounded ">
+		<!-- <div class="embed-responsive embed-responsive-16by9 w-8/12 overflow-hidden rounded ">
 			<iframe
 				class="embed-responsive-item h-96 w-full rounded"
 				src="https://www.youtube.com/embed/v64KOxKVLVg"
 				allowfullscreen
 			/>
 		</div> -->
-</section>
-
-<CallToWorkshop />
-
-<Video
-	link="{productData.shortDesc.video}"
-/>
-<Reviews feedback={productData.feedback} />
-
-<ProductVariants title='Warianty produktu' productVariants={productData.variants} mainProduct={productData.shortDesc.title}/>
-
-<FreeDownload translates={productData.shortDesc.translates}/>
-
-<FaqProduct faq={productData.faq} />
-
-<Contact />
-
-<Footer />
+	</section>
+</ProductLanding>

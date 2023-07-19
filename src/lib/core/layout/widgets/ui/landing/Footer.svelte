@@ -10,21 +10,6 @@
 		allKit.products
 	);
 
-	const legalLinks = [
-		{
-			title: 'About us',
-			link: '/about'
-		},
-
-		{
-			title: 'Contact',
-			link: '/contact'
-		},
-		{
-			title: 'Careers',
-			link: '/careers'
-		}
-	];
 	const socialLinks = [
 		{
 			title: 'LinkedIn',
@@ -60,6 +45,10 @@
 		{
 			title: 'FAQ',
 			link: '/help-center/faq'
+		},
+		{
+			title: 'About us',
+			link: '/about'
 		}
 	];
 
@@ -119,14 +108,12 @@
 				>
 			</div>
 		</div>
-
-		<div
-			class="mx-auto mt-12 grid grid-cols-2 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
-		>
-			<div class="max-w-md">
+		<!-- grid grid-cols-2 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-2 -->
+		<div class="mx-auto mt-12 flex flex-row flex-wrap justify-between">
+			<div class="max-w-2xl">
 				<h3 class="text-sm font-medium text-pink-500 ">Agile.fans products</h3>
 
-				<div class="mt-4 grid grid-cols-2 gap-1 space-y-4">
+				<div class="mt-4 grid grid-cols-4 gap-1 space-y-4">
 					{#each allProductsArr as product}
 						<a
 							href="/products/{product.shortDesc.link}"
@@ -151,27 +138,29 @@
 				</div>
 			</div> -->
 
-			<div>
-				<h3 class="text-sm font-medium text-pink-500 ">Resources</h3>
+			<div class="flex flex-row flex-wrap justify-between lg:w-3/12">
+				<div>
+					<h3 class="text-sm font-medium text-pink-500 ">Use cases</h3>
 
-				<div class="mt-4 flex flex-col items-start space-y-4">
-					{#each resourcesLinks as link}
-						<FooterLink {link} />
-					{/each}
+					<div class="mt-4 flex flex-col items-start space-y-4">
+						{#each useCasesLinks as link}
+							<FooterLink {link} />
+						{/each}
+					</div>
+				</div>
+
+				<div>
+					<h3 class="text-sm font-medium text-pink-500 ">Resources</h3>
+
+					<div class="mt-4 flex flex-col items-start space-y-4">
+						{#each resourcesLinks as link}
+							<FooterLink {link} />
+						{/each}
+					</div>
 				</div>
 			</div>
 
-			<div>
-				<h3 class="text-sm font-medium text-pink-500 ">Use cases</h3>
-
-				<div class="mt-4 flex flex-col items-start space-y-4">
-					{#each useCasesLinks as link}
-						<FooterLink {link} />
-					{/each}
-				</div>
-			</div>
-
-			<div>
+			<div class="">
 				<h3 class="text-sm font-medium text-pink-500 ">Social</h3>
 
 				<div class="mt-4 flex flex-col items-start space-y-4">
@@ -181,7 +170,7 @@
 				</div>
 			</div>
 
-			<div>
+			<!-- <div>
 				<h3 class="text-sm font-medium text-pink-500 ">Legal</h3>
 
 				<div class="mt-4 flex flex-col items-start space-y-4">
@@ -190,6 +179,7 @@
 					{/each}
 				</div>
 			</div>
+		 -->
 		</div>
 
 		<hr class="my-2 border-pink-500  md:my-6" />
@@ -202,6 +192,7 @@
 			<p class="mt-4 text-sm text-pink-700  sm:mt-0">© Copyright 2023. All Rights Reserved.</p>
 		</div>
 	</div>
+	<!-- </div> -->
 </footer>
 
 <!--

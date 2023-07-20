@@ -81,7 +81,7 @@ const taskInstruction = {
 		{
 			title: '3. Praca nad zadaniem:',
 			desc: [
-				`3.1. . Kości reprezentują ludzi pracujących nad zadaniem, a wyrzucone liczby reprezentują
+				`3.1. Kości reprezentują ludzi pracujących nad zadaniem, a wyrzucone liczby reprezentują
 ilość pracy jaką możemy nad nimi wykonać danego dnia. Jak w rzeczywistości -
 nasze dni nie są równie produktywne.`,
 				`3.2. Jeśli rzucasz kością w obszarze swojej specjalizacji A lub B (ten sam kolor kości i

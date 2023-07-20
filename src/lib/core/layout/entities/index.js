@@ -19,7 +19,15 @@ import StepsList from './ui/app/startScreen/StepsList.svelte';
 import TableOfContent from './ui/app/manualScreen/TableOfContent.svelte'
 import VideoCard from './ui/app/manualScreen/VideoCard.svelte';
 
+// game screen
+import CountdownTimer from './ui/app/gameScreen/CountdownTimer.svelte';
+import GameStepsBtns from './ui/app/gameScreen/GameStepsBtns.svelte'
+import TimeCounterBlock from './ui/app/gameScreen/TimeCounterBlock.svelte'
+
 export {
+  CountdownTimer,
+  TimeCounterBlock,
+  GameStepsBtns,
 	FreeDownload,
 	WorkshopCard,
 	TableOfContent,

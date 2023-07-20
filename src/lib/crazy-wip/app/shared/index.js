@@ -5,4 +5,7 @@ import {
 	taskInstruction,
 } from './data/instruction';
 
-export { gameSteps, dayInstruction, blockersInstruction, taskInstruction };
+import firstScenarioBasic from './data/scenaroius/firstScenarioBasic';
+
+
+export { gameSteps, firstScenarioBasic, dayInstruction, blockersInstruction, taskInstruction };

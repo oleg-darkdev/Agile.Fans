@@ -1,3 +1,5 @@
+
+
 <script>
 	import { HeaderApp, Footer } from '../../lib/core/layout/widgets';
 	import { ProductItem } from '../../lib/core/layout/entities';

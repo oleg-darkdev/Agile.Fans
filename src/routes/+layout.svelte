@@ -4,21 +4,28 @@
 
 
  -->
-<script>
+  <script lang="ts">
 	import '../app.css';
 	import 'aos/dist/aos.css';
-	// import AOS from 'aos';
+
+	// import { invalidateAll } from '$app/navigation';
+	// import { supabaseClient } from '$lib/supabase';
 	// import { onMount } from 'svelte';
+
 	// onMount(() => {
-	// 	AOS.init();
+	// 	const {
+	// 		data: { subscription }
+	// 	} = supabaseClient.auth.onAuthStateChange(() => {
+	// 		invalidateAll();
+	// 	});
+
+	// 	return () => {
+	// 		subscription.unsubscribe();
+	// 	};
 	// });
-
-	// import { Footer } from '../lib/core/layout/widgets';
-
-	// import { productsList, allKit } from '../lib/core/data';
-
-	// const productData = productsList.agileKit;
 </script>
+
+<slot />
 
 
 <main class="">

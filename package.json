@@ -22,6 +22,7 @@
 		"@tanstack/svelte-query": "^4.24.4",
 		"aos": "^2.3.4",
 		"moment": "^2.18.1",
+		"pocketbase": "^0.16.0",
 		"ramda": "^0.24.1"
 	},
 	"devDependencies": {
@@ -30,8 +31,6 @@
 		"@fontsource/poppins": "^4.5.10",
 		"@playwright-testing-library/test": "^4.5.0",
 		"@playwright/test": "^1.30.0",
-		"@supabase/auth-helpers-sveltekit": "^0.8.7",
-		"@supabase/supabase-js": "^2.29.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.3",
 		"@sveltejs/vite-plugin-svelte": "^2.0.2",

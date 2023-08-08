@@ -1,5 +1,17 @@
 <script>
-	export let selectedApp, allProductsArr;
+	export let user;
+
+	import { productsList, allKit } from '../../../data';
+
+	import { convertObjToArray } from '../../../utils';
+
+	const arrayOfProducts = convertObjToArray(productsList);
+
+	const allProductsArr = [].concat(allKit.products);
+
+	$: selectedApp = '';
+
+console.log(user);
 </script>
 
 <aside class="flex">
@@ -10,42 +22,45 @@
 			</a> -->
 
 			{#each allProductsArr as product}
-				<button
-					on:click={() => selectedApp}
-					class="focus:outline-nones inline-block rounded-lg p-1.5 text-black transition-colors duration-200 hover:bg-black"
+				<!--{product.id == selectedApp  ? 'bg-black': ''}  -->
+				<a
+					href="/apps/{product.shortDesc.link}"
+					class="focus:outline-nones inline-block rounded-lg p-1.5 text-black transition-colors duration-200 hover:bg-black "
 				>
 					<img src={product.shortDesc.icon} class="h-8 w-8" alt="" />
-				</button>
+				</a>
 			{/each}
 
 			<div class="mt-20 flex flex-col items-center space-y-4">
 				<a href="#">
 					<img
 						class="h-8 w-8 rounded-lg object-cover"
-						src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&h=634&q=80"
+						src="{user.avatar}"
 						alt="avatar"
 					/>
 				</a>
 
-				<a
-					href="#"
-					class="rotate-180 text-gray-500 transition-colors duration-200 hover:text-pink-500 rtl:rotate-0 dark:text-gray-400 dark:hover:text-pink-400"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="h-6 w-6"
+				<form action="/logout" method="POST">
+					<button
+						type="submit"
+						class="rotate-180 text-gray-500 transition-colors duration-200 hover:text-pink-500 rtl:rotate-0 dark:text-gray-400 dark:hover:text-pink-400"
 					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
-						/>
-					</svg>
-				</a>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
+							/>
+						</svg></button
+					>
+				</form>
 			</div>
 		</nav>
 	</div>

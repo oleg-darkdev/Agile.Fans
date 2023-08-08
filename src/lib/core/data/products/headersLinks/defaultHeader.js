@@ -27,9 +27,8 @@ const defaultHeader = [
 
 	{
 		title: 'Web Aplikacja',
-		link: '/demo'
+		link: '/apps'
 	}
 ];
 
-
-export default defaultHeader
+export default defaultHeader;

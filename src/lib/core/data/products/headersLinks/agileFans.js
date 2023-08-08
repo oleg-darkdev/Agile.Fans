@@ -24,7 +24,7 @@ const defaultHeader = [
 	},
 	{
 		title: 'Web Aplikacja',
-		link: '/demo'
+		link: '/apps'
 	}
 ];
 

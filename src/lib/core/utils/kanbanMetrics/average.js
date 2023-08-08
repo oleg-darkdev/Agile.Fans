@@ -1,8 +1,8 @@
-import {
-  converge,
-  divide,
-  sum,
-  length,
-} from 'ramda'
+// import {
+//   converge,
+//   divide,
+//   sum,
+//   length,
+// } from 'ramda'
 
-export default converge(divide, [sum, length])
+// export default converge(divide, [sum, length])

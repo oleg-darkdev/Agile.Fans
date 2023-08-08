@@ -6,7 +6,7 @@
 		ManualScreen
 	} from '../../../lib/crazy-wip/app/widgets';
 
-	import { kanbanMetrics } from '../../../lib/core/utils/';
+	// import { kanbanMetrics } from '../../../lib/core/utils/';
 
 
 const stories = [
@@ -31,7 +31,7 @@ const stories = [
 ];
 
 
-const metrics = kanbanMetrics(stories);
+// const metrics = kanbanMetrics(stories);
 
 // Функция для расчёта канбан метрики Throughput
 function calculateThroughput(stories) {

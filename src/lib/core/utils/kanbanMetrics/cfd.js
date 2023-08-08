@@ -1,5 +1,5 @@
-const cfd = (stories) => {
-  return {}
-}
+// const cfd = (stories) => {
+//   return {}
+// }
 
-export default cfd
+// export default cfd

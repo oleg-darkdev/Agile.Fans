@@ -1,37 +1,19 @@
-<!--
-  ToDo:
-   * get product data fro, url
-
-
- -->
-  <script lang="ts">
+<script>
 	import '../app.css';
-	import 'aos/dist/aos.css';
-
-	// import { invalidateAll } from '$app/navigation';
-	// import { supabaseClient } from '$lib/supabase';
+	// import 'aos/dist/aos.css';
+	// import AOS from 'aos';
 	// import { onMount } from 'svelte';
-
 	// onMount(() => {
-	// 	const {
-	// 		data: { subscription }
-	// 	} = supabaseClient.auth.onAuthStateChange(() => {
-	// 		invalidateAll();
-	// 	});
-
-	// 	return () => {
-	// 		subscription.unsubscribe();
-	// 	};
+	// 	AOS.init();
 	// });
+	export let data;
 </script>
 
-<slot />
 
-
-<main class="">
+<main class="min-h-full">
+	<!--  -->
 	<slot />
 </main>
-<!--  -->
 
 <style>
 	@media (max-width: 640px) {

@@ -7,7 +7,12 @@ import Aside from './ui/Aside.svelte';
 import ProductItem from './ui/ProductItem.svelte';
 import WorkshopCard from './ui/WorkshopCard.svelte';
 import FooterApp from './ui/FooterApp.svelte';
+
 import TextBlock from './ui/app/TextBlock.svelte';
+import LoginForm from './ui/app/LoginForm.svelte';
+import WorkshopsList from './ui/app/WorkshopsList.svelte';
+import StatsAccount from './ui/app/StatsAccount.svelte';
+
 
 // start screen
 import FinalStepOnScreen from './ui/app/startScreen/FinalStepOnScreen.svelte';
@@ -25,6 +30,9 @@ import GameStepsBtns from './ui/app/gameScreen/GameStepsBtns.svelte'
 import TimeCounterBlock from './ui/app/gameScreen/TimeCounterBlock.svelte'
 
 export {
+  LoginForm,
+  WorkshopsList,
+  StatsAccount,
   CountdownTimer,
   TimeCounterBlock,
   GameStepsBtns,

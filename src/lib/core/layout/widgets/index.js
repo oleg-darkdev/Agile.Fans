@@ -8,6 +8,7 @@ import Product from './ui/landing/Product.svelte';
 import HeaderApp from './ui/app/Header.svelte';
 import AppScreen from './ui/app/AppScreen.svelte';
 
+
 import Stats from './ui/landing/Stats.svelte';
 import Cookie from './ui/landing/Cookie.svelte';
 import FAQ from './ui/landing/FAQ.svelte';
@@ -27,7 +28,7 @@ import HeroProduct from './ui/products/HeroProduct.svelte';
 import HeaderBottomLine from './ui/products/HeaderBottomLine.svelte';
 
 export {
-	ProductVariants,
+  ProductVariants,
   StickyBanner,
   FullScreenVideo,
   HeaderApp,

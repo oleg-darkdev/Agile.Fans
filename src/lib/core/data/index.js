@@ -2,6 +2,8 @@
 import kanbanKitBoardModel from './kanbanKit/kanbanKitBoardModel.js';
 // end DB
 
+import components from './components/';
+
 import {
 	agileFans,
 
@@ -97,5 +99,6 @@ export {
 	scrumKitSubProducts,
 	kanbanel,
 	allKit,
-	scrumKit
+	scrumKit,
+	components
 };

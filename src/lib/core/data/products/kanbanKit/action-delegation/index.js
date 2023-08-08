@@ -8,6 +8,7 @@ import features from './features';
 import price from './price';
 import feedback from './feedback';
 
+
 const delegation = {
 	id: 1,
 	status: 0,

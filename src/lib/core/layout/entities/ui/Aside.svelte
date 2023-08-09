@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	export let user;
 
 	import { productsList, allKit } from '../../../data';
@@ -11,18 +11,13 @@
 
 	$: selectedApp = '';
 
-console.log(user);
+	console.log(user);
 </script>
 
 <aside class="flex">
 	<div class="flex h-full min-h-screen w-16 flex-col items-center border-gray-700 bg-pink-800 py-8">
 		<nav class="flex flex-1 flex-col items-center space-y-6 ">
-			<!-- <a href="#">
-				<img class="h-6 w-auto" src="https://merakiui.com/images/logo.svg" alt="" />
-			</a> -->
-
 			{#each allProductsArr as product}
-				<!--{product.id == selectedApp  ? 'bg-black': ''}  -->
 				<a
 					href="/apps/{product.shortDesc.link}"
 					class="focus:outline-nones inline-block rounded-lg p-1.5 text-black transition-colors duration-200 hover:bg-black "
@@ -33,11 +28,7 @@ console.log(user);
 
 			<div class="mt-20 flex flex-col items-center space-y-4">
 				<a href="#">
-					<img
-						class="h-8 w-8 rounded-lg object-cover"
-						src="{user.avatar}"
-						alt="avatar"
-					/>
+					<img class="h-8 w-8 rounded-lg object-cover" src={user.avatar} alt="avatar" />
 				</a>
 
 				<form action="/logout" method="POST">
@@ -197,4 +188,4 @@ console.log(user);
 			</nav>
 		</div>
 	{/if}
-</aside>
+</aside> -->

@@ -1,4 +1,14 @@
 <script>
+	import { CountUp } from 'countup.js';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const workshopsCountUp = new CountUp('workshops', 50, { enableScrollSpy: true, duration: 6 }),
+			appsCountUp = new CountUp('apps', 12, { enableScrollSpy: true, duration: 8 }),
+			gamesCountUp = new CountUp('games', 20, { enableScrollSpy: true, duration: 6 });
+		// experienceCountUp = new CountUp('experience', 10, { enableScrollSpy: true, duration: 13 });
+	});
+
 	import { TextBlock } from '../lib/agile-fans/landing/entities';
 	import {
 		Slider,
@@ -118,7 +128,7 @@
 	</div>
 
 	<div class="flex w-full justify-end">
-    <!-- bg-blue-300 -->
+		<!-- bg-blue-300 -->
 		<div
 			class=" flex h-auto max-w-sm flex-col  items-center justify-center rounded-lg bg-primary p-6 text-right text-6xl font-extrabold text-primary"
 		>
@@ -127,6 +137,7 @@
 				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
 				industries for previewing layouts and visual mockups.
 			</p>
+			<p id="workshops" class="big-letters font-black text-pink-700" />
 		</div>
 	</div>
 	<img
@@ -149,6 +160,7 @@
 			Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
 			for previewing layouts and visual mockups.
 		</p>
+		<p id="games" class="big-letters font-black text-pink-700" />
 	</div>
 	<div class="flex w-full justify-end">
 		<div
@@ -159,6 +171,7 @@
 				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
 				industries for previewing layouts and visual mockups.
 			</p>
+			<p id="apps" class="big-letters font-black text-pink-700" />
 		</div>
 	</div>
 	<img
@@ -168,6 +181,40 @@
 		async
 	/>
 </div>
+
+<!-- <section class=" mx-auto mb-24 h-screen md:px-6">
+	<a name="about" />
+	<TextBlock
+		mt="0"
+		title={`Agile.fans: <br class="hidden lg:block"> One goal - more tools.`}
+		desc={descAgileFans}
+	/>
+	<div
+		class="z-1 -mt-[20%] h-[110%] w-full overflow-hidden rounded-xl bg-[url('/agile-fans/landing/more_tools.jpg')] bg-cover bg-fixed  bg-[50%] bg-no-repeat"
+	/>
+	<TextBlock
+		mt="20%"
+		title={`Zasilamy Ziemię.`}
+		desc={[
+			`Projektujemy ekologiczne systemy, które są masowo skalowalne — co daje największe możliwe
+			korzyści dla środowiska. Nasze produkty do wytwarzania i magazynowania energii współpracują z
+			naszymi pojazdami elektrycznymi, aby wzmocnić ich wpływ.`
+		]}
+	>
+		<div slot="bottom">
+			<div class="mx-auto mt-6 flex w-full max-w-2xl justify-center gap-2">
+				<div class="mt-3 rounded-lg sm:mt-0 sm:ml-3">
+					<a
+						href="/"
+						target="_blank"
+						class="block transform items-center rounded-xl border-2 border-white px-5 py-3.5 text-center text-base font-medium text-white hover:bg-pink-600 shadow-md transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 lg:px-10"
+						>Wszystkie warsztaty</a
+					>
+				</div>
+			</div>
+		</div>
+	</TextBlock>
+</section> -->
 
 <Product />
 
@@ -260,5 +307,9 @@
 
 	.justify-content {
 		justify-content: space-between;
+	}
+
+	.big-letters {
+		font-size: 300px;
 	}
 </style>

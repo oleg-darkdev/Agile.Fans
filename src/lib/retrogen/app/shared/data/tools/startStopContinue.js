@@ -3,9 +3,11 @@ import { sectionComponent, appComponent, holderComponent } from '$lib/core/data'
 // const kit = retrogenComponent.retrogen;
 
 const tool = {
-	id: '1',
+	id: '0',
 	title: 'Начать, Прекратить, Продолжать',
 	shortDesc: 'Мозговой штурм и выбор лучших предложений',
+	attention: '',
+
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
 		'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
@@ -30,7 +32,7 @@ const tool = {
 		`Найдите набор компонентов с идентификатором # в пакете с логотипом retrogen.`,
 		`Озаглавьте колонки: 'Начать', 'Прекратить' и 'Продолжать`,
 		`Ознакомьтесь с инструкцией`,
-		`Запускайте приложение`,
+		`Запускайте приложение`
 	],
 	instruction: [
 		`Установите таймер на 5 минут и попросите соблюдать тишину.`,

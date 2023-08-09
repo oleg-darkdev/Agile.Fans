@@ -1,5 +1,55 @@
-import { startStopContinue,   } from './data/list';
+import {
+	startStopContinue,
+	timelineChronology,
+	punlicToDoList,
+	proudAndPity,
+	leftRight,
+	perfection,
+	preElectionManifesto,
+	fourWhos,
+	repeatAndAvoid,
+	satisfactionWithMeetings,
+	newOldBlue,
+	tweetMySprint,
+	likeWishСould,
+	averageHospitalTemperature,
+	magicGin,
+	inspectorGadget
+} from './data/list';
 
+const allScanariousForRetrogen = [
+	startStopContinue,
+  timelineChronology,
+	punlicToDoList,
+  proudAndPity,
+	leftRight,
+	perfection,
+	preElectionManifesto,
+	fourWhos,
+	repeatAndAvoid,
+	satisfactionWithMeetings,
+	newOldBlue,
+	tweetMySprint,
+	likeWishСould,
+	averageHospitalTemperature,
+  magicGin,
+  inspectorGadget
+];
 
-
-export { startStopContinue };
+export {allScanariousForRetrogen, 	startStopContinue,
+  timelineChronology,
+	punlicToDoList,
+  proudAndPity,
+	leftRight,
+	perfection,
+	preElectionManifesto,
+	fourWhos,
+	repeatAndAvoid,
+	satisfactionWithMeetings,
+	newOldBlue,
+	tweetMySprint,
+	likeWishСould,
+	averageHospitalTemperature,
+  magicGin,
+  inspectorGadget
+ };

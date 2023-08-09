@@ -1,7 +1,6 @@
 <script>
 	import { Description, Hero, Logos, ProductsList } from '../../../lib/agile-fans/landing/widgets';
 
-
 	import {
 		Contact,
 		Header,
@@ -12,18 +11,18 @@
 		Reviews,
 		Stats,
 		Cookie,
-    ProductVariants,
+		ProductVariants,
 		Footer
 	} from '../../../lib/core/layout/widgets';
 
 	import { FeaturesForStats } from '../../../lib/core/layout/entities';
 
 	import { productsList, kanbanKitSubProducts, allKit } from '../../../lib/core/data';
-  import {extractFaqValues} from '../../../lib/core/utils';
+	import { extractFaqValues } from '../../../lib/core/utils';
 
 	const productData = productsList.kanbanKit;
 
-  const kanbanKitFaq = extractFaqValues(kanbanKitSubProducts);
+	const kanbanKitFaq = extractFaqValues(kanbanKitSubProducts);
 
 </script>
 
@@ -41,8 +40,11 @@
 	</div>
 </Hero>
 
-<ProductVariants title='Zestaw produktów zawiera' productVariants={productData.variants}  mainProduct={productData.shortDesc.title}/>
-
+<ProductVariants
+	title="Zestaw produktów zawiera"
+	productVariants={productData.variants}
+	mainProduct={productData.shortDesc.title}
+/>
 
 <Cookie />
 
@@ -66,10 +68,10 @@
 <!-- <Product {product} />
 {/each} -->
 
-<Price prices={productData.prices}/>
+<Price prices={productData.prices} />
 <Reviews feedback={productData.feedback} />
 
-<FAQ productsFaq={kanbanKitFaq}/>
+<FAQ productsFaq={kanbanKitFaq} />
 
 <Contact />
 

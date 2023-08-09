@@ -2,7 +2,7 @@
 import kanbanKitBoardModel from './kanbanKit/kanbanKitBoardModel.js';
 // end DB
 
-import components from './components/';
+import { retrogenComponent, sectionComponent, appComponent, holderComponent } from './components/';
 
 import {
 	agileFans,
@@ -100,5 +100,8 @@ export {
 	kanbanel,
 	allKit,
 	scrumKit,
-	components
+	retrogenComponent,
+	sectionComponent,
+	appComponent,
+	holderComponent
 };

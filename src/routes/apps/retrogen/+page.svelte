@@ -1,11 +1,9 @@
 <script>
-	import { startStopContinue } from '../../../lib/retrogen/app/shared';
+	import { allScanariousForRetrogen } from '../../../lib/retrogen/app/shared';
 	// '$coreShared'
 	import { ComponentsTable, TextInstruction } from '../../../lib/retrogen/app/entities';
 
-	const tools = [startStopContinue];
-
-	let showFull = true;
+	$: selectedScenario = '';
 </script>
 
 <!-- <section> -->
@@ -92,37 +90,40 @@
 >
 	<!-- <div class="grid gap-6 lg:grid-cols-2"> -->
 	<ul class="flex flex-row flex-wrap justify-center ">
-		{#each tools as tool, i}
+		{#each allScanariousForRetrogen as scenario, i}
 			<li
-				on:click={() => (showFull = !showFull)}
-				class="group m-2  rounded-xl border-2 border-pink-700 p-3 transition duration-300 ease-in-out hover:bg-pink-700 hover:text-white"
+				on:click={() => {
+					scenario.showFull = !scenario.showFull;
+					selectedScenario = scenario;
+				}}
+				class="group m-2  w-full rounded-xl border-2 border-pink-700 p-3 transition duration-300 ease-in-out hover:bg-pink-700 hover:text-white"
 			>
-				<!-- <a href="/apps/retrogen/tools/{tool.link}"> -->
+				<!-- <a href="/apps/retrogen/allScanariousForRetrogen/{scenario.link}"> -->
 				<div class="flex items-start">
 					<div class="shrink-0">
 						<div class="flex  flex-row  pr-3">
 							<span class="mr-2 text-4xl  font-black text-white"> ID </span>
 							<div class="flex h-10 w-10 items-center justify-center rounded-xl bg-pink-700">
 								<span class="text-2xl font-black  text-white">
-									{tool.id}
+									{scenario.id}
 								</span>
 							</div>
 						</div>
 					</div>
 					<div class="group grow">
 						<p class="mb-1 font-bold text-pink-700 group-hover:text-white">
-							{tool.title}
+							{scenario.title}
 						</p>
 						<p class="mb-0 text-pink-500 group-hover:text-neutral-50">
-							{tool.shortDesc}
+							{scenario.shortDesc}
 						</p>
 					</div>
 				</div>
-				<a href={tool.author.link}>Author: <span>{tool.author.bio}</span></a>
+				<a href={scenario.author.link}>Author: <span>{scenario.author.bio}</span></a>
 
 				<!-- </a> -->
-				{#if showFull}
-					{#each tool.desc as desc}
+				{#if scenario.showFull}
+					{#each scenario.desc as desc}
 						<p class="mb-0 text-pink-500 group-hover:text-neutral-50">
 							{desc}
 						</p>
@@ -131,8 +132,8 @@
 					<div class=" mx-auto flex max-w-7xl flex-col items-center px-5  sm:px-6 lg:px-8">
 						<div class=" mx-auto flex w-full max-w-3xl flex-col text-left">
 							<div class="mx-auto w-full">
-								<h2 class='text-2xl font-bold mb-4'>Components</h2>
-								<ComponentsTable components={tool.components} />
+								<h2 class="mb-4 text-2xl font-bold">Components</h2>
+								<ComponentsTable components={scenario.components} />
 							</div>
 						</div>
 					</div>
@@ -141,14 +142,14 @@
 						title="Preparation"
 						desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
 				industries for previewing layouts and visual mockups."
-						steps={tool.preparation}
+						steps={scenario.preparation}
 					/>
 
 					<TextInstruction
 						title="Instruction"
 						desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
 				industries for previewing layouts and visual mockups."
-						steps={tool.instruction}
+						steps={scenario.instruction}
 					/>
 
 					<!-- export let

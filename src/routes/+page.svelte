@@ -110,7 +110,7 @@
 	<Slider />
 </section> -->
 
-<div class="grid grid-cols-2 gap-4">
+<div class="grid grid-cols-2 gap-4" id='about'>
 	<img
 		src="https://www.nuclino.com/images/solutions/h/1440/kanban.jpg"
 		alt="shoas"

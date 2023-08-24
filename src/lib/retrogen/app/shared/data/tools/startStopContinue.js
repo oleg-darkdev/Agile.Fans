@@ -45,11 +45,7 @@ const tool = {
 	listData: ['', '', ''],
 	components: [
 		// Object.assign(kit, { count: '1' }),
-		{
-			title: 'Complect for tool: `Start, Stop, Continue`',
-			id: '',
-			photo: ''
-		},
+
 		Object.assign(sectionComponent, { count: '3' }),
 		Object.assign(holderComponent, { count: '20' }),
 		Object.assign(appComponent, { count: 1 })

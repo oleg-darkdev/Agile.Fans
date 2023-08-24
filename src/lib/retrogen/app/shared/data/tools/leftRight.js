@@ -43,11 +43,7 @@ const tool = {
 	],
 	listData: ['', '', ''],
 	components: [
-		{
-			title: 'Complect for tool: `Left-Right`',
-			id: '',
-			photo: ''
-		},
+	
 		Object.assign(sectionComponent, { count: '3' }),
 		Object.assign(holderComponent, { count: '20' }),
 		Object.assign(appComponent, { count: 1 })

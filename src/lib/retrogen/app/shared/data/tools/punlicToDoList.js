@@ -4,8 +4,8 @@ import { sectionComponent, appComponent, holderComponent } from '$lib/core/data'
 
 const tool = {
 	id: '0',
-  title: 'Punlic to-do list',
-  attention: '',
+	title: 'Punlic to-do list',
+	attention: '',
 	shortDesc: 'Участники предлагают и берут ответственность за действия',
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
@@ -42,11 +42,6 @@ const tool = {
 	],
 	listData: ['', '', ''],
 	components: [
-		{
-			title: 'Complect for tool: `Punlic to-do list`',
-			id: '',
-			photo: ''
-		},
 		Object.assign(sectionComponent, { count: '3' }),
 		Object.assign(holderComponent, { count: '20' }),
 		Object.assign(appComponent, { count: 1 })

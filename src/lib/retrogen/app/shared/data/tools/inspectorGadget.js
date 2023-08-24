@@ -43,16 +43,10 @@ const tool = {
 		`Сгруппируйте карточки.`,
 		`Проведите голосование точками за наиболее важные мысли (6-9 точек на человека).`,
 		`Получившийся список является отправной точкой для следующего этапа: 'Разработка плана действий'.`,
-		``,
-		``
+
 	],
 	listData: ['', '', ''],
 	components: [
-		{
-			title: 'Complect for tool: ``',
-			id: '',
-			photo: ''
-		},
 		Object.assign(sectionComponent, { count: '3' }),
 		Object.assign(holderComponent, { count: '20' }),
 		Object.assign(appComponent, { count: 1 })

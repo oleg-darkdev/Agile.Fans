@@ -14,6 +14,9 @@ import magicGin from './tools/magicGin';
 import proudAndPity from './tools/proudAndPity';
 import inspectorGadget from './tools/inspectorGadget';
 import timelineChronology from './tools/timelineChronology';
+import generalCleaning from './tools/generalCleaning';
+import priorityPrinciple from './tools/priorityPrinciple';
+import rageSadnessHappiness from './tools/rageSadnessHappiness';
 // import inspectorGadget from './tools/inspectorGadget';
 // import inspectorGadget from './tools/inspectorGadget';
 // import inspectorGadget from './tools/inspectorGadget';
@@ -24,9 +27,11 @@ import timelineChronology from './tools/timelineChronology';
 
 export {
 	startStopContinue,
+	generalCleaning,
   timelineChronology,
+  rageSadnessHappiness,
 	punlicToDoList,
-  proudAndPity,
+	proudAndPity,
 	leftRight,
 	perfection,
 	preElectionManifesto,
@@ -37,6 +42,7 @@ export {
 	tweetMySprint,
 	likeWishСould,
 	averageHospitalTemperature,
-  magicGin,
-  inspectorGadget
+	magicGin,
+	inspectorGadget,
+	priorityPrinciple,
 };

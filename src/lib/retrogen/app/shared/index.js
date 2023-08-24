@@ -14,13 +14,19 @@ import {
 	likeWishСould,
 	averageHospitalTemperature,
 	magicGin,
-	inspectorGadget
+	inspectorGadget,
+	generalCleaning,
+	priorityPrinciple,
+	rageSadnessHappiness
 } from './data/list';
 
 const allScanariousForRetrogen = [
 	startStopContinue,
   timelineChronology,
-	punlicToDoList,
+  punlicToDoList,
+  priorityPrinciple,
+  rageSadnessHappiness,
+  generalCleaning,
   proudAndPity,
 	leftRight,
 	perfection,

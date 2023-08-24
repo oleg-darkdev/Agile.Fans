@@ -23,7 +23,8 @@
 		"aos": "^2.3.4",
 		"moment": "^2.18.1",
 		"pocketbase": "^0.16.0",
-		"ramda": "^0.24.1"
+		"ramda": "^0.24.1",
+		"tiny-timer": "^1.6.0"
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",

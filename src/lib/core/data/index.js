@@ -1,3 +1,22 @@
+// timer
+import defaultPomodoros from './timer/defaultPomodoros';
+
+// stores
+import draggingItem from './timer/stores/draggingItem';
+import pomodoroState from './timer/stores/pomodoroState';
+import runningTimerId from './timer/stores/runningTimerId';
+import pomodoroPaused from './timer/stores/pomodoroPaused';
+import stopwatchState from './timer/stores/stopwatchState';
+import stopwatchPaused from './timer/stores/stopwatchPaused';
+import resetTimers from './timer/stores/resetTimers';
+import newEntry from './timer/stores/newEntry';
+import laps from './timer/stores/laps';
+import timers from './timer/stores/timers';
+
+
+
+import { theme, currentView, hideHour } from './timer/stores/settings';
+
 // DB
 import kanbanKitBoardModel from './kanbanKit/kanbanKitBoardModel.js';
 // end DB
@@ -52,6 +71,7 @@ const kanbanKitSubProducts = [
 	scrumKitSubProducts = [],
 	agileKitSubProducts = [ten];
 
+  
 const agileKIT = {
 		title: 'Agile.KIT',
 		mainProduct: agileKit,
@@ -101,7 +121,23 @@ export {
 	allKit,
 	scrumKit,
 	retrogenComponent,
+	// box components
 	sectionComponent,
 	appComponent,
-	holderComponent
+	holderComponent,
+	// timer
+	defaultPomodoros,
+	draggingItem,
+	pomodoroState,
+	runningTimerId,
+	pomodoroPaused,
+	stopwatchPaused,
+	stopwatchState,
+	resetTimers,
+	newEntry,
+	laps,
+	theme,
+	currentView,
+	hideHour,
+	timers
 };

@@ -64,7 +64,7 @@
 						showFullInstruction = !showFullInstruction;
 						selectedScenario = '';
 					}}
-					class="btn-lg btn mx-6 mx-auto mt-6 mt-4 w-8/12 max-w-2xl bg-pink-600"
+					class="btn-lg btn mx-6 mx-auto mt-6 mb-4 w-8/12 max-w-2xl bg-pink-600"
 					>Show all scenarios</button
 				>
 				<div
@@ -77,13 +77,7 @@
 					{/each}
 				</div>
 
-				<div class=" mx-auto flex flex-col items-center px-5 sm:px-6  lg:max-w-7xl lg:px-8">
-					<div class=" lg: mx-auto flex w-full  max-w-3xl flex-col text-left">
-						<div class="mx-auto w-full">
-							<ComponentsTable components={selectedScenario.components} />
-						</div>
-					</div>
-				</div>
+				<ComponentsTable components={selectedScenario.components} />
 
 				<TextInstruction
 					title="Preparation"
@@ -105,7 +99,7 @@
 						showFullInstruction = !showFullInstruction;
 						selectedScenario = '';
 					}}
-					class="btn-lg btn mx-6 mx-auto mt-6 mt-4 w-8/12 max-w-2xl bg-pink-600"
+					class="btn-lg btn mx-6 mx-auto mt-6 mb-4 w-8/12 max-w-2xl bg-pink-600"
 					>Show all scenarios</button
 				>
 			{/if}

@@ -4,10 +4,14 @@ import Reviews from './ui/landing/Reviews.svelte';
 import Footer from './ui/landing/Footer.svelte';
 import Product from './ui/landing/Product.svelte';
 
+// timer
+import List from './ui/List.svelte';
+import Pomodoro from './ui/Pomodoro.svelte';
+import Settings from './ui/Settings.svelte';
+import Stopwatch from './ui/Stopwatch.svelte';
 
 import HeaderApp from './ui/app/Header.svelte';
 import AppScreen from './ui/app/AppScreen.svelte';
-
 
 import Stats from './ui/landing/Stats.svelte';
 import Cookie from './ui/landing/Cookie.svelte';
@@ -18,8 +22,6 @@ import StickyBanner from './ui/landing/StickyBanner.svelte';
 import Video from './ui/landing/Video.svelte';
 import FullScreenVideo from './ui/landing/FullScreenVideo.svelte';
 
-
-
 import ProductVariants from './ui/products/ProductVariants.svelte';
 import FaqProduct from './ui/products/Faq.svelte';
 import CallToWorkshop from './ui/products/CallToWorkshop.svelte';
@@ -28,12 +30,12 @@ import HeroProduct from './ui/products/HeroProduct.svelte';
 import HeaderBottomLine from './ui/products/HeaderBottomLine.svelte';
 
 export {
-  ProductVariants,
-  StickyBanner,
-  FullScreenVideo,
-  HeaderApp,
-  Product,
-  AppScreen,
+	ProductVariants,
+	StickyBanner,
+	FullScreenVideo,
+	HeaderApp,
+	Product,
+	AppScreen,
 	Video,
 	AboutProduct,
 	Price,
@@ -48,5 +50,9 @@ export {
 	Cookie,
 	Header,
 	Reviews,
-	Footer
+	Footer,
+	List,
+	Pomodoro,
+	Settings,
+	Stopwatch
 };

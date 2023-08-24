@@ -12,7 +12,19 @@ import StepElement from './ui/app/startScreen/StepElement.svelte';
 import LargeBtn from './ui/app/LargeBtn.svelte';
 import ListTextcard from './ui/app/manualScreen/ListTextcard.svelte';
 
+
+
+// timer
+import SummaryTime from './ui/SummaryTime.svelte';
+import Button from './ui/Button.svelte';
+import Switch from './ui/Toggle.svelte';
+
+
+
 export {
+  SummaryTime,
+  Switch,
+  Button,
   ShowFullListBtn,
   HorisontalImage,
   LargeBtn,

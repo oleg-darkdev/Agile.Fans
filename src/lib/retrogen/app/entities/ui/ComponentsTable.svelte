@@ -4,13 +4,13 @@
 
 
 <div
-	class="flex max-w-sm flex-col divide-gray-200 rounded-lg  bg-white p-4 text-gray-900 shadow-md  lg:max-w-lg"
+	class="flex w-full max-w-md flex-col divide-gray-200 rounded-lg  bg-white p-4 text-gray-900 shadow-md  "
 >
 	<div class="mb-4 flex items-center justify-between">
 		<h5 class="text-xl font-bold leading-none ">Components</h5>
 
 	</div>
-	<ul class="divide-y divide-gray-200 rounded-lg border-0 border-gray-200 bg-white text-gray-900 ">
+	<ul class="w-full divide-y divide-gray-200 rounded-lg border-0 border-gray-200 bg-white text-gray-900 ">
 		{#each components as component}
 			<li
 				class="w-full list-none py-2 px-4 text-sm font-medium first:rounded-t-lg last:rounded-b-lg"

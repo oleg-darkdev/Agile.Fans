@@ -1,12 +1,32 @@
 <script>
-	import { allScanariousForRetrogen } from '../../../lib/retrogen/app/shared';
-	import { LargeBtn } from '../../../lib/core/layout/shared/';
+  import { AppScreen } from '@coreWidgets';
+	import {
+		StartScreen,
+		GameProgressScreen,
+		ManualScreen
+	} from '@appRetrogenWidgets';
+
+	import { allScanariousForRetrogen } from '@appRetrogenShared';
+	import { LargeBtn } from '@coreSharedLayout';
 	// '$coreShared'
-	import { ComponentsTable, TextInstruction } from '../../../lib/retrogen/app/entities';
+	import { ComponentsTable, TextInstruction } from '@appRetrogenEntities';
 
 	$: selectedScenario = '';
 	$: showFullInstruction = true;
 </script>
+
+<AppScreen>
+	<div slot="start-screen">
+		<StartScreen />
+	</div>
+	<div slot="manual-screen">
+		<ManualScreen />
+	</div>
+	<div slot="game-screen">
+		<GameProgressScreen />
+	</div>
+</AppScreen>
+
 
 <section class=" flex w-full justify-center py-20">
 	<div

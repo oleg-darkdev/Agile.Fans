@@ -30,6 +30,26 @@ const config = {
 			'@coreProcesses': path.resolve('./src/lib/core/layout/processes'),
 			'@coreWidgets': path.resolve('./src/lib/core/layout/widgets'),
 
+			// craz-wip
+			'@appCrazyWipLimitsEntities': path.resolve('./src/lib/crazy-wip/app/entities'),
+			'@appCrazyWipLimitsFeatures': path.resolve('./src/lib/crazy-wip/app/features'),
+			'@appCrazyWipLimitsProcesses': path.resolve('./src/lib/crazy-wip/app/processes'),
+			'@appCrazyWipLimitsWidgets': path.resolve('./src/lib/crazy-wip/app/widgets'),
+
+			// retrogen
+			'@appRetrogenEntities': path.resolve('./src/lib/retrogen/app/entities'),
+			'@appRetrogenFeatures': path.resolve('./src/lib/retrogen/app/features'),
+			'@appRetrogenProcesses': path.resolve('./src/lib/retrogen/app/processes'),
+			'@appRetrogenWidgets': path.resolve('./src/lib/retrogen/app/widgets'),
+			'@appRetrogenShared': path.resolve('./src/lib/retrogen/app/shared'),
+
+			// template
+			// '@appEntities': path.resolve('./src/lib/retrogen/app/entities'),
+			// '@appFeatures': path.resolve('./src/lib/retrogen/app/features'),
+			// '@appProcesses': path.resolve('./src/lib/retrogen/app/processes'),
+			// '@appWidgets': path.resolve('./src/lib/retrogen/app/widgets'),
+			// 			'@appRetrogenShared': path.resolve('./src/lib/retrogen/app/shared'),
+
 			// core shared
 			'@coreSharedLayout': path.resolve('./src/lib/core/layout/shared'),
 			'@coreSharedData': path.resolve('./src/lib/core/data'),

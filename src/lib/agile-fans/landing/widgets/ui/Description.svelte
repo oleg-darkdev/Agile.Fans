@@ -1,6 +1,6 @@
 <script>
-	import { FreeDownload } from '../../../../core/layout/entities';
-	import { ShowFullListBtn } from '../../../../core/layout/shared';
+	import { FreeDownload } from '@coreEntities';
+	import { ShowFullListBtn } from '@coreSharedLayout';
 
 	import { products } from '../../shared';
 	let showFullList = false;

@@ -1,5 +1,5 @@
 <script>
-	import { LinkBtnStyle } from '../../../../core/layout/shared';
+	import { LinkBtnStyle } from '@coreSharedLayout';
 
 	export let technology;
 </script>

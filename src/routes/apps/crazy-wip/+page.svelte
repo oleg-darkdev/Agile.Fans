@@ -1,10 +1,10 @@
 <script>
-	import { AppScreen } from '../../../lib/core/layout/widgets/';
+	import { AppScreen } from '@coreWidgets';
 	import {
 		StartScreen,
 		GameProgressScreen,
 		ManualScreen
-	} from '../../../lib/crazy-wip/app/widgets';
+	} from '@appCrazyWipLimitsWidgets';
 
 	// import { kanbanMetrics } from '../../../lib/core/utils/';
 

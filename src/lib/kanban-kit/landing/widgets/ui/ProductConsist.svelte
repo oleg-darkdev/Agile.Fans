@@ -1,5 +1,5 @@
 <script>
-	import { FeaturesForProductType } from "../../../../core/layout/entities";
+	import { FeaturesForProductType } from "@coreEntities";
 
 	export let productVariants;
 </script>

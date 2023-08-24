@@ -5,11 +5,11 @@
 		StepsBtns,
 		// LevelSecelect,
 		FinalStepOnScreen
-	} from '../../../../core/layout/entities';
+	} from '@coreEntities';
 
 	import { gameSteps } from '../../shared';
 
-	import { HorisontalImage } from '../../../../core/layout/shared';
+	import { HorisontalImage } from '@coreSharedLayout';
 	// 		MapGenerator,
 	// RolesSetup,
 

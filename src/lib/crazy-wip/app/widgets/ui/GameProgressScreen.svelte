@@ -5,14 +5,14 @@
 		TimeCounterBlock,
 		GameStepsBtns,
 		FinalStepOnScreen
-	} from '../../../../core/layout/entities';
+	} from '@coreEntities';
 
-	import { HorisontalImage } from '../../../../core/layout/shared';
+	import { HorisontalImage } from '@coreSharedLayout';
 
 	import { firstScenarioBasic } from '../../shared';
 
-	import { StepsList } from '../../../../core/layout/entities/';
-	import { LargeBtn } from '../../../../core/layout/shared/';
+	import { StepsList } from '@coreEntities';
+	import { LargeBtn } from '@coreSharedLayout';
 
 	import { dayInstruction } from '../../shared';
 

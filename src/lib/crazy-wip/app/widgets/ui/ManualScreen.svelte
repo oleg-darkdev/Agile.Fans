@@ -1,6 +1,6 @@
 <script>
-	import { TableOfContent, VideoCard, StepsList } from '../../../../core/layout/entities/';
-	import { LargeBtn, ListTextcard } from '../../../../core/layout/shared/';
+	import { TableOfContent, VideoCard, StepsList } from '@coreEntities';
+	import { LargeBtn, ListTextcard } from '@coreSharedLayout';
 
 	import { dayInstruction, blockersInstruction, taskInstruction } from '../../shared';
 

@@ -24,6 +24,7 @@
 		"moment": "^2.18.1",
 		"pocketbase": "^0.16.0",
 		"ramda": "^0.24.1",
+		"svelte-awesome": "^3.2.1",
 		"tiny-timer": "^1.6.0"
 	},
 	"devDependencies": {

@@ -20,14 +20,16 @@ import {
 	rageSadnessHappiness
 } from './data/list';
 
+import selectedScenarious from './data/stores/selectedScenarious';
+
 const allScanariousForRetrogen = [
 	startStopContinue,
-  timelineChronology,
-  punlicToDoList,
-  priorityPrinciple,
-  rageSadnessHappiness,
-  generalCleaning,
-  proudAndPity,
+	timelineChronology,
+	punlicToDoList,
+	priorityPrinciple,
+	rageSadnessHappiness,
+	generalCleaning,
+	proudAndPity,
 	leftRight,
 	perfection,
 	preElectionManifesto,
@@ -38,14 +40,16 @@ const allScanariousForRetrogen = [
 	tweetMySprint,
 	likeWishСould,
 	averageHospitalTemperature,
-  magicGin,
-  inspectorGadget
+	magicGin,
+	inspectorGadget
 ];
 
-export {allScanariousForRetrogen, 	startStopContinue,
-  timelineChronology,
+export {
+	allScanariousForRetrogen,
+	startStopContinue,
+	timelineChronology,
 	punlicToDoList,
-  proudAndPity,
+	proudAndPity,
 	leftRight,
 	perfection,
 	preElectionManifesto,
@@ -56,6 +60,7 @@ export {allScanariousForRetrogen, 	startStopContinue,
 	tweetMySprint,
 	likeWishСould,
 	averageHospitalTemperature,
-  magicGin,
-  inspectorGadget
- };
+	magicGin,
+	inspectorGadget,
+	selectedScenarious
+};

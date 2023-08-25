@@ -1,18 +1,14 @@
 <script>
   import { AppScreen } from '@coreWidgets';
+  import { allScanariousForRetrogen } from '@appRetrogenShared';
+
 	import {
 		StartScreen,
 		GameProgressScreen,
 		ManualScreen
 	} from '@appRetrogenWidgets';
 
-	import { allScanariousForRetrogen } from '@appRetrogenShared';
-	import { LargeBtn } from '@coreSharedLayout';
-	// '$coreShared'
-	import { ComponentsTable, TextInstruction } from '@appRetrogenEntities';
 
-	$: selectedScenario = '';
-	$: showFullInstruction = true;
 </script>
 
 <AppScreen>
@@ -35,22 +31,17 @@
 		<!-- <div class="grid gap-6 lg:grid-cols-2"> -->
 
 		<ul id="start" class="flex flex-row flex-wrap justify-center px-8 ">
-			{#if !selectedScenario && showFullInstruction}
 				{#each allScanariousForRetrogen as scenario, i}
-					<li
-						on:click={() => {
-							scenario.showFull = !scenario.showFull;
-							selectedScenario = scenario;
-							showFullInstruction = !showFullInstruction;
-							location.href = '#start';
-						}}
+				<li
+	
 						class="m-2 flex w-full flex-row flex-row-reverse  flex-wrap justify-between {scenario.showFull
 							? ''
 							: ' border-2 border-pink-700 hover:bg-pink-700 hover:text-white'} rounded-xl p-3 transition duration-300 ease-in-out  "
 					>
-						<!-- <a href="/apps/retrogen/allScanariousForRetrogen/{scenario.link}"> -->
+          
+						
 						<a class="" href={scenario.author.link}>Author: <span>{scenario.author.bio}</span></a>
-
+	<a  class="w-full" href="./retrogen/tools/{scenario.link}"> 
 						<div class="mb-4 flex flex-col items-start md:mb-0 lg:mb-0">
 							<div class="shrink-0">
 								<div class="flex  flex-row  pr-3">
@@ -71,58 +62,15 @@
 								</p>
 							</div>
 						</div>
-						<!-- {
-			title: 'Complect for tool: `Start, Stop, Continue`',
-			id: '',
-			photo: ''
-		}, -->
+            </a>
+
 					</li>
+
+        
+
+				
 				{/each}
-			{:else}
-				<button
-					on:click={() => {
-						showFullInstruction = !showFullInstruction;
-						selectedScenario = '';
-					}}
-					class="btn-lg btn mx-6 mx-auto mt-6 mb-4 w-8/12 max-w-2xl bg-pink-600"
-					>Show all scenarios</button
-				>
-				<div
-					class="m-2 rounded-xl border-2 border-pink-700 p-3 text-pink-500 text-pink-500 hover:bg-pink-700 hover:text-white"
-				>
-					{#each selectedScenario.desc as desc}
-						<p class="mb-0  ">
-							{desc}
-						</p>
-					{/each}
-				</div>
-
-				<ComponentsTable components={selectedScenario.components} />
-
-				<TextInstruction
-					title="Preparation"
-					desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-				industries for previewing layouts and visual mockups."
-					steps={selectedScenario.preparation}
-				/>
-
-				<TextInstruction
-					title="Instruction"
-					desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-				industries for previewing layouts and visual mockups."
-					steps={selectedScenario.instruction}
-				/>
-
-				<!-- pomodoro timer -->
-				<button
-					on:click={() => {
-						showFullInstruction = !showFullInstruction;
-						selectedScenario = '';
-					}}
-					class="btn-lg btn mx-6 mx-auto mt-6 mb-4 w-8/12 max-w-2xl bg-pink-600"
-					>Show all scenarios</button
-				>
-			{/if}
+			
 		</ul>
 	</div>
 </section>

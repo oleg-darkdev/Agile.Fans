@@ -7,6 +7,7 @@ const tool = {
 	title: 'Perfection game',
 	shortDesc: 'Что сделает следующую итерацию максимально совершенной?',
 	attention: '',
+link: 'perfection',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

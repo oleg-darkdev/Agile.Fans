@@ -5,6 +5,8 @@ import { sectionComponent, appComponent, holderComponent } from '$lib/core/data'
 const tool = {
 	id: '0',
 	title: 'LEFT-RIGHT',
+  link: 'left-right',
+
 	attention:
 		'[Предупреждение: в игре есть победители и проигравшие. Откажитесь от упражнения, если силы членов команды неравны].',
 	shortDesc: 'Делимся идеями и забиваем «мячи» в ворота «действий»',

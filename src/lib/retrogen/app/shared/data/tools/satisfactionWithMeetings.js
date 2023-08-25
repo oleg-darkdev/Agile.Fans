@@ -7,6 +7,7 @@ const tool = {
 	title: '',
 	shortDesc: 'Рисуем диаграмму удовлетворённости встречами в ходе итерации',
 	attention: '',
+link: 'satisfaction-with-meetings',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

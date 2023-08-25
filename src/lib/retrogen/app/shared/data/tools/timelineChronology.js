@@ -7,6 +7,7 @@ const tool = {
 	title: '',
 	shortDesc: 'Участники записывают важные события в хронологическом порядке.',
 	attention: 'Важно собрать как можно большее количество событий.',
+link: 'timeline-chronology',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

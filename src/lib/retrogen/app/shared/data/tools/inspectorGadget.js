@@ -4,9 +4,10 @@ import { sectionComponent, appComponent, holderComponent } from '$lib/core/data'
 
 const tool = {
 	id: '0',
-	title: 'Мозговой штурм по 4-м категориям для быстрого выявления проблем',
-	shortDesc: '',
+	title: 'Inspector Gadget ',
+	shortDesc: 'Мозговой штурм по 4-м категориям для быстрого выявления проблем',
 	attention: '',
+link: 'inspector-gadget',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

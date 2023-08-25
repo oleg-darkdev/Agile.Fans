@@ -8,6 +8,7 @@ const tool = {
 	shortDesc:
 		'Узнайте, чем члены команды довольны, чему они научились, чего им недоставало и чего они очень ждали.',
 	attention: '',
+link: 'four-whos',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

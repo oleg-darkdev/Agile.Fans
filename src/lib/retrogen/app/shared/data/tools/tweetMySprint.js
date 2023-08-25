@@ -7,6 +7,7 @@ const tool = {
 	title: 'Хроника твитов об итерации',
 	shortDesc: ``,
 	attention: '',
+link: 'tweet-sprint',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

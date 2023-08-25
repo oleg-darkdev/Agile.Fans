@@ -4,10 +4,11 @@ import { sectionComponent, appComponent, holderComponent } from '$lib/core/data'
 
 const tool = {
 	id: '0',
-	title: 'satisfaction with meetings.',
+	title: 'New Old Blue.',
 	shortDesc:
 		'По древней английской традиции в день свадьбы у невесты должно быть несколько вещей: старая, новая, чужая и голубая. Общеизвестно, что в Англии голубой цвет символизирует грусть и печаль.',
 	attention: '',
+link: 'new-old-blue.',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

@@ -7,6 +7,7 @@ const tool = {
 	title: 'Приоритетный принцип',
 	shortDesc: 'Обсудите 12 принципов аджайл и выберите один для проработки.',
 	attention: '',
+link: 'priority-principle',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

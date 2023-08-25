@@ -7,6 +7,7 @@ const tool = {
 	title: 'General cleaning',
 	shortDesc: 'Есть в работе понятные и простые задачи, а есть и такие, смысл которых ускользает.',
 	attention: '',
+link: 'general-cleaning',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

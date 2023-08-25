@@ -7,6 +7,7 @@ const tool = {
 	title: 'Repeat and avoid',
 	shortDesc: 'Мозговой штурм: что повторить и каких поступков избегать',
 	attention: '',
+link: 'repeat-and-avoid',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

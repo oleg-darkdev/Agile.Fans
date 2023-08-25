@@ -7,6 +7,7 @@ const tool = {
 	title: 'I like it, I wish, I could.',
 	shortDesc: '',
 	attention: 'Позитивная и конструктивная обратная связь без агрессии.',
+link: 'like-wish-could',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

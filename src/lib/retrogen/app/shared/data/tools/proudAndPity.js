@@ -7,6 +7,7 @@ const tool = {
 	title: 'Proud and Pity',
 	shortDesc: 'Чем гордятся и о чем сожалеют участники команды?',
 	attention: '',
+link: 'proud-and-pity',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

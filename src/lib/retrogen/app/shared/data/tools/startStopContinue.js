@@ -7,6 +7,7 @@ const tool = {
 	title: 'Начать, Прекратить, Продолжать',
 	shortDesc: 'Мозговой штурм и выбор лучших предложений',
 	attention: '',
+link: 'start-stop-continue',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

@@ -8,6 +8,7 @@ const tool = {
 	shortDesc:
 		'Поиск и анализ событий, по поводу которых члены команды испытывали гнев, грусть или радость.',
 	attention: '',
+link: 'rage-sadness-happiness',
 
 	desc: [
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',

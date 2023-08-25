@@ -6,7 +6,9 @@ import FeaturesForStats from './ui/FeaturesForStats.svelte';
 import Aside from './ui/Aside.svelte';
 import ProductItem from './ui/ProductItem.svelte';
 import WorkshopCard from './ui/WorkshopCard.svelte';
+
 import FooterApp from './ui/FooterApp.svelte';
+import MsgToasts from './ui/app/MsgToasts.svelte';
 
 // timer
 import TimePoint from './ui/TimePoint.svelte';
@@ -35,6 +37,7 @@ import TimeCounterBlock from './ui/app/gameScreen/TimeCounterBlock.svelte';
 
 export {
 	LoginForm,
+  MsgToasts,
 	WorkshopsList,
 	StatsAccount,
 	CountdownTimer,

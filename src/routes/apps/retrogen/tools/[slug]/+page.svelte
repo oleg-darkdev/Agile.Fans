@@ -2,7 +2,9 @@
 	import Icon from 'svelte-awesome';
 	import timesRectangleO from 'svelte-awesome/icons/timesRectangleO';
 	import shareSquareO from 'svelte-awesome/icons/shareSquareO';
+	import arrowLeft from 'svelte-awesome/icons/arrowLeft';
 	import plusCircle from 'svelte-awesome/icons/plusCircle';
+
 	import { selectedScenarious } from '@appRetrogenShared';
 	import playCircleO from 'svelte-awesome/icons/playCircleO';
 
@@ -54,9 +56,9 @@
 	export let data;
 </script>
 
-<section class=" flex w-full justify-center py-20">
+<section class=" flex w-full justify-center bg-primary py-20 md:bg-neutral-100 lg:bg-neutral-100">
 	<div
-		class="mx-4  flex h-auto max-w-sm flex-col items-center rounded rounded-xl bg-primary py-5 md:max-w-2xl md:px-6 lg:max-w-4xl lg:px-8"
+		class="mx-4  flex h-auto w-full flex-col items-center rounded rounded-xl bg-primary py-5 md:max-w-2xl md:px-6 lg:max-w-4xl lg:px-8"
 	>
 		<div
 			class="m-2 flex flex-row rounded-xl  border-2 border-pink-700 p-3 text-pink-500 text-pink-500 hover:bg-pink-700 hover:text-white"
@@ -68,38 +70,40 @@
 					</p>
 				{/each}
 			</div>
-			<div class="">
-				{#if !scenarioAdded}
-					<button
-						on:click={() => {
-							addScenarioToApp(data.tool);
-							console.log($selectedScenarious.length);
-						}}
-						title="Add a scenario to the application"
-						class="{showSharedBlock ? 'mr-2' : 'mb-1'} "
-					>
-						<Icon data={plusCircle} scale={3} />
-					</button>
-				{:else}
-					<a
-						href="../"
-						class="{showSharedBlock ? 'mr-2' : 'mb-1'} "
-						title="Go to to the application"
-					>
-						<Icon data={playCircleO} scale={3} />
-					</a>
-				{/if}
+			<div class="mx-4">
+				<div class="flex flex-row">
+					{#if !scenarioAdded}
+						<button
+							on:click={() => {
+								addScenarioToApp(data.tool);
+								console.log($selectedScenarious.length);
+							}}
+							title="Add a scenario to the application"
+							class="{showSharedBlock ? 'mr-2' : 'mb-1'} "
+						>
+							<Icon data={plusCircle} scale={3} />
+						</button>
+					{:else}
+						<a
+							href="../"
+							class="{showSharedBlock ? 'mr-2' : 'mb-1'} "
+							title="Go to to the application"
+						>
+							<Icon data={playCircleO} scale={3} />
+						</a>
+					{/if}
 
-				<button
-					title="Share the retrospective scenario"
-					class={showSharedBlock ? 'mr-2' : 'mb-1'}
-					on:click={() => (showSharedBlock = !showSharedBlock)}
-				>
-					<Icon data={shareSquareO} scale={3} />
-				</button>
-				<a href="../" title="Back to the list of scenarios">
-					<Icon data={timesRectangleO} scale={3} />
-				</a>
+					<button
+						title="Share the retrospective scenario"
+						class={showSharedBlock ? 'mr-2' : 'mb-1'}
+						on:click={() => (showSharedBlock = !showSharedBlock)}
+					>
+						<Icon data={shareSquareO} scale={3} />
+					</button>
+					<a href="../" title="Back to the list of scenarios">
+						<Icon data={timesRectangleO} scale={3} />
+					</a>
+				</div>
 
 				{#if showSharedBlock}
 					<input
@@ -132,7 +136,9 @@
 			steps={data.tool.instruction}
 		/>
 
-		<a href="" class="btn-lg btn mx-6 mx-auto mt-6 mb-4 w-8/12 max-w-2xl bg-pink-600">Go to app</a>
+		<a href="" class="btn-lg btn mx-6 mx-auto mt-6 mb-4 w-6/12 max-w-2xl bg-pink-600"
+			><Icon class="mr-4" data={arrowLeft} scale={2} /> Back to the scenarios list
+		</a>
 	</div>
 
 	<MsgToasts bind:showGreenMsg bind:showRedMsg bind:textMsg />

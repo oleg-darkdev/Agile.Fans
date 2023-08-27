@@ -1,40 +1,110 @@
 <script>
-	import { NavBtnAppFooter } from '../../shared';
+	import Icon from 'svelte-awesome';
+	import book from 'svelte-awesome/icons/book';
+	import gamepad from 'svelte-awesome/icons/gamepad';
+	import home from 'svelte-awesome/icons/home';
+	import playCircleO from 'svelte-awesome/icons/playCircleO';
+	import infoCircle from 'svelte-awesome/icons/infoCircle';
+	import shoppingCart from 'svelte-awesome/icons/shoppingCart';
+	import user from 'svelte-awesome/icons/user';
+	import lineChart from 'svelte-awesome/icons/lineChart';
+	import linode from 'svelte-awesome/icons/linode';
+	import barChart from 'svelte-awesome/icons/barChart';
+	import share from 'svelte-awesome/icons/share';
+	import arrowLeft from 'svelte-awesome/icons/arrowLeft';
+	import arrowRight from 'svelte-awesome/icons/arrowRight';
+
+	import { NavBtnAppFooter, NavLinkAppFooter } from '../../shared';
 
 	export let activeScreen;
 </script>
 
-<div class="btm-nav btm-nav-lg flex flex-row bg-pink-600 shadow-md shadow-pink-600">
-	<NavBtnAppFooter
-		on:click={() => (activeScreen = 'Rozpoczęcie')}
-		{activeScreen}
-		text={'Rozpoczęcie'}
+<div class="btm-nav flex flex-row  bg-pink-600 shadow-md shadow-pink-600">
+	<!--
+        эти иконки выдвигаются по нажатию стрелки
+левая сторона
+share - поделиться ссылкой
+домашняя страница
+фак страница с якорем по этой игре
+
+
+        правая сторона
+user - домашняя страница персонального кабинета
+
+        lineChart - таблица рекордов по игре
+      linode - ближайшый воркшоп по игре
+
+    barChart - статистика по приложению-->
+
+	<div
+		class="absolute bottom-4 left-1/2 z-50 grid h-24 w-full max-w-2xl -translate-x-1/2 grid-cols-5 gap-1 rounded-full bg-pink-800 px-2  lg:gap-4 lg:px-8"
 	>
-		<path
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			stroke-width="2"
-			d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-		/>
-	</NavBtnAppFooter>
-	<NavBtnAppFooter
-		on:click={() => (activeScreen = 'Instrukcja')}
-		{activeScreen}
-		text={'Instrukcja'}
-	>
-		<path
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			stroke-width="2"
-			d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-		/>
-	</NavBtnAppFooter>
-	<NavBtnAppFooter on:click={() => (activeScreen = 'Rozgrywka')} {activeScreen} text={'Rozgrywka'}>
-		<path
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			stroke-width="2"
-			d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-		/>
-	</NavBtnAppFooter>
+		<!-- <div class="mx-auto  h-full w-20"> -->
+		<div class="dropdown-end dropdown dropdown-top  md:dropdown-left lg:dropdown-left">
+			<label tabindex="0" class="flex justify-start"><Icon data={arrowLeft} scale={2} /></label>
+
+			<div
+				tabindex="0"
+				class="dropdown-content menu rounded-box relative z-[1] w-20 bg-black p-2 shadow"
+			>
+				<NavLinkAppFooter title="Go to homepage" text="home" link="/">
+					<Icon data={home} scale={2} />
+				</NavLinkAppFooter>
+				<NavLinkAppFooter title="Go to personal cabinet" text="cabinet" link="/">
+					<Icon data={user} scale={2} />
+				</NavLinkAppFooter>
+				<NavLinkAppFooter title="Go to F.A.Q page" text="F.A.Q." link="/faq">
+					<Icon data={infoCircle} scale={2} />
+				</NavLinkAppFooter>
+				<button title="" class="flex flex-col items-center">
+					<Icon data={share} scale={2} />
+					<span class="text-xs font-semibold text-white">Share</span>
+				</button>
+			</div>
+		</div>
+		<NavBtnAppFooter
+			on:click={() => (activeScreen = 'Rozpoczęcie')}
+			{activeScreen}
+			text={'Rozpoczęcie'}
+		>
+			<Icon data={playCircleO} scale={3} />
+		</NavBtnAppFooter>
+
+		<NavBtnAppFooter
+			on:click={() => (activeScreen = 'Instrukcja')}
+			{activeScreen}
+			text={'Instrukcja'}
+		>
+			<Icon data={book} scale={3} />
+		</NavBtnAppFooter>
+
+		<NavBtnAppFooter
+			on:click={() => (activeScreen = 'Rozgrywka')}
+			{activeScreen}
+			text={'Rozgrywka'}
+		>
+			<Icon data={gamepad} scale={3} />
+		</NavBtnAppFooter>
+		<div class="dropdown-end dropdown dropdown-top md:dropdown-right lg:dropdown-right ">
+			<label tabindex="0" class="flex justify-end"><Icon data={arrowRight} scale={2} /></label>
+
+			<div
+				tabindex="0"
+				class="dropdown-content menu rounded-box relative z-[1] w-20 bg-black p-2 shadow"
+			>
+				<NavLinkAppFooter title="Go to " text="account" link="/">
+					<Icon data={user} scale={2} />
+				</NavLinkAppFooter>
+				<NavLinkAppFooter title="Go to " text="workshop" link="/">
+					<Icon data={linode} scale={2} />
+				</NavLinkAppFooter>
+				<NavLinkAppFooter title="Go to " text="records on game" link="/">
+					<Icon data={lineChart} scale={2} />
+				</NavLinkAppFooter>
+				<NavLinkAppFooter title="Go to " text="stats" link="/">
+					<Icon data={barChart} scale={2} />
+				</NavLinkAppFooter>
+			</div>
+		</div>
+	</div>
 </div>

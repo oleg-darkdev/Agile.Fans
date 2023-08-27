@@ -7,12 +7,14 @@ import BtnSignIn from './ui/BtnSignIn.svelte';
 import LinkBtnStyle from './ui/LinkBtnStyle.svelte';
 import FooterLinkTargetNewBlank from './ui/FooterLinkTargetNewBlank.svelte';
 import NavBtnAppFooter from './ui/NavBtnAppFooter.svelte';
+import NavLinkAppFooter from './ui/NavLinkAppFooter.svelte';
+
+
+// app
 import HorisontalImage from './ui/app/startScreen/HorisontalImage.svelte';
 import StepElement from './ui/app/startScreen/StepElement.svelte';
 import LargeBtn from './ui/app/LargeBtn.svelte';
 import ListTextcard from './ui/app/manualScreen/ListTextcard.svelte';
-
-
 
 // timer
 import SummaryTime from './ui/SummaryTime.svelte';
@@ -23,6 +25,7 @@ import Switch from './ui/Toggle.svelte';
 
 export {
   SummaryTime,
+  NavLinkAppFooter,
   Switch,
   Button,
   ShowFullListBtn,

@@ -15,7 +15,7 @@
 	<span class="btn-nav-label">{text}</span>
 </button> -->
 
-<button on:click class="{text === activeScreen ? 'active bg-black' : ''} w-16 rounded-lg lg:px-4 px-2 py-2 my-2">
+<button on:click class="{text === activeScreen ? 'active bg-black' : ''} lg:w-24 w-16 rounded-lg lg:px-4 px-2 py-2 my-2">
 	<slot />
 	<span class="lg:display hidden md:display btn-nav-label">{text}</span>
 </button>

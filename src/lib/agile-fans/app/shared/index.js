@@ -1,5 +1,5 @@
-// import boards from './data/boards';
+import WorkshopCardShowHidePanel from './ui/WorkshopCardShowHidePanel.svelte';
+import WorkshopCardLocalisationString from './ui/WorkshopCardLocalisationString.svelte';
+import WorkshopCardDateString from './ui/WorkshopCardDateString.svelte';
 
-
-
-// export { boards };
+export { WorkshopCardShowHidePanel, WorkshopCardLocalisationString, WorkshopCardDateString };

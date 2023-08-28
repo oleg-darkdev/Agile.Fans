@@ -1,41 +1,65 @@
 <script>
+	import {
+		WorkshopCardDateBlock,
+		WorkshopCardLocalisationBlock,
+		WorkshopCardFollowUsBlock,
+		WorkshopCardFooter,
+		WorkshopCardShortDescBlock
+	} from '@agileFansAppEntities';
+
 	export let workshopData;
 </script>
 
 <li class="w-full list-none py-2 px-4 text-sm font-medium first:rounded-t-lg last:rounded-b-lg">
 	<div
-		class="mb-4 flex max-w-sm flex-col-reverse divide-gray-200 rounded-lg border border-gray-200 bg-white text-gray-500 shadow-md dark:divide-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400"
+		class="group flex flex-col items-center rounded-lg border  border-black  bg-black shadow hover:bg-pink-800 md:max-w-xl md:flex-row"
 	>
-		<img class="rounded-b-lg" src="/images/image-1.webp" alt="" />
-		<div class="p-4 sm:p-6">
-			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-				Noteworthy technology acquisitions 2021
-			</h5>
-			<p class="mb-3 font-normal leading-tight text-gray-700 dark:text-gray-400">
-				Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
-				chronological order.
-			</p>
-			<button
-				type="button"
-				role="button"
-				class="bg-primary-700 hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-700 focus:ring-primary-300 dark:focus:ring-primary-800 inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4"
-				>Read more <svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					class="ml-2 h-3.5 w-3.5 shrink-0 text-white"
-					role="img"
-					aria-label="arrow-right-outline"
-					viewBox="0 0 14 11"
+		<div class="flex flex-row">
+			<img
+				class="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+				src={workshopData.img}
+				alt="Worhshop img "
+			/>
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<WorkshopCardShortDescBlock
+					title={workshopData.description.title}
+					shortDesc={workshopData.description.shortDesc}
+				/>
+
+				<a
+					href="workshops/{workshopData.date}"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="mb-4 inline-flex items-center text-2xl font-bold text-pink-600 hover:underline group-hover:text-black"
 				>
-					<path
-						stroke="currentColor"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M1 5.64h12m0 0L9 1.85m4 3.79L9 9.432"
-					/>
-				</svg></button
-			>
+					More information
+					<svg
+						class="ml-2.5 h-3 w-3"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill=""
+						viewBox="0 0 18 18"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+						/>
+					</svg>
+				</a>
+
+				<WorkshopCardDateBlock date={workshopData.date} time={workshopData.time} />
+				<WorkshopCardLocalisationBlock localisation={workshopData.localisation} />
+
+				<WorkshopCardFollowUsBlock links={workshopData.links} />
+
+				<WorkshopCardFooter
+					registrationLink={workshopData.links.registration}
+					price={workshopData.price}
+				/>
+			</div>
 		</div>
 	</div>
 </li>

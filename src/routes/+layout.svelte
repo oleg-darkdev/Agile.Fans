@@ -6,9 +6,10 @@
 	// onMount(() => {
 	// 	AOS.init();
 	// });
-	export let data;
-</script>
 
+
+
+</script>
 
 <main class="min-h-full">
 	<!--  -->
@@ -22,8 +23,7 @@
 		}
 	}
 
-
-  /* from timer */
+	/* from timer */
 	:global(.list-item) {
 		border-top: 1px solid rgba(0, 0, 0, 0.2);
 		position: relative;
@@ -36,7 +36,6 @@
 		--accent-color: #cb2a37;
 		--separator-color: rgba(255, 255, 255, 0.08);
 		--grey-color: #808080;
-
 	}
 
 	@media (prefers-color-scheme: light) {

@@ -25,10 +25,30 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
+			// core
 			'@coreEntities': path.resolve('./src/lib/core/layout/entities'),
 			'@coreFeatures': path.resolve('./src/lib/core/layout/features'),
 			'@coreProcesses': path.resolve('./src/lib/core/layout/processes'),
 			'@coreWidgets': path.resolve('./src/lib/core/layout/widgets'),
+			// core shared
+			'@coreSharedLayout': path.resolve('./src/lib/core/layout/shared'),
+			'@coreSharedData': path.resolve('./src/lib/core/data'),
+			'@coreSharedUtils': path.resolve('./src/lib/core/utils'),
+
+			// agile.fans
+			// agile.fans landing
+			'@agileFansLandingEntities': path.resolve('./src/lib/agile-fans/landing/entities'),
+			'@agileFansLandingFeatures': path.resolve('./src/lib/agile-fans/landing/features'),
+			'@agileFansLandingProcesses': path.resolve('./src/lib/agile-fans/landing/processes'),
+			'@agileFansLandingWidgets': path.resolve('./src/lib/agile-fans/landing/widgets'),
+			'@agileFansLandingShared': path.resolve('./src/lib/agile-fans/landing/shared'),
+
+			// agile.fans app
+			'@agileFansAppEntities': path.resolve('./src/lib/agile-fans/app/entities'),
+			'@agileFansAppFeatures': path.resolve('./src/lib/agile-fans/app/features'),
+			'@agileFansAppProcesses': path.resolve('./src/lib/agile-fans/app/processes'),
+			'@agileFansAppWidgets': path.resolve('./src/lib/agile-fans/app/widgets'),
+			'@agileFansAppShared': path.resolve('./src/lib/agile-fans/app/shared'),
 
 			// craz-wip
 			'@appCrazyWipLimitsEntities': path.resolve('./src/lib/crazy-wip/app/entities'),
@@ -41,7 +61,7 @@ const config = {
 			'@appRetrogenFeatures': path.resolve('./src/lib/retrogen/app/features'),
 			'@appRetrogenProcesses': path.resolve('./src/lib/retrogen/app/processes'),
 			'@appRetrogenWidgets': path.resolve('./src/lib/retrogen/app/widgets'),
-			'@appRetrogenShared': path.resolve('./src/lib/retrogen/app/shared'),
+			'@appRetrogenShared': path.resolve('./src/lib/retrogen/app/shared')
 
 			// template
 			// '@appEntities': path.resolve('./src/lib/retrogen/app/entities'),
@@ -49,11 +69,6 @@ const config = {
 			// '@appProcesses': path.resolve('./src/lib/retrogen/app/processes'),
 			// '@appWidgets': path.resolve('./src/lib/retrogen/app/widgets'),
 			// 			'@appRetrogenShared': path.resolve('./src/lib/retrogen/app/shared'),
-
-			// core shared
-			'@coreSharedLayout': path.resolve('./src/lib/core/layout/shared'),
-			'@coreSharedData': path.resolve('./src/lib/core/data'),
-			'@coreSharedUtils': path.resolve('./src/lib/core/utils')
 		}
 	}
 };

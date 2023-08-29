@@ -12,14 +12,10 @@
 
 <li class="w-full list-none py-2 px-4 text-sm font-medium first:rounded-t-lg last:rounded-b-lg">
 	<div
-		class="group flex flex-col items-center rounded-lg border  border-black  bg-black shadow hover:bg-pink-800 md:max-w-xl md:flex-row"
+		class="group mb-4 flex max-w-sm flex-col items-center  rounded-lg  rounded-lg border border-black  bg-black  shadow-md shadow hover:bg-pink-800"
 	>
+		<img class="rounded-t-lg" src={workshopData.img} alt="Worhshop img " />
 		<div class="flex flex-row">
-			<img
-				class="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-				src={workshopData.img}
-				alt="Worhshop img "
-			/>
 			<div class="flex flex-col justify-between p-4 leading-normal">
 				<WorkshopCardShortDescBlock
 					title={workshopData.description.title}
@@ -53,7 +49,7 @@
 				<WorkshopCardDateBlock date={workshopData.date} time={workshopData.time} />
 				<WorkshopCardLocalisationBlock localisation={workshopData.localisation} />
 
-				<WorkshopCardFollowUsBlock links={workshopData.links} />
+				<!-- <WorkshopCardFollowUsBlock links={workshopData.links} /> -->
 
 				<WorkshopCardFooter
 					registrationLink={workshopData.links.registration}

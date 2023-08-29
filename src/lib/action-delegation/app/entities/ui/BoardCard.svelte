@@ -21,44 +21,53 @@
 		</svg>
 	</button>
 
-	<h4 class="text-lg font-medium">
-		{card.title}
-	</h4>
-	<p class="font-sm mb-2 text-sm text-gray-500">{card.desc}</p>
-	<div class="mt-3 flex w-full items-center justify-between text-xs font-medium text-gray-400">
-		<div class="flex flex-col">
-			<span
-				class="mb-2 flex h-6 items-center rounded-full bg-pink-100 px-3 text-xs font-semibold text-pink-500"
-				>{card.type}</span
-			>
+	<div class="flex justify-between">
+		<h4 class="text-lg font-bold">
+			{card.title} <span class="text-sm font-normal">value: {card.value}</span>
+		</h4>
+	</div>
 
-			<div class="flex items-center ">
-				<svg
-					class="h-6 w-6 fill-pink-500 text-pink-500"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 20 20"
-					fill="currentColor"
-				>
-					<path
-						fill-rule="evenodd"
-						d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-						clip-rule="evenodd"
-					/>
-				</svg>
-				<span class="ml-1 text-lg leading-none text-pink-500">{card.date}</span>
+	<p class="mb-2 text-sm text-gray-500">{card.desc}</p>
+	<div class="mt-3 flex w-full items-center justify-between text-xs font-medium text-gray-400 ">
+		<div class="flex flex-col w-full">
+			<div class="flex flex-row w-full flex-wrap">
+				{#each card.tags as tag}
+					<span
+						class="mx-1 mb-2 flex h-6 items-center rounded-full bg-pink-100 px-3 text-xs font-semibold text-pink-500"
+						>{tag}</span
+					>
+				{/each}
 			</div>
-		</div>
 
-		<div
-			class="avatar-group  -space-x-6 rounded-full ring ring-pink-500 ring-offset-2 ring-offset-base-100"
-		>
-			{#each card.members as member}
-				<div class="avatar ">
-					<div class="w-10">
-						<img src={member.avatar} alt={member.fullName} />
-					</div>
+			<div class="flex flex-row w-full justify-between">
+				<div class="flex items-center ">
+					<svg
+						class="h-6 w-6 fill-black text-black"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 20 20"
+						fill="currentColor"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+							clip-rule="evenodd"
+						/>
+					</svg>
+					<span class="ml-1 text-lg leading-none text-black">{card.date}</span>
 				</div>
-			{/each}
+
+				<div
+					class="avatar-group  -space-x-4 rounded-full ring ring-black ring-offset-2 ring-offset-base-100"
+				>
+					{#each card.members as member}
+						<div class="avatar ">
+							<div class="w-10">
+								<img src={member.avatar} alt={member.fullName} />
+							</div>
+						</div>
+					{/each}
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

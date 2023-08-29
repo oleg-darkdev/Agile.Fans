@@ -3,8 +3,9 @@
 
 	export let data;
 
-  // console.log(data.user);
+	// console.log(data.user);
 </script>
+
 <!--
 <header class="min-h-full ">
 	<nav class="navbar flex w-full justify-between bg-primary">
@@ -246,12 +247,12 @@
 		</div>
 	</section>
 {:else} -->
-	<main class="flex flex-row">
-		<Aside user={data.user} />
-		<slot />
-	</main>
-<!-- {/if} -->
+<section class="flex flex-row">
+	<Aside user={data.user} />
+	<slot />
+</section>
 
+<!-- {/if} -->
 <style>
 	@media (max-width: 640px) {
 		:global(.hidden-sm) {

@@ -1,12 +1,30 @@
 <script>
 	import { boards } from '../../../lib/action-delegation/app/shared';
 
+	import { AppScreen } from '@coreWidgets';
+
+	import { StartScreen, GameProgressScreen, ManualScreen } from '@appRetrogenWidgets';
+
+
+
 	$: showApp = true;
 </script>
 
 <!--class={showApp ? 'hidden' : ''}-->
 <!-- {#if !showApp} -->
 
+<!-- 
+<AppScreen>
+	<div slot="start-screen">
+		<StartScreen />
+	</div>
+	<div slot="manual-screen">
+		<ManualScreen />
+	</div>
+	<div slot="game-screen">
+		<GameProgressScreen />
+	</div>
+</AppScreen> -->
 
 <section class:hidden={!showApp} class="flex  w-full justify-center py-12">
 	<div class="relative">

@@ -13,6 +13,29 @@ const olegMember = {
 		avatar: '/action-delegation/anton_test_photo.jpg',
 		nickname: 'Savichau Anton',
 		status: 'Online'
+	},
+	fake1Member = {
+		fullName: 'Anton ',
+		id: '6',
+		email: 'sa.bygaga.ne@gmail.com',
+		avatar: '/action-delegation/anton_test_photo.jpg',
+		nickname: 'Savichau Anton',
+		status: 'Online'
+	},
+	fake2Member = {
+		fullName: 'Anton ',
+		id: '3',
+		email: 'sa.bygaga.ne@gmail.com',
+		avatar: '/action-delegation/anton_test_photo.jpg',
+		nickname: 'Savichau Anton',
+		status: 'Online'
+	},fake3Member = {
+		fullName: 'Anton ',
+		id: '4',
+		email: 'sa.bygaga.ne@gmail.com',
+		avatar: '/action-delegation/anton_test_photo.jpg',
+		nickname: 'Savichau Anton',
+		status: 'Online'
 	};
 
 const cardFrontend = {

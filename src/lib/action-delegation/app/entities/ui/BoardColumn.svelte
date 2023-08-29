@@ -1,18 +1,17 @@
 <script>
 	import { BoardCard } from '../../entities';
 
-	export let column, showCards;
+	export let column;
 </script>
 
 <div
 	class=" {column.showCards
 		? 'w-full'
-		: 'max-w-lg'}  m-4 flex flex-shrink-0 flex-col rounded rounded-xl bg-pink-600 bg-pink-500 "
+		: ''}  m-1  flex flex-col rounded rounded-xl bg-pink-600 bg-pink-500 "
 >
-	<div class="flex h-28 max-w-xs flex-shrink-0 items-center px-2">
+	<div class="flex h-20 max-w-xs  items-center px-2">
 		<button
 			on:click={() => {
-				showCards = !showCards;
 				column.showCards = !column.showCards;
 			}}
 			class="transform rounded-xl bg-pink-800 px-5 py-4 text-center text-base font-medium text-white transition duration-500 ease-in-out hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 lg:px-10"

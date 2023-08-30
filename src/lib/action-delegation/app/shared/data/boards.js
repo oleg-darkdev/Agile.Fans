@@ -214,7 +214,8 @@ const boards = [
 			{
 				title: 'Backlog',
 				data: [cardWorkshops, cardSales],
-				id: 0
+				id: 0,
+				wip: 0
 			},
 			{
 				title: 'Level 1',
@@ -230,37 +231,44 @@ const boards = [
 					cardBackend,
 					cardDesign
 				],
-				id: 1
+				id: 1,
+				wip: 0
 			},
 			{
 				title: 'Level 2',
 				data: [],
-				id: 2
+				id: 2,
+				wip: 0
 			},
 			{
 				title: 'Level 3',
 				data: [cardBussines],
-				id: 3
+				id: 3,
+				wip: 0
 			},
 			{
 				title: 'Level 4',
 				data: [cardTests],
-				id: 4
+				id: 4,
+				wip: 0
 			},
 			{
 				title: 'Level 5',
 				data: [],
-				id: 5
+				id: 5,
+				wip: 0
 			},
 			{
 				title: 'Level 6',
 				data: [],
-				id: 6
+				id: 6,
+				wip: 0
 			},
 			{
 				title: 'Level 7',
 				data: [],
-				id: 7
+				id: 7,
+				wip: 0
 			}
 		]
 	}

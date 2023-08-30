@@ -61,14 +61,21 @@ const config = {
 			'@appRetrogenFeatures': path.resolve('./src/lib/retrogen/app/features'),
 			'@appRetrogenProcesses': path.resolve('./src/lib/retrogen/app/processes'),
 			'@appRetrogenWidgets': path.resolve('./src/lib/retrogen/app/widgets'),
-			'@appRetrogenShared': path.resolve('./src/lib/retrogen/app/shared')
+			'@appRetrogenShared': path.resolve('./src/lib/retrogen/app/shared'),
+
+			// action-delegation
+			'@appActionDelegationEntities': path.resolve('./src/lib/action-delegation/app/entities'),
+			'@appActionDelegationFeatures': path.resolve('./src/lib/action-delegation/app/features'),
+			'@appActionDelegationProcesses': path.resolve('./src/lib/action-delegation/app/processes'),
+			'@appActionDelegationWidgets': path.resolve('./src/lib/action-delegation/app/widgets'),
+			'@appActionDelegationShared': path.resolve('./src/lib/action-delegation/app/shared')
 
 			// template
 			// '@appEntities': path.resolve('./src/lib/retrogen/app/entities'),
 			// '@appFeatures': path.resolve('./src/lib/retrogen/app/features'),
 			// '@appProcesses': path.resolve('./src/lib/retrogen/app/processes'),
 			// '@appWidgets': path.resolve('./src/lib/retrogen/app/widgets'),
-			// 			'@appRetrogenShared': path.resolve('./src/lib/retrogen/app/shared'),
+			// 			'@appShared': path.resolve('./src/lib/retrogen/app/shared'),
 		}
 	}
 };

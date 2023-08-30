@@ -10,8 +10,11 @@ import Pomodoro from './ui/Pomodoro.svelte';
 import Settings from './ui/Settings.svelte';
 import Stopwatch from './ui/Stopwatch.svelte';
 
+// app
 import HeaderApp from './ui/app/Header.svelte';
 import AppScreen from './ui/app/AppScreen.svelte';
+import DescriptionService from './ui/app/DescriptionService.svelte';
+import TeamMembersList from './ui/app/TeamMembersList.svelte';
 
 import Stats from './ui/landing/Stats.svelte';
 import Cookie from './ui/landing/Cookie.svelte';
@@ -30,7 +33,9 @@ import HeroProduct from './ui/products/HeroProduct.svelte';
 import HeaderBottomLine from './ui/products/HeaderBottomLine.svelte';
 
 export {
-	ProductVariants,
+  ProductVariants,
+  DescriptionService,
+  TeamMembersList,
 	StickyBanner,
 	FullScreenVideo,
 	HeaderApp,

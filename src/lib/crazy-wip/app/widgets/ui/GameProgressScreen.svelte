@@ -7,6 +7,8 @@
 		FinalStepOnScreen
 	} from '@coreEntities';
 
+	import { gameSteps } from '@coreSharedData';
+
 	import { HorisontalImage } from '@coreSharedLayout';
 
 	import { firstScenarioBasic } from '../../shared';
@@ -25,6 +27,8 @@
 
 {#if !step}
 	<TextBlock
+		{gameSteps}
+		bind:step
 		title="Przedyskutujcie plan działania z pozostałymi graczami. "
 		desc="Jak tylko naciśniesz przycisk start, gra się rozpoczyna i zaczyna się timer."
 	>
@@ -34,7 +38,7 @@
 		>
 	</TextBlock>
 {:else if step >= 1 && step <= 15}
-	<TimeCounterBlock bind:showMsg bind:showFullInstruction day={firstScenarioBasic[step - 1]}>
+	<TimeCounterBlock bind:showMsg bind:showFullInstruction gameSteps={firstScenarioBasic} day={firstScenarioBasic[step - 1]}>
 		<CountdownTimer slot="timer" bind:showMsg bind:time />
 
 		<GameStepsBtns

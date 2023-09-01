@@ -5,7 +5,7 @@
 </script>
 
 <section
-	class="content flex min-h-screen bg-primary flex-1 flex-col items-center justify-center  overflow-y-scroll pt-10 pb-40"
+	class="content flex min-h-screen bg-black flex-1 flex-col items-center justify-center  overflow-y-scroll pt-10 pb-40"
 >
 	<div class:hidden={activeScreen == 'Instrukcja' || activeScreen == 'Rozgrywka'}>
 		<slot name="start-screen" />

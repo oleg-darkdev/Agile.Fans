@@ -1,6 +1,11 @@
 // timer
 import defaultPomodoros from './timer/defaultPomodoros';
 
+// lorem
+import gameSteps from './gameSteps';
+
+
+
 // stores
 import draggingItem from './timer/stores/draggingItem';
 import pomodoroState from './timer/stores/pomodoroState';
@@ -71,7 +76,7 @@ const kanbanKitSubProducts = [
 	scrumKitSubProducts = [],
 	agileKitSubProducts = [ten];
 
-  
+
 const agileKIT = {
 		title: 'Agile.KIT',
 		mainProduct: agileKit,
@@ -98,6 +103,7 @@ const productsCategories = [allKit, kanbanKIT, scrumKIT, agileKIT];
 
 export {
 	productsList,
+	gameSteps,
 	contact,
 	social,
 	productsCategories,

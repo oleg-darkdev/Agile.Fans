@@ -1,4 +1,3 @@
-import gameSteps from './data/gameSteps';
 import {
 	dayInstruction,
 	blockersInstruction,
@@ -8,4 +7,4 @@ import {
 import firstScenarioBasic from './data/scenaroius/firstScenarioBasic';
 
 
-export { gameSteps, firstScenarioBasic, dayInstruction, blockersInstruction, taskInstruction };
+export { firstScenarioBasic, dayInstruction, blockersInstruction, taskInstruction };

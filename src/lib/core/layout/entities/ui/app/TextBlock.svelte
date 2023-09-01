@@ -1,8 +1,13 @@
 <script>
-	export let title, desc;
+	import { Progress } from '@coreEntities';
+	import { AppBlocksWrapper } from '@coreSharedLayout';
+
+	export let title, desc, gameSteps, step;
 </script>
 
-<div class="mx-2 h-full  rounded-lg border-2 border-pink-700 bg-black shadow-md shadow-pink-700">
+<AppBlocksWrapper>
+	<Progress {gameSteps} bind:step />
+
 	<slot name="img" />
 	<div class="py-6">
 		<div class="mx-auto max-w-screen-xl px-4 md:px-8 md:text-center">
@@ -17,4 +22,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</AppBlocksWrapper>

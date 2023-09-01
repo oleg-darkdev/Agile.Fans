@@ -1,17 +1,16 @@
 <script>
-	export let day, showMsg, showFullInstruction;
+	import { AppBlocksWrapper } from '@coreSharedLayout';
+	import { Progress } from '@coreEntities';
+
+	export let day, showMsg, showFullInstruction, gameSteps;
 </script>
+
+<!-- 			class="relative flex max-w-md flex-col items-center  gap-4 rounded-md border-2 border-pink-700 bg-black bg-pink-700 p-4 p-6 shadow-md shadow-pink-700 sm:py-8 sm:px-12"
+ -->
 
 <div class="mx-4  ">
 	{#if showMsg}
-		<div
-			class="relative bg-black flex max-w-md flex-col  items-center gap-4 rounded-md border-2 border-pink-700 bg-pink-700 p-4 p-6 shadow-md shadow-pink-700 sm:py-8 sm:px-12"
-		>
-
-
-
-
-
+		<AppBlocksWrapper>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 512 512"
@@ -27,16 +26,10 @@
 					d="M470.65,334.707l-47.867-81.283-41.148-6.812,61.441,104.333A32,32,0,0,1,415.5,399.183H304.046l38.359-38.358L319.778,338.2l-76.332,76.332,76.332,76.333,22.627-22.628-37.052-37.051H415.5a64,64,0,0,0,55.149-96.476Z"
 				/>
 			</svg>
-			<h2 class="text-center text-3xl font-black leading-tight text-black tracking-wide">
+			<h2 class="text-center text-3xl font-black leading-tight tracking-wide text-black">
 				Czas na wykonanie zadań w bieżącym dniu minął.
 			</h2>
-			<p class=" text-center text-2xl font-semibold  text-gray-100">
-				Przejść do następnego dnia?
-			</p>
-
-
-
-
+			<p class=" text-center text-2xl font-semibold  text-gray-100">Przejść do następnego dnia?</p>
 
 			<!-- <ol class="text-center" type="i">
 				<li>
@@ -52,14 +45,19 @@
 			<div class="mt-4 flex items-center gap-3 md:justify-center">
 				<slot name="btn" />
 			</div>
-		</div>
+		</AppBlocksWrapper>
 	{:else}
-		<div class="mb-4 bg-black h-full rounded-lg border-2 border-pink-600 p-4  shadow-md shadow-pink-600">
+		<!-- 			class="mb-4 h-full rounded-lg border-2 border-pink-600 bg-black p-4  shadow-md shadow-pink-600"
+ -->
+		<AppBlocksWrapper>
 			<slot name="timer" />
-		</div>
+		</AppBlocksWrapper>
 
-		<div class="bg-black h-full rounded-lg border-2 border-pink-600  shadow-md shadow-pink-600">
+		<!-- class="h-full rounded-lg border-2 border-pink-600 bg-black  shadow-md shadow-pink-600"  -->
+		<AppBlocksWrapper>
 			<div class="py-6">
+				<Progress {gameSteps} bind:step={day} />
+
 				<div class="mx-auto max-w-screen-xl px-4 md:px-8 md:text-center">
 					<div class="max-w-xl md:mx-auto">
 						<h3 class="text-left text-3xl font-semibold text-gray-300 sm:text-4xl">
@@ -76,7 +74,7 @@
 			<div class="mt-4 mb-4 px-6">
 				<slot name="instructionBtns" />
 			</div>
-		</div>
+		</AppBlocksWrapper>
 
 		{#if showFullInstruction}
 			<div class="mt-4 w-full">

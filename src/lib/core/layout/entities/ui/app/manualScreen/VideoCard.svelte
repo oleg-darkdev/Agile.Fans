@@ -5,10 +5,10 @@
 <a
 	href={video.link}
 	target="_black"
-	class="rounded-lg w-full m-2 border-2 border-pink-700 bg-black p-4 shadow-md shadow-pink-700 hover:bg-pink-700 lg:w-5/12 "
+	class="m-2 w-full  p-4 p-4 text-gray-500 shadow-md hover:bg-neutral-900  lg:w-5/12 "
 >
-	<h3 class="mb-4 max-w-4xl text-center text-3xl font-semibold text-gray-100 ">{video.title}</h3>
-	<video class="rounded-2xl" poster={video.poster} controls playsinline  muted loop>
+	<h3 class="mb-4 max-w-lg text-center text-3xl font-semibold text-gray-100 ">{video.title}</h3>
+	<video class="rounded-2xl max-w-lg" poster={video.poster} controls="true" playsinline muted loop>
 		<source src={video.link} type="video/mp4" />
 	</video>
 </a>

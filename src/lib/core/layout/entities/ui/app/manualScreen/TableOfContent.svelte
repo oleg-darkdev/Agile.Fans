@@ -1,10 +1,12 @@
 <script>
+	import { AppBlocksWrapper } from '@coreSharedLayout';
+
 	export let card, index, selected, showFullInstruction;
 </script>
 
-<div
-	class="group m-1 max-w-sm rounded-lg border-2 border-pink-700 bg-black shadow-md shadow-pink-700 hover:bg-pink-700 hover:no-underline focus:no-underline"
->
+<!-- 	class="bg-neutal-600 rounded-lg group m-1 max-w-sm border border-neutral-600 p-4 text-gray-500 shadow-md shadow-md hover:bg-neutral-900  hover:no-underline focus:no-underline"
+ -->
+<AppBlocksWrapper>
 	<div
 		class="space-y-2 p-6 group-focus:bg-pink-700  "
 		on:click={() => {
@@ -20,4 +22,4 @@
 		</h3>
 		<p>{card.shortDesc}</p>
 	</div>
-</div>
+</AppBlocksWrapper>

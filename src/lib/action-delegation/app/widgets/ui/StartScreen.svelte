@@ -1,29 +1,102 @@
 <script>
-	import { boards } from '@appActionDelegationShared';
-	import { LastUpdCreateDate } from '@coreSharedLayout';
+	import {
+		StepsList,
+		TextBlock,
+		WelcomeBlock,
+		StepsBtns,
+		VideoCard,
+		Progress,
+		CheckboxAppOrService,
+		// LevelSecelect,
+		FinalStepOnScreen
+	} from '@coreEntities';
+
+	import { gameSteps } from '@coreSharedData';
+
+	import { HorisontalImage } from '@coreSharedLayout';
+	// 		MapGenerator,
+	// RolesSetup,
+
+	let step = 0;
+	const video = {
+		title: 'Przygotowanie do gry',
+		link: '/agile-fans/landing/video.mp4',
+		poster: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.jpg'
+	};
+
+	$: selectedMode = '';
+
+	export let activeScreen;
 </script>
 
-<section class="flex  w-full justify-center py-12">
-	<!-- среди этапов будет выбор, играть в игру или пользоваться сервисом! -->
-
-	<div class="flex flex-row flex-wrap justify-center space-y-8">
-		{#each boards as board}
-			<a href="./action-delegation/board/" class="flex flex-col justify-center "
-				><div
-					class="group mb-4 max-w-lg rounded rounded-xl border-2 border-neutral-600  px-2  py-6 hover:bg-neutral-800 sm:flex lg:items-end"
-				>
-					<div>
-						<LastUpdCreateDate dateCreated={board.dateCreated} lastUpd={board.lastUpd} />
-
-						<p class="mt-3 text-lg font-medium leading-6">
-							{board.title}
-						</p>
-						<p class="mt-2 text-lg text-gray-500">
-							{board.description}
-						</p>
-					</div>
-				</div>
-			</a>
-		{/each}
-	</div>
-</section>
+{#if step == 0}
+	<WelcomeBlock
+		{video}
+		bind:step
+		title="Witamy   "
+		desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+	/>
+{:else if step >= 1 && step <= 6}
+	{#if step == 1}
+		<StepsList steps={gameSteps}>
+			<StepsBtns bind:step />
+		</StepsList>
+	{:else if step == 2}
+		<CheckboxAppOrService {gameSteps} bind:step bind:selectedMode>
+			<StepsBtns slot="btn" bind:step />
+		</CheckboxAppOrService>
+	{:else if step == 3}
+		<TextBlock
+			{gameSteps}
+			bind:step
+			title={selectedMode.title}
+			desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+		>
+			<StepsBtns slot="btn" bind:step />
+		</TextBlock>
+	{:else if step == 4}
+		<TextBlock
+			{gameSteps}
+			bind:step
+			title="Lorem ipsum is placeholder"
+			desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+		>
+			<StepsBtns slot="btn" bind:step />
+		</TextBlock>
+		<!--  -->
+	{:else if step == 5}
+		<TextBlock
+			{gameSteps}
+			bind:step
+			title="'Dostarczanie surowców do ISS"
+			desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+		>
+			<HorisontalImage slot="img" img="" alt="Science banner" />
+			<StepsBtns slot="btn" bind:step />
+		</TextBlock>
+	{:else if step == 6}
+		<TextBlock
+			{gameSteps}
+			bind:step
+			title="Przygotowanie kart eksperymentów"
+			desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+		>
+			<HorisontalImage slot="img" img="/images/manual/science_bg.png" alt="Science banner" />
+			<StepsBtns slot="btn" bind:step />
+		</TextBlock>
+	{/if}
+{:else}
+	<FinalStepOnScreen
+		title="Yay, prawie skończyliśmy przygotowania"
+		desc={[
+			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
+			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.'
+		]}
+		on:click={() => {
+			activeScreen = 'Rozgrywka';
+			step = 1;
+		}}
+	>
+		<HorisontalImage img="" alt="Hello banner" />
+	</FinalStepOnScreen>
+{/if}

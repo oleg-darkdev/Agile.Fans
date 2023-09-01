@@ -15,7 +15,7 @@
 </script>
 
 <div
-	class="bg-neutal-600 flex max-w-md  flex-col rounded-lg border border-neutral-600 p-4 text-gray-500 shadow-md hover:bg-neutral-900 "
+	class="bg-neutal-600  flex max-w-md  flex-col rounded-lg border border-neutral-600 p-4 text-gray-500 shadow-md hover:bg-neutral-900 "
 >
 	<div class="mb-4 flex items-center justify-between ">
 		<h5 class="text-xl font-bold leading-none text-neutral-400 ">

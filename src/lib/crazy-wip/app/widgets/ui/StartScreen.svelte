@@ -24,7 +24,13 @@
 
 	export let activeScreen;
 
-	$: selectedMode = '';
+	$: selectedMode = {
+		title: '',
+		desc: '',
+		video: '',
+		value: 0,
+		link: ''
+	};
 </script>
 
 {#if step == 0}
@@ -36,14 +42,15 @@
 	/>
 {:else if step >= 1 && step <= 6}
 	{#if step == 1}
-		<StepsList steps={gameSteps}>
-			<StepsBtns bind:step />
-		</StepsList>
-	{:else if step == 2}
 		<CheckboxAppOrService {gameSteps} bind:step bind:selectedMode>
 			<StepsBtns slot="btn" bind:step />
 		</CheckboxAppOrService>
+	{:else if step == 2}
+		<StepsList steps={gameSteps}>
+			<StepsBtns bind:step />
+		</StepsList>
 	{:else if step == 3}
+
 		<TextBlock
 			{gameSteps}
 			bind:step

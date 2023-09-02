@@ -49,8 +49,9 @@
 				setTimeout(hideBadMsgWithTimer, 2000);
 			});
 
-	import { LargeBtn } from '@coreSharedLayout';
-	import { ComponentsTable, TextInstruction } from '@appRetrogenEntities';
+	import { ComponentsTable } from '@coreEntities';
+
+	import { TextInstruction } from '@appRetrogenEntities';
 	import { MsgToasts } from '@coreEntities';
 
 	export let data;

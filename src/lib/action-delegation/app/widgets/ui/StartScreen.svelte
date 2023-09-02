@@ -24,7 +24,13 @@
 		poster: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.jpg'
 	};
 
-	$: selectedMode = '';
+	$: selectedMode = {
+		title: '',
+		desc: '',
+		video: '',
+		value: 0,
+		link: ''
+	};
 
 	export let activeScreen;
 </script>
@@ -38,52 +44,31 @@
 	/>
 {:else if step >= 1 && step <= 6}
 	{#if step == 1}
-		<StepsList steps={gameSteps}>
-			<StepsBtns bind:step />
-		</StepsList>
-	{:else if step == 2}
 		<CheckboxAppOrService {gameSteps} bind:step bind:selectedMode>
 			<StepsBtns slot="btn" bind:step />
 		</CheckboxAppOrService>
-	{:else if step == 3}
-		<TextBlock
-			{gameSteps}
-			bind:step
-			title={selectedMode.title}
-			desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
-		>
+	{:else if step == 2}
+		<StepsList steps={gameSteps}>
+			<StepsBtns bind:step />
+		</StepsList>
+	{:else if step > 2}
+		<!-- {selectedMode.title} -->
+		<TextBlock {gameSteps} bind:step title={gameSteps[step].title} desc={gameSteps[step].desc[0]}>
 			<StepsBtns slot="btn" bind:step />
 		</TextBlock>
-	{:else if step == 4}
-		<TextBlock
-			{gameSteps}
-			bind:step
-			title="Lorem ipsum is placeholder"
-			desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
-		>
-			<StepsBtns slot="btn" bind:step />
-		</TextBlock>
-		<!--  -->
-	{:else if step == 5}
-		<TextBlock
-			{gameSteps}
-			bind:step
-			title="'Dostarczanie surowców do ISS"
-			desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
-		>
-			<HorisontalImage slot="img" img="" alt="Science banner" />
-			<StepsBtns slot="btn" bind:step />
-		</TextBlock>
-	{:else if step == 6}
-		<TextBlock
-			{gameSteps}
-			bind:step
-			title="Przygotowanie kart eksperymentów"
-			desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
-		>
-			<HorisontalImage slot="img" img="/images/manual/science_bg.png" alt="Science banner" />
-			<StepsBtns slot="btn" bind:step />
-		</TextBlock>
+
+		<!-- 			<HorisontalImage slot="img" img="" alt="Science banner" />
+ -->
+		<!-- 	import { AppBlocksWrapper } from '@coreSharedLayout';
+
+
+
+<AppBlocksWrapper>
+<div class="max-w-md lg:max-w-xl">
+ComponentsTable
+
+
+-->
 	{/if}
 {:else}
 	<FinalStepOnScreen

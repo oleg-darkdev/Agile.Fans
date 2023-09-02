@@ -84,7 +84,8 @@
 				</div>
 			</div>
 		{/each}
-
-		<slot name="btn" />
+		{#if selectedMode.title.length > 0}
+			<slot name="btn" />
+		{/if}
 	</div>
 </AppBlocksWrapper>

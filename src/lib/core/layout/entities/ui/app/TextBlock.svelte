@@ -9,7 +9,7 @@
 	<Progress {gameSteps} bind:step />
 
 	<slot name="img" />
-	<div class="py-6">
+	<div class="py-6 ">
 		<div class="mx-auto max-w-screen-xl px-4 md:px-8 md:text-center">
 			<div class="max-w-xl md:mx-auto">
 				<h3 class="text-3xl font-bold text-gray-100 sm:text-4xl">{title}</h3>

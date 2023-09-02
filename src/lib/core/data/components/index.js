@@ -5,6 +5,7 @@ const sectionComponent = {
 		photo: '',
 		shortDesc: 'Lorem ipsum is placeholder text commonly used in the graphic',
 		desc: [''],
+		count: 0,
 
 		id: 1
 	},
@@ -13,7 +14,7 @@ const sectionComponent = {
 		title: 'App',
 		shortDesc: 'Lorem ipsum is placeholder text commonly used in the graphic',
 		desc: [''],
-
+		count: 0,
 		link: ''
 	},
 	holderComponent = {
@@ -21,6 +22,8 @@ const sectionComponent = {
 		photo: '',
 		shortDesc: 'Lorem ipsum is placeholder text commonly used in the graphic',
 		desc: [''],
+		count: 0,
+
 		id: 3
 	};
 

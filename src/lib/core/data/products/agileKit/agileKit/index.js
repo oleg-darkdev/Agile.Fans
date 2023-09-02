@@ -8,6 +8,11 @@ import features from './features';
 import price from './price';
 import feedback from './feedback';
 
+import timings from './timings';
+import components from './components';
+import translates from './translates';
+import { landingVideos, appVideos } from './videos';
+
 const product = {
 	id: 0,
 	status: 0,
@@ -25,38 +30,13 @@ const product = {
 			'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.',
 		video:
 			'https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com',
-		translates: [
-			{
-				lang: 'English',
-				link: ''
-			},
-			{
-				lang: 'Polish',
-				link: ''
-			},
-			{
-				lang: 'Russian',
-				link: ''
-			},
-			{
-				lang: 'Ukrainian',
-				link: ''
-			},
-			{
-				lang: 'German',
-				link: ''
-			},
-			{
-				lang: 'French',
-				link: ''
-			},
-			{
-				lang: 'Spanish',
-				link: ''
-			}
-		]
+		translates
 	},
 	variants: variantOfProduct,
+	components: components,
+	timings: timings,
+	landingVideos: landingVideos,
+	appVideos: appVideos,
 
 	about: {
 		desc: [

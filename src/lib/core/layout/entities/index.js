@@ -18,6 +18,9 @@ import CountdownTime from './ui/CountdownTime.svelte';
 
 import TextBlock from './ui/app/TextBlock.svelte';
 import WelcomeBlock from './ui/app/WelcomeBlock.svelte';
+import ComponentsTable from './ui/app/ComponentsTable.svelte';
+import Progress from './ui/app/ProgresSteps.svelte';
+
 
 import LoginForm from './ui/app/LoginForm.svelte';
 import WorkshopsList from './ui/app/WorkshopsList.svelte';
@@ -27,7 +30,6 @@ import StatsAccount from './ui/app/StatsAccount.svelte';
 import FinalStepOnScreen from './ui/app/startScreen/FinalStepOnScreen.svelte';
 import StepsBtns from './ui/app/startScreen/StepsBtns.svelte';
 import StepsList from './ui/app/startScreen/StepsList.svelte';
-import Progress from './ui/app/startScreen/Progress.svelte';
 import CheckboxAppOrService from './ui/app/startScreen/CheckboxAppOrService.svelte';
 
 // manual screen
@@ -40,7 +42,8 @@ import GameStepsBtns from './ui/app/gameScreen/GameStepsBtns.svelte';
 import TimeCounterBlock from './ui/app/gameScreen/TimeCounterBlock.svelte';
 
 export {
-	LoginForm,
+  LoginForm,
+  ComponentsTable,
 	CheckboxAppOrService,
 	MsgToasts,
 	WelcomeBlock,

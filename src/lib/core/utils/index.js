@@ -1,5 +1,6 @@
 import convertObjToArray from './convertObjToArray';
 import extractFaqValues from './extractFaqValues';
+import createLocalComponent from './createLocalComponent';
 
 
 // time
@@ -12,7 +13,8 @@ import minutsAndSecondsToSecondsConverter from './timer/minutsAndSecondsToSecond
 // kanbanMetrics
 export {
 	convertObjToArray,
-	extractFaqValues,
+  extractFaqValues,
+  createLocalComponent,
 	showNotification,
 	playSound,
 	minutsAndSecondsToSecondsConverter

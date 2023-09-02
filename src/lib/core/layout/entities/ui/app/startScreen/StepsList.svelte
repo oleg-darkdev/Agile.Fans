@@ -1,8 +1,6 @@
 <script>
 	import { AppBlocksWrapper, StepElement } from '@coreSharedLayout';
 
-	$: stepsLength = steps.length - 1;
-
 	export let steps;
 </script>
 
@@ -11,10 +9,12 @@
 	<h3 class="text-1xl mb-6 text-center font-bold text-gray-100 sm:text-4xl">
 		Kroki przygotowania do gry
 	</h3>
-	<div class="mx-auto grid max-w-2xl">
-		{#each steps as step, idStep}
-			<StepElement {step} {idStep} {stepsLength} />
+	<ul class="steps steps-vertical">
+		{#each steps as step}
+			<StepElement {step} />
 		{/each}
-	</div>
+		<li class="step-primary step">Register</li>
+	</ul>
+
 	<slot />
 </AppBlocksWrapper>

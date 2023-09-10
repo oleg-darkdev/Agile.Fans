@@ -80,7 +80,7 @@
 		<TextBlock
 			{gameSteps}
 			bind:step
-			title="Przygotowanie kart eksperymentów"
+			title="Lorem ipsum is placeholder text commonly"
 			desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
 		>
 			<HorisontalImage slot="img" img="/images/manual/science_bg.png" alt="Science banner" />

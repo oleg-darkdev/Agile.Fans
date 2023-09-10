@@ -20,6 +20,7 @@ import TextBlock from './ui/app/TextBlock.svelte';
 import WelcomeBlock from './ui/app/WelcomeBlock.svelte';
 import ComponentsTable from './ui/app/ComponentsTable.svelte';
 import Progress from './ui/app/ProgresSteps.svelte';
+import FaqLine from './ui/app/FaqLine.svelte';
 
 
 import LoginForm from './ui/app/LoginForm.svelte';
@@ -44,6 +45,7 @@ import TimeCounterBlock from './ui/app/gameScreen/TimeCounterBlock.svelte';
 export {
   LoginForm,
   ComponentsTable,
+  FaqLine,
 	CheckboxAppOrService,
 	MsgToasts,
 	WelcomeBlock,

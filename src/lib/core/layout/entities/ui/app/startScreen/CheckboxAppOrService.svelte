@@ -39,26 +39,29 @@
 	<div class="flex max-w-md flex-col items-center justify-center">
 		{#each modes as mode, i}
 			<div
-				class="max-w-smdivide-gray-200 my-4 rounded-lg border border-gray-200 bg-white text-gray-500 shadow-md dark:divide-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400"
+				class="my-4 max-w-sm rounded-lg border border-gray-200 text-gray-400  shadow-md hover:border-pink-600 hover:bg-neutral-800 divide-gray-700 "
 			>
 				<!-- <img class="rounded-t-lg" src="/images/image-1.webp" alt="" /> -->
 
-				<video
-					class="w-full rounded-2xl"
-					poster={videosAboutModes[i].poster}
-					controls="true"
-					playsinline
-					muted
-					loop
-				>
-					<source src={videosAboutModes[i].link} type="video/mp4" />
-				</video>
-				<p
-					class="mb-3 font-normal leading-tight text-gray-700 dark:text-gray-400"
-					data-svelte-h="svelte-1v6x62e"
-				>
-					Video about mode
-				</p>
+				<div class="m-1 rounded-2xl p-4">
+					<p
+						class="mb-3 font-normal leading-tight text-gray-400"
+					>
+						Video about mode
+					</p>
+
+					<video
+						class="w-full rounded-2xl"
+						poster={videosAboutModes[i].poster}
+						controls="true"
+						playsinline
+						muted
+						loop
+					>
+						<source src={videosAboutModes[i].link} type="video/mp4" />
+					</video>
+				</div>
+
 				<div class="p-4 sm:p-6">
 					<!--
            <h5
@@ -72,7 +75,7 @@
 
 					<div class="form-control">
 						<label class="label cursor-pointer">
-							<span class="label-text text-2xl font-bold text-pink-600">{mode.title}</span>
+							<span class="label-text text-2xl font-bold text-neutral-100">{mode.title}</span>
 							<input
 								type="radio"
 								name="radio-mode"

@@ -62,7 +62,7 @@
 		class="mx-4  flex h-auto w-full flex-col items-center rounded rounded-xl bg-primary py-5 md:max-w-2xl md:px-6 lg:max-w-4xl lg:px-8"
 	>
 		<div
-			class="m-2 flex flex-row rounded-xl  border-2 border-pink-700 p-3 text-pink-500 text-pink-500 hover:bg-pink-700 hover:text-white"
+			class="m-2 flex flex-col-reverse rounded-xl border-2 border-pink-700  p-3 text-pink-500 text-pink-500 hover:bg-pink-700 hover:text-white md:flex-row lg:flex-row"
 		>
 			<div>
 				{#each data.tool.desc as desc}
@@ -72,7 +72,7 @@
 				{/each}
 			</div>
 			<div class="mx-4">
-				<div class="flex flex-row">
+				<div class="flex flex-row items-end">
 					{#if !scenarioAdded}
 						<button
 							on:click={() => {
@@ -80,14 +80,14 @@
 								console.log($selectedScenarious.length);
 							}}
 							title="Add a scenario to the application"
-							class="{showSharedBlock ? 'mr-2' : 'mb-1'} "
+							class="{showSharedBlock ? '' : 'mb-1'} mr-2"
 						>
 							<Icon data={plusCircle} scale={3} />
 						</button>
 					{:else}
 						<a
 							href="../"
-							class="{showSharedBlock ? 'mr-2' : 'mb-1'} "
+							class="{showSharedBlock ? '' : 'mb-1'} mr-2"
 							title="Go to to the application"
 						>
 							<Icon data={playCircleO} scale={3} />
@@ -96,7 +96,7 @@
 
 					<button
 						title="Share the retrospective scenario"
-						class={showSharedBlock ? 'mr-2' : 'mb-1'}
+						class="{showSharedBlock ? '' : 'mb-1'} mr-2"
 						on:click={() => (showSharedBlock = !showSharedBlock)}
 					>
 						<Icon data={shareSquareO} scale={3} />
@@ -137,8 +137,8 @@
 			steps={data.tool.instruction}
 		/>
 
-		<a href="" class="btn-lg btn mx-6 mx-auto mt-6 mb-4 w-6/12 max-w-2xl bg-pink-600"
-			><Icon class="mr-4" data={arrowLeft} scale={2} /> Back to the scenarios list
+		<a href="" class="btn-lg btn mx-6 mx-auto mt-6 mb-4 w-full max-w-2xl bg-pink-600 lg:w-6/12"
+			><Icon class="mr-4" data={arrowLeft} scale={1} /> Scenarios list
 		</a>
 	</div>
 

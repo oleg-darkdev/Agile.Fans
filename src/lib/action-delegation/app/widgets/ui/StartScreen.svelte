@@ -11,7 +11,7 @@
 		FinalStepOnScreen
 	} from '@coreEntities';
 
-	import { gameSteps } from '@coreSharedData';
+
 
 	import { HorisontalImage } from '@coreSharedLayout';
 	// 		MapGenerator,
@@ -32,7 +32,9 @@
 		link: ''
 	};
 
-	export let activeScreen;
+	export let activeScreen, gameSteps;
+
+
 </script>
 
 {#if step == 0}

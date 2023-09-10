@@ -8,6 +8,7 @@ import features from './features';
 import price from './price';
 import feedback from './feedback';
 
+import appSteps from './appSteps';
 import timings from './timings';
 import components from './components';
 import translates from './translates';
@@ -52,7 +53,8 @@ const delegation = {
 	features: features,
 	prices: price,
 	feedback: feedback,
-	faq: faq
+	faq: faq,
+	appSteps: appSteps
 };
 
 export default delegation;

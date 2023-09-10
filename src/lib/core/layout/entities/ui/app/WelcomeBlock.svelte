@@ -13,10 +13,18 @@
 			</p>
 		</div>
 
-		<video class="w-full rounded-2xl" poster={video.poster} controls="true" playsinline muted loop>
-			<source src={video.link} type="video/mp4" />
-		</video>
-
+		<div class="rounded-2xl p-4 hover:bg-pink-600">
+			<video
+				class="w-full rounded-2xl hover:bg-pink-600"
+				poster={video.poster}
+				controls="true"
+				playsinline
+				muted
+				loop
+			>
+				<source src={video.link} type="video/mp4" />
+			</video>
+		</div>
 		<div class="mt-4 flex items-center justify-center">
 			<button class="btn-lg  btn mx-6 mt-4 max-w-2xl bg-pink-600" on:click={() => step++}
 				>Dalej

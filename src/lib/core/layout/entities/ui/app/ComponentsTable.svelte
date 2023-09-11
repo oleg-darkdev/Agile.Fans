@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="flex w-full  flex-col divide-gray-200 rounded-lg  bg-white p-4 text-gray-900 shadow-md  "
+	class="flex w-full mb-4 flex-col divide-gray-200 rounded-lg  bg-white p-4 text-gray-900 shadow-md  "
 >
 	<div class="mb-4 flex items-center justify-between">
 		<h5 class="text-xl font-bold leading-none ">Components</h5>

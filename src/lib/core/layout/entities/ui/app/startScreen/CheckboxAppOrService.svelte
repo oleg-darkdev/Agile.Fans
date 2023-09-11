@@ -41,7 +41,6 @@
 			<div
 				class="my-4 max-w-sm rounded-lg border border-gray-200 text-gray-400  shadow-md hover:border-pink-600 hover:bg-neutral-800 divide-gray-700 "
 			>
-				<!-- <img class="rounded-t-lg" src="/images/image-1.webp" alt="" /> -->
 
 				<div class="m-1 rounded-2xl p-4">
 					<p
@@ -63,16 +62,6 @@
 				</div>
 
 				<div class="p-4 sm:p-6">
-					<!--
-           <h5
-					class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-					data-svelte-h="svelte-nw3hm"
-				>
-					Noteworthy technology acquisitions 2021
-				</h5>
-
-			-->
-
 					<div class="form-control">
 						<label class="label cursor-pointer">
 							<span class="label-text text-2xl font-bold text-neutral-100">{mode.title}</span>

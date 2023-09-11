@@ -6,16 +6,12 @@
 		StepsBtns,
 		VideoCard,
 		Progress,
+		ComponentsTable,
 		CheckboxAppOrService,
 		// LevelSecelect,
 		FinalStepOnScreen
 	} from '@coreEntities';
-
-
-
-	import { HorisontalImage } from '@coreSharedLayout';
-	// 		MapGenerator,
-	// RolesSetup,
+	import { AppBlocksWrapper, HorisontalImage } from '@coreSharedLayout';
 
 	let step = 0;
 	const video = {
@@ -32,9 +28,10 @@
 		link: ''
 	};
 
-	export let activeScreen, gameSteps;
+	export let activeScreen, service;
 
-
+	let gameSteps = service.appSteps,
+		components = service.components;
 </script>
 
 {#if step == 0}
@@ -44,33 +41,26 @@
 		title="Witamy   "
 		desc="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
 	/>
-{:else if step >= 1 && step <= 6}
+{:else if step >= 1 && step <= gameSteps.length - 1}
 	{#if step == 1}
 		<CheckboxAppOrService {gameSteps} bind:step bind:selectedMode>
 			<StepsBtns slot="btn" bind:step />
 		</CheckboxAppOrService>
 	{:else if step == 2}
-		<StepsList steps={gameSteps}>
+		<StepsList steps={gameSteps} selectedMode={selectedMode.title}>
 			<StepsBtns bind:step />
 		</StepsList>
-	{:else if step > 2}
-		<!-- {selectedMode.title} -->
+	{:else if step == 3}
+		<AppBlocksWrapper>
+			<Progress {gameSteps} bind:step />
+
+			<ComponentsTable {components} />
+			<StepsBtns bind:step />
+		</AppBlocksWrapper>
+	{:else if step > 3}
 		<TextBlock {gameSteps} bind:step title={gameSteps[step].title} desc={gameSteps[step].desc[0]}>
 			<StepsBtns slot="btn" bind:step />
 		</TextBlock>
-
-		<!-- 			<HorisontalImage slot="img" img="" alt="Science banner" />
- -->
-		<!-- 	import { AppBlocksWrapper } from '@coreSharedLayout';
-
-
-
-<AppBlocksWrapper>
-<div class="max-w-md lg:max-w-xl">
-ComponentsTable
-
-
--->
 	{/if}
 {:else}
 	<FinalStepOnScreen

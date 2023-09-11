@@ -5,8 +5,9 @@
 
 	import { FooterApp } from '../../../entities';
 
-	let activeScreen = 'Instrukcja';
 	let selectedTab = 'user';
+
+	export let activeScreen;
 </script>
 
 <section
@@ -27,7 +28,7 @@
 	</div> -->
 
 	<div
-		class="flex overflow-x-auto overflow-y-hidden whitespace-nowrap border-b border-gray-700 mb-12"
+		class="mb-12 flex overflow-x-auto overflow-y-hidden whitespace-nowrap border-b border-gray-700"
 	>
 		<button
 			on:click={() => (selectedTab = 'user')}
@@ -35,7 +36,7 @@
 				? 'border-pink-500 text-pink-500'
 				: 'border-neutral-500 border-transparent text-neutral-300'} cursor-base -px-1 -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 bg-transparent px-2 py-2  text-center hover:border-pink-500  hover:text-pink-500  focus:outline-none sm:px-4"
 		>
-			<Icon class='mr-2' data={user} scale={1.5} />
+			<Icon class="mr-2" data={user} scale={1.5} />
 
 			<span class="mx-1 text-sm sm:text-base"> User </span>
 		</button>
@@ -45,8 +46,7 @@
 				? 'border-pink-500 text-pink-500'
 				: 'border-neutral-500 border-transparent text-neutral-300'} cursor-base -px-1 -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 bg-transparent px-2 py-2  text-center hover:border-pink-500  hover:text-pink-500  focus:outline-none sm:px-4"
 		>
-			<Icon class='mr-2' data={eye} scale={1.5} />
-
+			<Icon class="mr-2" data={eye} scale={1.5} />
 
 			<span class="mx-1 text-sm sm:text-base"> Facilitator </span>
 		</button>

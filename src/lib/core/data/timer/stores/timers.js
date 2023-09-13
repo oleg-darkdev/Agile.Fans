@@ -1,25 +1,16 @@
 import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
 
-import { timingState } from './timingsState';
-
-timingState.set([
-	{
-		id: 2,
-		name: 'Work Review',
-		time: 15,
-		completed: false
-	}
-]);
-
-const { subscribe, set, update } = timingState;
+import defaultPomodoros from '../defaultPomodoros';
 
 function timerStore() {
-	// let state = defaultPomodoros;
+	let state = defaultPomodoros;
 	//  :
 	// state = browser ? JSON.parse(localStorage.getItem('timers')) : defaultPomodoros;
 
 	// state = browser ? defaultPomodoros  : JSON.parse(localStorage.getItem('timers'));
+
+	const { subscribe, set, update } = writable(state);
 
 	const timers = {
 		sort(dragId, dropId) {
@@ -33,6 +24,9 @@ function timerStore() {
 
 				return state;
 			});
+		},
+		setNewTimings(data) {
+			set(data);
 		},
 		modify(data) {
 			update((state) => {
@@ -69,10 +63,11 @@ function timerStore() {
 		subscribe,
 		set,
 		update,
+
 		...timers
 	};
 }
 
-// const timers = timerStore();
+const timers = timerStore();
 
-export default timerStore();
+export default timers;

@@ -19,6 +19,7 @@
 	};
 </script>
 
+<!-- button-container -->
 <button
 	title={buttonTitle}
 	class:selected
@@ -26,7 +27,8 @@
 	class:smaller
 	class:running
 	class:grows
-	class="button-container"
+	class="btn btn-outline btn-secondary"
+
 	style="animation-play-state: {paused ? 'paused' : 'running'};"
 	on:click={buttonFunction}
 	disabled={disable}

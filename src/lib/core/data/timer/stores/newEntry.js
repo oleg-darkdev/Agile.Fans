@@ -1,4 +1,4 @@
-import timers from './timers';
+import { timers } from '../../index';
 
 const defaultEntry = () => {
 	return {

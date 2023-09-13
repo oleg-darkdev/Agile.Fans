@@ -1,14 +1,19 @@
 <script>
-	import { theme, hideHour } from '@coreSharedData';
+	// import { theme, hideHour } from '../../stores/settings.js';
 	import { resetTimers, pomodoroState } from '@coreSharedData';
 	import { showNotification, playSound } from '@coreSharedUtils';
 
-	import { Button, Switch } from '../../shared/';
+	import { Button, Switch } from '@coreSharedLayout';
 
-	let timerSoundEnabled = JSON.parse(localStorage.getItem('timerSound')) || false,
-		lapSoundEnabled = JSON.parse(localStorage.getItem('lapSound')) || false,
-		notificationsEnabled = JSON.parse(localStorage.getItem('notifications')) || false,
-		waitForStart = JSON.parse(localStorage.getItem('waitForStart')) || false;
+	import { browser } from '$app/environment';
+	let timerSoundEnabled, lapSoundEnabled, notificationsEnabled, waitForStart;
+
+	if (browser) {
+		(timerSoundEnabled = JSON.parse(localStorage.getItem('timerSound')) || false),
+			(lapSoundEnabled = JSON.parse(localStorage.getItem('lapSound')) || false),
+			(notificationsEnabled = JSON.parse(localStorage.getItem('notifications')) || false),
+			(waitForStart = JSON.parse(localStorage.getItem('waitForStart')) || false);
+	}
 
 	let appVersion = '1.1.0';
 
@@ -20,7 +25,7 @@
 		Blue: '#137195'
 	};
 
-	$: currentTheme = $theme;
+	// $: currentTheme = $theme;
 	// $: separatorColor = colorLuminance(currentTheme);
 
 	// const colorLuminance = (hex) => {
@@ -44,15 +49,19 @@
 	// };
 
 	const changeTheme = (color) => {
-		localStorage.setItem('theme', color);
-		$theme = color;
+		if (browser) {
+			localStorage.setItem('theme', color);
+		}
+		// $theme = color;
 	};
 
 	const toggleTimerSound = (value) => {
 		if (value) {
 			playSound('done');
 		}
-		localStorage.setItem('timerSound', value);
+		if (browser) {
+			localStorage.setItem('timerSound', value);
+		}
 		timerSoundEnabled = value;
 	};
 
@@ -60,7 +69,9 @@
 		if (value) {
 			playSound('lap');
 		}
-		localStorage.setItem('lapSound', value);
+		if (browser) {
+			localStorage.setItem('lapSound', value);
+		}
 		lapSoundEnabled = value;
 	};
 
@@ -68,23 +79,27 @@
 		if (value) {
 			showNotification();
 		}
-
-		localStorage.setItem('notifications', value);
+		if (browser) {
+			localStorage.setItem('notifications', value);
+		}
 		notificationsEnabled = value;
 	};
 
 	const toggleAutoStart = (value) => {
-		localStorage.setItem('waitForStart', value);
+		if (browser) {
+			localStorage.setItem('waitForStart', value);
+		}
 		waitForStart = value;
 	};
 </script>
 
-<div class="settings-column" style="">
-	<!-- --custom-separator-color: {separatorColor}; -->
-	<div class="settings-container">
-		<h1>Settings</h1>
+<section class="flex flex-col gap-2 rounded-lg bg-pink-600 py-4 px-8" style="">
+	<div>
+		<!-- --custom-separator-color: {separatorColor}; -->
+		<div class="flex  flex-col">
+			<h2 class="mb-6 text-5xl font-black text-black">Settings</h2>
 
-		<!-- <div class="setting">
+			<!-- <div class="setting">
       <h2>Theme:</h2>
 
       <div class="theme-options">
@@ -99,187 +114,104 @@
         {/each}
       </div>
     </div> -->
-	</div>
+		</div>
+		{#if browser}
+			{#if 'Notification' in window}
+				<div class="">
+					<h3 class="mb-6 text-3xl font-bold text-black">Alerts</h3>
 
-	{#if 'Notification' in window}
-		<div class="settings-container">
-			<h1>Alerts</h1>
+					<div class="mb-8 flex w-full flex-row justify-between border-b-2 border-black">
+						<p class="text-1xl mb-6  text-black">Enable notifications:</p>
 
-			<div class="setting">
-				<h2>Enable notifications:</h2>
+						<Switch
+							buttonFunction={() => {
+								notificationsEnabled = !notificationsEnabled;
+								notificationsEnabled ? toggleNotifications(true) : toggleNotifications(false);
+							}}
+						/>
+					</div>
+				</div>
+			{/if}
+		{/if}
+
+		<div class="">
+			<h3 class="mb-6 text-3xl font-bold text-black">Pomodoro</h3>
+
+			<div class="mb-8 flex w-full flex-row justify-between border-b-2 border-black">
+				<p class="text-1xl mb-6  text-black">Confirm before starting next timer:</p>
 
 				<Switch
-					isOn={notificationsEnabled}
-					switchOn={() => {
-						toggleNotifications(true);
-					}}
-					switchOff={() => {
-						toggleNotifications(false);
+					buttonFunction={() => {
+						waitForStart = !waitForStart;
+						waitForStart ? toggleAutoStart(true) : toggleAutoStart(false);
 					}}
 				/>
 			</div>
+			<div class="">
+				<h3 class="mb-6 text-3xl font-bold text-black">Sound</h3>
+
+				<div class="mb-8 flex w-full flex-row justify-between border-b-2 border-black">
+					<p class="text-1xl mb-6  text-black">Play sound when completed:</p>
+
+					<Switch
+						buttonFunction={() => {
+							timerSoundEnabled = !timerSoundEnabled;
+							timerSoundEnabled ? toggleTimerSound(true) : toggleTimerSound(false);
+						}}
+					/>
+				</div>
+			</div>
+
+			<div class="">
+				<h3 class="mb-6 text-3xl font-bold text-black">Stopwatch</h3>
+
+				<div class="mb-8 flex w-full flex-row justify-between border-b-2 border-black">
+					<p class="text-1xl mb-6  text-black">Play sound on new laps:</p>
+
+					<Switch
+						buttonFunction={() => {
+							lapSoundEnabled = !lapSoundEnabled;
+							lapSoundEnabled ? toggleLapSound(true) : toggleLapSound(false);
+						}}
+					/>
+				</div>
+			</div>
 		</div>
-	{/if}
 
-	<div class="settings-container">
-		<h1>Pomodoro</h1>
+		<div class="mb-20 flex flex-row flex-wrap justify-between ">
+			<h3 class="mb-6 text-3xl font-bold text-black">Reset timers:</h3>
 
-		<div class="setting">
-			<h2>Confirm before starting next timer:</h2>
-
-			<Switch
-				isOn={waitForStart}
-				switchOn={() => {
-					toggleAutoStart(true);
-				}}
-				switchOff={() => {
-					toggleAutoStart(false);
-				}}
-			/>
+			<button disable={$pomodoroState} class="btn" on:click={() => resetTimers()}>Reset</button>
 		</div>
-		<div class="setting">
-			<h2>Play sound when completed:</h2>
 
-			<Switch
-				isOn={timerSoundEnabled}
-				switchOn={() => {
-					toggleTimerSound(true);
-				}}
-				switchOff={() => {
-					toggleTimerSound(false);
-				}}
-			/>
-		</div>
-		<div class="setting">
-			<h2>Reset timers:</h2>
-
-			<Button
-				disable={$pomodoroState}
-				buttonTitle="Reset Pomodoro timers to default"
-				buttonFunction={resetTimers}><span slot="label">Reset</span></Button
+		<div class="information">
+			<a href="" target="_blank"
+				><img
+					src="/img/bmac-button.png"
+					alt="Buy Me A Coffee"
+					style="height: 40px !important;width: 145px !important;"
+				/></a
 			>
+
+			<p class="text-black">
+				Made by <a rel="noreferrer" class="font-bold underline" target="_blank" href=""
+					>Agile.fans &#8599;
+				</a>
+			</p>
+			<p class="max-w-sm text-black" style="line-height: 1.4;">
+				If you found a problem or have any suggestion you can send me an email at:
+				<span class="font-bold underline">oleg@darkdev.games</span>
+			</p>
 		</div>
 	</div>
-
-	<div class="settings-container">
-		<h1>Stopwatch</h1>
-
-		<div class="setting">
-			<h2>Play sound on new laps:</h2>
-
-			<Switch
-				isOn={lapSoundEnabled}
-				switchOn={() => {
-					toggleLapSound(true);
-				}}
-				switchOff={() => {
-					toggleLapSound(false);
-				}}
-			/>
-		</div>
-
-		<div class="setting">
-			<h2>Always show hours:</h2>
-
-			<Switch
-				isOn={!$hideHour}
-				switchOn={() => {
-					localStorage.setItem('hideHour', 'false');
-					$hideHour = false;
-				}}
-				switchOff={() => {
-					localStorage.setItem('hideHour', 'true');
-					$hideHour = true;
-				}}
-			/>
-		</div>
-	</div>
-
-	<div class="information">
-		<img
-			style="max-height: 46px; filter: drop-shadow(0 1px 6px rgba(50, 50, 50, 0.5));"
-			alt="Timesets logo"
-			src="/img/timesets-logo.png"
-		/>
-
-		<p style="padding: 14px 0 18px 0;">
-			Timesets v {appVersion} -
-			<a rel="noreferrer" target="_blank" href="https://github.com/iamnabholz/timesets-app/releases"
-				>Release notes &#8599;
-			</a>
-		</p>
-
-		<a href="https://www.buymeacoffee.com/nabholz" target="_blank"
-			><img
-				src="/img/bmac-button.png"
-				alt="Buy Me A Coffee"
-				style="height: 40px !important;width: 145px !important;"
-			/></a
-		>
-		<p>
-			Made by <a rel="noreferrer" target="_blank" href="https://nabholz.work/"
-				>nabholz.work &#8599;
-			</a>
-		</p>
-		<p style="line-height: 1.4;">
-			If you found a problem or have any suggestion you can send me an email at:
-			<br />
-			support@nabholz.work
-		</p>
-	</div>
-</div>
+</section>
 
 <style>
-	.settings-column {
-		display: flex;
-		flex-direction: column;
-		row-gap: 2rem;
-
-		--custom-separator-color: rgba(0, 0, 0, 0.2);
-	}
-
-	.settings-container {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.setting {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 1rem 0;
-		position: relative;
-	}
-
-	.setting::before {
-		content: '';
-		position: absolute;
-		border-top: 1px solid var(--custom-separator-color);
-		width: 100%;
-		height: 100%;
-		pointer-events: none;
-	}
-
 	.theme-options {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-end;
 		gap: 2px;
-	}
-
-	h1 {
-		color: #000;
-		padding-bottom: 0.8rem;
-		font-size: 2rem;
-	}
-
-	h2 {
-		color: #000;
-		font-size: 1.4rem;
-	}
-
-	p {
-		color: #000;
 	}
 
 	.information {

@@ -11,6 +11,7 @@ import timings from './timings';
 import components from './components';
 import translates from './translates';
 import { landingVideos, appVideos } from './videos';
+import cardsDescription from './cardsDescription';
 
 const product = {
 	id: 100,
@@ -37,7 +38,8 @@ const product = {
 	components: components,
 	timings: timings,
 	landingVideos: landingVideos,
-  appVideos: appVideos,
+	appVideos: appVideos,
+	cards: cardsDescription,
 
 	about: {
 		desc: [

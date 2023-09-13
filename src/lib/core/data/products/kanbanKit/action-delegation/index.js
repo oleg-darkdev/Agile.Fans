@@ -1,5 +1,5 @@
 import defaultHeader from '../../headersLinks/defaultHeader';
-import productsIcons from '../../productsIcons';
+
 import variantOfProduct from './variantOfProduct';
 
 import faq from './faq';
@@ -12,6 +12,8 @@ import appSteps from './appSteps';
 import timings from './timings';
 import components from './components';
 import translates from './translates';
+import cardsDescription from './cardsDescription';
+
 import { landingVideos, appVideos } from './videos';
 
 const delegation = {
@@ -40,6 +42,7 @@ const delegation = {
 	timings: timings,
 	landingVideos: landingVideos,
 	appVideos: appVideos,
+  cards: cardsDescription,
 
 	about: {
 		desc: [

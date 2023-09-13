@@ -1,6 +1,6 @@
 const delegationDegrees = [
 	{
-		img: '',
+		img: 'https://wallup.net/wp-content/uploads/2016/03/12/341770-Audi_R8-car-vehicle-Super_Car-electric_car-blue_cars.jpg',
 		id: 1,
 		title: 'Manager -> team.',
 

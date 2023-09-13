@@ -1,5 +1,5 @@
 import defaultHeader from '../../headersLinks/defaultHeader';
-import productsIcons from '../../productsIcons';
+
 import variantOfProduct from './variantOfProduct';
 
 import faq from './faq';
@@ -12,6 +12,7 @@ import timings from './timings';
 import components from './components';
 import translates from './translates';
 import { landingVideos, appVideos } from './videos';
+import cardsDescription from './cardsDescription';
 
 const product = {
 	id: 0,
@@ -38,6 +39,7 @@ const product = {
 	timings: timings,
 	landingVideos: landingVideos,
 	appVideos: appVideos,
+	cards: cardsDescription,
 
 	about: {
 		desc: [

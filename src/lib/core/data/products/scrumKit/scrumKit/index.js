@@ -1,8 +1,6 @@
 import defaultHeader from '../../headersLinks/defaultHeader';
 import variantOfProduct from './variantOfProduct';
 
-import productsIcons from '../../productsIcons';
-
 import faq from './faq';
 import stats from './stats';
 import features from './features';
@@ -13,6 +11,7 @@ import timings from './timings';
 import components from './components';
 import translates from './translates';
 import { landingVideos, appVideos } from './videos';
+import cardsDescription from './cardsDescription';
 
 const product = {
 	id: 0,
@@ -22,7 +21,7 @@ const product = {
 		text: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
 		title: 'ScrumKIT',
 		logo: '',
-		icon: productsIcons.scrumKit.icon,
+		icon: '/action-delegation/icon.svg',
 		promo:
 			'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
 
@@ -40,6 +39,7 @@ const product = {
 	timings: timings,
 	landingVideos: landingVideos,
 	appVideos: appVideos,
+	cards: cardsDescription,
 
 	about: {
 		desc: [

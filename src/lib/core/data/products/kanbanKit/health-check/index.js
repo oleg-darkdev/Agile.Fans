@@ -1,7 +1,6 @@
 import header from './header';
-import productsIcons from '../../productsIcons';
-import variantOfProduct from './variantOfProduct';
 
+import variantOfProduct from './variantOfProduct';
 
 import faq from './faq';
 import stats from './stats';
@@ -13,6 +12,7 @@ import timings from './timings';
 import components from './components';
 import translates from './translates';
 import { landingVideos, appVideos } from './videos';
+import cardsDescription from './cardsDescription';
 
 const product = {
 	id: 2,
@@ -39,6 +39,7 @@ const product = {
 	timings: timings,
 	landingVideos: landingVideos,
 	appVideos: appVideos,
+	cards: cardsDescription,
 
 	about: {
 		desc: [

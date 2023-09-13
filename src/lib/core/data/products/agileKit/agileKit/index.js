@@ -1,5 +1,5 @@
 import defaultHeader from '../../headersLinks/defaultHeader';
-import productsIcons from '../../productsIcons';
+
 import variantOfProduct from './variantOfProduct';
 
 import faq from './faq';
@@ -12,6 +12,8 @@ import timings from './timings';
 import components from './components';
 import translates from './translates';
 import { landingVideos, appVideos } from './videos';
+import cardsDescription from './cardsDescription';
+
 
 const product = {
 	id: 0,
@@ -22,7 +24,7 @@ const product = {
 		title: 'AgileKIT',
 		logo: '/core/images/logo.svg',
 		promo: 'https://mdbcdn.b-cdn.net/img/new/standard/people/033.jpg',
-		icon: productsIcons.agileKit.icon,
+		icon: '/action-delegation/icon.svg',
 		banner:
 			'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
 		link: 'agike-kit/',
@@ -37,6 +39,7 @@ const product = {
 	timings: timings,
 	landingVideos: landingVideos,
 	appVideos: appVideos,
+	cards: cardsDescription,
 
 	about: {
 		desc: [

@@ -11,6 +11,7 @@ import timings from './timings';
 import components from './components';
 import translates from './translates';
 import { landingVideos, appVideos } from './videos';
+import cardsDescription from './cardsDescription';
 
 const product = {
 	id: 100,
@@ -37,7 +38,7 @@ const product = {
 	components: components,
 	timings: timings,
 	landingVideos: landingVideos,
-  appVideos: appVideos,
+	appVideos: appVideos,
 
 	about: {
 		desc: [
@@ -47,6 +48,7 @@ const product = {
 		],
 		author: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`
 	},
+	cards: cardsDescription,
 
 	stats: stats,
 	features: features,

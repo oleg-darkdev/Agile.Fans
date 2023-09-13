@@ -1,3 +1,6 @@
+
+
+
 import FreeDownload from '../entities/ui/FreeDownload.svelte';
 import Header from './ui/landing/Header.svelte';
 import Reviews from './ui/landing/Reviews.svelte';
@@ -9,6 +12,11 @@ import List from './ui/List.svelte';
 import Pomodoro from './ui/Pomodoro.svelte';
 import Settings from './ui/Settings.svelte';
 import Stopwatch from './ui/Stopwatch.svelte';
+import ListPomodoro from './ui/ListPomodoro.svelte';
+import ListStopwatch from './ui/ListStopwatch.svelte';
+import SettingsScreen from './ui/app/SettingsScreen.svelte';
+import PomodoroScreen from './ui/app/PomodoroScreen.svelte';
+import StopwatchScreen from './ui/app/StopwatchScreen.svelte';
 
 // app
 import HeaderApp from './ui/app/Header.svelte';
@@ -33,9 +41,9 @@ import HeroProduct from './ui/products/HeroProduct.svelte';
 import HeaderBottomLine from './ui/products/HeaderBottomLine.svelte';
 
 export {
-  ProductVariants,
-  DescriptionService,
-  TeamMembersList,
+	ProductVariants,
+	DescriptionService,
+	TeamMembersList,
 	StickyBanner,
 	FullScreenVideo,
 	HeaderApp,
@@ -59,5 +67,10 @@ export {
 	List,
 	Pomodoro,
 	Settings,
-	Stopwatch
+	Stopwatch,
+	ListPomodoro,
+	PomodoroScreen,
+	SettingsScreen,
+	StopwatchScreen,
+	ListStopwatch,
 };

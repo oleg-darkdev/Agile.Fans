@@ -19,8 +19,8 @@ import laps from './timer/stores/laps';
 import timers from './timer/stores/timers';
 
 
-
-import { theme, currentView, hideHour } from './timer/stores/settings';
+// theme, currentView,
+import {  hideHour } from './timer/stores/settings';
 
 // DB
 import kanbanKitBoardModel from './kanbanKit/kanbanKitBoardModel.js';
@@ -142,8 +142,8 @@ export {
 	resetTimers,
 	newEntry,
 	laps,
-	theme,
-	currentView,
+	// theme,
+	// currentView,
 	hideHour,
 	timers
 };

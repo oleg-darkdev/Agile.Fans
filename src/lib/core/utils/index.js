@@ -7,12 +7,14 @@ import createLocalComponent from './createLocalComponent';
 import showNotification from './timer/showNotification';
 import playSound from './timer/playSound';
 import minutsAndSecondsToSecondsConverter from './timer/minutsAndSecondsToSecondsConverter';
+import timeAdapterStopwatch from './timer/timeAdapterStopwatch';
 
 // import kanbanMetrics from './kanbanMetrics';
 
 // kanbanMetrics
 export {
 	convertObjToArray,
+        timeAdapterStopwatch,
   extractFaqValues,
   createLocalComponent,
 	showNotification,

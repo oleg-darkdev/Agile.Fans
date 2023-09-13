@@ -22,10 +22,15 @@ import AppBlocksWrapper from './ui/app/AppBlocksWrapper.svelte';
 import SummaryTime from './ui/SummaryTime.svelte';
 import Button from './ui/Button.svelte';
 import Switch from './ui/Toggle.svelte';
-
+import ButtonForTimingList from './ui/ButtonForTimingList.svelte';
+import ToggleTimer from './ui/ToggleTimer.svelte';
+import BtnAddNewTimer from './ui/BtnAddNewTimer.svelte';
 
 
 export {
+  ToggleTimer,
+  BtnAddNewTimer,
+  ButtonForTimingList,
   SummaryTime,
   AppBlocksWrapper,
   LastUpdCreateDate,

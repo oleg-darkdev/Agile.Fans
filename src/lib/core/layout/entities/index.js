@@ -10,6 +10,9 @@ import WorkshopCard from './ui/WorkshopCard.svelte';
 import FooterApp from './ui/FooterApp.svelte';
 import MsgToasts from './ui/app/MsgToasts.svelte';
 
+
+
+
 // timer
 import TimePoint from './ui/TimePoint.svelte';
 import Timer from './ui/Timer.svelte';
@@ -33,6 +36,8 @@ import StepsBtns from './ui/app/startScreen/StepsBtns.svelte';
 import StepsList from './ui/app/startScreen/StepsList.svelte';
 import CheckboxAppOrService from './ui/app/startScreen/CheckboxAppOrService.svelte';
 import CheckboxRoleCard from './ui/app/startScreen/CheckboxRoleCard.svelte';
+import TimingsCard from './ui/app/TimingsCard.svelte';
+
 
 // manual screen
 import TableOfContent from './ui/app/manualScreen/TableOfContent.svelte';
@@ -45,6 +50,7 @@ import TimeCounterBlock from './ui/app/gameScreen/TimeCounterBlock.svelte';
 
 export {
   LoginForm,
+  TimingsCard,
   CheckboxRoleCard,
   ComponentsTable,
   FaqLine,

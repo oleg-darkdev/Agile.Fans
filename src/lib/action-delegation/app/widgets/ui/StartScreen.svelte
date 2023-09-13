@@ -8,7 +8,7 @@
 		Progress,
 		ComponentsTable,
 		CheckboxAppOrService,
-    CheckboxCard,
+    CheckboxRoleCard,
 		// LevelSecelect,
 		FinalStepOnScreen
 	} from '@coreEntities';
@@ -31,7 +31,7 @@
 		link: ''
 	};
 
-  $: selectedCheckbox = {
+  $: selectedRole = {
 		title: '',
 		desc: '',
     role: ''
@@ -86,21 +86,19 @@
 			<StepsBtns slot="btn" bind:step />
 		</TextBlock> -->
 
-    <CheckboxCard {gameSteps} bind:step bind:selectedCheckbox modes={roles}>
+    <CheckboxRoleCard {gameSteps} bind:step bind:selectedRole {roles}>
       <StepsBtns slot="btn" bind:step />
-    </CheckboxCard>
+    </CheckboxRoleCard>
 	{:else if step > 4}
 
 		<AppBlocksWrapper>
 			<Progress {gameSteps} bind:step />
-      <CardDescription card={cardsDescription[step - 5]} {selectedCheckbox}/>
+      <CardDescription card={cardsDescription[step - 5]} {selectedRole}/>
 
 
 			<StepsBtns bind:step />
 		</AppBlocksWrapper>
-			<!-- {#each cardsDescription as degree}
-				<DegreeDescriptionCard {degree} />
-			{/each} -->
+
 	{/if}
 {:else}
 	<FinalStepOnScreen

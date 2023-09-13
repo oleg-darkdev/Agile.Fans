@@ -32,7 +32,7 @@ import FinalStepOnScreen from './ui/app/startScreen/FinalStepOnScreen.svelte';
 import StepsBtns from './ui/app/startScreen/StepsBtns.svelte';
 import StepsList from './ui/app/startScreen/StepsList.svelte';
 import CheckboxAppOrService from './ui/app/startScreen/CheckboxAppOrService.svelte';
-import CheckboxCard from './ui/app/startScreen/CheckboxCard.svelte';
+import CheckboxRoleCard from './ui/app/startScreen/CheckboxRoleCard.svelte';
 
 // manual screen
 import TableOfContent from './ui/app/manualScreen/TableOfContent.svelte';
@@ -45,7 +45,7 @@ import TimeCounterBlock from './ui/app/gameScreen/TimeCounterBlock.svelte';
 
 export {
   LoginForm,
-  CheckboxCard,
+  CheckboxRoleCard,
   ComponentsTable,
   FaqLine,
 	CheckboxAppOrService,

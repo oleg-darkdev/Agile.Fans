@@ -16,7 +16,7 @@
   import { CardDescription } from '@appActionDelegationEntities';
 
 
-	let step = 4;
+	let step = 0;
 	const video = {
 		title: 'Przygotowanie do gry',
 		link: '/agile-fans/landing/video.mp4',

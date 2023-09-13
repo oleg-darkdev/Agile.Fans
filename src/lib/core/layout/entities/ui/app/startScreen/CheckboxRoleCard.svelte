@@ -3,8 +3,6 @@
 	import { Progress } from '@coreEntities';
 
 	export let gameSteps, step, selectedRole, roles;
-
-  console.log(roles);
 </script>
 
 <AppBlocksWrapper>

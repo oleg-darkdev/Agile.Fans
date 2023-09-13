@@ -15,7 +15,7 @@
             </div>
           </div> -->
 		<h4 class="text-left text-2xl font-bold text-gray-100 group-hover:text-white ">
-			{selectedRole.role.lead ? card.lead.title : card.team.title}: {card.title}
+			{selectedRole.role = 'lead' ? card.lead.title : card.team.title}: {card.title}
 		</h4>
 		<p class=" mt-2 max-w-md text-left text-gray-300 group-hover:text-white">
 			{card.shortDescription}
@@ -28,9 +28,9 @@
             <div class="bg-black  rounded-lg border border-pink-700  flex w-full flex-col mb-4">
               <!-- <img class="rounded-t-lg h-[250px]" src="url({card.img})" alt=""> -->
               <div class="p-4 sm:p-6">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100 ">{selectedRole.role.lead ? 'Role: Leader' : 'Role: Team'} <span class=" text-xs font-medium text-pink-700">authority: {selectedRole.role.lead ? card.lead.procent : card.team.procent}%</span>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100 ">{selectedRole.role = 'lead' ? 'Role: Leader' : 'Role: Team'} <span class=" text-xs font-medium text-pink-700">authority: {selectedRole.role = 'lead' ? card.lead.procent : card.team.procent}%</span>
                 </h5>
-                <p class="mb-3 font-normal text-gray-300 leading-tight">{selectedRole.role.lead ? card.lead.description : card.team.description}</p>
+                <p class="mb-3 font-normal text-gray-300 leading-tight">{selectedRole.role = 'lead' ? card.lead.description : card.team.description}</p>
 
               </div>
             </div>

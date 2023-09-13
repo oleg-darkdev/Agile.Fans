@@ -43,7 +43,10 @@ const config = {
 			'@agileFansLandingWidgets': path.resolve('./src/lib/agile-fans/landing/widgets'),
 			'@agileFansLandingShared': path.resolve('./src/lib/agile-fans/landing/shared'),
 
-			// agile.fans app
+			/**
+			 * for APP`s
+			 */
+			// agile.fans
 			'@agileFansAppEntities': path.resolve('./src/lib/agile-fans/app/entities'),
 			'@agileFansAppFeatures': path.resolve('./src/lib/agile-fans/app/features'),
 			'@agileFansAppProcesses': path.resolve('./src/lib/agile-fans/app/processes'),
@@ -68,8 +71,24 @@ const config = {
 			'@appActionDelegationFeatures': path.resolve('./src/lib/action-delegation/app/features'),
 			'@appActionDelegationProcesses': path.resolve('./src/lib/action-delegation/app/processes'),
 			'@appActionDelegationWidgets': path.resolve('./src/lib/action-delegation/app/widgets'),
-			'@appActionDelegationShared': path.resolve('./src/lib/action-delegation/app/shared')
+			'@appActionDelegationShared': path.resolve('./src/lib/action-delegation/app/shared'),
 
+			/**
+			 * for landings
+			 */
+			'@landingActionDelegationEntities': path.resolve(
+				'./src/lib/action-delegation/landing/entities'
+			),
+			'@landingActionDelegationFeatures': path.resolve(
+				'./src/lib/action-delegation/landing/features'
+			),
+			'@landingActionDelegationProcesses': path.resolve(
+				'./src/lib/action-delegation/landing/processes'
+			),
+			'@landingActionDelegationWidgets': path.resolve(
+				'./src/lib/action-delegation/landing/widgets'
+			),
+			'@landingActionDelegationShared': path.resolve('./src/lib/action-delegation/landing/shared')
 			// template
 			// '@appEntities': path.resolve('./src/lib/retrogen/app/entities'),
 			// '@appFeatures': path.resolve('./src/lib/retrogen/app/features'),

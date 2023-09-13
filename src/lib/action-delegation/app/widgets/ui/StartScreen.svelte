@@ -8,15 +8,15 @@
 		Progress,
 		ComponentsTable,
 		CheckboxAppOrService,
-    CheckboxRoleCard,
+		CheckboxRoleCard,
+		TimingsCard,
 		// LevelSecelect,
 		FinalStepOnScreen
 	} from '@coreEntities';
 	import { AppBlocksWrapper, HorisontalImage } from '@coreSharedLayout';
-  import { CardDescription } from '@appActionDelegationEntities';
+	import { CardDescription } from '@appActionDelegationEntities';
 
-
-	let step = 0;
+	let step = 11;
 	const video = {
 		title: 'Przygotowanie do gry',
 		link: '/agile-fans/landing/video.mp4',
@@ -31,31 +31,30 @@
 		link: ''
 	};
 
-  $: selectedRole = {
+	$: selectedRole = {
 		title: '',
 		desc: '',
-    role: ''
+		role: ''
 	};
 
 	export let activeScreen, service;
 
 	let gameSteps = service.appSteps,
-  cardsDescription = service.cards,
+		cardsDescription = service.cards,
 		components = service.components;
 
-
-    const roles = [
-      {
-        title: 'Team leader',
-        role: 'Leader',
-        desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.'
-      },
-      {
-        title: 'Team member',
-        role: 'Member',
-        desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.'
-      },
-    ]
+	const roles = [
+		{
+			title: 'Team leader',
+			role: 'Leader',
+			desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.'
+		},
+		{
+			title: 'Team member',
+			role: 'Member',
+			desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.'
+		}
+	];
 </script>
 
 {#if step == 0}
@@ -86,19 +85,20 @@
 			<StepsBtns slot="btn" bind:step />
 		</TextBlock> -->
 
-    <CheckboxRoleCard {gameSteps} bind:step bind:selectedRole {roles}>
-      <StepsBtns slot="btn" bind:step />
-    </CheckboxRoleCard>
-	{:else if step > 4}
-
+		<CheckboxRoleCard {gameSteps} bind:step bind:selectedRole {roles}>
+			<StepsBtns slot="btn" bind:step />
+		</CheckboxRoleCard>
+	{:else if step > 4 && 12 > step}
 		<AppBlocksWrapper>
 			<Progress {gameSteps} bind:step />
-      <CardDescription card={cardsDescription[step - 5]} {selectedRole}/>
-
+			<CardDescription card={cardsDescription[step - 5]} {selectedRole} />
 
 			<StepsBtns bind:step />
 		</AppBlocksWrapper>
-
+	{:else if step == 12}
+		<TimingsCard {gameSteps} bind:step>
+			<StepsBtns slot="btn" bind:step />
+		</TimingsCard>
 	{/if}
 {:else}
 	<FinalStepOnScreen

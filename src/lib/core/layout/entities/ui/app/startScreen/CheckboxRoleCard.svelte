@@ -8,7 +8,7 @@
 <AppBlocksWrapper>
 	<Progress {gameSteps} bind:step />
 
-	<div class="flex max-w-md flex-col items-center justify-center">
+	<div class="flex flex-col w-full items-center justify-center">
 		{#each roles as role, i}
 			<div
 				class="my-4 max-w-sm rounded-lg border border-gray-200 text-gray-400  shadow-md hover:border-pink-600 hover:bg-neutral-800 divide-gray-700 "

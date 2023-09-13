@@ -8,12 +8,15 @@
 		Progress,
 		ComponentsTable,
 		CheckboxAppOrService,
+    CheckboxCard,
 		// LevelSecelect,
 		FinalStepOnScreen
 	} from '@coreEntities';
 	import { AppBlocksWrapper, HorisontalImage } from '@coreSharedLayout';
+  import { CardDescription } from '@appActionDelegationEntities';
 
-	let step = 0;
+
+	let step = 4;
 	const video = {
 		title: 'Przygotowanie do gry',
 		link: '/agile-fans/landing/video.mp4',
@@ -28,10 +31,31 @@
 		link: ''
 	};
 
+  $: selectedCheckbox = {
+		title: '',
+		desc: '',
+    role: ''
+	};
+
 	export let activeScreen, service;
 
 	let gameSteps = service.appSteps,
+  cardsDescription = service.cards,
 		components = service.components;
+
+
+    const roles = [
+      {
+        title: 'Team leader',
+        role: 'Leader',
+        desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.'
+      },
+      {
+        title: 'Team member',
+        role: 'Member',
+        desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.'
+      },
+    ]
 </script>
 
 {#if step == 0}
@@ -57,10 +81,26 @@
 			<ComponentsTable {components} />
 			<StepsBtns bind:step />
 		</AppBlocksWrapper>
-	{:else if step > 3}
-		<TextBlock {gameSteps} bind:step title={gameSteps[step].title} desc={gameSteps[step].desc[0]}>
+	{:else if step == 4}
+		<!-- <TextBlock {gameSteps} bind:step title={gameSteps[step].title} desc={gameSteps[step].desc[0]}>
 			<StepsBtns slot="btn" bind:step />
-		</TextBlock>
+		</TextBlock> -->
+
+    <CheckboxCard {gameSteps} bind:step bind:selectedCheckbox modes={roles}>
+      <StepsBtns slot="btn" bind:step />
+    </CheckboxCard>
+	{:else if step > 4}
+
+		<AppBlocksWrapper>
+			<Progress {gameSteps} bind:step />
+      <CardDescription card={cardsDescription[step - 5]} {selectedCheckbox}/>
+
+
+			<StepsBtns bind:step />
+		</AppBlocksWrapper>
+			<!-- {#each cardsDescription as degree}
+				<DegreeDescriptionCard {degree} />
+			{/each} -->
 	{/if}
 {:else}
 	<FinalStepOnScreen

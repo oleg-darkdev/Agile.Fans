@@ -1,14 +1,15 @@
 <script>
-	import { DegreeDescriptionCard } from '../../../lib/action-delegation/landing/entities';
-	import delegationDegrees from '../../../lib/action-delegation/degreeDescription';
-	import { ShowFullListBtn } from '../../../lib/core/layout/shared';
+	import { DegreeDescriptionCard } from '@landingActionDelegationEntities';
+	import { ShowFullListBtn } from '@coreSharedLayout';
 
 	$: showFullList = true;
 
-	import { ProductLanding } from '../../../lib/core/layout/features';
+	import { ProductLanding } from '@coreFeatures';
 
-	import { actionDelegation } from '../../../lib/core/data';
+	import { actionDelegation } from '@coreSharedData';
 	const productData = actionDelegation;
+
+	const cardsDescription = actionDelegation.cards;
 </script>
 
 <!--
@@ -30,10 +31,10 @@ Contact -->
 			>
 				Opis etapów delegowania
 			</h2>
-			{#each delegationDegrees as degree}
+			{#each cardsDescription as degree}
 				<DegreeDescriptionCard {degree} />
 			{/each}
-			<!-- {#each showFullList ? delegationDegrees.splice(0, 3) : delegationDegrees as degree}
+			<!-- {#each showFullList ? cardsDescription.splice(0, 3) : cardsDescription as degree}
 				<DegreeDescriptionCard {degree} />
 			{/each} -->
 		</div>

@@ -17,6 +17,9 @@ import timelineChronology from './tools/timelineChronology';
 import generalCleaning from './tools/generalCleaning';
 import priorityPrinciple from './tools/priorityPrinciple';
 import rageSadnessHappiness from './tools/rageSadnessHappiness';
+// new
+
+
 // import inspectorGadget from './tools/inspectorGadget';
 // import inspectorGadget from './tools/inspectorGadget';
 // import inspectorGadget from './tools/inspectorGadget';
@@ -44,5 +47,7 @@ export {
 	averageHospitalTemperature,
 	magicGin,
 	inspectorGadget,
-	priorityPrinciple,
+  priorityPrinciple,
+
+  // new
 };

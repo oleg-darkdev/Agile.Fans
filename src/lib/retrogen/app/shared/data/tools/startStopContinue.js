@@ -3,7 +3,7 @@ import { sectionComponent, appComponent, holderComponent } from '$lib/core/data'
 // const kit = retrogenComponent.retrogen;
 
 const tool = {
-	id: '0',
+	id: 'new',
 	title: 'Начать, Прекратить, Продолжать',
 	shortDesc: 'Мозговой штурм и выбор лучших предложений',
 	attention: '',

@@ -3,7 +3,7 @@ import { sectionComponent, appComponent, holderComponent } from '$lib/core/data'
 // const kit = retrogenComponent.retrogen;
 
 const tool = {
-	id: '0',
+	id: 'new',
 	title: '',
 	shortDesc: '',
 	attention: '',
@@ -37,7 +37,7 @@ const tool = {
 	instruction: [``, ``, ``, ``, ``, ``, ``],
 	listData: ['', '', ''],
 	components: [
-		
+
 		Object.assign(sectionComponent, { count: '3' }),
 		Object.assign(holderComponent, { count: '20' }),
 		Object.assign(appComponent, { count: 1 })

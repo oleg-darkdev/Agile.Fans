@@ -17,21 +17,6 @@
 	const newEntry = () => {
 		timers.modify(newTiming());
 	};
-
-	// export let data = {
-	// 	id: Date.now(),
-	// 	name: 'New task',
-	// 	time: 10,
-	// 	completed: false
-	// };
-
-	// let addNewTiming = () => {
-	// 	return data;
-	// };
-
-	// const newEntry = () => {
-	// 	timers.modify(addNewTiming());
-	// };
 </script>
 
 <Button buttonTitle="Add a new timer" withIcon disable={!stopped || done} buttonFunction={newEntry}>

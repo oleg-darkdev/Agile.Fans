@@ -11,12 +11,13 @@
 		CheckboxRoleCard,
 		TimingsCard,
 		// LevelSecelect,
+    TopicsListCard,
 		FinalStepOnScreen
 	} from '@coreEntities';
 	import { AppBlocksWrapper, HorisontalImage } from '@coreSharedLayout';
 	import { CardDescription } from '@appActionDelegationEntities';
 
-	let step = 11;
+	let step = 12;
 	const video = {
 		title: 'Przygotowanie do gry',
 		link: '/agile-fans/landing/video.mp4',
@@ -95,10 +96,13 @@
 
 			<StepsBtns bind:step />
 		</AppBlocksWrapper>
-	{:else if step == 12}
+{:else if step == 12}
+
+    <TopicsListCard {gameSteps} bind:step/>
+	<!-- {:else if step == 12}
 		<TimingsCard {gameSteps} bind:step>
 			<StepsBtns slot="btn" bind:step />
-		</TimingsCard>
+		</TimingsCard> -->
 	{/if}
 {:else}
 	<FinalStepOnScreen

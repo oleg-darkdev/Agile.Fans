@@ -17,6 +17,8 @@ import LargeBtn from './ui/app/LargeBtn.svelte';
 import ListTextcard from './ui/app/manualScreen/ListTextcard.svelte';
 import LastUpdCreateDate from './ui/app/LastUpdCreateDate.svelte';
 import AppBlocksWrapper from './ui/app/AppBlocksWrapper.svelte';
+import CircleBtn from './ui/CircleBtn.svelte';
+import EditTopicData from './ui/app/EditTopicData.svelte';
 
 // timer
 import SummaryTime from './ui/SummaryTime.svelte';
@@ -28,6 +30,8 @@ import BtnAddNewTimer from './ui/BtnAddNewTimer.svelte';
 
 
 export {
+  CircleBtn,
+  EditTopicData,
   ToggleTimer,
   BtnAddNewTimer,
   ButtonForTimingList,

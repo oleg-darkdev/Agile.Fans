@@ -37,6 +37,7 @@ import StepsList from './ui/app/startScreen/StepsList.svelte';
 import CheckboxAppOrService from './ui/app/startScreen/CheckboxAppOrService.svelte';
 import CheckboxRoleCard from './ui/app/startScreen/CheckboxRoleCard.svelte';
 import TimingsCard from './ui/app/TimingsCard.svelte';
+import TopicsListCard from './ui/app/startScreen/TopicsListCard.svelte';
 
 
 // manual screen
@@ -49,6 +50,7 @@ import GameStepsBtns from './ui/app/gameScreen/GameStepsBtns.svelte';
 import TimeCounterBlock from './ui/app/gameScreen/TimeCounterBlock.svelte';
 
 export {
+  TopicsListCard,
   LoginForm,
   TimingsCard,
   CheckboxRoleCard,

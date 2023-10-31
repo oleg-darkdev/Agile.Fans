@@ -36,7 +36,7 @@
 <AppBlocksWrapper>
 	<Progress {gameSteps} bind:step />
 
-	<div class="flex max-w-md flex-col items-center justify-center">
+	<div class="flex w-full flex-col items-center justify-center">
 		{#each modes as mode, i}
 			<div
 				class="my-4 max-w-sm rounded-lg border border-gray-200 text-gray-400  shadow-md hover:border-pink-600 hover:bg-neutral-800 divide-gray-700 "

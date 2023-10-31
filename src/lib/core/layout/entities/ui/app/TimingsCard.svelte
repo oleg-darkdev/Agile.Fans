@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	//
 	import { AppBlocksWrapper, BtnAddNewTimer } from '@coreSharedLayout';
 	import { Progress } from '@coreEntities';
@@ -34,7 +34,6 @@
 <AppBlocksWrapper>
 	<Progress {gameSteps} bind:step />
 
-	<!-- <h2>Testd;fkgdpkjgdjflgdlgflkjlk</h2> -->
 
 	<ListPomodoro>
 		<BtnAddNewTimer slot="btn" {newTiming} />
@@ -43,4 +42,4 @@
 </AppBlocksWrapper>
 
 <style>
-</style>
+</style> -->

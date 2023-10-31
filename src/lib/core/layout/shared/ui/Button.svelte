@@ -33,9 +33,9 @@
 	on:click={buttonFunction}
 	disabled={disable}
 >
-	{#if withIcon}
+	<!-- {#if withIcon} -->
 		<slot name="icon">
-			<svg
+			<!-- <svg
 				width="22"
 				height="22"
 				viewBox="0 0 22 22"
@@ -45,9 +45,9 @@
 				<path
 					d="M18.3412 9.84166C19.2196 10.3565 19.2196 11.6435 18.3412 12.1583L6.97647 18.8188C6.09804 19.3336 5 18.6901 5 17.6605L5 4.33953C5 3.30989 6.09804 2.66637 6.97647 3.18119L18.3412 9.84166Z"
 				/>
-			</svg>
+			</svg> -->
 		</slot>
-	{/if}
+	<!-- {/if} -->
 
 	{#if !noText}
 		{#if !(disable && withIcon)}
